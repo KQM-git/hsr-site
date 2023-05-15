@@ -1,3 +1,30 @@
+# KQM HSR Site
+AIM: Modern look (compete w/ others), passes accessibility standards, mobile-friendly, editor-friendly processes.
+
+## TODO: Home Page 
+    Thoughts on assets:
+		- Check Fontawesome or other SVG sites for socials icons
+		- Standardize image sizes
+		- Get other KQM logos
+		- If there's an official color-scheme, get ahold of it
+		- Look at other style guides and yoink if open-source
+
+	Current thoughts for components: 
+		- Header - have astro auto-generate breadcrumbs
+    		- Field for custom background images
+		- Footer - should be easy to find template
+		- Background - fixed. Find script (i have one sitting somewhere but need to find it)
+		- Event Component
+		- 'Groups' like 'What's New' group
+		- Edit 'Card' component. Add tags, etc. Create an example
+		  in MDX that showcases following:
+		  	- Title, Custom slug, tags, date (auto generate?)
+		  	- Any sort of auto-generated table (like Tibo mentioned)
+		  	- Links to other guides. SRL link. Outside link.
+    	- Search component
+
+
+
 # Astro Starter Kit: Basics
 
 ```
@@ -53,3 +80,5 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+

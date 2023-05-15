@@ -4,11 +4,12 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-import style from '../style/global.css';
+import background from "../assets/planet_edit3.png";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
+	<!-- <img src={background} alt="nothing here"> -->
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -20,6 +21,9 @@ import style from '../style/global.css';
 		<slot />
 	</body>
 </html>
+
+<!-- Global Styles
+TODO: MOVE THEM. -->
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;
@@ -27,7 +31,9 @@ import style from '../style/global.css';
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #362254;
+		background-image: url({background});
+		background-repeat: no-repeat;
+		background-color: #272232;
     	color: #fff;
 	}
 	code {
