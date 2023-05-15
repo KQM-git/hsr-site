@@ -77,9 +77,20 @@ I don't know enough about how to set this up. But at least here's a small amount
 ```
 
 
-My thought process is this: using (Routing)[https://docs.astro.build/en/core-concepts/routing/#dynamic-routes], content groups, whatever, we can auto-generate lightcones. For example, for that one, we'd want to auto generate pages at hsr.keqingmains.com/lightcones/boat and ~/lightcones/fermata. And maybe it could get a pre-made template table (like the ones on Figma) and fill it out. And we'd not have to manually add it in the fields each time. 
+My thought process is this: using [Routing](https://docs.astro.build/en/core-concepts/routing/#dynamic-routes), content groups, whatever, we can auto-generate lightcones. For example, for that one, we'd want to auto generate pages at hsr.keqingmains.com/lightcones/boat and ~/lightcones/fermata. And maybe it could get a pre-made template table (like the ones on Figma) and fill it out. And we'd not have to manually add it in the fields each time. 
 
 Otherwise, don't see much use for routing/content groups. 
+
+## Figma Links
+Kind of a nonsequitur, but here are links to everything on figma in case opening discord is annoying:
+
+- [Home Page](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=6-477&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+- [Light Cones, All](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=190-5377&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+- [Light Cones, One: Stats](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=127-3190&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2), [Light Cones, One: Abilities](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=190-5758&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+- Specific Light Cones
+  - [River](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=123-2956&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+  - [Carve The Moon](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=123-2956&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+
 
 
 
