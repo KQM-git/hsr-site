@@ -1,41 +1,12 @@
-# Astro Starter Kit: Basics
+# KQM:HSR Site
 
-```
-npm create astro@latest -- --template basics
-```
+## Routing (aka what's up with src/pages)
+*.astro, *.md, *.mdx in src/pages will just lead to the specified page (static routing). I.e. `~/src/pages/about.astro` becomes `hsr.keqingmains.com/about`
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Astro has a system for dynamic routing. Here' s Astro's documentation about it is [here](https://docs.astro.build/en/core-concepts/routing/#dynamic-routes).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Important note:
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
