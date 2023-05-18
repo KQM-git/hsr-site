@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import style from '../style/global.css';
 import logo from '../assets/KQM_HSR_Logo_Full.png';
+import Header from '../components/header.astro';
 ---
 
 <Layout title="KQM Honkai Star Rail: Guides and Theorycrafting">
@@ -10,9 +10,9 @@ import logo from '../assets/KQM_HSR_Logo_Full.png';
 		<!-- TODO: Make header component
 				   Stop hard coding.
 			<header></header> -->
-		<img src={logo} alt="Honkai Star Rail" style="max-width: 200px;">
-		<h1>KQM Honkai Star Rail: </h1>
-			<h2> [discord] [youtube] [twitch]| Guides and Theorycrafting </h2>
+		<Header
+			logo = {logo}
+		/>
 		
 		<ul role="list" class="link-card-grid">
 			<Card
