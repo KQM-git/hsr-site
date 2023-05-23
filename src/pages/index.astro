@@ -1,85 +1,44 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import logo from '../assets/KQM_HSR_Logo_Full.png';
-import Header from '../components/header.astro';
+/* TODO:
+ * Write page description
+ */
+
+import Layout from "../layouts/BaseLayout.astro";
+import Card from "../components/home/GuideCard.astro";
+import logo from "../assets/KQM_HSR_Logo_Full.png";
+import Header from "../components/Header.astro";
+import type MDPost from "../types/MDPost";
+import Searchbar from "../components/Searchbar.astro";
+
+// Use Astro.glob() to fetch all posts, and then sort them by date.
+const guides = (await Astro.glob("./guides/*.{md,mdx}")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+) as MDPost[];
 ---
 
-<Layout title="KQM Honkai Star Rail: Guides and Theorycrafting">
-	<main>
-		<!-- TODO: Make header component
-				   Stop hard coding.
-			<header></header> -->
-		<Header
-			logo = {logo}
-		/>
-		
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<script>
+  // remove search bar from nav
+  const searchbar = document.getElementById("nav-searchbar")
+    ?.parentElement as HTMLElement;
+  searchbar.classList.add("opacity-0");
+  searchbar.inert = true;
+</script>
+<Layout title="KQM Honkai Star Rail: Guides and Theorycrafting" description="">
+  <main class="flex items-center flex-col">
+    <Header logo={logo} />
+    <div class="my-12 w-full md:w-5/12">
+      <Searchbar
+        id="main-searchbar"
+        className="w-full"
+        placeholder="Search for guides, characters, and more..."
+      />
+    </div>
+    <ul role="list" class="link-card-grid">
+      {guides.map((g) => <Card {...g} />)}
+    </ul>
+  </main>
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+<style></style>

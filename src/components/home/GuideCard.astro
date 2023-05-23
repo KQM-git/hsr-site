@@ -1,0 +1,19 @@
+---
+import type MDPost from "../../types/MDPost";
+
+export interface Props extends MDPost {}
+
+const { frontmatter, url } = Astro.props;
+const { title, description, pubDate, tags } = frontmatter;
+---
+
+<li class="link-card">
+  <a href={url}>
+    <h2>
+      {title}
+    </h2>
+    <p>
+      {description}
+    </p>
+  </a>
+</li>

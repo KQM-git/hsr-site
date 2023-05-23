@@ -1,17 +1,25 @@
 ---
-export interface Props {
-	logo: string;
-
-}
-
-const { logo } = Astro.props;
+import { Image } from "astro:assets";
+import logo from "../assets/logo_full.png";
 ---
-<img src={logo} alt="KQM: Honkai Star Rail" style="max-width: 200px;">
-		<h1>KQM: Honkai Star Rail </h1>
-			<h2> [discord] [youtube] [twitch]| Guides and Theorycrafting </h2>
 
+<section class="flex flex-col md:flex-row mt-12 items-center gap-4">
+  <Image src={logo} class="w-[240px] lg:w-[320px]" width={280} alt="" />
 
-			
-<style>
+  <div class="font-bold">
+    <div class="text-3xl">KQM</div>
+    <h1 class="text-5xl font-serif tracking-wide">Honkai: Star Rail</h1>
+    <!-- Displaying elements in reverse is an a11y improvement in this case. -->
+    <div class="flex gap-4 flex-row-reverse items-center">
+      <h2 class="text-3xl">Guides & Theorycrafting</h2>
+      <hr class="outline outline-1 outline-neutral-300 h-6" />
+      <ul class="contents">
+        <li>dc</li>
+        <li>yt</li>
+        <li>tw</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-</style>
+<style></style>

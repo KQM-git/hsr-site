@@ -1,0 +1,23 @@
+/* Opinionated Global Styling
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-text bg-cover;
+    background-color: #272232;
+  }
+}
+
+@layer components {
+  .search-box {
+    border-radius: 999px;
+    @apply outline outline-1 outline-neutral-600 transition-all bg-bg bg-opacity-10;
+  }
+  .search-box:focus {
+    @apply outline outline-2 outline-neutral-300;
+  }
+}

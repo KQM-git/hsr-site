@@ -1,0 +1,12 @@
+/* A11y CSS changes
+* These changes improve accessibility. Do not change without good reason.
+*/
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+body {
+  line-height: 1.5;
+}
