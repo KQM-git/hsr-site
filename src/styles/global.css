@@ -17,7 +17,24 @@
     border-radius: 999px;
     @apply outline outline-1 outline-neutral-600 transition-all bg-bg bg-opacity-10;
   }
+
   .search-box:focus {
     @apply outline outline-2 outline-neutral-300;
+  }
+
+  .preview-tag-chip {
+    @apply px-2 font-bold rounded-full text-bg
+  }
+
+  .tag.new {
+    background-color: #D1D35A;
+  }
+
+  .tag.long {
+    background-color: #D3945A;
+  }
+
+  .subheader {
+    @apply font-bold text-4xl mb-5;
   }
 }

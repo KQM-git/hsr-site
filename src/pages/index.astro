@@ -28,16 +28,19 @@ const guides = (await Astro.glob("./guides/*.{md,mdx}")).sort(
 <Layout title="KQM Honkai Star Rail: Guides and Theorycrafting" description="">
   <main class="flex items-center flex-col">
     <Header logo={logo} />
-    <div class="my-12 w-full md:w-5/12">
+    <div class="my-12 w-10/12 max-w-[720px] lg:w-5/12 lg:min-w-[600px]">
       <Searchbar
         id="main-searchbar"
         className="w-full"
         placeholder="Search for guides, characters, and more..."
       />
     </div>
-    <ul role="list" class="link-card-grid">
-      {guides.map((g) => <Card {...g} />)}
-    </ul>
+    <section class="py-6 px-12 bg-bg rounded-lg">
+      <h2 class="subheader">What's New</h2>
+      <ul class="flex flex-wrap gap-4 lg:gap-8">
+        {guides.map((g) => <Card {...g} />)}
+      </ul>
+    </section>
   </main>
 </Layout>
 
