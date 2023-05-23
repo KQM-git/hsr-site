@@ -1,5 +1,6 @@
 ---
 /* TODO:
+ * Add dropdown for switching sites
  * Add dropdown for data bank
  * Add arrow key support for moving between menu items
  */
@@ -25,7 +26,7 @@ import Searchbar from "./Searchbar.astro";
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
-    if (width < 640 && navMenuToggle.ariaExpanded === "false") {
+    if (width < 1024 && navMenuToggle.ariaExpanded === "false") {
       navMenu.inert = true;
     } else if (navMenu.inert) {
       navMenu.inert = false;
@@ -49,13 +50,24 @@ import Searchbar from "./Searchbar.astro";
     }
   }
   navMenuToggle?.addEventListener("click", toggleNavMenu);
+
+  // close nav menu when escape is pressed
+  function checkEscapeMenu(e: KeyboardEvent) {
+    if (e.key === "Escape" && navMenuToggle.ariaExpanded === "true") {
+      toggleNavMenu();
+      navMenuToggle.focus();
+    }
+  }
+
+  window.addEventListener("keydown", checkEscapeMenu);
 </script>
 
-<header class="w-full sticky top-0">
+<header class="w-full sticky top-0 z-10">
   <nav
+    aria-label="Main"
     class="grid min-h-[60px] grid-cols-[auto_1fr_auto] items-center bg-bg bg-opacity-90 px-4"
   >
-    <a href="/" class="flex items-center gap-2">
+    <a href="/" class="flex items-center gap-2 z-30">
       <Image src={logo} height={52} alt="" />
       <span class="text-lg font-bold pt-2 font-serif flex items-center gap-2">
         KQM: Star Rail
@@ -65,7 +77,7 @@ import Searchbar from "./Searchbar.astro";
     <div class="lg:hidden"></div>
     <button
       id="button-toggle-nav"
-      class="lg:hidden mt-1 mr-2 p-2 z-50"
+      class="lg:hidden mt-1 mr-2 p-2 z-30"
       aria-controls="container-nav-links"
       aria-expanded="false"
     >
@@ -73,7 +85,7 @@ import Searchbar from "./Searchbar.astro";
     </button>
     <div
       id="container-nav-links"
-      class="-translate-y-full min-h-screen right-0 left-0 top-0 px-12 py-16 bg-bg transition-transform absolute lg:contents overflow-hidden"
+      class="-translate-y-full min-h-screen right-0 left-0 top-0 px-12 pt-24 pb-16 bg-bg transition-transform absolute overflow-hidden lg:contents"
     >
       <ul
         id="nav-links"
@@ -83,9 +95,9 @@ import Searchbar from "./Searchbar.astro";
           <a href="/guides" id="nav-links-guides" class="navlink">GUIDES</a>
         </li>
         <li>
-          <span id="nav-links-data" class="navlink flex align-center gap-2">
+          <span id="nav-links-data" class="navlink flex items-center gap-2">
             DATA BANK
-            <ExpandDown className="h-full" width="12px" height="7px" />
+            <ExpandDown width="12px" height="7px" />
           </span>
         </li>
         <li><a href="about" id="nav-links-about" class="navlink">ABOUT</a></li>
