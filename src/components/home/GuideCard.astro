@@ -1,19 +1,43 @@
 ---
+/* TODO:
+ * Add date parse
+ * Compare parsed date to current date and apply NEW tag as needed
+ */
+
 import type MDPost from "../../types/MDPost";
 
 export interface Props extends MDPost {}
 
 const { frontmatter, url } = Astro.props;
-const { title, description, pubDate, tags } = frontmatter;
+const { title, description, hero, pubDate, tags } = frontmatter;
 ---
 
-<li class="link-card">
-  <a href={url}>
-    <h2>
+<li class="rounded-lg overflow-hidden bg-bg-dark">
+  <a href={url} class="flex flex-col h-[320px] md:h-[400px]">
+    <img
+      src=`src/assets/guides/${hero}`
+      class="w-[320px] h-[180px] lg:w-[360px] lg:h-[200px] object-cover"
+      height={200}
+      alt=""
+    />
+    <ul class="flex gap-2 mt-4 mb-1 mx-4">
+      <li class="preview-tag-chip tag new">NEW</li>
+      {
+        tags.map((tag) => (
+          <li
+            class={`preview-tag-chip tag ${tag.toString().toLocaleLowerCase()}`}
+          >
+            {tag.toString().toLocaleUpperCase()}
+          </li>
+        ))
+      }
+    </ul>
+    <h3 class="text-2xl mx-4">
       {title}
-    </h2>
-    <p>
+    </h3>
+    <p class="text-sm text-neutral-300 mb-auto block mx-4">
       {description}
     </p>
+    <time class="text-sm text-neutral-300 mx-4 mt-2 mb-2">{pubDate}</time>
   </a>
 </li>

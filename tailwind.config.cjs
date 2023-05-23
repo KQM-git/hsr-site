@@ -31,7 +31,7 @@ module.exports = {
       },
 
       // Site related
-      
+
       // theme colors
 
       text: {
@@ -39,10 +39,11 @@ module.exports = {
         em: "DAB2F9",
         links: "DAB2F9"
       },
-      
+
       // primary background color; all content lays on top of this
       bg: {
         DEFAULT: "#141214",
+        dark: "#18151F",
         ice: "#0F0F14",
         lightning: "#140F14",
       },
