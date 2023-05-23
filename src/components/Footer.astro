@@ -1,2 +1,134 @@
 ---
+/* TODO
+ * Replace placeholder images for socials
+ */
+
+/* BREAKPOINTS: SM, LG, XL
+*/
+
+import { Image } from "astro:assets";
+import logo from "../assets/logo_full.png";
+import map from "../data/footer/sitemap.json";
 ---
+
+<footer class="bg-bg bg-opacity-90 xl:grid grid-cols-[auto,2px,1fr]">
+  <section class="p-6 sm:pl-8 xl:pl-12 xl:max-w-md">
+    <Image src={logo} height={96} alt="" />
+    <h2 class="text-xl my-2">KQM: Star Rail</h2>
+    <p class="my-1">
+      A Honkai: Star Rail community dedicated to providing in-depth game guides
+      and information.
+    </p>
+    <p>We are not affiliated with Hoyoverse in any way.</p>
+  </section>
+  <hr
+    class="border-none outline outline-1 outline-neutral-500 xl:h-full xl:w-0"
+  />
+  <nav
+    aria-label="Footer"
+    class="p-6 lg:grid grid-cols-[repeat(4,_160px)_1fr] sm:pl-8 xl:pt-8"
+  >
+    {
+      Object.entries(map).map(([title, links]) => (
+        <div>
+          <h3>{title}</h3>
+          <ul class="grid-fill">
+            {Object.entries(links).map(([link, href]) => (
+              <li>
+                <a href={href}>{link}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+    <div>
+      <h3>SOCIALS</h3>
+      <ul
+        id="footer-list-socials"
+        class="grid grid-cols-3 sm:grid-cols-6 gap-4 flex-col lg:flex"
+      >
+        <li>
+          <a
+            id="footer-links-discord"
+            href="https://discord.gg/kqmstarrail"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Discord
+          </a>
+        </li>
+        <li>
+          <a
+            id="footer-links-twitch"
+            href="https://www.twitch.tv/keqingmains"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Twitch
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-col text-right items-end mt-8 lg:mt-auto">
+      <a href="/privacy" class="underline mb-1">Privacy Policy</a>
+      <span class="inline-block">Copyright &copy; 2023 KQM</span>
+    </div>
+  </nav>
+</footer>
+
+<style>
+  footer h2,
+  footer h3 {
+    font-weight: bold;
+  }
+
+  ul.grid-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.5em 1em;
+  }
+  footer ul {
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    flex-direction: column;
+  }
+
+  #footer-list-socials > li {
+    display: contents;
+  }
+  #footer-list-socials > li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  #footer-list-socials > li > a::before {
+    content: "";
+    width: 3em;
+    height: 3em;
+    background-size: contain;
+    display: block;
+  }
+  @media (min-width: 1024px) {
+    ul.grid-fill {
+      display: flex;
+    }
+    #footer-list-socials > li > a:before {
+      width: 1.5em;
+      height: 1.5em;
+    }
+    #footer-list-socials > li > a {
+      flex-direction: row;
+      gap: 4px;
+    }
+  }
+  /* Placeholder images are being used here */
+  #footer-links-discord:before {
+    background-image: url("~/assets/ui/icon_guide.png");
+  }
+  #footer-links-twitch:before {
+    background-image: url("~/assets/ui/icon_data.png");
+  }
+</style>

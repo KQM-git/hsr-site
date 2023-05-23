@@ -1,0 +1,22 @@
+{
+  "KQM": {
+    "Home": "/",
+    "About Us": "/about",
+    "Contact": "/contact"
+  },
+  "DATA BANK": {
+    "Characters": "/data/characters",
+    "Light Cones": "/data/light-cones",
+    "Relics": "/data/relics",
+    "Mechanics": "/data/mechanics",
+    "Enemies": "/data/enemies",
+    "Tools": "/tools",
+    "Vault": "/data/vault"
+  },
+  "GUIDES": {
+    "Quick Guides": "/guides#short",
+    "Long Guides": "/guides#long",
+    "Infographics": "/guides#infographics",
+    "Misc.": "/guides#misc"
+  }
+}
