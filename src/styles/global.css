@@ -31,7 +31,7 @@
   }
 
   /* Guides */
-  .preview-tag-chip {
+  .card-tag-chip {
     @apply px-2 font-bold rounded-full text-bg
   }
 
