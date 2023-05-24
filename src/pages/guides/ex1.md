@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/Guide.astro"
-title: "Example Guide"
+title: "Example Guide 1"
 description: "This is an example Markdown page."
 hero: "tb_guide.webp"
 pubDate: "22-05-2023"
