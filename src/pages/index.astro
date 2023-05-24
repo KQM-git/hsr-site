@@ -3,6 +3,8 @@
  * Write page description
  */
 
+/* BREAKPOINTS: MD, LG */
+
 import Layout from "../layouts/BaseLayout.astro";
 import Card from "../components/home/GuideCard.astro";
 import logo from "../assets/KQM_HSR_Logo_Full.png";
@@ -32,12 +34,19 @@ const guides = (await Astro.glob("./guides/*.{md,mdx}")).sort(
       <Searchbar
         id="main-searchbar"
         className="w-full"
-        placeholder="Search for guides, characters, and more..."
+        placeholder="Try: Teambuilding, Clara, Cocolia..."
       />
     </div>
-    <section class="py-6 px-12 bg-bg rounded-lg">
-      <h2 class="subheader">What's New</h2>
-      <ul class="flex flex-wrap gap-4 lg:gap-8">
+    <section class="bg-bg rounded-lg max-w-[100vw] md:w-full md:max-w-[1200px]">
+      <h2 class="mx-8 mt-4 md:mt-8 subheader">What's New</h2>
+      <!-- This gives most desktop users 3 cols, tablets 2, and mobile scroll-x -->
+      <ul
+        class="flex pb-6 gap-4
+        overflow-x-auto snap-x snap-mandatory max-w-full 
+         [&>li:first-child]:ml-4 [&>li:last-child]:mr-4 
+         md:[&>li:first-child]:ml-0 md:[&>li:last-child]:mr-0 md:m-8
+         md:flex-wrap md:gap-8 md:grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))]"
+      >
         {guides.map((g) => <Card {...g} />)}
       </ul>
     </section>
