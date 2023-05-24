@@ -22,8 +22,9 @@ const { title } = Astro.props;
     <title>{title}</title>
     <meta name="description" />
   </head>
-  <body class="grid grid-rows-[min-content_1fr_auto]">
+  <body class="grid grid-rows-[60px_1fr_auto]">
     <Navbar />
+    <hr class="opacity-0" />
     <div class="mb-24">
       <slot />
       <hr class="mt-auto opacity-0" />
