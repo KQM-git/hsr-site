@@ -3,7 +3,7 @@
 ## Routing (aka what's up with src/pages)
 *.astro, *.md, *.mdx in src/pages will just lead to the specified page (static routing). I.e. `~/src/pages/about.astro` becomes `hsr.keqingmains.com/about`
 
-Astro has a system for dynamic routing. Here' s Astro's documentation about it is [here](https://docs.astro.build/en/core-concepts/routing/#dynamic-routes).
+Astro has a system for dynamic routing. Astro's documentation about it is [here](https://docs.astro.build/en/core-concepts/routing/#dynamic-routes).
 
 Important note:
 
