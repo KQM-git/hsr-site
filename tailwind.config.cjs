@@ -59,6 +59,9 @@ module.exports = {
       }
     },
     extend: {
+      aria: {
+        collapsed: 'expanded="false"'
+      },
       backgroundImage: {
         main: "url(~/assets/planet_bg.png)"
       }

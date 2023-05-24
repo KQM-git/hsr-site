@@ -3,6 +3,7 @@
  * Add dropdown for switching sites
  * Add dropdown for data bank
  * Add arrow key support for moving between menu items
+ * Clean up scripts
  */
 
 /* BREAKPOINTS: SM, LG, XL */
@@ -23,16 +24,28 @@ import Searchbar from "./Searchbar.astro";
     "main, footer"
   ) as NodeListOf<HTMLElement>;
 
-  // Prevent navbar from staying inert if resizing screen
+  // note: navMenuToggle aria-expanded should be canon for whether the menu is open
+  // Prevent navbar and body from staying inert if resizing screen
   function handleResize() {
     const width =
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
-    if (width < 1024 && navMenuToggle.ariaExpanded === "false") {
-      navMenu.inert = true;
-    } else if (navMenu.inert) {
+    if (width < 1024) {
+      // mobile - check if menu is open and assign inert accordingly
+      navMenuToggle.ariaExpanded ??= "false";
+      if (navMenuToggle.ariaExpanded === "false") {
+        navMenu.inert = true;
+        nonNav.forEach((el) => (el.inert = true));
+      } else if (navMenuToggle.ariaExpanded === "true") {
+        navMenu.inert = false;
+        nonNav.forEach((el) => (el.inert = false));
+      }
+    } else {
+      // desktop - menu no longer expands, nothing should be inert
+      navMenuToggle.ariaExpanded = null;
       navMenu.inert = false;
+      nonNav.forEach((el) => (el.inert = false));
     }
   }
   handleResize();
@@ -42,12 +55,10 @@ import Searchbar from "./Searchbar.astro";
   function toggleNavMenu() {
     if (navMenuToggle.ariaExpanded === "true") {
       navMenuToggle.ariaExpanded = "false";
-      navMenu.classList.add("-translate-y-full");
       navMenu.inert = true;
       nonNav.forEach((el) => (el.inert = false));
     } else {
       navMenuToggle.ariaExpanded = "true";
-      navMenu.classList.remove("-translate-y-full");
       navMenu.inert = false;
       nonNav.forEach((el) => (el.inert = true));
     }
@@ -65,10 +76,10 @@ import Searchbar from "./Searchbar.astro";
   window.addEventListener("keydown", checkEscapeMenu);
 </script>
 
-<header class="w-full sticky top-0 z-10">
+<header class="w-full fixed top-0 z-10">
   <nav
     aria-label="Main"
-    class="grid min-h-[60px] grid-cols-[auto_1fr_auto] items-center bg-bg bg-opacity-90 px-4"
+    class="grid min-h-[60px] grid-cols-[auto_1fr_auto] items-center bg-bg px-4"
   >
     <a href="/" class="flex items-center gap-2 z-30">
       <Image src={logo} height={52} alt="" />
@@ -80,7 +91,7 @@ import Searchbar from "./Searchbar.astro";
     <div class="lg:hidden"></div>
     <button
       id="button-toggle-nav"
-      class="lg:hidden mt-1 mr-2 p-2 z-30"
+      class="lg:hidden mt-1 mr-2 p-2 z-30 peer"
       aria-controls="container-nav-links"
       aria-expanded="false"
     >
@@ -88,7 +99,7 @@ import Searchbar from "./Searchbar.astro";
     </button>
     <div
       id="container-nav-links"
-      class="-translate-y-full min-h-screen right-0 left-0 top-0 px-12 pt-24 pb-16 bg-bg transition-transform absolute overflow-hidden lg:contents"
+      class="peer-aria-collapsed:-translate-y-full min-h-screen right-0 left-0 top-0 px-12 pt-24 pb-16 bg-bg transition-transform absolute overflow-hidden lg:contents"
     >
       <ul
         id="nav-links"
