@@ -14,16 +14,20 @@ module.exports = {
       // slider: used for colored sliders
       // N: bg layers
       imaginary: {
-        DEFAULT: '#e5b909'
+        DEFAULT: '#e5b909',
+        light: "#E5BE5C",
       },
       quantum: {
-        DEFAULT: '#4f48bd'
+        DEFAULT: '#4f48bd',
+        light: "#564CBF",
       },
       wind: {
-        DEFAULT: '#42c38c'
+        DEFAULT: '#42c38c',
+        light: "#53A653",
       },
       lightning: {
-        DEFAULT: '#b54bd3'
+        DEFAULT: '#b54bd3',
+        light: "#AD57D9",
       },
       ice: {
         DEFAULT: '#2192d6',
@@ -34,10 +38,12 @@ module.exports = {
         2: "#110F1A",
       },
       fire: {
-        DEFAULT: '#e62a29'
+        DEFAULT: '#e62a29',
+        light: "#D95757",
       },
       physical: {
-        DEFAULT: '#71718c'
+        DEFAULT: '#71718c',
+        light: "#D9D9D9",
       },
 
       // Site related

@@ -35,7 +35,7 @@
   }
 
   .card-bg {
-    @apply bg-bg rounded-lg max-w-[100vw] md:w-full md:max-w-[1200px] mt-16 p-4 md:p-8;
+    @apply bg-bg rounded-lg max-w-[100vw] w-full md:max-w-[1200px] mt-16 p-4 md:p-8;
   }
 
   /* Data Bank */
@@ -46,6 +46,12 @@
   .rarity-mask.r-5 {
     @apply bg-stars-5;
     mask-image: url(/img/rarity/5.png);
+    mask-position: 1px;
+  }
+  .rarity-mask.r-4 {
+    @apply bg-stars-4;
+    mask-image: url(/img/rarity/4.png);
+    mask-position: -1px;
   }
 
   .bg-gradient {
@@ -54,6 +60,24 @@
   }
   .bg-gradient.gradient-ice {
     @apply from-ice-light
+  }
+  .bg-gradient.gradient-lightning {
+    @apply from-lightning-light
+  }
+  .bg-gradient.gradient-physical {
+    @apply from-physical-light
+  }
+  .bg-gradient.gradient-wind {
+    @apply from-wind-light
+  }
+  .bg-gradient.gradient-imaginary {
+    @apply from-imaginary-light
+  }
+  .bg-gradient.gradient-quantum {
+    @apply from-quantum-light
+  }
+  .bg-gradient.gradient-fire {
+    @apply from-fire-light
   }
 
   /* Guides */

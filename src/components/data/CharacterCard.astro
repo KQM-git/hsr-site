@@ -4,7 +4,7 @@
  * Compare parsed date to current date and apply NEW tag as needed
  */
 
-import type { Character } from "../../types/GameData";
+import type { Character } from "../../types/game-data";
 import Rarity from "../ui/Rarity.astro";
 
 export interface Props extends Character {}
@@ -19,23 +19,20 @@ let href = name
   .filter((c) => /[a-z0-9 \-]/.test(c))
   .join("")
   .replaceAll(" ", "-");
+
+const charUrl = `url(/img/chars/portraits/${id}.png)`;
 ---
 
-<li class="rounded-lg overflow-hidden w-[120px]">
-  <a href=`/data/characters/${href}` class="">
-    <img
-      src=`/img/chars/portraits/${id}.png`
-      class=`bg-gradient gradient-${damageType.toLowerCase()}`
-      width="120"
-      height="164"
-      alt=""
-    />
+<li
+  class=`rounded-lg w-full bg-gradient gradient-${damageType.toLowerCase()}`
+>
+  <a href=`/data/characters/${href}` class="char">
     <div class="mx-2 -mt-8">
       <Rarity star={star} />
       <h3 class="text-lg">
-        {name}
+        {name.split("(")[0]}
       </h3>
-      <div class="flex text-xs subtitle mb-auto gap-1">
+      <div class="flex text-xs subtitle mb-auto gap-1 pb-1">
         <img
           src=`/img/elements/${damageType}.png`
           width="16"
@@ -47,3 +44,14 @@ let href = name
     </div>
   </a>
 </li>
+<style define:vars={{ charUrl }}>
+  .char::before {
+    content: "";
+    background-image: var(--charUrl);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    padding-top: 140%
+  }
+</style>
