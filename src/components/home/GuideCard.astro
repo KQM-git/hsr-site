@@ -17,7 +17,7 @@ const { title, description, hero, pubDate, tags } = frontmatter;
 >
   <a href={url} class="grid grid-rows-[auto_auto_auto_1fr_auto] h-full">
     <img
-      src=`src/assets/guides/${hero}`
+      src=`/img/guides/${hero}`
       class="w-full h-[200px] object-cover"
       height={200}
       alt=""
@@ -39,7 +39,7 @@ const { title, description, hero, pubDate, tags } = frontmatter;
     <h3 class="text-2xl mx-4">
       {title}
     </h3>
-    <p class="text-sm text-neutral-300 mb-auto block mx-4">
+    <p class="text-sm text-neutral-300 mb-auto mx-4">
       {description}
     </p>
     <time class="text-sm text-neutral-300 mx-4 mt-2 mb-2">{pubDate}</time>

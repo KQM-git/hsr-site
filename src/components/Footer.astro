@@ -5,14 +5,12 @@
 
 /* BREAKPOINTS: SM, LG, XL */
 
-import { Image } from "astro:assets";
-import logo from "../assets/logo_full.png";
 import map from "../data/footer/sitemap.json";
 ---
 
 <footer class="bg-bg bg-opacity-90 xl:grid grid-cols-[auto,2px,1fr]">
   <section class="p-6 sm:pl-8 xl:pl-12 xl:max-w-md">
-    <Image src={logo} height={96} alt="" />
+    <img src="/img/logo_full.png" width="120" height="96" alt="" />
     <h2 class="text-xl my-2">KQM: Star Rail</h2>
     <p class="my-1">
       A Honkai: Star Rail community dedicated to providing in-depth game guides
@@ -125,9 +123,9 @@ import map from "../data/footer/sitemap.json";
   }
   /* Placeholder images are being used here */
   #footer-links-discord:before {
-    background-image: url("~/assets/ui/icon_guide.png");
+    background-image: url("/img/ui/icon_guide.png");
   }
   #footer-links-twitch:before {
-    background-image: url("~/assets/ui/icon_data.png");
+    background-image: url("/img/ui/icon_data.png");
   }
 </style>

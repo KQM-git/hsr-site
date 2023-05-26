@@ -8,8 +8,6 @@
 
 /* BREAKPOINTS: SM, LG, XL */
 
-import { Image } from "astro:assets";
-import logo from "../assets/logo_full.png";
 import ExpandDown from "./ui/ExpandDown.astro";
 import Hamburger from "./ui/Hamburger.astro";
 import Searchbar from "./Searchbar.astro";
@@ -82,7 +80,7 @@ import Searchbar from "./Searchbar.astro";
     class="grid min-h-[60px] grid-cols-[auto_1fr_auto] items-center bg-bg px-4"
   >
     <a href="/" class="flex items-center gap-2 z-30">
-      <Image src={logo} height={52} alt="" />
+      <img src="/img/logo_full.png" height="48" width="60" alt="" />
       <span class="text-lg font-bold pt-2 font-serif flex items-center gap-2">
         KQM: Star Rail
         <ExpandDown width="12px" height="7px" />
@@ -114,9 +112,9 @@ import Searchbar from "./Searchbar.astro";
             <ExpandDown width="12px" height="7px" />
           </span>
         </li>
-        <li><a href="about" id="nav-links-about" class="navlink">ABOUT</a></li>
+        <li><a href="/about" id="nav-links-about" class="navlink">ABOUT</a></li>
         <li>
-          <a href="contact" id="nav-links-contact" class="navlink">CONTACT</a>
+          <a href="/contact" id="nav-links-contact" class="navlink">CONTACT</a>
         </li>
       </ul>
       <Searchbar id="nav-searchbar" />
@@ -146,15 +144,15 @@ import Searchbar from "./Searchbar.astro";
     opacity: 25%;
   }
   #nav-links-guides:before {
-    background-image: url("~/assets/ui/icon_guide.png");
+    background-image: url("/img/ui/icon_guide.png");
   }
   #nav-links-data:before {
-    background-image: url("~/assets/ui/icon_data.png");
+    background-image: url("/img/ui/icon_data.png");
   }
   #nav-links-about:before {
-    background-image: url("~/assets/ui/icon_team.png");
+    background-image: url("/img/ui/icon_team.png");
   }
   #nav-links-contact:before {
-    background-image: url("~/assets/ui/icon_contact.png");
+    background-image: url("/img/ui/icon_contact.png");
   }
 </style>
