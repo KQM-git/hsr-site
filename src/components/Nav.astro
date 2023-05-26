@@ -34,10 +34,10 @@ import Searchbar from "./Searchbar.astro";
       navMenuToggle.ariaExpanded ??= "false";
       if (navMenuToggle.ariaExpanded === "false") {
         navMenu.inert = true;
-        nonNav.forEach((el) => (el.inert = true));
+        nonNav.forEach((el) => (el.inert = false));
       } else if (navMenuToggle.ariaExpanded === "true") {
         navMenu.inert = false;
-        nonNav.forEach((el) => (el.inert = false));
+        nonNav.forEach((el) => (el.inert = true));
       }
     } else {
       // desktop - menu no longer expands, nothing should be inert
