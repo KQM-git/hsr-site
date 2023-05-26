@@ -1,0 +1,345 @@
+{
+  "name": "Gepard",
+  "damageType": "Ice",
+  "baseType": "Preservation",
+  "star": 5,
+  "stats": [
+    {
+      "level": 0,
+      "maxLevel": 20,
+      "attackBase": 73.92,
+      "attackAdd": 3.696,
+      "hpBase": 190.08,
+      "hpAdd": 9.504,
+      "defenseBase": 89.1,
+      "defenseAdd": 4.455,
+      "crate": 0.05,
+      "cdmg": 0.5,
+      "aggro": 150,
+      "speedBase": 92,
+      "speedAdd": 0
+    },
+    {
+      "level": 1,
+      "maxLevel": 30,
+      "attackBase": 103.488,
+      "attackAdd": 3.696,
+      "hpBase": 266.112,
+      "hpAdd": 9.504,
+      "defenseBase": 124.74,
+      "defenseAdd": 4.455,
+      "crate": 0.05,
+      "cdmg": 0.5,
+      "aggro": 150,
+      "speedBase": 92,
+      "speedAdd": 0
+    },
+    {
+      "level": 2,
+      "maxLevel": 40,
+      "attackBase": 133.056,
+      "attackAdd": 3.696,
+      "hpBase": 342.144,
+      "hpAdd": 9.504,
+      "defenseBase": 160.38,
+      "defenseAdd": 4.455,
+      "crate": 0.05,
+      "cdmg": 0.5,
+      "aggro": 150,
+      "speedBase": 92,
+      "speedAdd": 0
+    },
+    {
+      "level": 3,
+      "maxLevel": 50,
+      "attackBase": 162.624,
+      "attackAdd": 3.696,
+      "hpBase": 418.176,
+      "hpAdd": 9.504,
+      "defenseBase": 196.02,
+      "defenseAdd": 4.455,
+      "crate": 0.05,
+      "cdmg": 0.5,
+      "aggro": 150,
+      "speedBase": 92,
+      "speedAdd": 0
+    },
+    {
+      "level": 4,
+      "maxLevel": 60,
+      "attackBase": 192.192,
+      "attackAdd": 3.696,
+      "hpBase": 494.208,
+      "hpAdd": 9.504,
+      "defenseBase": 231.66,
+      "defenseAdd": 4.455,
+      "crate": 0.05,
+      "cdmg": 0.5,
+      "aggro": 150,
+      "speedBase": 92,
+      "speedAdd": 0
+    },
+    {
+      "level": 5,
+      "maxLevel": 70,
+      "attackBase": 221.76,
+      "attackAdd": 3.696,
+      "hpBase": 570.24,
+      "hpAdd": 9.504,
+      "defenseBase": 267.3,
+      "defenseAdd": 4.455,
+      "crate": 0.05,
+      "cdmg": 0.5,
+      "aggro": 150,
+      "speedBase": 92,
+      "speedAdd": 0
+    },
+    {
+      "level": 6,
+      "maxLevel": 80,
+      "attackBase": 251.328,
+      "attackAdd": 3.696,
+      "hpBase": 646.272,
+      "hpAdd": 9.504,
+      "defenseBase": 302.94,
+      "defenseAdd": 4.455,
+      "crate": 0.05,
+      "cdmg": 0.5,
+      "aggro": 150,
+      "speedBase": 92,
+      "speedAdd": 0
+    }
+  ],
+  "skills": [
+    {
+      "name": "Fist of Conviction",
+      "tag": "Single Target",
+      "type": "Basic ATK",
+      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Gepard's ATK to a single enemy.",
+      "params": [
+        [ 0.5 ],
+        [ 0.6 ],
+        [ 0.7 ],
+        [ 0.8 ],
+        [ 0.9 ],
+        [ 1 ],
+        [ 1.1 ],
+        [ 1.2 ],
+        [ 1.3 ]
+      ],
+      "energyGain": 20,
+      "toughness": {
+        "Target": 30
+      }
+    },
+    {
+      "name": "Daunting Smite",
+      "tag": "Impair",
+      "type": "Skill",
+      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Gepard's ATK to a single enemy, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to Freeze the enemy for <unbreak>#3[i]</unbreak> turn(s).\\nWhile Frozen, the enemy cannot take action and will take <u>Additional</u> Ice DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Gepard's ATK at the beginning of each turn.",
+      "params": [
+        [ 1, 0.65, 1, 0.3 ],
+        [ 1.1, 0.65, 1, 0.33 ],
+        [ 1.2, 0.65, 1, 0.36 ],
+        [ 1.3, 0.65, 1, 0.39 ],
+        [ 1.4, 0.65, 1, 0.42 ],
+        [ 1.5, 0.65, 1, 0.45 ],
+        [ 1.625, 0.65, 1, 0.4875 ],
+        [ 1.75, 0.65, 1, 0.525 ],
+        [ 1.875, 0.65, 1, 0.5625 ],
+        [ 2, 0.65, 1, 0.6 ],
+        [ 2.1, 0.65, 1, 0.63 ],
+        [ 2.2, 0.65, 1, 0.66 ],
+        [ 2.3, 0.65, 1, 0.69 ],
+        [ 2.4, 0.65, 1, 0.72 ],
+        [ 2.5, 0.65, 1, 0.75 ]
+      ],
+      "energyGain": 30,
+      "toughness": {
+        "Target": 60
+      }
+    },
+    {
+      "name": "Enduring Bulwark",
+      "tag": "Defense",
+      "type": "Ultimate",
+      "desc": "Applies a Shield to all allies, absorbing DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Gepard's DEF plus <color=#f29e38ff><unbreak>#3[i]</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).",
+      "params": [
+        [ 0.3, 3, 150 ],
+        [ 0.31875, 3, 240 ],
+        [ 0.3375, 3, 307.5 ],
+        [ 0.35625, 3, 375 ],
+        [ 0.375, 3, 420 ],
+        [ 0.39, 3, 465 ],
+        [ 0.405, 3, 498.75 ],
+        [ 0.42, 3, 532.5 ],
+        [ 0.435, 3, 566.25 ],
+        [ 0.45, 3, 600 ],
+        [ 0.465, 3, 633.75 ],
+        [ 0.48, 3, 667.5 ],
+        [ 0.495, 3, 701.25 ],
+        [ 0.51, 3, 735 ],
+        [ 0.525, 3, 768.75 ]
+      ],
+      "energyNeeded": 100,
+      "energyGain": 5
+    },
+    {
+      "name": "Unyielding Will",
+      "tag": "Restore",
+      "type": "Talent",
+      "desc": "When struck with a killing blow, instead of becoming <u>knocked down</u>, Gepard's HP immediately restores to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of his Max HP. This effect can only trigger once per battle.",
+      "params": [
+        [ 0.25 ],
+        [ 0.275 ],
+        [ 0.3 ],
+        [ 0.325 ],
+        [ 0.35 ],
+        [ 0.375 ],
+        [ 0.40625 ],
+        [ 0.4375 ],
+        [ 0.46875 ],
+        [ 0.5 ],
+        [ 0.525 ],
+        [ 0.55 ],
+        [ 0.575 ],
+        [ 0.6 ],
+        [ 0.625 ]
+      ]
+    },
+    {
+      "name": "Comradery",
+      "tag": "Defense",
+      "type": "Technique",
+      "desc": "After Gepard uses his Technique, when the next battle begins, a Shield will be applied to all allies, absorbing DMG equal to <unbreak>#1[i]%</unbreak> of Gepard's DEF plus <unbreak>#3[i]</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
+      "params": [
+        [ 0.24, 2, 150 ]
+      ]
+    }
+  ],
+  "eidolons": [
+    {
+      "name": "Due Diligence",
+      "desc": "When using Skill, increases the base chance to Freeze enemies by <unbreak>#1[i]%</unbreak>.",
+      "params": [ 0.35 ]
+    },
+    {
+      "name": "Lingering Cold",
+      "desc": "After an enemy Frozen by Skill is unfrozen, their SPD is reduced by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
+      "params": [ 0.2, 1 ]
+    },
+    {
+      "name": "Never Surrender",
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+      "params": []
+    },
+    {
+      "name": "Faith Moves Mountains",
+      "desc": "When Gepard is in battle, all allies' Effect RES increases by <unbreak>#1[i]%</unbreak>.",
+      "params": [ 0.2 ]
+    },
+    {
+      "name": "Cold Iron Fist",
+      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+      "params": []
+    },
+    {
+      "name": "Unyielding Resolve",
+      "desc": "When his Talent is triggered, Gepard's action is Advanced Forward by <unbreak>100%</unbreak>, and he restores extra HP equal to <unbreak>#1[i]%</unbreak> of his Max HP.",
+      "params": [ 0.5 ]
+    }
+  ],
+  "skillTree": [
+    {
+      "name": "Fighting Spirit",
+      "desc": "Gepard's ATK increases by <unbreak>#1[i]%</unbreak> of his current DEF. This effect will refresh at the start of each turn.",
+      "params": [ 0.35 ],
+      "minAsc": 6,
+      "children": [
+        {
+          "name": "DEF Boost",
+          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+          "params": [ 0.075 ],
+          "minAsc": 6,
+          "children": [
+            {
+              "name": "Effect RES Boost",
+              "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+              "params": [ 0.08 ],
+              "minLevel": 75
+            },
+            {
+              "name": "DMG Boost: Ice",
+              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
+              "params": [ 0.064 ],
+              "minLevel": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DMG Boost: Ice",
+      "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
+      "params": [ 0.032 ],
+      "children": [
+        {
+          "name": "Integrity",
+          "desc": "Gepard has a higher chance to be attacked by enemies.",
+          "params": [ 3 ],
+          "minAsc": 2,
+          "children": [
+            {
+              "name": "Effect RES Boost",
+              "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+              "params": [ 0.04 ],
+              "minAsc": 2,
+              "children": [
+                {
+                  "name": "DMG Boost: Ice",
+                  "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
+                  "params": [ 0.032 ],
+                  "minAsc": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Commander",
+          "desc": "When \"Unyielding Will\" is triggered, Gepard's Energy will be restored to <unbreak>100%</unbreak>.",
+          "params": [],
+          "minAsc": 4,
+          "children": [
+            {
+              "name": "DMG Boost: Ice",
+              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
+              "params": [ 0.048 ],
+              "minAsc": 4,
+              "children": [
+                {
+                  "name": "Effect RES Boost",
+                  "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+                  "params": [ 0.06 ],
+                  "minAsc": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DEF Boost",
+      "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+      "params": [ 0.05 ],
+      "minAsc": 3
+    },
+    {
+      "name": "DMG Boost: Ice",
+      "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
+      "params": [ 0.048 ],
+      "minAsc": 5
+    }
+  ]
+}
