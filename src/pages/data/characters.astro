@@ -1,0 +1,26 @@
+---
+/* TODO:
+ * Write Page
+ */
+
+/* BREAKPOINTS: MD, LG */
+
+import CharacterCard from "../../components/data/CharacterCard.astro";
+import Layout from "../../layouts/Data.astro";
+import type { Character } from "../../types/GameData";
+
+const chars = (await Astro.glob("../../data/characters/*.json")) as Character[];
+---
+
+<Layout title="" description="">
+  <main class="flex items-center flex-col">
+    <section class="card-bg p-4 md:p-8">
+      <h2 class="subheader">Characters</h2>
+      <ol class="flex gap-4">
+        {chars.map((c) => <CharacterCard {...c} />)}
+      </ol>
+    </section>
+  </main>
+</Layout>
+
+<style></style>

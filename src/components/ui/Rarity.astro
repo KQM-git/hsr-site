@@ -1,0 +1,8 @@
+---
+export interface Props {
+  star: number;
+}
+const { star } = Astro.props;
+---
+
+<div class=`rarity h-4 w-full rarity-mask r-${star}`></div>

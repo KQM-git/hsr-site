@@ -1,0 +1,49 @@
+---
+/* TODO:
+ * Add date parse
+ * Compare parsed date to current date and apply NEW tag as needed
+ */
+
+import type { Character } from "../../types/GameData";
+import Rarity from "../ui/Rarity.astro";
+
+export interface Props extends Character {}
+
+const id = 1209;
+const { name, damageType, baseType, star } = Astro.props;
+
+// leave only letters, numbers, and dashes
+let href = name
+  .toLocaleLowerCase()
+  .split("")
+  .filter((c) => /[a-z0-9 \-]/.test(c))
+  .join("")
+  .replaceAll(" ", "-");
+---
+
+<li class="rounded-lg overflow-hidden w-[120px]">
+  <a href=`/data/characters/${href}` class="">
+    <img
+      src=`/img/chars/portraits/${id}.png`
+      class=`bg-gradient gradient-${damageType.toLowerCase()}`
+      width="120"
+      height="164"
+      alt=""
+    />
+    <div class="mx-2 -mt-8">
+      <Rarity star={star} />
+      <h3 class="text-lg">
+        {name}
+      </h3>
+      <div class="flex text-xs subtitle mb-auto gap-1">
+        <img
+          src=`/img/elements/${damageType}.png`
+          width="16"
+          height="16"
+          alt={damageType}
+        />
+        {baseType}
+      </div>
+    </div>
+  </a>
+</li>

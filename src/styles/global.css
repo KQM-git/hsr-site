@@ -30,6 +30,32 @@
     @apply font-bold text-4xl mb-5;
   }
 
+  .subtitle {
+    @apply text-neutral-300 uppercase
+  }
+
+  .card-bg {
+    @apply bg-bg rounded-lg max-w-[100vw] md:w-full md:max-w-[1200px] mt-16 p-4 md:p-8;
+  }
+
+  /* Data Bank */
+  .rarity-mask {
+    mask-size: auto 16px;
+    mask-repeat: no-repeat;
+  }
+  .rarity-mask.r-5 {
+    @apply bg-stars-5;
+    mask-image: url(/img/rarity/5.png);
+  }
+
+  .bg-gradient {
+    @apply from-10% to-85%;
+    background: linear-gradient(188deg, var(--tw-gradient-stops));
+  }
+  .bg-gradient.gradient-ice {
+    @apply from-ice-light
+  }
+
   /* Guides */
   .card-tag-chip {
     @apply px-2 font-bold rounded-full text-bg

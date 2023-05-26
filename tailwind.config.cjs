@@ -3,7 +3,16 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     colors: {
+      stars: {
+        5: "#FDBA3E",
+        4: "#C03EFD",
+        3: "#3E7FFD",
+      },
+
       // Element related
+      // light: used for card bg
+      // slider: used for colored sliders
+      // N: bg layers
       imaginary: {
         DEFAULT: '#e5b909'
       },
@@ -18,10 +27,11 @@ module.exports = {
       },
       ice: {
         DEFAULT: '#2192d6',
-        card: "57AED9",
+        light: "#57AED9",
         slider: "#81CDEF",
-        bg1: "#161624",
-        bg2: "#110F1A",
+        0: "#0F0F14",
+        1: "#161624",
+        2: "#110F1A",
       },
       fire: {
         DEFAULT: '#e62a29'
@@ -44,8 +54,6 @@ module.exports = {
       bg: {
         DEFAULT: "#141214",
         dark: "#18151F",
-        ice: "#0F0F14",
-        lightning: "#140F14",
       },
 
       neutral: {
@@ -63,7 +71,7 @@ module.exports = {
         collapsed: 'expanded="false"'
       },
       backgroundImage: {
-        main: "url(~/assets/planet_bg.png)"
+        main: "url(/img/planet_bg.png)"
       }
     }
   },
