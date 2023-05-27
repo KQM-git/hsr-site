@@ -1,9 +1,9 @@
 // Characters
 export interface Character {
   name: string
-  damageType: string
-  baseType: string
-  star: number
+  element: string
+  path: string
+  rarity: number
   stats: CharStats[]
   skills: CharSkill[]
   eidolons: Eidolon[]
