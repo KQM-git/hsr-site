@@ -1,8 +1,8 @@
 {
   "name": "Clara",
-  "damageType": "Physical",
-  "baseType": "Destruction",
-  "star": 5,
+  "element": "Physical",
+  "path": "Destruction",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -349,5 +349,6 @@
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "params": [ 0.04 ]
     }
-  ]
+  ],
+  "description": "A vagrant girl who lives with robots.\nShe is introverted, gentle, and has a pure heart.\nShe wishes for all Underworlders to become a family."
 }

@@ -1,8 +1,8 @@
 {
   "name": "March 7th",
-  "damageType": "Ice",
-  "baseType": "Preservation",
-  "star": 4,
+  "element": "Ice",
+  "path": "Preservation",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -347,5 +347,6 @@
       "params": [ 0.075 ],
       "minAsc": 5
     }
-  ]
+  ],
+  "description": "A girl who once slumbered in eternal ice and knows nothing about her past.\nTo find out the truth about her origins, she decided to travel with the Astral Express.\nAs of right now, she has prepared about 67 different versions of her life story for herself."
 }

@@ -1,8 +1,8 @@
 {
   "name": "Bronya",
-  "damageType": "Wind",
-  "baseType": "Harmony",
-  "star": 5,
+  "element": "Wind",
+  "path": "Harmony",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -339,5 +339,6 @@
         }
       ]
     }
-  ]
+  ],
+  "description": "Heir apparent to the Supreme Guardian of Belobog.\nShe possesses pride befitting of a princess, but also the determination and integrity of a soldier."
 }

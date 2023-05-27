@@ -1,0 +1,39 @@
+{
+  "name": "Silvermane Cannoneer",
+  "faction": "Jarilo-VI",
+  "variants": [
+    {
+      "desc": "A cannoneer of the Silvermane Guards who wields a portable hand cannon into battle.\nDuring combat, Silvermane Cannoneers will launch brutal chain attacks with their allies.",
+      "attack": 18,
+      "def": 210,
+      "hp": 195.3,
+      "speed": 100,
+      "toughness": 90,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Physical",
+        "Ice",
+        "Imaginary"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Lightning": 0.2,
+        "Wind": 0.2,
+        "Quantum": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Barrage",
+          "type": "Ability",
+          "desc": "Deals minor Physical DMG to a single target and units adjacent to the target."
+        },
+        {
+          "name": "Covering Support",
+          "type": "Ability",
+          "desc": "Provides support to a friendly unit. When this unit attacks, it performs a follow-up attack that deals minor Physical DMG to the attacked target and units adjacent to the target."
+        }
+      ]
+    }
+  ]
+}

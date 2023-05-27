@@ -1,0 +1,39 @@
+{
+  "name": "Entranced Ingenium: Illumination Dragonfish",
+  "faction": "The Xianzhou Luofu",
+  "variants": [
+    {
+      "desc": "An ingenium casually made by craftsmasters of the Artisanship Commission. It was originally an inanimate illuminator used for casting light upon darkness, but now it has been given a short-lived \"life\" due to certain mutations.",
+      "attack": 18,
+      "def": 210,
+      "hp": 139.5,
+      "speed": 100,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Physical",
+        "Lightning",
+        "Imaginary"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Ice": 0.2,
+        "Wind": 0.2,
+        "Quantum": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Nightly Luminosity",
+          "type": "Ability",
+          "desc": "Deals minor Fire DMG to all targets, with a high chance to reduce their DEF."
+        },
+        {
+          "name": "Candle Flame",
+          "type": "Ability",
+          "desc": "When receiving a killing blow, deals Fire DMG to all friendly units, with a high chance to reduce their DEF."
+        }
+      ]
+    }
+  ]
+}

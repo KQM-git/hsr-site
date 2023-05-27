@@ -1,8 +1,8 @@
 {
   "name": "Arlan",
-  "damageType": "Lightning",
-  "baseType": "Destruction",
-  "star": 4,
+  "element": "Lightning",
+  "path": "Destruction",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -349,5 +349,6 @@
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "params": [ 0.04 ]
     }
-  ]
+  ],
+  "description": "The head of Herta Space Station's Security Department.\nThis quiet boy hopes to protect the researchers who value their pursuit of knowledge, and to help them to complete their work."
 }

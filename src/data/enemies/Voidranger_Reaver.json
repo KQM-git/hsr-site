@@ -1,0 +1,39 @@
+{
+  "name": "Voidranger: Reaver",
+  "faction": "Antimatter Legion",
+  "variants": [
+    {
+      "desc": "Warriors yet to perish were recast in the Warforge and gained the Destruction's power. Antimatter completes their bodies and negative particles reverberate throughout their forms.\nViolently aggressive, they embody the will of the Destruction and are basic combat units of the Antimatter Legion, acting only according to their destructive instincts.",
+      "attack": 18,
+      "def": 210,
+      "hp": 139.5,
+      "speed": 100,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Physical",
+        "Lightning"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Ice": 0.2,
+        "Wind": 0.2,
+        "Quantum": 0.2,
+        "Imaginary": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Hunting Blade",
+          "type": "Ability",
+          "desc": "Deals minor Imaginary DMG to a single target."
+        },
+        {
+          "name": "Vortex Leap",
+          "type": "Ability",
+          "desc": "Deals minor Imaginary DMG to a single target and units adjacent to the target."
+        }
+      ]
+    }
+  ]
+}

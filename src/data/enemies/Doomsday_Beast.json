@@ -1,0 +1,33 @@
+{
+  "name": "Doomsday Beast",
+  "faction": "Antimatter Legion",
+  "variants": [
+    {
+      "desc": "Using fragments of the Dusk Leviathan, and the wails of the remnants in the Warforge as the agent, the Antimatter Legion recast the Doomsday Beast. The resentful spirit's senseless obsession turns into a tangible hand, and the shadow of the old disaster conceals the heavens. The Doomsday Beast detains the will of all beings that are not at ease and have yet to die. Anger, mourning, or delusional joy — all is revealed, and all evil begins to move. The Doomsday Beast's core is a dark matter engine.",
+      "attack": 18,
+      "def": 210,
+      "hp": 1395,
+      "speed": 0,
+      "toughness": 0,
+      "effectResBase": 1,
+      "weaknesses": [
+        "Physical",
+        "Fire",
+        "Ice",
+        "Wind"
+      ],
+      "dmgRES": {},
+      "debuffRES": {
+        "Control Effects": 1
+      },
+      "skills": [
+        {
+          "name": "Leviathan's Lingering Power",
+          "type": "Talent",
+          "desc": "The Doomsday Beast cannot be attacked until the Antimatter Engine, Disaster's Right Hand, and Dawn's Left Hand have all been destroyed.",
+          "phases": [ 1, 2 ]
+        }
+      ]
+    }
+  ]
+}

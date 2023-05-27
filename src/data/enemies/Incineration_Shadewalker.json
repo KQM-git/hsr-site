@@ -1,0 +1,36 @@
+{
+  "name": "Incineration Shadewalker",
+  "faction": "Fragmentum Monsters",
+  "variants": [
+    {
+      "desc": "Shades that wander in the Fragmentum after the arrival of the Eternal Freeze. It mimics the form of the Silvermane Guards in a twisted manner. Fitted with the same uniformed armors as the Belobog warriors, its skull is however replaced by faceless embers.\nIncineration Shadewalkers will swing their fiery ax and burn their enemies in battle.",
+      "attack": 18,
+      "def": 210,
+      "hp": 139.5,
+      "speed": 100,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Ice",
+        "Wind",
+        "Imaginary"
+      ],
+      "dmgRES": {
+        "Physical": 0.2,
+        "Fire": 0.4,
+        "Lightning": 0.2,
+        "Quantum": 0.2
+      },
+      "debuffRES": {
+        "Burn": 1
+      },
+      "skills": [
+        {
+          "name": "Scorching Crush",
+          "type": "Ability",
+          "desc": "Deals Fire DMG to a single target, with a high chance to Burn the target."
+        }
+      ]
+    }
+  ]
+}

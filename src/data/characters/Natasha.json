@@ -1,8 +1,8 @@
 {
   "name": "Natasha",
-  "damageType": "Physical",
-  "baseType": "Abundance",
-  "star": 4,
+  "element": "Physical",
+  "path": "Abundance",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -340,5 +340,6 @@
       "params": [ 0.08 ],
       "minLevel": 80
     }
-  ]
+  ],
+  "description": "A doctor from the Underworld and a caregiver of children.\nAlongside her kindness and caring, she also has a hidden dangerous side."
 }

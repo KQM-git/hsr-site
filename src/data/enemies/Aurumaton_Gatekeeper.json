@@ -1,0 +1,50 @@
+{
+  "name": "Aurumaton Gatekeeper",
+  "faction": "The Xianzhou Luofu",
+  "variants": [
+    {
+      "desc": "Garrison aurumaton created with ancient ingenium technology.\nCountless years ago, the aurumatons set sail with the Xianzhou to seek divine recipes of immortality, and were tasked to oversee humanity and to aid humankind during warfare. However, after countless rebellions, they were finally overpowered by the Xianzhou natives.\nNow, all aurumatons are strictly controlled with talismans, and are employed to guard important places.",
+      "attack": 18,
+      "def": 210,
+      "hp": 930,
+      "speed": 100,
+      "toughness": 300,
+      "effectResBase": 0.2,
+      "weaknesses": [
+        "Lightning",
+        "Wind",
+        "Quantum"
+      ],
+      "dmgRES": {
+        "Physical": 0.2,
+        "Fire": 0.2,
+        "Ice": 0.2,
+        "Imaginary": 0.4
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Enchainment",
+          "type": "Ability",
+          "desc": "Deals massive Imaginary DMG to a single target, with a high chance of inflicting Imprisonment.",
+          "threat": true
+        },
+        {
+          "name": "Farewell Etiquette",
+          "type": "Talent",
+          "desc": "The Sanction Rate level increases when your team uses Skills or Ultimates. When the Sanction Rate reaches its level cap, enters Sanction mode and summons Entranced Ingenium: Illumination Dragonfish."
+        },
+        {
+          "name": "Dread",
+          "type": "Ability",
+          "desc": "Increases Sanction Rate level and deals minor Imaginary DMG to all targets. Has a high chance to inflict Weaken on the targets."
+        },
+        {
+          "name": "Restraint",
+          "type": "Ability",
+          "desc": "Deals Imaginary DMG to a single target."
+        }
+      ]
+    }
+  ]
+}

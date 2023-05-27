@@ -1,8 +1,8 @@
 {
   "name": "Gepard",
-  "damageType": "Ice",
-  "baseType": "Preservation",
-  "star": 5,
+  "element": "Ice",
+  "path": "Preservation",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -341,5 +341,6 @@
       "params": [ 0.048 ],
       "minAsc": 5
     }
-  ]
+  ],
+  "description": "A captain in the Silvermane Guards and an outstanding warrior of Belobog.\nHe is meticulous and vigilant to the core and is always true to himself."
 }

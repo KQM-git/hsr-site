@@ -1,0 +1,44 @@
+{
+  "name": "Warp Trotter",
+  "faction": "Galaxy",
+  "variants": [
+    {
+      "desc": "An interdimensional creature lost in the stars. Docile in nature. Sweet in taste. Inedible. Spends most of its life feeding and fleeing. Travelers who encounter these creatures see them as good omens.",
+      "attack": 18,
+      "def": 315,
+      "hp": 334.8,
+      "speed": 83,
+      "toughness": 90,
+      "effectResBase": 0,
+      "weaknesses": [
+        "Physical",
+        "Quantum",
+        "Imaginary"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Ice": 0.2,
+        "Lightning": 0.2,
+        "Wind": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "S—S—S—Scared",
+          "type": "Ability",
+          "desc": "The Treasure Trotter got spooked and will flee in 2 turns."
+        },
+        {
+          "name": "Run... Run!",
+          "type": "Ability",
+          "desc": "The Treasure Trotter is panicking and will flee in 1 turn."
+        },
+        {
+          "name": "Phew... Escaped",
+          "type": "Ability",
+          "desc": "The Trotter flees in an instant."
+        }
+      ]
+    }
+  ]
+}

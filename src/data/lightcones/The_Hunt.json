@@ -1,0 +1,970 @@
+{
+  "Adversarial": {
+    "name": "Adversarial",
+    "baseType": "The Hunt",
+    "stars": 3,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 33.6,
+        "hpAdd": 5.04,
+        "attackBase": 16.8,
+        "attackAdd": 2.52,
+        "defenseBase": 12,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 73.92,
+        "hpAdd": 5.04,
+        "attackBase": 36.96,
+        "attackAdd": 2.52,
+        "defenseBase": 26.4,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 127.68,
+        "hpAdd": 5.04,
+        "attackBase": 63.84,
+        "attackAdd": 2.52,
+        "defenseBase": 45.6,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 181.44,
+        "hpAdd": 5.04,
+        "attackBase": 90.72,
+        "attackAdd": 2.52,
+        "defenseBase": 64.8,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 235.2,
+        "hpAdd": 5.04,
+        "attackBase": 117.6,
+        "attackAdd": 2.52,
+        "defenseBase": 84,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 288.96,
+        "hpAdd": 5.04,
+        "attackBase": 144.48,
+        "attackAdd": 2.52,
+        "defenseBase": 103.2,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 342.72,
+        "hpAdd": 5.04,
+        "attackBase": 171.36,
+        "attackAdd": 2.52,
+        "defenseBase": 122.4,
+        "defenseAdd": 1.8
+      }
+    ],
+    "superimposition": {
+      "name": "Alliance",
+      "desc": "When the wearer defeats an enemy, increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).",
+      "params": [
+        [ 0.1, 2 ],
+        [ 0.12, 2 ],
+        [ 0.14, 2 ],
+        [ 0.16, 2 ],
+        [ 0.18, 2 ]
+      ]
+    }
+  },
+  "Arrows": {
+    "name": "Arrows",
+    "baseType": "The Hunt",
+    "stars": 3,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 38.4,
+        "hpAdd": 5.76,
+        "attackBase": 14.4,
+        "attackAdd": 2.16,
+        "defenseBase": 12,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 84.48,
+        "hpAdd": 5.76,
+        "attackBase": 31.68,
+        "attackAdd": 2.16,
+        "defenseBase": 26.4,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 145.92,
+        "hpAdd": 5.76,
+        "attackBase": 54.72,
+        "attackAdd": 2.16,
+        "defenseBase": 45.6,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 207.36,
+        "hpAdd": 5.76,
+        "attackBase": 77.76,
+        "attackAdd": 2.16,
+        "defenseBase": 64.8,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 268.8,
+        "hpAdd": 5.76,
+        "attackBase": 100.8,
+        "attackAdd": 2.16,
+        "defenseBase": 84,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 330.24,
+        "hpAdd": 5.76,
+        "attackBase": 123.84,
+        "attackAdd": 2.16,
+        "defenseBase": 103.2,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 391.68,
+        "hpAdd": 5.76,
+        "attackBase": 146.88,
+        "attackAdd": 2.16,
+        "defenseBase": 122.4,
+        "defenseAdd": 1.8
+      }
+    ],
+    "superimposition": {
+      "name": "Crisis",
+      "desc": "At the start of the battle, the wearer's CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).",
+      "params": [
+        [ 0.12, 3 ],
+        [ 0.15, 3 ],
+        [ 0.18, 3 ],
+        [ 0.21, 3 ],
+        [ 0.24, 3 ]
+      ]
+    }
+  },
+  "Darting Arrow": {
+    "name": "Darting Arrow",
+    "baseType": "The Hunt",
+    "stars": 3,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 33.6,
+        "hpAdd": 5.04,
+        "attackBase": 16.8,
+        "attackAdd": 2.52,
+        "defenseBase": 12,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 73.92,
+        "hpAdd": 5.04,
+        "attackBase": 36.96,
+        "attackAdd": 2.52,
+        "defenseBase": 26.4,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 127.68,
+        "hpAdd": 5.04,
+        "attackBase": 63.84,
+        "attackAdd": 2.52,
+        "defenseBase": 45.6,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 181.44,
+        "hpAdd": 5.04,
+        "attackBase": 90.72,
+        "attackAdd": 2.52,
+        "defenseBase": 64.8,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 235.2,
+        "hpAdd": 5.04,
+        "attackBase": 117.6,
+        "attackAdd": 2.52,
+        "defenseBase": 84,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 288.96,
+        "hpAdd": 5.04,
+        "attackBase": 144.48,
+        "attackAdd": 2.52,
+        "defenseBase": 103.2,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 342.72,
+        "hpAdd": 5.04,
+        "attackBase": 171.36,
+        "attackAdd": 2.52,
+        "defenseBase": 122.4,
+        "defenseAdd": 1.8
+      }
+    ],
+    "superimposition": {
+      "name": "War Cry",
+      "desc": "When the wearer defeats an enemy, increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).",
+      "params": [
+        [ 0.24, 3 ],
+        [ 0.3, 3 ],
+        [ 0.36, 3 ],
+        [ 0.42, 3 ],
+        [ 0.48, 3 ]
+      ]
+    }
+  },
+  "Only Silence Remains": {
+    "name": "Only Silence Remains",
+    "baseType": "The Hunt",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 21.6,
+        "attackAdd": 3.24,
+        "defenseBase": 15,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 47.52,
+        "attackAdd": 3.24,
+        "defenseBase": 33,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 82.08,
+        "attackAdd": 3.24,
+        "defenseBase": 57,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 116.64,
+        "attackAdd": 3.24,
+        "defenseBase": 81,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 151.2,
+        "attackAdd": 3.24,
+        "defenseBase": 105,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 185.76,
+        "attackAdd": 3.24,
+        "defenseBase": 129,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 220.32,
+        "attackAdd": 3.24,
+        "defenseBase": 153,
+        "defenseAdd": 2.25
+      }
+    ],
+    "superimposition": {
+      "name": "Record",
+      "desc": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. If there are 2 or fewer enemies on the field, increases wearer's CRIT Rate by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+      "params": [
+        [ 0.16, 0.12 ],
+        [ 0.2, 0.15 ],
+        [ 0.24, 0.18 ],
+        [ 0.28, 0.21 ],
+        [ 0.32, 0.24 ]
+      ]
+    }
+  },
+  "Return to Darkness": {
+    "name": "Return to Darkness",
+    "baseType": "The Hunt",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 38.4,
+        "hpAdd": 5.76,
+        "attackBase": 24,
+        "attackAdd": 3.6,
+        "defenseBase": 15,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 84.48,
+        "hpAdd": 5.76,
+        "attackBase": 52.8,
+        "attackAdd": 3.6,
+        "defenseBase": 33,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 145.92,
+        "hpAdd": 5.76,
+        "attackBase": 91.2,
+        "attackAdd": 3.6,
+        "defenseBase": 57,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 207.36,
+        "hpAdd": 5.76,
+        "attackBase": 129.6,
+        "attackAdd": 3.6,
+        "defenseBase": 81,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 268.8,
+        "hpAdd": 5.76,
+        "attackBase": 168,
+        "attackAdd": 3.6,
+        "defenseBase": 105,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 330.24,
+        "hpAdd": 5.76,
+        "attackBase": 206.4,
+        "attackAdd": 3.6,
+        "defenseBase": 129,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 391.68,
+        "hpAdd": 5.76,
+        "attackBase": 244.8,
+        "attackAdd": 3.6,
+        "defenseBase": 153,
+        "defenseAdd": 2.25
+      }
+    ],
+    "superimposition": {
+      "name": "Raging Waves",
+      "desc": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After a CRIT Hit, there is a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> fixed chance to dispel 1 buff on the target enemy. This effect can only trigger 1 time per attack.",
+      "params": [
+        [ 0.12, 0.16 ],
+        [ 0.15, 0.2 ],
+        [ 0.18, 0.24 ],
+        [ 0.21, 0.28 ],
+        [ 0.24, 0.32 ]
+      ]
+    }
+  },
+  "River Flows in Spring": {
+    "name": "River Flows in Spring",
+    "baseType": "The Hunt",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 38.4,
+        "hpAdd": 5.76,
+        "attackBase": 21.6,
+        "attackAdd": 3.24,
+        "defenseBase": 18,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 84.48,
+        "hpAdd": 5.76,
+        "attackBase": 47.52,
+        "attackAdd": 3.24,
+        "defenseBase": 39.6,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 145.92,
+        "hpAdd": 5.76,
+        "attackBase": 82.08,
+        "attackAdd": 3.24,
+        "defenseBase": 68.4,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 207.36,
+        "hpAdd": 5.76,
+        "attackBase": 116.64,
+        "attackAdd": 3.24,
+        "defenseBase": 97.2,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 268.8,
+        "hpAdd": 5.76,
+        "attackBase": 151.2,
+        "attackAdd": 3.24,
+        "defenseBase": 126,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 330.24,
+        "hpAdd": 5.76,
+        "attackBase": 185.76,
+        "attackAdd": 3.24,
+        "defenseBase": 154.8,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 391.68,
+        "hpAdd": 5.76,
+        "attackBase": 220.32,
+        "attackAdd": 3.24,
+        "defenseBase": 183.6,
+        "defenseAdd": 2.7
+      }
+    ],
+    "superimposition": {
+      "name": "Stave Off the Lingering Cold",
+      "desc": "After entering battle, increases the wearer's SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. When the wearer takes DMG, this effect will disappear. This effect will resume after the end of the wearer's next turn.",
+      "params": [
+        [ 0.08, 0.12 ],
+        [ 0.09, 0.15 ],
+        [ 0.1, 0.18 ],
+        [ 0.11, 0.21 ],
+        [ 0.12, 0.24 ]
+      ]
+    }
+  },
+  "Subscribe for More!": {
+    "name": "Subscribe for More!",
+    "baseType": "The Hunt",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 21.6,
+        "attackAdd": 3.24,
+        "defenseBase": 15,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 47.52,
+        "attackAdd": 3.24,
+        "defenseBase": 33,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 82.08,
+        "attackAdd": 3.24,
+        "defenseBase": 57,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 116.64,
+        "attackAdd": 3.24,
+        "defenseBase": 81,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 151.2,
+        "attackAdd": 3.24,
+        "defenseBase": 105,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 185.76,
+        "attackAdd": 3.24,
+        "defenseBase": 129,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 220.32,
+        "attackAdd": 3.24,
+        "defenseBase": 153,
+        "defenseAdd": 2.25
+      }
+    ],
+    "superimposition": {
+      "name": "Like Before You Leave!",
+      "desc": "Increases the DMG of the wearer's Basic ATK and Skill by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect increases by an extra <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> when the wearer's current Energy reaches its max level.",
+      "params": [
+        [ 0.24, 0.24 ],
+        [ 0.3, 0.3 ],
+        [ 0.36, 0.36 ],
+        [ 0.42, 0.42 ],
+        [ 0.48, 0.48 ]
+      ]
+    }
+  },
+  "Swordplay": {
+    "name": "Swordplay",
+    "baseType": "The Hunt",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 21.6,
+        "attackAdd": 3.24,
+        "defenseBase": 15,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 47.52,
+        "attackAdd": 3.24,
+        "defenseBase": 33,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 82.08,
+        "attackAdd": 3.24,
+        "defenseBase": 57,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 116.64,
+        "attackAdd": 3.24,
+        "defenseBase": 81,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 151.2,
+        "attackAdd": 3.24,
+        "defenseBase": 105,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 185.76,
+        "attackAdd": 3.24,
+        "defenseBase": 129,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 220.32,
+        "attackAdd": 3.24,
+        "defenseBase": 153,
+        "defenseAdd": 2.25
+      }
+    ],
+    "superimposition": {
+      "name": "Answers of Their Own",
+      "desc": "For each time the wearer hits the same target, DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <unbreak>#2[i]</unbreak> time(s). This effect will be dispelled when the wearer changes targets.",
+      "params": [
+        [ 0.08, 5 ],
+        [ 0.1, 5 ],
+        [ 0.12, 5 ],
+        [ 0.14, 5 ],
+        [ 0.16, 5 ]
+      ]
+    }
+  },
+  "Cruising in the Stellar Sea": {
+    "name": "Cruising in the Stellar Sea",
+    "baseType": "The Hunt",
+    "stars": 5,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 24,
+        "attackAdd": 3.6,
+        "defenseBase": 21,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 52.8,
+        "attackAdd": 3.6,
+        "defenseBase": 46.2,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 91.2,
+        "attackAdd": 3.6,
+        "defenseBase": 79.8,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 129.6,
+        "attackAdd": 3.6,
+        "defenseBase": 113.4,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 168,
+        "attackAdd": 3.6,
+        "defenseBase": 147,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 206.4,
+        "attackAdd": 3.6,
+        "defenseBase": 180.6,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 244.8,
+        "attackAdd": 3.6,
+        "defenseBase": 214.2,
+        "defenseAdd": 3.15
+      }
+    ],
+    "superimposition": {
+      "name": "Chase",
+      "desc": "Increases the wearer's CRIT rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and increases their CRIT rate against enemies with HP less than or equal to <unbreak>#2[i]%</unbreak> by an extra <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. When the wearer defeats an enemy, their ATK is increased by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> for <unbreak>#5[i]</unbreak> turn(s).",
+      "params": [
+        [ 0.08, 0.5, 0.08, 0.2, 2 ],
+        [ 0.1, 0.5, 0.1, 0.25, 2 ],
+        [ 0.12, 0.5, 0.12, 0.3, 2 ],
+        [ 0.14, 0.5, 0.14, 0.35, 2 ],
+        [ 0.16, 0.5, 0.16, 0.4, 2 ]
+      ]
+    }
+  },
+  "In the Night": {
+    "name": "In the Night",
+    "baseType": "The Hunt",
+    "stars": 5,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 48,
+        "hpAdd": 7.2,
+        "attackBase": 26.4,
+        "attackAdd": 3.96,
+        "defenseBase": 21,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 105.6,
+        "hpAdd": 7.2,
+        "attackBase": 58.08,
+        "attackAdd": 3.96,
+        "defenseBase": 46.2,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 182.4,
+        "hpAdd": 7.2,
+        "attackBase": 100.32,
+        "attackAdd": 3.96,
+        "defenseBase": 79.8,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 259.2,
+        "hpAdd": 7.2,
+        "attackBase": 142.56,
+        "attackAdd": 3.96,
+        "defenseBase": 113.4,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 336,
+        "hpAdd": 7.2,
+        "attackBase": 184.8,
+        "attackAdd": 3.96,
+        "defenseBase": 147,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 412.8,
+        "hpAdd": 7.2,
+        "attackBase": 227.04,
+        "attackAdd": 3.96,
+        "defenseBase": 180.6,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 489.6,
+        "hpAdd": 7.2,
+        "attackBase": 269.28,
+        "attackAdd": 3.96,
+        "defenseBase": 214.2,
+        "defenseAdd": 3.15
+      }
+    ],
+    "superimposition": {
+      "name": "Flowers and Butterflies",
+      "desc": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. While the wearer is in battle, for every <unbreak>#2[i]</unbreak> SPD that exceeds <unbreak>100</unbreak>, the DMG of the wearer's Basic ATK and Skill is increased by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> and the CRIT DMG of their Ultimate is increased by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>. This effect can stack up to <unbreak>#5[i]</unbreak> time(s).",
+      "params": [
+        [ 0.18, 10, 0.06, 0.12, 6 ],
+        [ 0.21, 10, 0.07, 0.14, 6 ],
+        [ 0.24, 10, 0.08, 0.16, 6 ],
+        [ 0.27, 10, 0.09, 0.18, 6 ],
+        [ 0.3, 10, 0.1, 0.2, 6 ]
+      ]
+    }
+  },
+  "Sleep Like the Dead": {
+    "name": "Sleep Like the Dead",
+    "baseType": "The Hunt",
+    "stars": 5,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 48,
+        "hpAdd": 7.2,
+        "attackBase": 26.4,
+        "attackAdd": 3.96,
+        "defenseBase": 21,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 105.6,
+        "hpAdd": 7.2,
+        "attackBase": 58.08,
+        "attackAdd": 3.96,
+        "defenseBase": 46.2,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 182.4,
+        "hpAdd": 7.2,
+        "attackBase": 100.32,
+        "attackAdd": 3.96,
+        "defenseBase": 79.8,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 259.2,
+        "hpAdd": 7.2,
+        "attackBase": 142.56,
+        "attackAdd": 3.96,
+        "defenseBase": 113.4,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 336,
+        "hpAdd": 7.2,
+        "attackBase": 184.8,
+        "attackAdd": 3.96,
+        "defenseBase": 147,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 412.8,
+        "hpAdd": 7.2,
+        "attackBase": 227.04,
+        "attackAdd": 3.96,
+        "defenseBase": 180.6,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 489.6,
+        "hpAdd": 7.2,
+        "attackBase": 269.28,
+        "attackAdd": 3.96,
+        "defenseBase": 214.2,
+        "defenseAdd": 3.15
+      }
+    ],
+    "superimposition": {
+      "name": "Sweet Dreams",
+      "desc": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer's Basic ATK or Skill does not result in a CRIT Hit, increases their CRIT Rate by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s). This effect can only trigger once every <unbreak>#4[i]</unbreak> turn(s).",
+      "params": [
+        [ 0.3, 0.36, 1, 3 ],
+        [ 0.35, 0.42, 1, 3 ],
+        [ 0.4, 0.48, 1, 3 ],
+        [ 0.45, 0.54, 1, 3 ],
+        [ 0.5, 0.6, 1, 3 ]
+      ]
+    }
+  }
+}

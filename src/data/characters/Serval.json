@@ -1,8 +1,8 @@
 {
   "name": "Serval",
-  "damageType": "Lightning",
-  "baseType": "Erudition",
-  "star": 4,
+  "element": "Lightning",
+  "path": "Erudition",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -343,5 +343,6 @@
       "params": [ 0.053 ],
       "minLevel": 80
     }
-  ]
+  ],
+  "description": "A Belobog mechanic who used to be a researcher for the Technology Division of the Architects.\nAs Gepard Landau's elder sister, her personality stands in stark contrast to her brother's.\nShe loves an ancient form of music known as \"rock 'n' roll\" that was popular before the Eternal Freeze."
 }

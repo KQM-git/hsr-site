@@ -1,0 +1,34 @@
+{
+  "name": "Silvermane Gunner",
+  "faction": "Jarilo-VI",
+  "variants": [
+    {
+      "desc": "A gunner of Belobog's Silvermane Guards, tasked with sniping at enemies.\nSilvermane Gunners' shots will inflict Bleed on their enemies during combat.",
+      "attack": 18,
+      "def": 210,
+      "hp": 102.3,
+      "speed": 100,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Physical",
+        "Ice"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Lightning": 0.2,
+        "Wind": 0.2,
+        "Quantum": 0.2,
+        "Imaginary": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Piercing Grenade",
+          "type": "Ability",
+          "desc": "Deals Physical DMG to a single target, with a high chance to cause Bleed."
+        }
+      ]
+    }
+  ]
+}

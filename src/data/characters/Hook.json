@@ -1,8 +1,8 @@
 {
   "name": "Hook",
-  "damageType": "Fire",
-  "baseType": "Destruction",
-  "star": 4,
+  "element": "Fire",
+  "path": "Destruction",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -376,5 +376,6 @@
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "params": [ 0.04 ]
     }
-  ]
+  ],
+  "description": "Boss (self-proclaimed) of an Underworld adventure squad, The Moles.\nShe loves freedom and sees life as a series of adventures."
 }

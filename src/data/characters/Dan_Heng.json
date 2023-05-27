@@ -1,8 +1,8 @@
 {
   "name": "Dan Heng",
-  "damageType": "Wind",
-  "baseType": "The Hunt",
-  "star": 4,
+  "element": "Wind",
+  "path": "The Hunt",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -342,5 +342,6 @@
       "params": [ 0.048 ],
       "minAsc": 5
     }
-  ]
+  ],
+  "description": "A cold and reserved young man who is reticent about his past.\nTo avoid his kin, he decided to travel with the Astral Express."
 }

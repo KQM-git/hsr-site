@@ -1,8 +1,8 @@
 {
   "name": "Trailblazer (Physical)",
-  "damageType": "Physical",
-  "baseType": "Destruction",
-  "star": 5,
+  "element": "Physical",
+  "path": "Destruction",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,

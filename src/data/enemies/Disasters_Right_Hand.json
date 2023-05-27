@@ -1,0 +1,49 @@
+{
+  "name": "Disaster's Right Hand",
+  "faction": "Antimatter Legion/Doomsday Beast",
+  "variants": [
+    {
+      "desc": "Only the echoes of pain remain on the devastated earth — the march of the end times.\nDisaster's Right Hand is adept at drawing upon Imaginary power to create large-scale attacks.",
+      "attack": 18,
+      "def": 210,
+      "hp": 465,
+      "speed": 120,
+      "toughness": 120,
+      "effectResBase": 0.3,
+      "weaknesses": [
+        "Fire",
+        "Ice"
+      ],
+      "dmgRES": {
+        "Physical": 0.2,
+        "Lightning": 0.2,
+        "Wind": 0.2,
+        "Quantum": 0.2,
+        "Imaginary": 0.4
+      },
+      "debuffRES": {
+        "Control Effects": 0.5
+      },
+      "skills": [
+        {
+          "name": "Calamity Tear",
+          "type": "Ability",
+          "desc": "Deals minor Imaginary DMG to all targets.",
+          "phases": [ 1 ]
+        },
+        {
+          "name": "Tough Cuts",
+          "type": "Ability",
+          "desc": "Deals minor Imaginary DMG to all targets, with a small chance to inflict Imprisonment on the target.",
+          "phases": [ 1, 2 ]
+        },
+        {
+          "name": "The Breakdown of Tyranny",
+          "type": "Ability",
+          "desc": "Deals Imaginary DMG to all targets, with a small chance to cause Imprisonment.",
+          "phases": [ 2 ]
+        }
+      ]
+    }
+  ]
+}

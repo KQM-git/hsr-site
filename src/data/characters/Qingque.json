@@ -1,8 +1,8 @@
 {
   "name": "Qingque",
-  "damageType": "Quantum",
-  "baseType": "Erudition",
-  "star": 4,
+  "element": "Quantum",
+  "path": "Erudition",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -358,5 +358,6 @@
       "params": [ 0.08 ],
       "minLevel": 80
     }
-  ]
+  ],
+  "description": "Diviner of the Divination Commission on the Xianzhou Luofu, and a librarian.\nAlways slacks off and is about to be demoted to a \"door guardian.\""
 }

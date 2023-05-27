@@ -1,0 +1,794 @@
+{
+  "Cornucopia": {
+    "name": "Cornucopia",
+    "baseType": "Abundance",
+    "stars": 3,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 12,
+        "attackAdd": 1.8,
+        "defenseBase": 12,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 26.4,
+        "attackAdd": 1.8,
+        "defenseBase": 26.4,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 45.6,
+        "attackAdd": 1.8,
+        "defenseBase": 45.6,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 64.8,
+        "attackAdd": 1.8,
+        "defenseBase": 64.8,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 84,
+        "attackAdd": 1.8,
+        "defenseBase": 84,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 103.2,
+        "attackAdd": 1.8,
+        "defenseBase": 103.2,
+        "defenseAdd": 1.8
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 122.4,
+        "attackAdd": 1.8,
+        "defenseBase": 122.4,
+        "defenseAdd": 1.8
+      }
+    ],
+    "superimposition": {
+      "name": "Prosperity",
+      "desc": "When the wearer uses their Skill or Ultimate, their Outgoing Healing increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+      "params": [
+        [ 0.12 ],
+        [ 0.15 ],
+        [ 0.18 ],
+        [ 0.21 ],
+        [ 0.24 ]
+      ]
+    }
+  },
+  "Fine Fruit": {
+    "name": "Fine Fruit",
+    "baseType": "Abundance",
+    "stars": 3,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 14.4,
+        "attackAdd": 2.16,
+        "defenseBase": 9,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 31.68,
+        "attackAdd": 2.16,
+        "defenseBase": 19.8,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 54.72,
+        "attackAdd": 2.16,
+        "defenseBase": 34.2,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 77.76,
+        "attackAdd": 2.16,
+        "defenseBase": 48.6,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 100.8,
+        "attackAdd": 2.16,
+        "defenseBase": 63,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 123.84,
+        "attackAdd": 2.16,
+        "defenseBase": 77.4,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 146.88,
+        "attackAdd": 2.16,
+        "defenseBase": 91.8,
+        "defenseAdd": 1.35
+      }
+    ],
+    "superimposition": {
+      "name": "Savor",
+      "desc": "At the start of the battle, immediately regenerates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Energy for all allies.",
+      "params": [
+        [ 6 ],
+        [ 7.5 ],
+        [ 9 ],
+        [ 10.5 ],
+        [ 12 ]
+      ]
+    }
+  },
+  "Multiplication": {
+    "name": "Multiplication",
+    "baseType": "Abundance",
+    "stars": 3,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 14.4,
+        "attackAdd": 2.16,
+        "defenseBase": 9,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 31.68,
+        "attackAdd": 2.16,
+        "defenseBase": 19.8,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 54.72,
+        "attackAdd": 2.16,
+        "defenseBase": 34.2,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 77.76,
+        "attackAdd": 2.16,
+        "defenseBase": 48.6,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 100.8,
+        "attackAdd": 2.16,
+        "defenseBase": 63,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 123.84,
+        "attackAdd": 2.16,
+        "defenseBase": 77.4,
+        "defenseAdd": 1.35
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 146.88,
+        "attackAdd": 2.16,
+        "defenseBase": 91.8,
+        "defenseAdd": 1.35
+      }
+    ],
+    "superimposition": {
+      "name": "Denizens of Abundance",
+      "desc": "After the wearer uses their Basic ATK, their next action will be Advanced Forward by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+      "params": [
+        [ 0.12 ],
+        [ 0.14 ],
+        [ 0.16 ],
+        [ 0.18 ],
+        [ 0.2 ]
+      ]
+    }
+  },
+  "Perfect Timing": {
+    "name": "Perfect Timing",
+    "baseType": "Abundance",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 19.2,
+        "attackAdd": 2.88,
+        "defenseBase": 18,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 42.24,
+        "attackAdd": 2.88,
+        "defenseBase": 39.6,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 72.96,
+        "attackAdd": 2.88,
+        "defenseBase": 68.4,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 103.68,
+        "attackAdd": 2.88,
+        "defenseBase": 97.2,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 134.4,
+        "attackAdd": 2.88,
+        "defenseBase": 126,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 165.12,
+        "attackAdd": 2.88,
+        "defenseBase": 154.8,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 195.84,
+        "attackAdd": 2.88,
+        "defenseBase": 183.6,
+        "defenseAdd": 2.7
+      }
+    ],
+    "superimposition": {
+      "name": "Refraction of Sightline",
+      "desc": "Increases the wearer's Effect RES by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and increases Outgoing Healing by an amount that is equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Effect RES. Outgoing Healing can be increased this way by up to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+      "params": [
+        [ 0.16, 0.33, 0.15 ],
+        [ 0.2, 0.36, 0.18 ],
+        [ 0.24, 0.39, 0.21 ],
+        [ 0.28, 0.42, 0.24 ],
+        [ 0.32, 0.45, 0.27 ]
+      ]
+    }
+  },
+  "Post-Op Conversation": {
+    "name": "Post-Op Conversation",
+    "baseType": "Abundance",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 48,
+        "hpAdd": 7.2,
+        "attackBase": 19.2,
+        "attackAdd": 2.88,
+        "defenseBase": 15,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 105.6,
+        "hpAdd": 7.2,
+        "attackBase": 42.24,
+        "attackAdd": 2.88,
+        "defenseBase": 33,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 182.4,
+        "hpAdd": 7.2,
+        "attackBase": 72.96,
+        "attackAdd": 2.88,
+        "defenseBase": 57,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 259.2,
+        "hpAdd": 7.2,
+        "attackBase": 103.68,
+        "attackAdd": 2.88,
+        "defenseBase": 81,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 336,
+        "hpAdd": 7.2,
+        "attackBase": 134.4,
+        "attackAdd": 2.88,
+        "defenseBase": 105,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 412.8,
+        "hpAdd": 7.2,
+        "attackBase": 165.12,
+        "attackAdd": 2.88,
+        "defenseBase": 129,
+        "defenseAdd": 2.25
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 489.6,
+        "hpAdd": 7.2,
+        "attackBase": 195.84,
+        "attackAdd": 2.88,
+        "defenseBase": 153,
+        "defenseAdd": 2.25
+      }
+    ],
+    "superimposition": {
+      "name": "Mutual Healing",
+      "desc": "Increases the wearer's Energy Regeneration Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and increases Outgoing Healing when they use their Ultimate by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+      "params": [
+        [ 0.08, 0.12 ],
+        [ 0.1, 0.15 ],
+        [ 0.12, 0.18 ],
+        [ 0.14, 0.21 ],
+        [ 0.16, 0.24 ]
+      ]
+    }
+  },
+  "Quid Pro Quo": {
+    "name": "Quid Pro Quo",
+    "baseType": "Abundance",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 19.2,
+        "attackAdd": 2.88,
+        "defenseBase": 18,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 42.24,
+        "attackAdd": 2.88,
+        "defenseBase": 39.6,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 72.96,
+        "attackAdd": 2.88,
+        "defenseBase": 68.4,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 103.68,
+        "attackAdd": 2.88,
+        "defenseBase": 97.2,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 134.4,
+        "attackAdd": 2.88,
+        "defenseBase": 126,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 165.12,
+        "attackAdd": 2.88,
+        "defenseBase": 154.8,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 195.84,
+        "attackAdd": 2.88,
+        "defenseBase": 183.6,
+        "defenseAdd": 2.7
+      }
+    ],
+    "superimposition": {
+      "name": "Enjoy With Rapture",
+      "desc": "At the start of the wearer's turn, regenerates <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Energy for a randomly chosen ally (excluding the wearer) whose current Energy is lower than <unbreak>#1[i]%</unbreak>.",
+      "params": [
+        [ 0.5, 8 ],
+        [ 0.5, 10 ],
+        [ 0.5, 12 ],
+        [ 0.5, 14 ],
+        [ 0.5, 16 ]
+      ]
+    }
+  },
+  "Shared Feeling": {
+    "name": "Shared Feeling",
+    "baseType": "Abundance",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 43.2,
+        "hpAdd": 6.48,
+        "attackBase": 19.2,
+        "attackAdd": 2.88,
+        "defenseBase": 18,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 95.04,
+        "hpAdd": 6.48,
+        "attackBase": 42.24,
+        "attackAdd": 2.88,
+        "defenseBase": 39.6,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 164.16,
+        "hpAdd": 6.48,
+        "attackBase": 72.96,
+        "attackAdd": 2.88,
+        "defenseBase": 68.4,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 233.28,
+        "hpAdd": 6.48,
+        "attackBase": 103.68,
+        "attackAdd": 2.88,
+        "defenseBase": 97.2,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 302.4,
+        "hpAdd": 6.48,
+        "attackBase": 134.4,
+        "attackAdd": 2.88,
+        "defenseBase": 126,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 371.52,
+        "hpAdd": 6.48,
+        "attackBase": 165.12,
+        "attackAdd": 2.88,
+        "defenseBase": 154.8,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 440.64,
+        "hpAdd": 6.48,
+        "attackBase": 195.84,
+        "attackAdd": 2.88,
+        "defenseBase": 183.6,
+        "defenseAdd": 2.7
+      }
+    ],
+    "superimposition": {
+      "name": "Cure and Repair",
+      "desc": "Increases the wearer's Outgoing Healing by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using Skill, regenerates <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Energy for all allies.",
+      "params": [
+        [ 0.1, 2 ],
+        [ 0.125, 2.5 ],
+        [ 0.15, 3 ],
+        [ 0.175, 3.5 ],
+        [ 0.2, 4 ]
+      ]
+    }
+  },
+  "Warmth Shortens Cold Nights": {
+    "name": "Warmth Shortens Cold Nights",
+    "baseType": "Abundance",
+    "stars": 4,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 48,
+        "hpAdd": 7.2,
+        "attackBase": 16.8,
+        "attackAdd": 2.52,
+        "defenseBase": 18,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 105.6,
+        "hpAdd": 7.2,
+        "attackBase": 36.96,
+        "attackAdd": 2.52,
+        "defenseBase": 39.6,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 182.4,
+        "hpAdd": 7.2,
+        "attackBase": 63.84,
+        "attackAdd": 2.52,
+        "defenseBase": 68.4,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 259.2,
+        "hpAdd": 7.2,
+        "attackBase": 90.72,
+        "attackAdd": 2.52,
+        "defenseBase": 97.2,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 336,
+        "hpAdd": 7.2,
+        "attackBase": 117.6,
+        "attackAdd": 2.52,
+        "defenseBase": 126,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 412.8,
+        "hpAdd": 7.2,
+        "attackBase": 144.48,
+        "attackAdd": 2.52,
+        "defenseBase": 154.8,
+        "defenseAdd": 2.7
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 489.6,
+        "hpAdd": 7.2,
+        "attackBase": 171.36,
+        "attackAdd": 2.52,
+        "defenseBase": 183.6,
+        "defenseAdd": 2.7
+      }
+    ],
+    "superimposition": {
+      "name": "Tiny Light",
+      "desc": "Increases the wearer's Max HP by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using Basic ATK or Skill, restores all allies' HP by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of their respective Max HP.",
+      "params": [
+        [ 0.16, 0.02 ],
+        [ 0.2, 0.025 ],
+        [ 0.24, 0.03 ],
+        [ 0.28, 0.035 ],
+        [ 0.32, 0.04 ]
+      ]
+    }
+  },
+  "Time Waits for No One": {
+    "name": "Time Waits for No One",
+    "baseType": "Abundance",
+    "stars": 5,
+    "stats": [
+      {
+        "level": 0,
+        "maxLevel": 20,
+        "hpBase": 57.6,
+        "hpAdd": 8.64,
+        "attackBase": 21.6,
+        "attackAdd": 3.24,
+        "defenseBase": 21,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 1,
+        "maxLevel": 30,
+        "hpBase": 126.72,
+        "hpAdd": 8.64,
+        "attackBase": 47.52,
+        "attackAdd": 3.24,
+        "defenseBase": 46.2,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 2,
+        "maxLevel": 40,
+        "hpBase": 218.88,
+        "hpAdd": 8.64,
+        "attackBase": 82.08,
+        "attackAdd": 3.24,
+        "defenseBase": 79.8,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 3,
+        "maxLevel": 50,
+        "hpBase": 311.04,
+        "hpAdd": 8.64,
+        "attackBase": 116.64,
+        "attackAdd": 3.24,
+        "defenseBase": 113.4,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 4,
+        "maxLevel": 60,
+        "hpBase": 403.2,
+        "hpAdd": 8.64,
+        "attackBase": 151.2,
+        "attackAdd": 3.24,
+        "defenseBase": 147,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 5,
+        "maxLevel": 70,
+        "hpBase": 495.36,
+        "hpAdd": 8.64,
+        "attackBase": 185.76,
+        "attackAdd": 3.24,
+        "defenseBase": 180.6,
+        "defenseAdd": 3.15
+      },
+      {
+        "level": 6,
+        "maxLevel": 80,
+        "hpBase": 587.52,
+        "hpAdd": 8.64,
+        "attackBase": 220.32,
+        "attackAdd": 3.24,
+        "defenseBase": 214.2,
+        "defenseAdd": 3.15
+      }
+    ],
+    "superimposition": {
+      "name": "Morn, Noon, Dusk, and Night",
+      "desc": "Increases the wearer's Max HP by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Outgoing Healing by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. When the wearer heals allies, record the amount of Outgoing Healing. When any ally launches an attack, a random attacked enemy takes Additional DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of the recorded Outgoing Healing value. This Additional DMG is of the same Type as the wearer's, is not affected by other buffs, and can only occur 1 time per turn.",
+      "params": [
+        [ 0.18, 0.12, 0.36 ],
+        [ 0.21, 0.14, 0.42 ],
+        [ 0.24, 0.16, 0.48 ],
+        [ 0.27, 0.18, 0.54 ],
+        [ 0.3, 0.2, 0.6 ]
+      ]
+    }
+  }
+}

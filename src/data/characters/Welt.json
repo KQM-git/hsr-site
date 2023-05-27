@@ -1,8 +1,8 @@
 {
   "name": "Welt",
-  "damageType": "Imaginary",
-  "baseType": "Nihility",
-  "star": 5,
+  "element": "Imaginary",
+  "path": "Nihility",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -347,5 +347,6 @@
         }
       ]
     }
-  ]
+  ],
+  "description": "A seasoned member of the Express Crew.\nThe passion buried in his heart burns anew as he enjoys this fresh adventure.\nOccasionally, he would sketch the experiences in a notebook."
 }

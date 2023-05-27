@@ -1,8 +1,8 @@
 {
   "name": "Seele",
-  "damageType": "Quantum",
-  "baseType": "The Hunt",
-  "star": 5,
+  "element": "Quantum",
+  "path": "The Hunt",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -342,5 +342,6 @@
       "params": [ 0.06 ],
       "minAsc": 5
     }
-  ]
+  ],
+  "description": "A resident of the Underworld and the backbone of Wildfire. She goes by the alias \"Babochka.\"\nShe has a frank personality, but there is a delicate and sensitive hidden side to her deep in her heart."
 }

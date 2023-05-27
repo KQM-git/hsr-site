@@ -1,8 +1,8 @@
 {
   "name": "Pela",
-  "damageType": "Ice",
-  "baseType": "Nihility",
-  "star": 4,
+  "element": "Ice",
+  "path": "Nihility",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -348,5 +348,6 @@
         }
       ]
     }
-  ]
+  ],
+  "description": "A secretarial officer for the Silvermane Guards.\nShe has a serious personality and is revered by other members of the Silvermane Guards."
 }

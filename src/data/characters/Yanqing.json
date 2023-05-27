@@ -1,8 +1,8 @@
 {
   "name": "Yanqing",
-  "damageType": "Ice",
-  "baseType": "The Hunt",
-  "star": 5,
+  "element": "Ice",
+  "path": "The Hunt",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -346,5 +346,6 @@
       "params": [ 0.06 ],
       "minAsc": 5
     }
-  ]
+  ],
+  "description": "General Jing Yuan's retainer. A gifted swordsman who hasn't even come of age.\nNo one can best Yanqing when he holds a sword in hand."
 }

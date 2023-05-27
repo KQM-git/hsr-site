@@ -1,0 +1,39 @@
+{
+  "name": "Vagrant",
+  "faction": "Jarilo-VI",
+  "variants": [
+    {
+      "desc": "In order to survive, some Underworlders are desperate enough to venture into the Fragmentum in search of anything available. Ancient machinery that they dug up have become their best helper.",
+      "attack": 18,
+      "def": 210,
+      "hp": 139.5,
+      "speed": 100,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Imaginary"
+      ],
+      "dmgRES": {
+        "Physical": 0.2,
+        "Lightning": 0.2,
+        "Wind": 0.2,
+        "Quantum": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Shovel Attack",
+          "type": "Ability",
+          "desc": "Deals minor Physical DMG to a single target."
+        },
+        {
+          "name": "Inspire",
+          "type": "Ability",
+          "desc": "Increases a friendly unit's ATK and causes them to act immediately."
+        }
+      ]
+    }
+  ]
+}

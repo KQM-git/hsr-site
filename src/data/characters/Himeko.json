@@ -1,8 +1,8 @@
 {
   "name": "Himeko",
-  "damageType": "Fire",
-  "baseType": "Erudition",
-  "star": 5,
+  "element": "Fire",
+  "path": "Erudition",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -345,5 +345,6 @@
       "params": [ 0.064 ],
       "minLevel": 80
     }
-  ]
+  ],
+  "description": "The one who repaired the Astral Express.\nTo witness the vast starry sky, she decided to travel with the Astral Express.\nHer hobby is brewing hand-made coffee."
 }

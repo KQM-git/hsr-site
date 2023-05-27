@@ -1,0 +1,138 @@
+{
+  "name": "Silvermane Lieutenant",
+  "faction": "Jarilo-VI",
+  "variants": [
+    {
+      "source": "Silvermane Lieutenant",
+      "desc": "The leader of a squad of Belobog's Silvermane Guards.\nSilvermane Lieutenants can raise a giant shield during combat and Enhance themselves. Attacking a Silvermane Lieutenant with their shield raised will immediately result in a fierce Counter.",
+      "attack": 18,
+      "def": 210,
+      "hp": 930,
+      "speed": 120,
+      "toughness": 240,
+      "effectResBase": 0.2,
+      "weaknesses": [
+        "Physical",
+        "Ice",
+        "Quantum"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Lightning": 0.2,
+        "Wind": 0.2,
+        "Imaginary": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Pierce",
+          "type": "Ability",
+          "desc": "Deals massive Physical DMG to a single target.",
+          "threat": true
+        },
+        {
+          "name": "Assault",
+          "type": "Ability",
+          "desc": "Deals Physical DMG to a single target."
+        },
+        {
+          "name": "Shield Reflect",
+          "type": "Ability",
+          "desc": "Enters the Counter state. When attacked by a single character, acts immediately and casts \"Pierce\" on the attacker."
+        },
+        {
+          "name": "Reinforcement",
+          "type": "Ability",
+          "desc": "Summons Silvermane Soldier or Silvermane Gunner"
+        }
+      ]
+    },
+    {
+      "name": "Silvermane Lieutenant (Bug)",
+      "source": "Silvermane Lieutenant (Bug)",
+      "desc": "A false projection produced by compromised codes. The original reference entity is the leader of a squad of Belobog's Silvermane Guards.\nAs long as there are remaining friendly units, Silvermane Lieutenants will persistently raise a giant shield during combat. Attacking a Silvermane Lieutenant with their shield raised will result in a fierce counterattack.",
+      "attack": 18,
+      "def": 210,
+      "hp": 1488,
+      "speed": 120,
+      "toughness": 360,
+      "effectResBase": 0.2,
+      "weaknesses": [
+        "Physical",
+        "Ice",
+        "Quantum"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Lightning": 0.2,
+        "Wind": 0.2,
+        "Imaginary": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Rallying",
+          "type": "Ability",
+          "desc": "Increases all friendly units' ATK and causes them to act immediately.",
+          "threat": true
+        },
+        {
+          "name": "Assault",
+          "type": "Ability",
+          "desc": "Deals Physical DMG to a single target."
+        },
+        {
+          "name": "Pierce",
+          "type": "Ability",
+          "desc": "Deals massive Physical DMG to a single target."
+        },
+        {
+          "name": "Shield Reflect",
+          "type": "Ability",
+          "desc": "Goes into the Counter state. When attacked by a single character, gains 1 extra turn and deals Physical DMG to the target."
+        },
+        {
+          "name": "Reinforcement",
+          "type": "Ability",
+          "desc": "Summons Silvermane Soldier or Silvermane Gunner"
+        }
+      ]
+    },
+    {
+      "name": "Silvermane Lieutenant (Complete)",
+      "source": "Silvermane Lieutenant (Complete)",
+      "desc": "A complete projection produced by compromised codes. The original reference entity is the leader of a squad of Belobog's Silvermane Guards.",
+      "attack": 18,
+      "def": 210,
+      "hp": 558,
+      "speed": 144,
+      "toughness": 180,
+      "effectResBase": 0.2,
+      "weaknesses": [
+        "Physical",
+        "Ice",
+        "Quantum"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Lightning": 0.2,
+        "Wind": 0.2,
+        "Imaginary": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Pierce",
+          "type": "Ability",
+          "desc": "Deals massive Physical DMG to a single target.",
+          "threat": true
+        },
+        {
+          "name": "Assault",
+          "type": "Ability",
+          "desc": "Deals Physical DMG to a single target."
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "name": "Jing Yuan",
-  "damageType": "Lightning",
-  "baseType": "Erudition",
-  "star": 5,
+  "element": "Lightning",
+  "path": "Erudition",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -344,5 +344,6 @@
       "params": [ 0.08 ],
       "minLevel": 80
     }
-  ]
+  ],
+  "description": "The Divine Foresight, one of the Seven Arbiter-Generals of the Xianzhou Alliance, leads the Cloud Knights of the Xianzhou Luofu.\nA student of the Luofu's previous Sword Champion, though not known for his martial prowess."
 }

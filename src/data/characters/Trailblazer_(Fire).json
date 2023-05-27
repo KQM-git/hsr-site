@@ -1,8 +1,8 @@
 {
   "name": "Trailblazer (Fire)",
-  "damageType": "Fire",
-  "baseType": "Preservation",
-  "star": 5,
+  "element": "Fire",
+  "path": "Preservation",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,

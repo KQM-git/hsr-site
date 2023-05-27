@@ -1,0 +1,39 @@
+{
+  "name": "Automaton Hound",
+  "faction": "Jarilo-VI",
+  "variants": [
+    {
+      "desc": "An automaton pieced together with Old World technology. It looks like a transportation vehicle whose purpose has long been forgotten.\nIn combat, Automaton Hounds can provide support and restore HP to its allies.",
+      "attack": 18,
+      "def": 210,
+      "hp": 130.2,
+      "speed": 100,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Physical",
+        "Lightning"
+      ],
+      "dmgRES": {
+        "Fire": 0.2,
+        "Ice": 0.2,
+        "Wind": 0.2,
+        "Quantum": 0.2,
+        "Imaginary": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Vertical Strike",
+          "type": "Ability",
+          "desc": "Deals minor Physical DMG to a single target."
+        },
+        {
+          "name": "Self-Healing Module",
+          "type": "Ability",
+          "desc": "Immediately recovers all friendly units' HP."
+        }
+      ]
+    }
+  ]
+}

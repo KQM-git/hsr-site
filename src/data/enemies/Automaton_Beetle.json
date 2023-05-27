@@ -1,0 +1,34 @@
+{
+  "name": "Automaton Beetle",
+  "faction": "Jarilo-VI",
+  "variants": [
+    {
+      "desc": "An automaton pieced together with Old World technology. A signal light is placed on its legs, and the unit may have been used for mining or construction operations.\nIn combat, Automaton Beetles can create forcefields to shield themselves.",
+      "attack": 18,
+      "def": 210,
+      "hp": 130.2,
+      "speed": 100,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Lightning",
+        "Wind",
+        "Imaginary"
+      ],
+      "dmgRES": {
+        "Physical": 0.2,
+        "Fire": 0.2,
+        "Ice": 0.2,
+        "Quantum": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Unstable Forcefield",
+          "type": "Ability",
+          "desc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Voidranger: Distorter",
+  "faction": "Antimatter Legion",
+  "variants": [
+    {
+      "desc": "A Voidranger that has successfully survived particle annihilation, the positive and negative particles in its body have temporarily achieved a strange balance, granting them more power than ordinary reavers.\nBasic combat units of the Antimatter Legion. They possess some intelligence and are able to control reavers within a small surrounding area.",
+      "attack": 18,
+      "def": 210,
+      "hp": 167.4,
+      "speed": 120,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Wind",
+        "Imaginary"
+      ],
+      "dmgRES": {
+        "Physical": 0.2,
+        "Fire": 0.2,
+        "Ice": 0.2,
+        "Lightning": 0.2,
+        "Quantum": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Nihility's Command",
+          "type": "Ability",
+          "desc": "Locks Onto a random unit on your team, making them the target for incoming attacks from all of their enemies."
+        },
+        {
+          "name": "Shadowless Void Strike",
+          "type": "Ability",
+          "desc": "Deals Quantum DMG to a single target."
+        }
+      ]
+    }
+  ]
+}

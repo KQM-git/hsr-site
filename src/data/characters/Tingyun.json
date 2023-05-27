@@ -1,8 +1,8 @@
 {
   "name": "Tingyun",
-  "damageType": "Lightning",
-  "baseType": "Harmony",
-  "star": 4,
+  "element": "Lightning",
+  "path": "Harmony",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -338,5 +338,6 @@
         }
       ]
     }
-  ]
+  ],
+  "description": "Amicassador of the Sky-Faring Commission of the Xianzhou Luofu.\nShe travels with business delegates, forging trade relationships and alliances with many worlds."
 }

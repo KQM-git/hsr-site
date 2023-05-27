@@ -1,0 +1,34 @@
+{
+  "name": "Cloud Knights Patroller",
+  "faction": "The Xianzhou Luofu",
+  "variants": [
+    {
+      "desc": "Member of the ground patrol division of the Xianzhou Luofu Cloud Knights. Wearing a light set of silver armor and with a Devastator Glaive in hand, they are in charge of maintaining order in every delve.",
+      "attack": 18,
+      "def": 210,
+      "hp": 148.8,
+      "speed": 120,
+      "toughness": 60,
+      "effectResBase": 0.1,
+      "weaknesses": [
+        "Fire",
+        "Wind",
+        "Imaginary"
+      ],
+      "dmgRES": {
+        "Physical": 0.2,
+        "Ice": 0.2,
+        "Lightning": 0.2,
+        "Quantum": 0.2
+      },
+      "debuffRES": {},
+      "skills": [
+        {
+          "name": "Cloud Edge",
+          "type": "Ability",
+          "desc": "Deals minor Wind DMG to a single target with a high chance to slightly increase the DMG taken by the target."
+        }
+      ]
+    }
+  ]
+}

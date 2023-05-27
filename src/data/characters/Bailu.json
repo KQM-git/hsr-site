@@ -1,8 +1,8 @@
 {
   "name": "Bailu",
-  "damageType": "Lightning",
-  "baseType": "Abundance",
-  "star": 5,
+  "element": "Lightning",
+  "path": "Abundance",
+  "rarity": 5,
   "stats": [
     {
       "level": 0,
@@ -338,5 +338,6 @@
       "params": [ 0.08 ],
       "minLevel": 80
     }
-  ]
+  ],
+  "description": "The High Elder of the Vidyadhara, who is also known as the \"Healer Lady\" on the Luofu.\nShe uses her unique medical science and the medical treatment that can only be provided by the Vidyadhara dragon race to save lives."
 }

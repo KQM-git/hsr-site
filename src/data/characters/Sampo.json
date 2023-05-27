@@ -1,8 +1,8 @@
 {
   "name": "Sampo",
-  "damageType": "Wind",
-  "baseType": "Nihility",
-  "star": 4,
+  "element": "Wind",
+  "path": "Nihility",
+  "rarity": 4,
   "stats": [
     {
       "level": 0,
@@ -347,5 +347,6 @@
         }
       ]
     }
-  ]
+  ],
+  "description": "A merchant who freely travels between the Overworld and the Underworld.\nHe acts like he is everyone's friend, is enthusiastically humorous, and is good at bantering."
 }
