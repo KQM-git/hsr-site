@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Guide.astro"
+layout: "layouts/Guide.astro"
 title: "Example Guide 1"
 description: "This is an example Markdown page."
 hero: "tb_guide.webp"

@@ -1,0 +1,30 @@
+---
+import Layout from "layouts/Data.astro";
+import backgrounds from "styles/dynamic/element-backgrounds";
+import type { Character } from "types/game-data";
+
+export async function getStaticPaths() {
+  const chars = (await Astro.glob(
+    "/src/data/characters/*.json"
+  )) as Character[];
+
+  return chars.map((ch) => ({ params: { name: ch.name } }));
+}
+
+const { name } = Astro.params;
+const chars = (await Astro.glob(`/src/data/characters/*.json`)) as Character[];
+const char = chars.find((c) => c.name === name);
+const bgs = backgrounds[char?.element ?? "DEFAULT"];
+---
+
+<Layout title={name ?? "Characters"} description="">
+  <main class="flex items-center flex-col">
+    <article class=`card-bg p-4 md:p-8 ${bgs[0]}`>
+      <section class=`card-bg-1 ${bgs[1]}`>
+        <h1 class="subheader">{name}</h1>
+      </section>
+    </article>
+  </main>
+</Layout>
+
+<style></style>
