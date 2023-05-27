@@ -4,42 +4,39 @@
  * Compare parsed date to current date and apply NEW tag as needed
  */
 
-import type { Character } from "../../types/game-data";
-import Rarity from "../ui/Rarity.astro";
+import type { Character } from "types/game-data";
+import Rarity from "../ui/Rarity.astro";import gradients from "styles/dynamic/element-gradients";
+;
 
 export interface Props extends Character {}
 
-const id = 1209;
-const { name, damageType, baseType, star } = Astro.props;
+const { name, element, path, rarity } = Astro.props;
 
 // leave only letters, numbers, and dashes
-let href = name
-  .toLocaleLowerCase()
-  .split("")
-  .filter((c) => /[a-z0-9 \-]/.test(c))
-  .join("")
-  .replaceAll(" ", "-");
+let href = name.replaceAll(" ", "_");
 
-const charUrl = `url(/img/chars/portraits/${id}.png)`;
+const charUrl = `url(/img/characters/portraits/${href.replaceAll("(", "\\(").replaceAll(")", "\\)")}.png)`;
+
+
 ---
 
 <li
-  class=`rounded-lg w-full bg-gradient gradient-${damageType.toLowerCase()}`
+  class=`rounded-lg w-full bg-gradient ${gradients[element]}`
 >
   <a href=`/data/characters/${href}` class="char">
     <div class="mx-2 -mt-8">
-      <Rarity star={star} />
+      <Rarity rarity={rarity} />
       <h3 class="text-lg">
         {name.split("(")[0]}
       </h3>
       <div class="flex text-xs subtitle mb-auto gap-1 pb-1">
         <img
-          src=`/img/elements/${damageType}.png`
+          src=`/img/elements/${element}.png`
           width="16"
           height="16"
-          alt={damageType}
+          alt={element}
         />
-        {baseType}
+        {path}
       </div>
     </div>
   </a>
