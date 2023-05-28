@@ -1,0 +1,39 @@
+---
+import Rarity from "components/ui/Rarity.astro";
+import type { Character } from "types/game-data";
+
+export interface Props extends Character {
+  h1?: boolean;
+}
+const { h1, name, element, path, rarity } = Astro.props;
+---
+
+<div class="flex items-start gap-2">
+  {
+    h1 ? (
+      <h1 class="subheader leading-none">{name}</h1>
+    ) : (
+      <h2 class="subheader leading-none">{name}</h2>
+    )
+  }
+  <img
+    src=`/img/elements/${element}.png`
+    width="48"
+    height="48"
+    class="ml-auto"
+    alt={element}
+  />
+</div>
+<div class="flex items-center gap-2 mb-4">
+  <img
+    src=`/img/paths/${path.replace(" ","_")}.png`
+    width="32"
+    height="32"
+    class="inline"
+    alt=""
+  />
+  <span>
+    {path}
+  </span>
+  <Rarity className="ml-auto" rarity={rarity} />
+</div>

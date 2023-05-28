@@ -1,7 +1,25 @@
 ---
+/**
+ *
+ */
+
+/** BREAKPOINTS:
+ * MD: Collapse char img inline (info) or hidden (other 3), expand info and tablist to full width
+ * XL: Collapse tablist to top of page
+ */
+
+import type { BreadcrumbsType } from "components/Breadcrumbs.astro";
+import ParsedParams from "components/ParsedParams.astro";
+import CharInfo from "components/data/characters/CharInfo.astro";
+import CharacterPageTab from "components/data/characters/CharTab.astro";
+import CharTrace from "components/data/characters/CharTrace.astro";
+import ExpandDown from "components/ui/ExpandDown.astro";
+import Rarity from "components/ui/Rarity.astro";
 import Layout from "layouts/Data.astro";
 import backgrounds from "styles/dynamic/element-backgrounds";
+import tabGradients from "styles/dynamic/tab-gradients";
 import type { Character } from "types/game-data";
+import splitTextIntoBlocks from "util/splitTextIntoBlocks";
 
 export async function getStaticPaths() {
   const chars = (await Astro.glob(
@@ -13,18 +31,226 @@ export async function getStaticPaths() {
 
 const { name } = Astro.params;
 const chars = (await Astro.glob(`/src/data/characters/*.json`)) as Character[];
-const char = chars.find((c) => c.name === name);
+const char = chars.find((c) => c.name === name) as Character;
 const bgs = backgrounds[char?.element ?? "DEFAULT"];
+const {
+  name: charName,
+  element,
+  path,
+  rarity,
+  description,
+  skills,
+  eidolons,
+  skillTree,
+} = char;
+
+const tabClass = `tab ${tabGradients[element]}`;
+const cardClass = "rounded-lg p-4 max-w-full md:max-w-sm relative pb-16";
+const bgClass = `card-bg-1 ${bgs[1]} bg-opacity-90 max-w-full relative`;
+
+const breadcrumbs: BreadcrumbsType = {
+  title: "Data Bank",
+  href: "/data",
+  next: {
+    title: "Characters",
+    href: "/characters",
+    next: {
+      title: charName,
+      href: `/${name}`,
+    },
+  },
+};
+
+const src = `/img/characters/full/${name}.png`;
 ---
 
-<Layout title={name ?? "Characters"} description="">
+<script>
+  const refs = ["", "#skills", "#eidolons", "#traces"];
+
+  const buttons = document.querySelectorAll(
+    "[role='tablist'] .tab"
+  ) as NodeListOf<HTMLElement>;
+
+  const targets: HTMLElement[] = [];
+  buttons.forEach((b) => {
+    const targetId = b.getAttribute("aria-controls");
+    if (!targetId) return;
+    const el = document.getElementById(targetId);
+    if (el) targets.push(el);
+  });
+
+  function changeTabTo(n: number) {
+    if (n < 0 || n >= buttons.length) n = 0;
+
+    buttons.forEach((b, i) => {
+      if (n === i) {
+        b.tabIndex = 0;
+        b.ariaSelected = "true";
+      } else {
+        b.tabIndex = -1;
+        b.ariaSelected = "false";
+      }
+    });
+    targets.forEach((e, i) => {
+      if (n === i) {
+        e.hidden = false;
+      } else {
+        e.hidden = true;
+      }
+    });
+  }
+
+  function onChangeTab(e: MouseEvent) {
+    const target = e.currentTarget as HTMLElement;
+    if (!target) return;
+    const n = parseInt(target.id.at(-1)!);
+    changeTabTo(n);
+    window.location.hash = refs[n];
+  }
+
+  function onHashChange() {
+    const n = refs.findIndex((val) => val === window.location.hash);
+    changeTabTo(n);
+  }
+  onHashChange();
+  window.addEventListener("hashchange", onHashChange);
+
+  buttons.forEach((b) => {
+    b.addEventListener("click", onChangeTab);
+  });
+</script>
+<Layout title={name ?? "Characters"} description="" breadcrumbs={breadcrumbs}>
   <main class="flex items-center flex-col">
-    <article class=`card-bg p-4 md:p-8 ${bgs[0]}`>
-      <section class=`card-bg-1 ${bgs[1]}`>
-        <h1 class="subheader">{name}</h1>
-      </section>
+    <article
+      class=`card-bg p-4 md:p-8 ${bgs[0]} max-w-4xl relative min-h-[700px]`
+    >
+      <nav class=`bg-bg sidebar ${bgs[0]}`>
+        <ul
+          role="tablist"
+          aria-label="Character Tabs"
+          class="flex max-w-full md:max-w-sm justify-around gap-2 xl:flex-col xl:w-40"
+        >
+          <li>
+            <button
+              class={tabClass}
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-1"
+              id="tab-0"
+              tabindex="-1"
+            >
+              Info
+            </button>
+          </li>
+          <li>
+            <button
+              class={tabClass}
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-2"
+              id="tab-1"
+              tabindex="-1"
+            >
+              Skills
+            </button>
+          </li>
+          <li>
+            <button
+              class={tabClass}
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-3"
+              id="tab-2"
+              tabindex="-1"
+            >
+              Eidolons
+            </button>
+          </li>
+          <li>
+            <button
+              class={tabClass}
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-4"
+              id="tab-3"
+              tabindex="-1"
+            >
+              Traces
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <CharacterPageTab index={1} src={src}>
+        <section class={bgClass}>
+          <CharInfo h1 {...char} />
+          <div class="subtitle text-xs font-bold">Introduction</div>
+          <div class="mt-1 space-y-1">
+            {splitTextIntoBlocks(description).map((p) => <p>{p}</p>)}
+          </div>
+        </section>
+      </CharacterPageTab>
+
+      <!-- SKILLS -->
+      <CharacterPageTab index={2} src={src}>
+        <section class={cardClass}>
+          <CharInfo {...char} />
+        </section>
+        <section class={bgClass}>TODO</section>
+      </CharacterPageTab>
+
+      <!-- EIDOLONS -->
+      <CharacterPageTab index={3} src={src}>
+        <section class={cardClass}>
+          <CharInfo {...char} />
+        </section>
+        <section class={bgClass}>
+          <ol class="flex flex-col gap-2">
+            {
+              eidolons.map((e, i) => (
+                <li class="flex gap-2 md:gap-4 items-start">
+                  <img
+                    src={`/img/characters/eidolons/${name}/${i + 1}.png`}
+                    width="120"
+                    height="120"
+                    class="scale-75 md:scale-100"
+                    alt=""
+                  />
+                  <div>
+                    <h2 class="subsubheader">
+                      E{i + 1}
+                      {e.name}
+                    </h2>
+                    <div>
+                      <ParsedParams data={e.desc} params={e.params} />
+                    </div>
+                  </div>
+                </li>
+              ))
+            }
+          </ol>
+        </section>
+      </CharacterPageTab>
+
+      <!-- TRACES -->
+      <CharacterPageTab index={4} src={src}>
+        <section class={cardClass}>
+          <CharInfo {...char} />
+        </section>
+        <section class={bgClass}>
+          <ol class="flex flex-col gap-4">
+            {
+              skillTree.map((trace) => (
+                <CharTrace {...trace} />
+              ))
+            }
+          </ol>
+        </section>
+      </CharacterPageTab>
     </article>
   </main>
 </Layout>
 
-<style></style>
+<style>
+  ul[role="tablist"] > li > button {
+  }
+</style>

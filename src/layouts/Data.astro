@@ -2,11 +2,20 @@
 export interface Props {
   title: string;
   description: string;
+  breadcrumbs?: BreadcrumbsType;
 }
-const { title, description } = Astro.props;
+const { title, description, breadcrumbs } = Astro.props;
+import type { BreadcrumbsType } from "components/Breadcrumbs.astro";
 import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "components/Breadcrumbs.astro";
 ---
 
-<BaseLayout title={`${title} | Data Bank | KQM: Honkai Star Rail`} description={description}>
+<BaseLayout
+  title={`${title} | Data Bank | KQM: Honkai Star Rail`}
+  description={description}
+>
+  <div class="ml-4 mt-4 md:ml-32 md:mt-10">
+    {breadcrumbs && <Breadcrumbs {...breadcrumbs} />}
+  </div>
   <slot />
 </BaseLayout>

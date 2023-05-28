@@ -1,0 +1,20 @@
+---
+export interface Props {
+  index: number;
+  src: string;
+}
+const { index, src } = Astro.props;
+
+const dim = index === 1 ? "640" : "360";
+---
+
+<article id=`panel-${index}` class="" hidden>
+  <img
+    src={src}
+    width={dim}
+    height={dim}
+    class=`${index === 1 ? "block" : "hidden"} scale-75 md:scale-100 md:block md:absolute ${index === 1 ? "md:-top-16 md:-right-16" : "md:-top-6 md:-right-6"}`
+    alt=""
+  />
+  <slot />
+</article>

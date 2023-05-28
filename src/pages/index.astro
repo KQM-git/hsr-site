@@ -3,7 +3,10 @@
  * Write page description
  */
 
-/* BREAKPOINTS: MD, LG */
+/** BREAKPOINTS:
+ * MD: Switch to horizontal scrolling guides
+ * LG: Collapse hero into vertical layout
+ */
 
 import Layout from "layouts/BaseLayout.astro";
 import Card from "components/home/GuideCard.astro";
@@ -37,7 +40,10 @@ const guides = (await Astro.glob("./guides/*.{md,mdx}")).sort(
       />
     </div>
     <section class="card-bg p-0">
-      <h2 class="mx-8 mt-4 md:mt-8 subheader">What's New</h2>
+      <div class="flex mx-8 mt-4 md:mt-8 items-baseline">
+        <h2 class="subheader mr-auto">What's New</h2>
+        <a class="subtitle" href="/guides">SEE ALL →</a>
+      </div>
       <!-- This gives most desktop users 3 cols, tablets 2, and mobile scroll-x -->
       <ul
         class="flex pb-6 gap-4 overflow-x-auto snap-x snap-mandatory max-w-full [&>li:first-child]:ml-4 [&>li:last-child]:mr-4 md:[&>li:first-child]:ml-0 md:[&>li:last-child]:mr-0 md:m-8 md:flex-wrap md:gap-8 md:grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))]"

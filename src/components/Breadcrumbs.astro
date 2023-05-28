@@ -1,0 +1,27 @@
+---
+/* TODO
+ * Actually search
+ */
+
+export interface Props extends BreadcrumbsType {}
+
+export interface BreadcrumbsType {
+  title: string;
+  href: string | null;
+  next?: BreadcrumbsType;
+}
+
+const { title, href, next } = Astro.props;
+---
+
+<div class="flex gap-1 subtitle font-bold text-xs">
+  <a href={next && href}>{title}</a>
+  {
+    next && (
+      <>
+        <span>/</span>
+        <Astro.self {...next} />
+      </>
+    )
+  }
+</div>
