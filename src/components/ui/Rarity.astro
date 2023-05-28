@@ -1,8 +1,11 @@
 ---
+import rarities from "styles/dynamic/rarity-colors";
+
 export interface Props {
   rarity: number;
+  className?: string;
 }
-const { rarity } = Astro.props;
+const { rarity, className } = Astro.props;
 ---
 
-<div class=`rarity h-4 w-full rarity-mask r-${rarity}`></div>
+<span class=`${className ?? ""} ${rarities[rarity]} tracking-tighter`>{"✦".repeat(rarity)}</span>
