@@ -259,24 +259,28 @@
     {
       "name": "Rock 'n' Roll",
       "desc": "Skill has a <unbreak>#1[i]%</unbreak> increased base chance to Shock enemies.",
+      "icon": "SkillIcon_1103_SkillTree1.png",
       "params": [ 0.2 ],
       "minAsc": 2,
       "children": [
         {
           "name": "Effect Hit Rate Boost",
           "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconStatusProbability.png",
           "params": [ 0.04 ],
           "minAsc": 2,
           "children": [
             {
               "name": "CRIT Rate Boost",
               "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconCriticalChance.png",
               "params": [ 0.027 ],
               "minAsc": 3
             },
             {
               "name": "Effect RES Boost",
               "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconStatusResistance.png",
               "params": [ 0.04 ],
               "minAsc": 3
             }
@@ -287,24 +291,28 @@
     {
       "name": "String Vibration",
       "desc": "At the start of the battle, immediately regenerates <unbreak>#1[i]</unbreak> Energy.",
+      "icon": "SkillIcon_1103_SkillTree2.png",
       "params": [ 15 ],
       "minAsc": 4,
       "children": [
         {
           "name": "CRIT Rate Boost",
           "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconCriticalChance.png",
           "params": [ 0.04 ],
           "minAsc": 4,
           "children": [
             {
               "name": "Effect Hit Rate Boost",
               "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconStatusProbability.png",
               "params": [ 0.06 ],
               "minAsc": 5
             },
             {
               "name": "CRIT Rate Boost",
               "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconCriticalChance.png",
               "params": [ 0.04 ],
               "minAsc": 5
             }
@@ -315,18 +323,21 @@
     {
       "name": "Mania",
       "desc": "Upon defeating an enemy, ATK is increased by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
+      "icon": "SkillIcon_1103_SkillTree3.png",
       "params": [ 0.2, 2 ],
       "minAsc": 6,
       "children": [
         {
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconStatusResistance.png",
           "params": [ 0.06 ],
           "minAsc": 6
         },
         {
           "name": "Effect Hit Rate Boost",
           "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconStatusProbability.png",
           "params": [ 0.08 ],
           "minLevel": 75
         }
@@ -335,11 +346,13 @@
     {
       "name": "CRIT Rate Boost",
       "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconCriticalChance.png",
       "params": [ 0.027 ]
     },
     {
       "name": "CRIT Rate Boost",
       "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconCriticalChance.png",
       "params": [ 0.053 ],
       "minLevel": 80
     }

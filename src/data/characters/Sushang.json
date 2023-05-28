@@ -258,18 +258,21 @@
     {
       "name": "Guileless",
       "desc": "When current HP percentage is <unbreak>#1[i]%</unbreak> or lower, reduces the chance of being attacked by enemies.",
+      "icon": "SkillIcon_1206_SkillTree1.png",
       "params": [ 0.5, 0.5 ],
       "minAsc": 2,
       "children": [
         {
           "name": "HP Boost",
           "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconMaxHP.png",
           "params": [ 0.04 ],
           "minAsc": 2,
           "children": [
             {
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconAttack.png",
               "params": [ 0.04 ],
               "minAsc": 3
             }
@@ -280,18 +283,21 @@
     {
       "name": "Riposte",
       "desc": "For every Sword Stance triggered, the DMG dealt by Sword Stance increases by <unbreak>#1[i]%</unbreak>. Stacks up to <unbreak>#2[i]</unbreak> time(s).",
+      "icon": "SkillIcon_1206_SkillTree2.png",
       "params": [ 0.025, 10 ],
       "minAsc": 4,
       "children": [
         {
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconAttack.png",
           "params": [ 0.06 ],
           "minAsc": 4,
           "children": [
             {
               "name": "HP Boost",
               "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconMaxHP.png",
               "params": [ 0.06 ],
               "minAsc": 5
             }
@@ -302,24 +308,28 @@
     {
       "name": "Vanquisher",
       "desc": "After using Basic ATK or Skill, if there are enemies on the field with Weakness Break, Sushang's action is Advanced Forward by <unbreak>#1[i]%</unbreak>.",
+      "icon": "SkillIcon_1206_SkillTree3.png",
       "params": [ 0.15 ],
       "minAsc": 6,
       "children": [
         {
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconDefence.png",
           "params": [ 0.075 ],
           "minAsc": 6,
           "children": [
             {
               "name": "HP Boost",
               "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconMaxHP.png",
               "params": [ 0.08 ],
               "minLevel": 75
             },
             {
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconAttack.png",
               "params": [ 0.08 ],
               "minLevel": 80
             }
@@ -330,17 +340,20 @@
     {
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconAttack.png",
       "params": [ 0.04 ]
     },
     {
       "name": "DEF Boost",
       "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconDefence.png",
       "params": [ 0.05 ],
       "minAsc": 3
     },
     {
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconAttack.png",
       "params": [ 0.06 ],
       "minAsc": 5
     }

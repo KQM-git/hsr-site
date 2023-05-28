@@ -250,24 +250,28 @@
     {
       "name": "Qihuang Analects",
       "desc": "When Bailu heals a target ally above their normal Max HP, the target's Max HP increases by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turns.",
+      "icon": "SkillIcon_1211_SkillTree1.png",
       "params": [ 0.1, 2 ],
       "minAsc": 2,
       "children": [
         {
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconDefence.png",
           "params": [ 0.05 ],
           "minAsc": 2,
           "children": [
             {
               "name": "HP Boost",
               "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconMaxHP.png",
               "params": [ 0.04 ],
               "minAsc": 3,
               "children": [
                 {
                   "name": "Effect RES Boost",
                   "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+                  "icon": "IconStatusResistance.png",
                   "params": [ 0.04 ],
                   "minAsc": 3
                 }
@@ -280,24 +284,28 @@
     {
       "name": "Vidyadhara Ichor Lines",
       "desc": "Invigoration can trigger <unbreak>#1[i]</unbreak> more time(s).",
+      "icon": "SkillIcon_1211_SkillTree2.png",
       "params": [ 1 ],
       "minAsc": 4,
       "children": [
         {
           "name": "HP Boost",
           "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconMaxHP.png",
           "params": [ 0.06 ],
           "minAsc": 4,
           "children": [
             {
               "name": "DEF Boost",
               "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconDefence.png",
               "params": [ 0.075 ],
               "minAsc": 5,
               "children": [
                 {
                   "name": "HP Boost",
                   "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+                  "icon": "IconMaxHP.png",
                   "params": [ 0.06 ],
                   "minAsc": 5
                 }
@@ -310,18 +318,21 @@
     {
       "name": "Aquatic Benediction",
       "desc": "Characters with Invigoration receive <unbreak>#1[i]%</unbreak> less DMG.",
+      "icon": "SkillIcon_1211_SkillTree3.png",
       "params": [ 0.1 ],
       "minAsc": 6,
       "children": [
         {
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconStatusResistance.png",
           "params": [ 0.06 ],
           "minAsc": 6
         },
         {
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconDefence.png",
           "params": [ 0.1 ],
           "minLevel": 75
         }
@@ -330,11 +341,13 @@
     {
       "name": "HP Boost",
       "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconMaxHP.png",
       "params": [ 0.04 ]
     },
     {
       "name": "HP Boost",
       "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconMaxHP.png",
       "params": [ 0.08 ],
       "minLevel": 80
     }

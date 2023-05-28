@@ -256,18 +256,21 @@
     {
       "name": "Hidden Dragon",
       "desc": "When current HP percentage is <unbreak>#1[i]%</unbreak> or lower, reduces the chance of being attacked by enemies.",
+      "icon": "SkillIcon_1002_SkillTree1.png",
       "params": [ 0.5, 0.5 ],
       "minAsc": 2,
       "children": [
         {
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconAttack.png",
           "params": [ 0.04 ],
           "minAsc": 2,
           "children": [
             {
               "name": "DMG Boost: Wind",
               "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconWindAddedRatio.png",
               "params": [ 0.032 ],
               "minAsc": 3
             }
@@ -278,18 +281,21 @@
     {
       "name": "Faster Than Light",
       "desc": "After launching an attack, there is a <unbreak>#1[i]%</unbreak> fixed chance to increase own SPD by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
+      "icon": "SkillIcon_1002_SkillTree2.png",
       "params": [ 0.5, 0.2, 2 ],
       "minAsc": 4,
       "children": [
         {
           "name": "DMG Boost: Wind",
           "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconWindAddedRatio.png",
           "params": [ 0.048 ],
           "minAsc": 4,
           "children": [
             {
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconAttack.png",
               "params": [ 0.06 ],
               "minAsc": 5
             }
@@ -300,24 +306,28 @@
     {
       "name": "High Gale",
       "desc": "Basic ATK deals <unbreak>#1[i]%</unbreak> more DMG to Slowed enemies.",
+      "icon": "SkillIcon_1002_SkillTree3.png",
       "params": [ 0.4 ],
       "minAsc": 6,
       "children": [
         {
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconDefence.png",
           "params": [ 0.075 ],
           "minAsc": 6,
           "children": [
             {
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconAttack.png",
               "params": [ 0.08 ],
               "minLevel": 75
             },
             {
               "name": "DMG Boost: Wind",
               "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconWindAddedRatio.png",
               "params": [ 0.064 ],
               "minLevel": 80
             }
@@ -328,17 +338,20 @@
     {
       "name": "DMG Boost: Wind",
       "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconWindAddedRatio.png",
       "params": [ 0.032 ]
     },
     {
       "name": "DEF Boost",
       "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconDefence.png",
       "params": [ 0.05 ],
       "minAsc": 3
     },
     {
       "name": "DMG Boost: Wind",
       "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconWindAddedRatio.png",
       "params": [ 0.048 ],
       "minAsc": 5
     }

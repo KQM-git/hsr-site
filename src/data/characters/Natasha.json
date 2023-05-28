@@ -252,24 +252,28 @@
     {
       "name": "Soothe",
       "desc": "The Skill removes <unbreak>#1[i]</unbreak> debuff(s) from a target ally.",
+      "icon": "SkillIcon_1105_SkillTree1.png",
       "params": [ 1 ],
       "minAsc": 2,
       "children": [
         {
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconStatusResistance.png",
           "params": [ 0.04 ],
           "minAsc": 2,
           "children": [
             {
               "name": "HP Boost",
               "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconMaxHP.png",
               "params": [ 0.04 ],
               "minAsc": 3,
               "children": [
                 {
                   "name": "DEF Boost",
                   "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+                  "icon": "IconDefence.png",
                   "params": [ 0.05 ],
                   "minAsc": 3
                 }
@@ -282,24 +286,28 @@
     {
       "name": "Healer",
       "desc": "Natasha's Outgoing Healing increases by <unbreak>#1[i]%</unbreak>.",
+      "icon": "SkillIcon_1105_SkillTree2.png",
       "params": [ 0.1 ],
       "minAsc": 4,
       "children": [
         {
           "name": "HP Boost",
           "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconMaxHP.png",
           "params": [ 0.06 ],
           "minAsc": 4,
           "children": [
             {
               "name": "Effect RES Boost",
               "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+              "icon": "IconStatusResistance.png",
               "params": [ 0.06 ],
               "minAsc": 5,
               "children": [
                 {
                   "name": "HP Boost",
                   "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+                  "icon": "IconMaxHP.png",
                   "params": [ 0.06 ],
                   "minAsc": 5
                 }
@@ -312,18 +320,21 @@
     {
       "name": "Recuperation",
       "desc": "Increases the duration of Skill's continuous healing effect for <unbreak>#1[i]</unbreak> turn(s).",
+      "icon": "SkillIcon_1105_SkillTree3.png",
       "params": [ 1 ],
       "minAsc": 6,
       "children": [
         {
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconDefence.png",
           "params": [ 0.075 ],
           "minAsc": 6
         },
         {
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+          "icon": "IconStatusResistance.png",
           "params": [ 0.08 ],
           "minLevel": 75
         }
@@ -332,11 +343,13 @@
     {
       "name": "HP Boost",
       "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconMaxHP.png",
       "params": [ 0.04 ]
     },
     {
       "name": "HP Boost",
       "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+      "icon": "IconMaxHP.png",
       "params": [ 0.08 ],
       "minLevel": 80
     }
