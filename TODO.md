@@ -1,15 +1,10 @@
 # KQM HSR Site
-**AIM:** Modern look (compete w/ others), passes accessibility standards, mobile-friendly, editor-friendly processes.
-
-I started to break down my thought processes on how to approach various parts of the design. This is basically pseudo-pseudo-pseudo code in terms of abstraction, but it's a start.
+**AIM:** Improve UI, WCAG AA compliance, straightforward content creation process
 
 ## Home Page 
 Thoughts on assets:
-- Check Fontawesome or other SVG sites for socials icons
 - Standardize image sizes
 - Get other KQM logos
-- If there's an official color-scheme, get ahold of it
-- Look at other style guides and yoink if open-source
 
 Current thoughts for components: 
 - Header: have astro auto-generate breadcrumbs
@@ -21,7 +16,7 @@ Current thoughts for components:
 	- Edit 'Card' component. Add tags, etc. 
  - Search component
 
-## Guide Pages
+## Guide Creation
 **Main question:** What do the editors/authors need?
 
 First, basic formatting: 
@@ -31,17 +26,16 @@ First, basic formatting:
 
 Next, easy templates for formats.
 - Saved element colors for text (might want bolds built-in)
-- Saved Paths/Elements with set sizes ```<Element variant="Fire" size="Large">``` so on and so forth, 
-- Saved portraits, same as above, maybe pulls from a database though? 
+- Components for common images (chars, paths, etc) with set sizes (e.g. ```<Element variant="Fire" size="Large">```)
 - Saved image sizes: "Title" page size (with field for source), flex-to-table size, infographic size, etc
- - Saved table formats with colored boxes, etc
+- Saved table formats with colored boxes, etc
 
 
 We'd also want an example page using MDX that showcases following:
-- Title, Custom slug, tags, date (auto generate?)
+- Frontmatter (title, slug?, tags, date, etc)
 - Any sort of auto-generated table (like Tibo mentioned)
-- Links to other guides. SRL link. Outside link.
-- Images, especially component images like Paths, with set formattings.
+- Links, both internal and external
+- Images, especially component images like Paths, with formatting
 - Various other common custom formats
 
 Some specifics wants that I thought up:
@@ -50,47 +44,37 @@ Some specifics wants that I thought up:
 - Teammate comparison table
 
 ## Site Architecture
-I don't know enough about how to set this up. But at least here's a small amount of things I know I don't know. 
-- Slugs. What is going on with them. What is the situation with them. Auto-generated? Namescheme?
+- How will guide slugs be generated?
 - What is current file/page architecture on KQM? Are guides grouped? Are categories grouped? If so, by what?
     - Opinions on the current file/page architecture? How to make better/more futureproof/less annoying?
-- How are assets stored rn? DB? within repo of site? ??????
+- How will assets be stored and delivered?
 - Name-schemes in general. Any title name schemes? Any for images? Should there be any for either? Anything that relies on sorting pages/whatever else by parsing this? 
-- Is it just me or does the original site not have a search at all. I can't seem to find it
-- Do we want to auto-generate pages? i.e. lightcones? Let's say we have the following lightcone json. (excuse my terrible json format recollection)
- 
-```json
-    {
-        "lightcone": 
-        {
-            "name": "Boat",
-            "rarity": 5,
-            "path": "The Hunt"
-        }
-        "lightcone": 
-        {
-            "name": "Fermata",
-            "rarity": 4,
-            "path": "Nihility"
-        }
-    }
-```
+- How will searching be implemented?
+- When a guide is created, how will its recommendations be reused in other places across the site?
 
-
-My thought process is this: using [Routing](https://docs.astro.build/en/core-concepts/routing/#dynamic-routes), content groups, whatever, we can auto-generate lightcones. For example, for that one, we'd want to auto generate pages at hsr.keqingmains.com/lightcones/boat and ~/lightcones/fermata. And maybe it could get a pre-made template table (like the ones on Figma) and fill it out. And we'd not have to manually add it in the fields each time. 
-
-Otherwise, don't see much use for routing/content groups. 
+## No Component Left Behind
+- components/Searchbar
+  - Needs searching functionality
+- components/data/characters/CharTrace and pages/data/characters/[name]
+  - Needs js to draw SVG lines to connect traces (see figma)
+- components/ParsedParams
+  - Needs parameter parsing functionality (see [original](https://github.com/KQM-git/SRL/blob/master/src/components/common/ParamFormat.tsx))
 
 ## Figma Links
-Kind of a nonsequitur, but here are links to everything on figma in case opening discord is annoying:
-
 - [Home Page](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=6-477&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
 - [Light Cones, All](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=190-5377&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
-- [Light Cones, One: Stats](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=127-3190&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2), [Light Cones, One: Abilities](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=190-5758&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
-- Specific Light Cones
-  - [River](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=123-2956&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
-  - [Carve The Moon](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=123-2956&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+  - [Hunt: Stats](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=127-3190&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+  - [Hunt: Abilities](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=190-5758&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+    - [River](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=123-2956&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+    - [Carve The Moon](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=123-2956&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
 - [Characters, All](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=123-2870&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
-
-
-
+  - [Yanqing](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=266-3377&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+- [Relics, All](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=392-2001&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+  - [Relics, One Set](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=474-4777&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+- [Enemies, All](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=565-3593&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+  - [Guadian Shadow](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=565-3404&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+  - [Cocolia](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=583-4093&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+- [Guides, All](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=6-408&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+  - [Guides, One](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=517-1940&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+- [About](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=6-431&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
+- [Contact](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=6-431&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
