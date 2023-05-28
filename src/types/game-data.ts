@@ -3,7 +3,7 @@ export interface Character {
   name: string
   element: string
   path: string
-  description: string
+  description?: string
   rarity: number
   stats: CharStats[]
   skills: CharSkill[]
@@ -45,6 +45,7 @@ export interface Eidolon {
 }
 
 export interface CharacterTrace {
+  id: number
   name: string
   desc: string
   icon: string

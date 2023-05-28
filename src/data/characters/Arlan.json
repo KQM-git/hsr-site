@@ -257,6 +257,7 @@
   ],
   "skillTree": [
     {
+      "id": 1008101,
       "name": "Revival",
       "desc": "If the current HP percentage is <unbreak>#1[i]%</unbreak> or lower when defeating an enemy, immediately restores HP equal to <unbreak>#2[i]%</unbreak> of Max HP.",
       "icon": "SkillIcon_1008_SkillTree1.png",
@@ -264,6 +265,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1008202,
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconStatusResistance.png",
@@ -271,6 +273,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1008203,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -278,6 +281,7 @@
               "minAsc": 3,
               "children": [
                 {
+                  "id": 1008204,
                   "name": "HP Boost",
                   "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconMaxHP.png",
@@ -291,6 +295,7 @@
       ]
     },
     {
+      "id": 1008102,
       "name": "Endurance",
       "desc": "The chance to resist DoT Debuffs increases by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1008_SkillTree2.png",
@@ -298,6 +303,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1008205,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -305,6 +311,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1008206,
               "name": "Effect RES Boost",
               "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconStatusResistance.png",
@@ -312,6 +319,7 @@
               "minAsc": 5,
               "children": [
                 {
+                  "id": 1008207,
                   "name": "ATK Boost",
                   "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconAttack.png",
@@ -325,6 +333,7 @@
       ]
     },
     {
+      "id": 1008103,
       "name": "Repel",
       "desc": "Upon entering battle, if Arlan's HP is less than or equal to <unbreak>#1[i]%</unbreak>, he can nullify all DMG received except for DoT until after he is attacked.",
       "icon": "SkillIcon_1008_SkillTree3.png",
@@ -332,6 +341,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1008208,
           "name": "HP Boost",
           "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconMaxHP.png",
@@ -339,6 +349,7 @@
           "minAsc": 6,
           "children": [
             {
+              "id": 1008209,
               "name": "Effect RES Boost",
               "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconStatusResistance.png",
@@ -346,6 +357,7 @@
               "minLevel": 75
             },
             {
+              "id": 1008210,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -357,6 +369,7 @@
       ]
     },
     {
+      "id": 1008201,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",

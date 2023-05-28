@@ -2,8 +2,9 @@
 export interface Props {
   data: string;
   params: number[];
+  className?: string;
 }
 const { data } = Astro.props;
 ---
 
-{data}
+{data.split("<")[0]}1

@@ -258,6 +258,7 @@
   ],
   "skillTree": [
     {
+      "id": 1209101,
       "name": "Icing on the Kick",
       "desc": "When Yanqing attacks, deals Additional Ice DMG equal to <unbreak>#1[i]%</unbreak> of Yanqing's ATK to enemies with Ice Weakness.",
       "icon": "SkillIcon_1209_SkillTree1.png",
@@ -265,6 +266,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1209202,
           "name": "DMG Boost: Ice",
           "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconIceAddedRatio.png",
@@ -272,6 +274,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1209203,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -283,6 +286,7 @@
       ]
     },
     {
+      "id": 1209102,
       "name": "Frost Favors the Brave",
       "desc": "When Soulsteel Sync is active, Effect RES increases by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1209_SkillTree2.png",
@@ -290,6 +294,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1209205,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -297,6 +302,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1209206,
               "name": "DMG Boost: Ice",
               "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconIceAddedRatio.png",
@@ -308,6 +314,7 @@
       ]
     },
     {
+      "id": 1209103,
       "name": "Gentle Blade",
       "desc": "When a CRIT Hit is triggered, increases SPD by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
       "icon": "SkillIcon_1209_SkillTree3.png",
@@ -315,6 +322,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1209208,
           "name": "HP Boost",
           "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconMaxHP.png",
@@ -322,6 +330,7 @@
           "minAsc": 6,
           "children": [
             {
+              "id": 1209209,
               "name": "DMG Boost: Ice",
               "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconIceAddedRatio.png",
@@ -329,6 +338,7 @@
               "minLevel": 75
             },
             {
+              "id": 1209210,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -340,12 +350,14 @@
       ]
     },
     {
+      "id": 1209201,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",
       "params": [ 0.04 ]
     },
     {
+      "id": 1209204,
       "name": "HP Boost",
       "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconMaxHP.png",
@@ -353,6 +365,7 @@
       "minAsc": 3
     },
     {
+      "id": 1209207,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",

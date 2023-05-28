@@ -284,6 +284,7 @@
   ],
   "skillTree": [
     {
+      "id": 1109101,
       "name": "Innocence",
       "desc": "Hook restores HP equal to <unbreak>#1[i]%</unbreak> of her Max HP whenever her Talent is triggered.",
       "icon": "SkillIcon_1109_SkillTree1.png",
@@ -291,6 +292,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1109202,
           "name": "HP Boost",
           "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconMaxHP.png",
@@ -298,6 +300,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1109203,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -305,6 +308,7 @@
               "minAsc": 3,
               "children": [
                 {
+                  "id": 1109204,
                   "name": "CRIT DMG Boost",
                   "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconCriticalDamage.png",
@@ -318,6 +322,7 @@
       ]
     },
     {
+      "id": 1109102,
       "name": "Naivete",
       "desc": "The chance to resist Crowd Control Debuffs increases by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1109_SkillTree2.png",
@@ -325,6 +330,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1109205,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -332,6 +338,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1109206,
               "name": "HP Boost",
               "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconMaxHP.png",
@@ -339,6 +346,7 @@
               "minAsc": 5,
               "children": [
                 {
+                  "id": 1109207,
                   "name": "ATK Boost",
                   "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconAttack.png",
@@ -352,6 +360,7 @@
       ]
     },
     {
+      "id": 1109103,
       "name": "Playing With Fire",
       "desc": "When using her Ultimate, Hook has her action Advanced Forward by <unbreak>#2[i]%</unbreak> and Hook additionally regenerates <unbreak>#1[i]</unbreak> Energy.",
       "icon": "SkillIcon_1109_SkillTree3.png",
@@ -359,6 +368,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1109208,
           "name": "CRIT DMG Boost",
           "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconCriticalDamage.png",
@@ -366,6 +376,7 @@
           "minAsc": 6,
           "children": [
             {
+              "id": 1109209,
               "name": "HP Boost",
               "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconMaxHP.png",
@@ -373,6 +384,7 @@
               "minLevel": 75
             },
             {
+              "id": 1109210,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -384,6 +396,7 @@
       ]
     },
     {
+      "id": 1109201,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",

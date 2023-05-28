@@ -258,6 +258,7 @@
   ],
   "skillTree": [
     {
+      "id": 1013101,
       "name": "Efficiency",
       "desc": "When Skill is used, the DMG Boost effect on target enemies increases by an extra <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1013_SkillTree1.png",
@@ -265,6 +266,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1013202,
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconDefence.png",
@@ -272,6 +274,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1013203,
               "name": "DMG Boost: Ice",
               "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconIceAddedRatio.png",
@@ -279,6 +282,7 @@
               "minAsc": 3
             },
             {
+              "id": 1013204,
               "name": "CRIT Rate Boost",
               "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconCriticalChance.png",
@@ -290,6 +294,7 @@
       ]
     },
     {
+      "id": 1013102,
       "name": "Puppet",
       "desc": "The chance to resist Crowd Control Debuffs increases by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1013_SkillTree2.png",
@@ -297,6 +302,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1013205,
           "name": "DMG Boost: Ice",
           "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconIceAddedRatio.png",
@@ -304,6 +310,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1013206,
               "name": "DEF Boost",
               "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconDefence.png",
@@ -311,6 +318,7 @@
               "minAsc": 5
             },
             {
+              "id": 1013207,
               "name": "DMG Boost: Ice",
               "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconIceAddedRatio.png",
@@ -322,6 +330,7 @@
       ]
     },
     {
+      "id": 1013103,
       "name": "Icing",
       "desc": "When Ultimate is used, deals <unbreak>#1[i]%</unbreak> more DMG to Frozen enemies.",
       "icon": "SkillIcon_1013_SkillTree3.png",
@@ -329,6 +338,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1013208,
           "name": "CRIT Rate Boost",
           "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconCriticalChance.png",
@@ -336,6 +346,7 @@
           "minAsc": 6
         },
         {
+          "id": 1013209,
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconDefence.png",
@@ -345,12 +356,14 @@
       ]
     },
     {
+      "id": 1013201,
       "name": "DMG Boost: Ice",
       "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconIceAddedRatio.png",
       "params": [ 0.032 ]
     },
     {
+      "id": 1013210,
       "name": "DMG Boost: Ice",
       "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconIceAddedRatio.png",

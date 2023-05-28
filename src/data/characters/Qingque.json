@@ -272,6 +272,7 @@
   ],
   "skillTree": [
     {
+      "id": 1201101,
       "name": "Tile Battle",
       "desc": "Restores 1 Skill Point when using the Skill. This effect can only be triggered 1 time per battle.",
       "icon": "SkillIcon_1201_SkillTree1.png",
@@ -279,6 +280,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1201202,
           "name": "DMG Boost: Quantum",
           "desc": "Quantum DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconQuantumAddedRatio.png",
@@ -286,6 +288,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1201203,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -293,6 +296,7 @@
               "minAsc": 3
             },
             {
+              "id": 1201204,
               "name": "DEF Boost",
               "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconDefence.png",
@@ -304,6 +308,7 @@
       ]
     },
     {
+      "id": 1201102,
       "name": "Bide Time",
       "desc": "Using the Skill increases DMG Boost effect of attacks by an extra <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1201_SkillTree2.png",
@@ -311,6 +316,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1201205,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -318,6 +324,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1201206,
               "name": "DMG Boost: Quantum",
               "desc": "Quantum DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconQuantumAddedRatio.png",
@@ -325,6 +332,7 @@
               "minAsc": 5
             },
             {
+              "id": 1201207,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -336,6 +344,7 @@
       ]
     },
     {
+      "id": 1201103,
       "name": "Winning Hand",
       "desc": "Qingque's SPD increases by <unbreak>#1[i]%</unbreak> for 1 turn after using the Enhanced Basic ATK.",
       "icon": "SkillIcon_1201_SkillTree3.png",
@@ -343,6 +352,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1201208,
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconDefence.png",
@@ -350,6 +360,7 @@
           "minAsc": 6
         },
         {
+          "id": 1201209,
           "name": "DMG Boost: Quantum",
           "desc": "Quantum DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconQuantumAddedRatio.png",
@@ -359,12 +370,14 @@
       ]
     },
     {
+      "id": 1201201,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",
       "params": [ 0.04 ]
     },
     {
+      "id": 1201210,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",

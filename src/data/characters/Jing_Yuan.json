@@ -258,6 +258,7 @@
   ],
   "skillTree": [
     {
+      "id": 1204101,
       "name": "Battalia Crush",
       "desc": "If the Lightning-Lord's Hits Per Action is greater or equal to <unbreak>#1[i]</unbreak> in the next turn, its CRIT DMG increases by <unbreak>#2[i]%</unbreak> for the next turn.",
       "icon": "SkillIcon_1204_SkillTree1.png",
@@ -265,6 +266,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1204202,
           "name": "CRIT Rate Boost",
           "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconCriticalChance.png",
@@ -272,6 +274,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1204203,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -279,6 +282,7 @@
               "minAsc": 3
             },
             {
+              "id": 1204204,
               "name": "DEF Boost",
               "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconDefence.png",
@@ -290,6 +294,7 @@
       ]
     },
     {
+      "id": 1204102,
       "name": "Savant Providence",
       "desc": "At the start of the battle, immediately regenerates <unbreak>#1[i]</unbreak> Energy.",
       "icon": "SkillIcon_1204_SkillTree2.png",
@@ -297,6 +302,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1204205,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -304,6 +310,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1204206,
               "name": "CRIT Rate Boost",
               "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconCriticalChance.png",
@@ -311,6 +318,7 @@
               "minAsc": 5
             },
             {
+              "id": 1204207,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -322,6 +330,7 @@
       ]
     },
     {
+      "id": 1204103,
       "name": "War Marshal",
       "desc": "After using Skill, CRIT Rate increases by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
       "icon": "SkillIcon_1204_SkillTree3.png",
@@ -329,6 +338,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1204208,
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconDefence.png",
@@ -336,6 +346,7 @@
           "minAsc": 6
         },
         {
+          "id": 1204209,
           "name": "CRIT Rate Boost",
           "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconCriticalChance.png",
@@ -345,12 +356,14 @@
       ]
     },
     {
+      "id": 1204201,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",
       "params": [ 0.04 ]
     },
     {
+      "id": 1204210,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",

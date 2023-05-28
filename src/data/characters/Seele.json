@@ -254,6 +254,7 @@
   ],
   "skillTree": [
     {
+      "id": 1102101,
       "name": "Nightshade",
       "desc": "When current HP percentage is <unbreak>#1[i]%</unbreak> or lower, reduces the chance of being attacked by enemies.",
       "icon": "SkillIcon_1102_SkillTree1.png",
@@ -261,6 +262,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1102202,
           "name": "CRIT DMG Boost",
           "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconCriticalDamage.png",
@@ -268,6 +270,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1102203,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -279,6 +282,7 @@
       ]
     },
     {
+      "id": 1102102,
       "name": "Lacerate",
       "desc": "While Seele is in the buffed state, her Quantum RES PEN increases by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1102_SkillTree2.png",
@@ -286,6 +290,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1102205,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -293,6 +298,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1102206,
               "name": "CRIT DMG Boost",
               "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconCriticalDamage.png",
@@ -304,6 +310,7 @@
       ]
     },
     {
+      "id": 1102103,
       "name": "Rippling Waves",
       "desc": "After using a Basic ATK, Seele's next action will be Advanced Forward by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1102_SkillTree3.png",
@@ -311,6 +318,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1102208,
           "name": "DEF Boost",
           "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconDefence.png",
@@ -318,6 +326,7 @@
           "minAsc": 6,
           "children": [
             {
+              "id": 1102209,
               "name": "CRIT DMG Boost",
               "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconCriticalDamage.png",
@@ -325,6 +334,7 @@
               "minLevel": 75
             },
             {
+              "id": 1102210,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -336,12 +346,14 @@
       ]
     },
     {
+      "id": 1102201,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",
       "params": [ 0.04 ]
     },
     {
+      "id": 1102204,
       "name": "DEF Boost",
       "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconDefence.png",
@@ -349,6 +361,7 @@
       "minAsc": 3
     },
     {
+      "id": 1102207,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",

@@ -255,6 +255,7 @@
   ],
   "skillTree": [
     {
+      "id": 1004101,
       "name": "Retribution",
       "desc": "When using Ultimate, there is a <unbreak>#1[i]%</unbreak> base chance to increase the DMG received by the targets by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
       "icon": "SkillIcon_1004_SkillTree1.png",
@@ -262,6 +263,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1004202,
           "name": "DMG Boost: Imaginary",
           "desc": "Imaginary DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconImaginaryAddedRatio.png",
@@ -269,6 +271,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1004203,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -276,6 +279,7 @@
               "minAsc": 3,
               "children": [
                 {
+                  "id": 1004204,
                   "name": "Effect RES Boost",
                   "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconStatusResistance.png",
@@ -289,6 +293,7 @@
       ]
     },
     {
+      "id": 1004102,
       "name": "Judgment",
       "desc": "Using Ultimate additionally regenerates <unbreak>#1[i]</unbreak> Energy.",
       "icon": "SkillIcon_1004_SkillTree2.png",
@@ -296,6 +301,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1004205,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -303,6 +309,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1004206,
               "name": "DMG Boost: Imaginary",
               "desc": "Imaginary DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconImaginaryAddedRatio.png",
@@ -310,6 +317,7 @@
               "minAsc": 5,
               "children": [
                 {
+                  "id": 1004207,
                   "name": "ATK Boost",
                   "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconAttack.png",
@@ -323,6 +331,7 @@
       ]
     },
     {
+      "id": 1004103,
       "name": "Punishment",
       "desc": "Deals <unbreak>#1[i]%</unbreak> more DMG to enemies inflicted with Weakness Break.",
       "icon": "SkillIcon_1004_SkillTree3.png",
@@ -330,6 +339,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1004208,
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconStatusResistance.png",
@@ -337,6 +347,7 @@
           "minAsc": 6
         },
         {
+          "id": 1004209,
           "name": "DMG Boost: Imaginary",
           "desc": "Imaginary DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconImaginaryAddedRatio.png",
@@ -346,12 +357,14 @@
       ]
     },
     {
+      "id": 1004201,
       "name": "ATK Boost",
       "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconAttack.png",
       "params": [ 0.04 ],
       "children": [
         {
+          "id": 1004210,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",

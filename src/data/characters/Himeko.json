@@ -259,6 +259,7 @@
   ],
   "skillTree": [
     {
+      "id": 1003101,
       "name": "Starfire",
       "desc": "After using an attack, there is a <unbreak>#1[i]%</unbreak> base chance to inflict Burn on enemies for <unbreak>#2[i]</unbreak> turn(s).\\nWhen afflicted with Burn, enemies take Fire DoT equal to <unbreak>#3[i]%</unbreak> of Himeko's ATK at the start of each turn.",
       "icon": "SkillIcon_1003_SkillTree1.png",
@@ -266,6 +267,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1003202,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -273,6 +275,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1003203,
               "name": "DMG Boost: Fire",
               "desc": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconFireAddedRatio.png",
@@ -280,6 +283,7 @@
               "minAsc": 3
             },
             {
+              "id": 1003204,
               "name": "Effect RES Boost",
               "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconStatusResistance.png",
@@ -291,6 +295,7 @@
       ]
     },
     {
+      "id": 1003102,
       "name": "Magma",
       "desc": "Skill deals <unbreak>#1[i]%</unbreak> more DMG to enemies currently afflicted with Burn.",
       "icon": "SkillIcon_1003_SkillTree2.png",
@@ -298,6 +303,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1003205,
           "name": "DMG Boost: Fire",
           "desc": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconFireAddedRatio.png",
@@ -305,6 +311,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1003206,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -312,6 +319,7 @@
               "minAsc": 5
             },
             {
+              "id": 1003207,
               "name": "DMG Boost: Fire",
               "desc": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconFireAddedRatio.png",
@@ -323,6 +331,7 @@
       ]
     },
     {
+      "id": 1003103,
       "name": "Benchmark",
       "desc": "When current HP percentage is <unbreak>#1[i]%</unbreak> or higher, CRIT Rate increases by <unbreak>#2[i]%</unbreak>.",
       "icon": "SkillIcon_1003_SkillTree3.png",
@@ -330,6 +339,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1003208,
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconStatusResistance.png",
@@ -337,6 +347,7 @@
           "minAsc": 6
         },
         {
+          "id": 1003209,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -346,12 +357,14 @@
       ]
     },
     {
+      "id": 1003201,
       "name": "DMG Boost: Fire",
       "desc": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconFireAddedRatio.png",
       "params": [ 0.032 ]
     },
     {
+      "id": 1003210,
       "name": "DMG Boost: Fire",
       "desc": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconFireAddedRatio.png",

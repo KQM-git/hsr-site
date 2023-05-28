@@ -256,6 +256,7 @@
   ],
   "skillTree": [
     {
+      "id": 1106101,
       "name": "Bash",
       "desc": "Deals <unbreak>#1[i]%</unbreak> more DMG to debuffed enemies.",
       "icon": "SkillIcon_1106_SkillTree1.png",
@@ -263,6 +264,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1106202,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -270,6 +272,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1106203,
               "name": "DMG Boost: Ice",
               "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconIceAddedRatio.png",
@@ -277,6 +280,7 @@
               "minAsc": 3,
               "children": [
                 {
+                  "id": 1106204,
                   "name": "Effect Hit Rate Boost",
                   "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconStatusProbability.png",
@@ -290,6 +294,7 @@
       ]
     },
     {
+      "id": 1106102,
       "name": "The Secret Strategy",
       "desc": "When Pela is on the battlefield, all allies' Effect Hit Rate increases by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1106_SkillTree2.png",
@@ -297,6 +302,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1106205,
           "name": "DMG Boost: Ice",
           "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconIceAddedRatio.png",
@@ -304,6 +310,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1106206,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -311,6 +318,7 @@
               "minAsc": 5,
               "children": [
                 {
+                  "id": 1106207,
                   "name": "DMG Boost: Ice",
                   "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconIceAddedRatio.png",
@@ -324,6 +332,7 @@
       ]
     },
     {
+      "id": 1106103,
       "name": "Wipe Out",
       "desc": "Using Skill to remove buff(s) increases the DMG of the next attack by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1106_SkillTree3.png",
@@ -331,6 +340,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1106208,
           "name": "Effect Hit Rate Boost",
           "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconStatusProbability.png",
@@ -338,6 +348,7 @@
           "minAsc": 6
         },
         {
+          "id": 1106209,
           "name": "ATK Boost",
           "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconAttack.png",
@@ -347,12 +358,14 @@
       ]
     },
     {
+      "id": 1106201,
       "name": "DMG Boost: Ice",
       "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconIceAddedRatio.png",
       "params": [ 0.032 ],
       "children": [
         {
+          "id": 1106210,
           "name": "DMG Boost: Ice",
           "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconIceAddedRatio.png",

@@ -257,6 +257,7 @@
   ],
   "skillTree": [
     {
+      "id": 1001103,
       "name": "Ice Spell",
       "desc": "Increases Ultimate's base chance to Freeze enemies by <unbreak>#1[i]%</unbreak>.",
       "icon": "SkillIcon_1001_SkillTree3.png",
@@ -264,6 +265,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1001208,
           "name": "DMG Boost: Ice",
           "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconIceAddedRatio.png",
@@ -271,6 +273,7 @@
           "minAsc": 6,
           "children": [
             {
+              "id": 1001209,
               "name": "DMG Boost: Ice",
               "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconIceAddedRatio.png",
@@ -278,6 +281,7 @@
               "minLevel": 75
             },
             {
+              "id": 1001210,
               "name": "DEF Boost",
               "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconDefence.png",
@@ -289,12 +293,14 @@
       ]
     },
     {
+      "id": 1001201,
       "name": "DMG Boost: Ice",
       "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconIceAddedRatio.png",
       "params": [ 0.032 ],
       "children": [
         {
+          "id": 1001101,
           "name": "Purify",
           "desc": "Skill removes 1 debuff from an ally.",
           "icon": "SkillIcon_1001_SkillTree1.png",
@@ -302,6 +308,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1001202,
               "name": "DEF Boost",
               "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconDefence.png",
@@ -309,6 +316,7 @@
               "minAsc": 2,
               "children": [
                 {
+                  "id": 1001203,
                   "name": "DMG Boost: Ice",
                   "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconIceAddedRatio.png",
@@ -320,6 +328,7 @@
           ]
         },
         {
+          "id": 1001102,
           "name": "Reinforce",
           "desc": "The duration of the Shield generated from Skill is extended for <unbreak>#1[i]</unbreak> turn(s).",
           "icon": "SkillIcon_1001_SkillTree2.png",
@@ -327,6 +336,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1001205,
               "name": "DMG Boost: Ice",
               "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconIceAddedRatio.png",
@@ -334,6 +344,7 @@
               "minAsc": 4,
               "children": [
                 {
+                  "id": 1001206,
                   "name": "Effect RES Boost",
                   "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconStatusResistance.png",
@@ -347,6 +358,7 @@
       ]
     },
     {
+      "id": 1001204,
       "name": "Effect RES Boost",
       "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconStatusResistance.png",
@@ -354,6 +366,7 @@
       "minAsc": 3
     },
     {
+      "id": 1001207,
       "name": "DEF Boost",
       "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconDefence.png",

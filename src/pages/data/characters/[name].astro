@@ -26,12 +26,17 @@ export async function getStaticPaths() {
     "/src/data/characters/*.json"
   )) as Character[];
 
-  return chars.map((ch) => ({ params: { name: ch.name } }));
+  return chars.map((ch) => ({
+    params: { name: ch.name.replaceAll(" ", "_") },
+  }));
 }
 
 const { name } = Astro.params;
 const chars = (await Astro.glob(`/src/data/characters/*.json`)) as Character[];
-const char = chars.find((c) => c.name === name) as Character;
+const char = chars.find(
+  (c) => c.name.replaceAll(" ", "_") === name
+) as Character;
+
 const bgs = backgrounds[char?.element ?? "DEFAULT"];
 const {
   name: charName,
@@ -65,6 +70,7 @@ const src = `/img/characters/full/${name}.png`;
 ---
 
 <script>
+  // Control tabs & navigation
   const refs = ["", "#skills", "#eidolons", "#traces"];
 
   const buttons = document.querySelectorAll(
@@ -117,6 +123,41 @@ const src = `/img/characters/full/${name}.png`;
 
   buttons.forEach((b) => {
     b.addEventListener("click", onChangeTab);
+  });
+</script>
+<script>
+  // Draw trace tree
+  window.addEventListener("DOMContentLoaded", () => {
+    const tree = document.getElementById("skill-tree") as HTMLElement;
+    const leaves = tree.querySelectorAll(
+      ".tree-node"
+    ) as NodeListOf<HTMLElement>;
+    leaves.forEach((leaf) => {
+      const parentLeaf = leaf.parentElement!.closest(
+        ".tree-node"
+      ) as HTMLElement;
+      if (!parentLeaf) return;
+      const parentIconBounds = parentLeaf
+        .querySelector("img")!
+        .getBoundingClientRect();
+
+      const leafImgBounds = leaf.querySelector("img")!.getBoundingClientRect();
+
+      leaf.style.setProperty(
+        "--deco-height",
+        `${
+          (leafImgBounds.bottom + leafImgBounds.top) / 2 -
+          parentIconBounds.bottom
+        }px`
+      );
+      leaf.style.setProperty(
+        "--deco-width",
+        `${
+          leafImgBounds.left -
+          (parentIconBounds.left + parentIconBounds.right) / 2
+        }px`
+      );
+    });
   });
 </script>
 <Layout title={name ?? "Characters"} description="" breadcrumbs={breadcrumbs}>
@@ -185,7 +226,10 @@ const src = `/img/characters/full/${name}.png`;
           <CharInfo h1 {...char} />
           <div class="subtitle text-xs font-bold">Introduction</div>
           <div class="mt-1 space-y-1">
-            {splitTextIntoBlocks(description).map((p) => <p>{p}</p>)}
+            {
+              description &&
+                splitTextIntoBlocks(description).map((p) => <p>{p}</p>)
+            }
           </div>
         </section>
       </CharacterPageTab>
@@ -237,12 +281,8 @@ const src = `/img/characters/full/${name}.png`;
           <CharInfo {...char} />
         </section>
         <section class={bgClass}>
-          <ol class="flex flex-col gap-4">
-            {
-              skillTree.map((trace) => (
-                <CharTrace {...trace} />
-              ))
-            }
+          <ol id="skill-tree" class="flex flex-col gap-4">
+            {skillTree.map((trace) => <CharTrace {...trace} depth={0} />)}
           </ol>
         </section>
       </CharacterPageTab>

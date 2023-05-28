@@ -249,6 +249,7 @@
   ],
   "skillTree": [
     {
+      "id": 1101101,
       "name": "Command",
       "desc": "The CRIT Rate for Basic ATK increases to <unbreak>100%</unbreak>.",
       "icon": "SkillIcon_1101_SkillTree1.png",
@@ -256,6 +257,7 @@
       "minAsc": 2,
       "children": [
         {
+          "id": 1101202,
           "name": "CRIT DMG Boost",
           "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconCriticalDamage.png",
@@ -263,6 +265,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 1101203,
               "name": "DMG Boost: Wind",
               "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconWindAddedRatio.png",
@@ -274,6 +277,7 @@
       ]
     },
     {
+      "id": 1101102,
       "name": "Battlefield",
       "desc": "At the start of the battle, all allies' DEF increases by <unbreak>#2[i]%</unbreak> for <unbreak>#1[i]</unbreak> turn(s).",
       "icon": "SkillIcon_1101_SkillTree2.png",
@@ -281,6 +285,7 @@
       "minAsc": 4,
       "children": [
         {
+          "id": 1101205,
           "name": "DMG Boost: Wind",
           "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconWindAddedRatio.png",
@@ -288,6 +293,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 1101206,
               "name": "CRIT DMG Boost",
               "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconCriticalDamage.png",
@@ -299,6 +305,7 @@
       ]
     },
     {
+      "id": 1101103,
       "name": "Military Might",
       "desc": "When Bronya is on the field, all allies deal <unbreak>#1[i]%</unbreak> more DMG.",
       "icon": "SkillIcon_1101_SkillTree3.png",
@@ -306,6 +313,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 1101208,
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconStatusResistance.png",
@@ -313,6 +321,7 @@
           "minAsc": 6,
           "children": [
             {
+              "id": 1101209,
               "name": "CRIT DMG Boost",
               "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconCriticalDamage.png",
@@ -320,6 +329,7 @@
               "minLevel": 75
             },
             {
+              "id": 1101210,
               "name": "DMG Boost: Wind",
               "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconWindAddedRatio.png",
@@ -331,12 +341,14 @@
       ]
     },
     {
+      "id": 1101201,
       "name": "DMG Boost: Wind",
       "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconWindAddedRatio.png",
       "params": [ 0.032 ],
       "children": [
         {
+          "id": 1101204,
           "name": "Effect RES Boost",
           "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconStatusResistance.png",
@@ -344,6 +356,7 @@
           "minAsc": 3
         },
         {
+          "id": 1101207,
           "name": "DMG Boost: Wind",
           "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconWindAddedRatio.png",

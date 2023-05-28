@@ -273,6 +273,7 @@
   ],
   "skillTree": [
     {
+      "id": 8004103,
       "name": "Action Beats Overthinking",
       "desc": "When the Trailblazer is protected by a Shield at the beginning of the turn, increases their ATK by <unbreak>#2[i]%</unbreak> and regenerates <unbreak>#1[i]</unbreak> Energy until the action is over.",
       "icon": "SkillIcon_8003_SkillTree3.png",
@@ -280,6 +281,7 @@
       "minAsc": 6,
       "children": [
         {
+          "id": 8004208,
           "name": "HP Boost",
           "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
           "icon": "IconMaxHP.png",
@@ -287,6 +289,7 @@
           "minAsc": 6,
           "children": [
             {
+              "id": 8004209,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -294,6 +297,7 @@
               "minLevel": 75
             },
             {
+              "id": 8004210,
               "name": "DEF Boost",
               "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconDefence.png",
@@ -305,12 +309,14 @@
       ]
     },
     {
+      "id": 8004201,
       "name": "DEF Boost",
       "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconDefence.png",
       "params": [ 0.05 ],
       "children": [
         {
+          "id": 8004101,
           "name": "The Strong Defend the Weak",
           "desc": "After using the Skill, the DMG taken by all allies reduces by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
           "icon": "SkillIcon_8003_SkillTree1.png",
@@ -318,6 +324,7 @@
           "minAsc": 2,
           "children": [
             {
+              "id": 8004202,
               "name": "ATK Boost",
               "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconAttack.png",
@@ -325,6 +332,7 @@
               "minAsc": 2,
               "children": [
                 {
+                  "id": 8004203,
                   "name": "DEF Boost",
                   "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconDefence.png",
@@ -336,6 +344,7 @@
           ]
         },
         {
+          "id": 8004102,
           "name": "Unwavering Gallantry",
           "desc": "Using Enhanced Basic ATK restores the Trailblazer's HP by <unbreak>#1[i]%</unbreak> of their Max HP.",
           "icon": "SkillIcon_8003_SkillTree2.png",
@@ -343,6 +352,7 @@
           "minAsc": 4,
           "children": [
             {
+              "id": 8004205,
               "name": "DEF Boost",
               "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
               "icon": "IconDefence.png",
@@ -350,6 +360,7 @@
               "minAsc": 4,
               "children": [
                 {
+                  "id": 8004206,
                   "name": "ATK Boost",
                   "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
                   "icon": "IconAttack.png",
@@ -363,6 +374,7 @@
       ]
     },
     {
+      "id": 8004204,
       "name": "HP Boost",
       "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconMaxHP.png",
@@ -370,6 +382,7 @@
       "minAsc": 3
     },
     {
+      "id": 8004207,
       "name": "DEF Boost",
       "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
       "icon": "IconDefence.png",
