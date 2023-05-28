@@ -59,6 +59,10 @@ Some specifics wants that I thought up:
   - Needs js to draw SVG lines to connect traces (see figma)
 - components/ParsedParams
   - Needs parameter parsing functionality (see [original](https://github.com/KQM-git/SRL/blob/master/src/components/common/ParamFormat.tsx))
+- pages/data/characters
+  - Needs filtering functionality
+- components/Nav
+  - Needs keyboard navigation
 
 ## Figma Links
 - [Home Page](https://www.figma.com/proto/hlb0VjDsQJXB0MvqpCLcZt/KQM-Revision-Draft?type=design&node-id=6-477&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2)
