@@ -131,7 +131,9 @@ const src = `/img/characters/full/${name}.png`;
         </ul>
       </nav>
       <CharacterPageTab index={1} src={src}>
-        <section class={bgClass}>
+        <section
+          class=`card-bg-1 ${bgs[1]} bg-opacity-90 max-w-full md:max-w-sm relative`
+        >
           <CharInfo h1 {...char} />
           <div class="subtitle text-xs font-bold">Introduction</div>
           <div class="mt-1 space-y-1">
