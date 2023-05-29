@@ -11,10 +11,12 @@ import type { Character } from "types/game-data";
 import elements from "util/elements";
 import paths from "util/paths";
 
+const breadcrumbs = ["Data Bank", "Characters"];
+
 const chars = (await Astro.glob("/src/data/characters/*.json")) as Character[];
 ---
 
-<Layout title="Characters" description="">
+<Layout title="Characters" description="" breadcrumbs={breadcrumbs}>
   <main class="flex items-center flex-col">
     <section class="card-bg p-4 md:p-8">
       <h1 class="subheader">Characters</h1>

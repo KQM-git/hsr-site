@@ -1,6 +1,6 @@
 ---
-/**
- *
+/** TODO
+ * Fix performance issues when changing to trace tab (resize observer triggers on reveal / hide)
  */
 
 /** BREAKPOINTS:
@@ -8,7 +8,6 @@
  * XL: Collapse tablist to top of page
  */
 
-import type { BreadcrumbsType } from "components/Breadcrumbs.astro";
 import ParsedParams from "components/ParsedParams.astro";
 import CharInfo from "components/data/characters/CharInfo.astro";
 import CharacterPageTab from "components/data/characters/CharTab.astro";
@@ -53,18 +52,7 @@ const tabClass = `tab ${tabGradients[element]}`;
 const cardClass = "rounded-lg p-4 max-w-full md:max-w-sm relative pb-16";
 const bgClass = `card-bg-1 ${bgs[1]} bg-opacity-90 max-w-full relative`;
 
-const breadcrumbs: BreadcrumbsType = {
-  title: "Data Bank",
-  href: "/data",
-  next: {
-    title: "Characters",
-    href: "/characters",
-    next: {
-      title: charName,
-      href: `/${name}`,
-    },
-  },
-};
+const breadcrumbs = ["Data Bank", "Characters", charName];
 
 const src = `/img/characters/full/${name}.png`;
 ---
@@ -150,7 +138,7 @@ const src = `/img/characters/full/${name}.png`;
         <section class={cardClass}>
           <CharInfo {...char} />
         </section>
-        <section class={bgClass}>TODO</section>
+        <section class={bgClass}></section>
       </CharacterPageTab>
 
       <!-- EIDOLONS -->
@@ -212,10 +200,10 @@ const src = `/img/characters/full/${name}.png`;
   // Control tabs & navigation
   const refs = ["", "#skills", "#eidolons", "#traces"];
 
-  const buttons = document.querySelectorAll("[role='tablist'] .tab");
+  const tabButtons = document.querySelectorAll("[role='tablist'] .tab");
 
   const targets = [];
-  buttons.forEach((b) => {
+  tabButtons.forEach((b) => {
     const targetId = b.getAttribute("aria-controls");
     if (!targetId) return;
     const el = document.getElementById(targetId);
@@ -223,12 +211,14 @@ const src = `/img/characters/full/${name}.png`;
   });
 
   function changeTabTo(n) {
-    if (n < 0 || n >= buttons.length) n = 0;
+    if (n < 0) n = 0;
+    if (n >= tabButtons.length) n = tabButtons.length - 1;
 
-    buttons.forEach((b, i) => {
+    tabButtons.forEach((b, i) => {
       if (n === i) {
         b.tabIndex = 0;
         b.ariaSelected = "true";
+        b.focus();
       } else {
         b.tabIndex = -1;
         b.ariaSelected = "false";
@@ -241,25 +231,103 @@ const src = `/img/characters/full/${name}.png`;
         e.hidden = true;
       }
     });
+    if (window.location.hash != refs[n]) window.location.hash = refs[n];
   }
 
+  // Manage hash changes
   function onChangeTab(e) {
     const target = e.currentTarget;
     if (!target) return;
     const n = parseInt(target.id.at(-1));
     changeTabTo(n);
-    window.location.hash = refs[n];
   }
-
   function onHashChange() {
-    const n = refs.findIndex((val) => val === window.location.hash);
-    changeTabTo(n);
+    let n = refs.findIndex((val) => val === window.location.hash);
+    if (n < 0 || tabButtons[n].ariaSelected !== "true") changeTabTo(n);
   }
   onHashChange();
   window.addEventListener("hashchange", onHashChange);
 
-  buttons.forEach((b) => {
+  // KB nav for tabs
+  function handleKeyDown(event) {
+    const id = document.activeElement.id;
+    if (!id) return;
+    const n = parseInt(id.at(-1));
+    switch (event.code) {
+      case "PageUp":
+        if (
+          tabButtons[0].getBoundingClientRect().top ===
+          tabButtons[1].getBoundingClientRect().top
+        )
+          break;
+      case "Home":
+        changeTabTo(0);
+        event.preventDefault();
+        break;
+      case "PageDown":
+        if (
+          tabButtons[0].getBoundingClientRect().top ===
+          tabButtons[1].getBoundingClientRect().top
+        )
+          break;
+      case "End":
+        changeTabTo(tabButtons.length - 1);
+        event.preventDefault();
+        break;
+      case "ArrowUp":
+        if (
+          tabButtons[0].getBoundingClientRect().top ===
+          tabButtons[1].getBoundingClientRect().top
+        )
+          break;
+        changeTabTo(n - 1);
+        event.preventDefault();
+        break;
+      case "ArrowLeft":
+        if (
+          tabButtons[0].getBoundingClientRect().left ===
+          tabButtons[1].getBoundingClientRect().left
+        )
+          break;
+        changeTabTo(n - 1);
+        event.preventDefault();
+        break;
+      case "ArrowDown":
+      case "ArrowUp":
+        if (
+          tabButtons[0].getBoundingClientRect().top ===
+          tabButtons[1].getBoundingClientRect().top
+        )
+          break;
+        changeTabTo(n + 1);
+        event.preventDefault();
+        break;
+      case "ArrowRight":
+        if (
+          tabButtons[0].getBoundingClientRect().left ===
+          tabButtons[1].getBoundingClientRect().left
+        )
+          break;
+        changeTabTo(n + 1);
+        event.preventDefault();
+        break;
+      default:
+        return;
+    }
+  }
+
+  tabButtons.forEach((b) => {
     b.addEventListener("click", onChangeTab);
+    b.addEventListener("focus", () => {
+      // Add a keydown event listener to the document
+      document.addEventListener("keydown", handleKeyDown);
+    });
+    if (document.activeElement === b) {
+      document.addEventListener("keydown", handleKeyDown);
+    }
+    b.addEventListener("blur", () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    });
   });
 </script>
 <script is:inline defer>

@@ -1,27 +1,45 @@
 ---
-/* TODO
- * Actually search
+/**
+ *
  */
 
-export interface Props extends BreadcrumbsType {}
-
-export interface BreadcrumbsType {
-  title: string;
-  href: string | null;
-  next?: BreadcrumbsType;
+// trail: array of titles, ending in the current page
+export interface Props {
+  trail: string[];
+  className?: string;
 }
 
-const { title, href, next } = Astro.props;
+const { trail, className } = Astro.props;
 ---
 
-<div class="flex gap-1 subtitle font-bold text-xs">
-  <a href={next && href}>{title}</a>
-  {
-    next && (
-      <>
-        <span>/</span>
-        <Astro.self {...next} />
-      </>
-    )
+<nav aria-label="Breadcrumbs" class={className ?? ""}>
+  <ol>
+    {
+      trail.map((crumb, i) => (
+        <li class="inline subtitle text-xs">
+          <a
+            href={
+              i !== trail.length - 1
+                ? "./" + "../".repeat(trail.length - 2 - i)
+                : ""
+            }
+            aria-current={i === trail.length - 1 ? "page" : undefined}
+          >
+            {crumb}
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+
+<style>
+  nav li + li::before {
+    content: "";
+    display: inline-block;
+    margin: 0 0.25em;
+    transform: skew(-18deg) translateY(0.05em);
+    border-right: 0.2em solid currentcolor;
+    height: 0.9em;
   }
-</div>
+</style>
