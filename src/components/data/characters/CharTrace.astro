@@ -19,7 +19,10 @@ const dim = major ? "64" : "48";
 
 <!-- Remove unnecessary class names -->
 <li class=`tree-node depth-${depth} ${major ? "major" : "minor"}`>
-  <div id={id.toString()} class="relative flex gap-2 items-start">
+  <div
+    id={id.toString()}
+    class=`relative flex ${major ? "gap-4" :"gap-2"} items-start`
+  >
     <div class="relative shrink-0">
       <img src={`/img/traces/${icon}`} width={dim} height={dim} alt="" />
       <div
@@ -52,6 +55,8 @@ const dim = major ? "64" : "48";
   }
   li:not(.depth-0).tree-node {
     margin-left: 48px;
+  }
+  li:not(.depth-0).tree-node > div {
     margin-bottom: 16px;
   }
 
@@ -60,8 +65,8 @@ const dim = major ? "64" : "48";
     position: absolute;
     width: var(--deco-width);
     height: var(--deco-height);
-    border-left: 2px solid #aaa;
-    border-bottom: 2px solid #aaa;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
     right: 100%;
     bottom: 50%;
   }

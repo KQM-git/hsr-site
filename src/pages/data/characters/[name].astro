@@ -69,15 +69,13 @@ const breadcrumbs: BreadcrumbsType = {
 const src = `/img/characters/full/${name}.png`;
 ---
 
-<script>
+<script is:inline>
   // Control tabs & navigation
   const refs = ["", "#skills", "#eidolons", "#traces"];
 
-  const buttons = document.querySelectorAll(
-    "[role='tablist'] .tab"
-  ) as NodeListOf<HTMLElement>;
+  const buttons = document.querySelectorAll("[role='tablist'] .tab");
 
-  const targets: HTMLElement[] = [];
+  const targets = [];
   buttons.forEach((b) => {
     const targetId = b.getAttribute("aria-controls");
     if (!targetId) return;
@@ -85,7 +83,7 @@ const src = `/img/characters/full/${name}.png`;
     if (el) targets.push(el);
   });
 
-  function changeTabTo(n: number) {
+  function changeTabTo(n) {
     if (n < 0 || n >= buttons.length) n = 0;
 
     buttons.forEach((b, i) => {
@@ -106,10 +104,10 @@ const src = `/img/characters/full/${name}.png`;
     });
   }
 
-  function onChangeTab(e: MouseEvent) {
-    const target = e.currentTarget as HTMLElement;
+  function onChangeTab(e) {
+    const target = e.currentTarget;
     if (!target) return;
-    const n = parseInt(target.id.at(-1)!);
+    const n = parseInt(target.id.at(-1));
     changeTabTo(n);
     window.location.hash = refs[n];
   }
@@ -125,23 +123,24 @@ const src = `/img/characters/full/${name}.png`;
     b.addEventListener("click", onChangeTab);
   });
 </script>
-<script>
-  // Draw trace tree
-  window.addEventListener("DOMContentLoaded", () => {
-    const tree = document.getElementById("skill-tree") as HTMLElement;
-    const leaves = tree.querySelectorAll(
-      ".tree-node"
-    ) as NodeListOf<HTMLElement>;
-    leaves.forEach((leaf) => {
-      const parentLeaf = leaf.parentElement!.closest(
-        ".tree-node"
-      ) as HTMLElement;
-      if (!parentLeaf) return;
-      const parentIconBounds = parentLeaf
-        .querySelector("img")!
-        .getBoundingClientRect();
+<script is:inline>
+  const tree = document.getElementById("skill-tree");
+  const leaves = Array.from(tree.querySelectorAll(".tree-node")).map((leaf) => {
+    return {
+      leaf: leaf,
+      img: leaf.querySelector("img"),
+      parentImg: leaf.parentElement
+        ?.closest(".tree-node")
+        ?.querySelector("img"),
+    };
+  });
 
-      const leafImgBounds = leaf.querySelector("img")!.getBoundingClientRect();
+  // Draw trace tree
+  function drawBranches() {
+    leaves.forEach(({ leaf, img, parentImg }) => {
+      if (!parentImg) return;
+      const parentIconBounds = parentImg.getBoundingClientRect();
+      const leafImgBounds = img.getBoundingClientRect();
 
       leaf.style.setProperty(
         "--deco-height",
@@ -158,7 +157,11 @@ const src = `/img/characters/full/${name}.png`;
         }px`
       );
     });
-  });
+  }
+
+  window.addEventListener("DOMContentLoaded", drawBranches);
+  const resizeObserver = new ResizeObserver(drawBranches);
+  resizeObserver.observe(tree);
 </script>
 <Layout title={name ?? "Characters"} description="" breadcrumbs={breadcrumbs}>
   <main class="flex items-center flex-col">
@@ -282,7 +285,15 @@ const src = `/img/characters/full/${name}.png`;
         </section>
         <section class={bgClass}>
           <ol id="skill-tree" class="flex flex-col gap-4">
-            {skillTree.map((trace) => <CharTrace {...trace} depth={0} />)}
+            {
+              skillTree
+                .sort(
+                  (a, b) =>
+                    (a.minAsc ?? 0) - (b.minAsc ?? 0) ||
+                    (a.minLevel ?? 0) - (b.minLevel ?? 0)
+                )
+                .map((trace) => <CharTrace {...trace} depth={0} />)
+            }
           </ol>
         </section>
       </CharacterPageTab>
