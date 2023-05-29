@@ -22,13 +22,6 @@ const guides = (await Astro.glob("./guides/*.{md,mdx}")).sort(
 ) as MDPost[];
 ---
 
-<script>
-  // remove search bar from nav
-  const searchbar = document.getElementById("nav-searchbar")
-    ?.parentElement as HTMLElement;
-  searchbar.classList.add("opacity-0");
-  searchbar.inert = true;
-</script>
 <Layout title="KQM Honkai Star Rail: Guides and Theorycrafting" description="">
   <main class="flex items-center flex-col">
     <Header />
@@ -53,5 +46,11 @@ const guides = (await Astro.glob("./guides/*.{md,mdx}")).sort(
     </section>
   </main>
 </Layout>
+<script is:inline>
+  // remove search bar from nav
+  const searchbar = document.getElementById("nav-searchbar")?.parentElement;
+  searchbar.classList.add("opacity-0");
+  searchbar.inert = true;
+</script>
 
 <style></style>
