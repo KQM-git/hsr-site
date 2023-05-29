@@ -46,7 +46,7 @@ const guides = (await Astro.glob("./guides/*.{md,mdx}")).sort(
     </section>
   </main>
 </Layout>
-<script is:inline>
+<script is:inline defer>
   // remove search bar from nav
   const searchbar = document.getElementById("nav-searchbar")?.parentElement;
   searchbar.classList.add("opacity-0");

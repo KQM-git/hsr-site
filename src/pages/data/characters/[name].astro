@@ -206,7 +206,7 @@ const src = `/img/characters/full/${name}.png`;
     </article>
   </main>
 </Layout>
-<script is:inline>
+<script is:inline defer>
   // Control tabs & navigation
   const refs = ["", "#skills", "#eidolons", "#traces"];
 
@@ -260,7 +260,7 @@ const src = `/img/characters/full/${name}.png`;
     b.addEventListener("click", onChangeTab);
   });
 </script>
-<script is:inline>
+<script is:inline defer>
   const tree = document.getElementById("skill-tree");
   const leaves = Array.from(tree.querySelectorAll(".tree-node")).map((leaf) => {
     return {
