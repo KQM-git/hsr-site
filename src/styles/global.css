@@ -39,7 +39,7 @@
   }
 
   .subtitle {
-    @apply text-neutral-400 uppercase tracking-wide;
+    @apply text-neutral-400 uppercase tracking-wide font-bold;
   }
 
   .card-bg {
