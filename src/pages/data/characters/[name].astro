@@ -69,100 +69,6 @@ const breadcrumbs: BreadcrumbsType = {
 const src = `/img/characters/full/${name}.png`;
 ---
 
-<script is:inline>
-  // Control tabs & navigation
-  const refs = ["", "#skills", "#eidolons", "#traces"];
-
-  const buttons = document.querySelectorAll("[role='tablist'] .tab");
-
-  const targets = [];
-  buttons.forEach((b) => {
-    const targetId = b.getAttribute("aria-controls");
-    if (!targetId) return;
-    const el = document.getElementById(targetId);
-    if (el) targets.push(el);
-  });
-
-  function changeTabTo(n) {
-    if (n < 0 || n >= buttons.length) n = 0;
-
-    buttons.forEach((b, i) => {
-      if (n === i) {
-        b.tabIndex = 0;
-        b.ariaSelected = "true";
-      } else {
-        b.tabIndex = -1;
-        b.ariaSelected = "false";
-      }
-    });
-    targets.forEach((e, i) => {
-      if (n === i) {
-        e.hidden = false;
-      } else {
-        e.hidden = true;
-      }
-    });
-  }
-
-  function onChangeTab(e) {
-    const target = e.currentTarget;
-    if (!target) return;
-    const n = parseInt(target.id.at(-1));
-    changeTabTo(n);
-    window.location.hash = refs[n];
-  }
-
-  function onHashChange() {
-    const n = refs.findIndex((val) => val === window.location.hash);
-    changeTabTo(n);
-  }
-  onHashChange();
-  window.addEventListener("hashchange", onHashChange);
-
-  buttons.forEach((b) => {
-    b.addEventListener("click", onChangeTab);
-  });
-</script>
-<script is:inline>
-  const tree = document.getElementById("skill-tree");
-  const leaves = Array.from(tree.querySelectorAll(".tree-node")).map((leaf) => {
-    return {
-      leaf: leaf,
-      img: leaf.querySelector("img"),
-      parentImg: leaf.parentElement
-        ?.closest(".tree-node")
-        ?.querySelector("img"),
-    };
-  });
-
-  // Draw trace tree
-  function drawBranches() {
-    leaves.forEach(({ leaf, img, parentImg }) => {
-      if (!parentImg) return;
-      const parentIconBounds = parentImg.getBoundingClientRect();
-      const leafImgBounds = img.getBoundingClientRect();
-
-      leaf.style.setProperty(
-        "--deco-height",
-        `${
-          (leafImgBounds.bottom + leafImgBounds.top) / 2 -
-          parentIconBounds.bottom
-        }px`
-      );
-      leaf.style.setProperty(
-        "--deco-width",
-        `${
-          leafImgBounds.left -
-          (parentIconBounds.left + parentIconBounds.right) / 2
-        }px`
-      );
-    });
-  }
-
-  window.addEventListener("DOMContentLoaded", drawBranches);
-  const resizeObserver = new ResizeObserver(drawBranches);
-  resizeObserver.observe(tree);
-</script>
 <Layout title={name ?? "Characters"} description="" breadcrumbs={breadcrumbs}>
   <main class="flex items-center flex-col">
     <article
@@ -300,6 +206,100 @@ const src = `/img/characters/full/${name}.png`;
     </article>
   </main>
 </Layout>
+<script is:inline>
+  // Control tabs & navigation
+  const refs = ["", "#skills", "#eidolons", "#traces"];
+
+  const buttons = document.querySelectorAll("[role='tablist'] .tab");
+
+  const targets = [];
+  buttons.forEach((b) => {
+    const targetId = b.getAttribute("aria-controls");
+    if (!targetId) return;
+    const el = document.getElementById(targetId);
+    if (el) targets.push(el);
+  });
+
+  function changeTabTo(n) {
+    if (n < 0 || n >= buttons.length) n = 0;
+
+    buttons.forEach((b, i) => {
+      if (n === i) {
+        b.tabIndex = 0;
+        b.ariaSelected = "true";
+      } else {
+        b.tabIndex = -1;
+        b.ariaSelected = "false";
+      }
+    });
+    targets.forEach((e, i) => {
+      if (n === i) {
+        e.hidden = false;
+      } else {
+        e.hidden = true;
+      }
+    });
+  }
+
+  function onChangeTab(e) {
+    const target = e.currentTarget;
+    if (!target) return;
+    const n = parseInt(target.id.at(-1));
+    changeTabTo(n);
+    window.location.hash = refs[n];
+  }
+
+  function onHashChange() {
+    const n = refs.findIndex((val) => val === window.location.hash);
+    changeTabTo(n);
+  }
+  onHashChange();
+  window.addEventListener("hashchange", onHashChange);
+
+  buttons.forEach((b) => {
+    b.addEventListener("click", onChangeTab);
+  });
+</script>
+<script is:inline>
+  const tree = document.getElementById("skill-tree");
+  const leaves = Array.from(tree.querySelectorAll(".tree-node")).map((leaf) => {
+    return {
+      leaf: leaf,
+      img: leaf.querySelector("img"),
+      parentImg: leaf.parentElement
+        ?.closest(".tree-node")
+        ?.querySelector("img"),
+    };
+  });
+
+  // Draw trace tree
+  function drawBranches() {
+    leaves.forEach(({ leaf, img, parentImg }) => {
+      if (!parentImg) return;
+      const parentIconBounds = parentImg.getBoundingClientRect();
+      const leafImgBounds = img.getBoundingClientRect();
+
+      leaf.style.setProperty(
+        "--deco-height",
+        `${
+          (leafImgBounds.bottom + leafImgBounds.top) / 2 -
+          parentIconBounds.bottom
+        }px`
+      );
+      leaf.style.setProperty(
+        "--deco-width",
+        `${
+          leafImgBounds.left -
+          (parentIconBounds.left + parentIconBounds.right) / 2
+        }px`
+      );
+    });
+  }
+
+  window.addEventListener("DOMContentLoaded", drawBranches);
+  const resizeObserver = new ResizeObserver(drawBranches);
+  resizeObserver.observe(tree);
+</script>
 
 <style>
   ul[role="tablist"] > li > button {
