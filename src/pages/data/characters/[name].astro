@@ -64,6 +64,7 @@ const src = `/img/characters/full/${name}.png`;
     >
       <nav class=`bg-bg sidebar ${bgs[0]}`>
         <ul
+          id="char-tablist"
           role="tablist"
           aria-label="Character Tabs"
           class="flex max-w-full md:max-w-sm justify-around gap-2 xl:flex-col xl:w-40"
@@ -200,7 +201,9 @@ const src = `/img/characters/full/${name}.png`;
   // Control tabs & navigation
   const refs = ["", "#skills", "#eidolons", "#traces"];
 
-  const tabButtons = document.querySelectorAll("[role='tablist'] .tab");
+  const tabButtons = document.querySelectorAll(
+    "#char-tablist[role='tablist'] .tab"
+  );
 
   const targets = [];
   tabButtons.forEach((b) => {
