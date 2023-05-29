@@ -11,6 +11,16 @@
 import ExpandDown from "./ui/ExpandDown.astro";
 import Hamburger from "./ui/Hamburger.astro";
 import Searchbar from "./Searchbar.astro";
+
+const dataPaths = [
+  "Characters",
+  "Light Cones",
+  "Relics",
+  "Mechanics",
+  "Enemies",
+  "Tools",
+  "Vault",
+];
 ---
 
 <script>
@@ -106,11 +116,34 @@ import Searchbar from "./Searchbar.astro";
         <li>
           <a href="/guides" id="nav-links-guides" class="navlink">GUIDES</a>
         </li>
-        <li>
-          <span id="nav-links-data" class="navlink flex items-center gap-2">
-            DATA BANK
-            <ExpandDown width="12px" height="7px" />
-          </span>
+        <li class="block lg:flex items-center relative">
+          <a href="/data" id="nav-links-data" class="navlink">DATA BANK</a>
+          <button
+            id="nav-links-data-expand"
+            class="w-8 pt-2 h-full text-center hidden lg:block"
+            aria-expanded="false"
+            aria-controls="nav-links-data-menu"
+            aria-label="Show Data Bank Pages"
+          >
+            <ExpandDown className="ml-auto mr-auto" width="12px" height="7px" />
+          </button>
+          <ul
+            id="nav-links-data-menu"
+            class="lg:hidden lg:absolute w-full top-full mt-[14px] bg-bg"
+          >
+            {
+              dataPaths.map((pg) => (
+                <li class="block mb-1">
+                  <a
+                    class="block p-2 pl-4 subhref"
+                    href={pg.toLocaleLowerCase().replaceAll(" ", "-")}
+                  >
+                    {pg}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
         </li>
         <li><a href="/about" id="nav-links-about" class="navlink">ABOUT</a></li>
         <li>
@@ -121,6 +154,48 @@ import Searchbar from "./Searchbar.astro";
     </div>
   </nav>
 </header>
+<script>
+  const dataMenuToggle = document.querySelector(
+    "#nav-links-data-expand"
+  ) as HTMLButtonElement;
+  const dataMenuDropdown = document.querySelector(
+    "#nav-links-data-menu"
+  ) as HTMLElement;
+
+  // close nav menu when escape is pressed
+  function checkEscapeMenu(e: KeyboardEvent) {
+    if (e.key === "Escape" && dataMenuToggle.ariaExpanded === "true") {
+      toggleMenuDropdown();
+      dataMenuToggle.focus();
+    }
+  }
+  // close nav menu when click elsewhere
+  function checkMouseClickMenu(e: MouseEvent) {
+    if (
+      !dataMenuToggle.contains(e.target as HTMLElement) &&
+      !dataMenuDropdown.contains(e.target as HTMLElement) &&
+      dataMenuToggle.ariaExpanded === "true"
+    ) {
+      toggleMenuDropdown();
+      dataMenuToggle.focus();
+    }
+  }
+
+  function toggleMenuDropdown() {
+    if (dataMenuToggle.ariaExpanded === "true") {
+      dataMenuToggle.ariaExpanded = "false";
+      dataMenuDropdown.classList.add("lg:hidden");
+      window.removeEventListener("keydown", checkEscapeMenu);
+      window.removeEventListener("click", checkMouseClickMenu);
+    } else {
+      dataMenuToggle.ariaExpanded = "true";
+      dataMenuDropdown.classList.remove("lg:hidden");
+      window.addEventListener("keydown", checkEscapeMenu);
+      window.addEventListener("click", checkMouseClickMenu);
+    }
+  }
+  dataMenuToggle?.addEventListener("click", toggleMenuDropdown);
+</script>
 
 <style>
   li {
@@ -154,5 +229,37 @@ import Searchbar from "./Searchbar.astro";
   }
   #nav-links-contact:before {
     background-image: url("/img/ui/icon_contact.png");
+  }
+
+  a.subhref:hover {
+    position: relative;
+  }
+
+  a.subhref::after {
+    content: "";
+    width: 0px;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  a.subhref:hover:after {
+    content: "";
+    transition: width 0.15s;
+    transition-delay: 0.05s;
+    width: 4px;
+  }
+
+  a.subhref::before {
+    content: "";
+    display: inline-block;
+    margin: 0 0.25em;
+    transform: skew(-18deg) translateY(0.05em);
+    border-right: 0.18em solid currentcolor;
+    height: 0.9em;
+  }
+  a.subhref:hover:before {
+    margin: 0 0.4em;
   }
 </style>
