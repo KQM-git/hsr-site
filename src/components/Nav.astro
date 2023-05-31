@@ -1,7 +1,6 @@
 ---
 /* TODO:
  * Add dropdown for switching sites
- * Add dropdown for data bank
  * Add arrow key support for moving between menu items
  * Clean up scripts
  */
@@ -136,7 +135,7 @@ const dataPaths = [
                 <li class="block mb-1">
                   <a
                     class="block p-2 pl-4 subhref"
-                    href={pg.toLocaleLowerCase().replaceAll(" ", "-")}
+                    href={"/data/" + pg.toLocaleLowerCase().replaceAll(" ", "-")}
                   >
                     {pg}
                   </a>
