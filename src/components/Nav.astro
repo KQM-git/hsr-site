@@ -1,6 +1,5 @@
 ---
 /* TODO:
- * Add dropdown for switching sites
  * Add arrow key support for moving between menu items
  * Clean up scripts
  */
@@ -19,6 +18,14 @@ const dataPaths = [
   "Enemies",
   "Tools",
   "Vault",
+];
+
+const sites = [
+  {
+    "title": "KQM: Genshin",
+    "image": "/img/sites/kqm_gi_logo.png",
+    "link": "https://keqingmains.com/",
+  },
 ];
 ---
 
@@ -88,13 +95,41 @@ const dataPaths = [
     aria-label="Main"
     class="grid min-h-[60px] grid-cols-[auto_1fr_auto] items-center bg-bg px-4"
   >
-    <a href="/" class="flex items-center gap-2 z-30">
-      <img src="/img/logo_full.png" height="48" width="60" alt="" />
+    <div class="flex items-center gap-2 z-30">
+      <a href="/" class="flex items-center gap-2 z-30">
+        <img src="/img/logo_full.png" height="48" width="60" alt="KQM HSR Logo" />
       <span class="text-lg font-bold pt-2 font-serif flex items-center gap-2">
         KQM: Star Rail
-        <ExpandDown width="12px" height="7px" />
       </span>
-    </a>
+      </a>
+      <button
+        id="nav-links-site-expand"
+        class="w-8 pt-2 h-full text-center hidden lg:block"
+        aria-expanded="false"
+        aria-controls="nav-links-site-menu"
+        aria-label="Show KQM Sites"
+      >
+        <ExpandDown className="ml-auto mr-auto" width="12px" height="7px" />
+      </button>
+      <ul
+          id="nav-links-site-menu"
+          class="lg:hidden hidden lg:block lg:absolute w-64 -ml-4 top-full bg-bg"
+      >
+        {
+          sites.map((pg) => (
+            <li class="block m-0">
+              <a
+                class="text-lg font-bold font-serif flex items-center gap-2 p-2 pl-0 site"
+                href={pg.link}
+              >
+                <img src={pg.image} height="48" width="60" alt="KQM GI Logo" />
+                {pg.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
     <div class="lg:hidden"></div>
     <button
       id="button-toggle-nav"
@@ -160,12 +195,24 @@ const dataPaths = [
   const dataMenuDropdown = document.querySelector(
     "#nav-links-data-menu"
   ) as HTMLElement;
+  const siteMenuToggle = document.querySelector(
+    "#nav-links-site-expand"
+  ) as HTMLButtonElement;
+  const siteMenuDropdown = document.querySelector(
+    "#nav-links-site-menu"
+  ) as HTMLElement;
 
   // close nav menu when escape is pressed
   function checkEscapeMenu(e: KeyboardEvent) {
+    // data menu
     if (e.key === "Escape" && dataMenuToggle.ariaExpanded === "true") {
-      toggleMenuDropdown();
+      toggleDataMenuDropdown();
       dataMenuToggle.focus();
+    }
+    // site menu
+    if (e.key === "Escape" && siteMenuToggle.ariaExpanded === "true") {
+      toggleSiteMenuDropdown();
+      siteMenuToggle.focus();
     }
   }
   // close nav menu when click elsewhere
@@ -175,12 +222,20 @@ const dataPaths = [
       !dataMenuDropdown.contains(e.target as HTMLElement) &&
       dataMenuToggle.ariaExpanded === "true"
     ) {
-      toggleMenuDropdown();
+      toggleDataMenuDropdown();
       dataMenuToggle.focus();
+    }
+    if (
+      !siteMenuToggle.contains(e.target as HTMLElement) &&
+      !siteMenuDropdown.contains(e.target as HTMLElement) &&
+      siteMenuToggle.ariaExpanded === "true"
+    ) {
+      toggleSiteMenuDropdown();
+      siteMenuToggle.focus();
     }
   }
 
-  function toggleMenuDropdown() {
+  function toggleDataMenuDropdown() {
     if (dataMenuToggle.ariaExpanded === "true") {
       dataMenuToggle.ariaExpanded = "false";
       dataMenuDropdown.classList.add("lg:hidden");
@@ -193,7 +248,22 @@ const dataPaths = [
       window.addEventListener("click", checkMouseClickMenu);
     }
   }
-  dataMenuToggle?.addEventListener("click", toggleMenuDropdown);
+
+  function toggleSiteMenuDropdown(){
+    if (siteMenuToggle.ariaExpanded === "true") {
+      siteMenuToggle.ariaExpanded = "false";
+      siteMenuDropdown.classList.add("lg:hidden");
+      window.removeEventListener("keydown", checkEscapeMenu);
+      window.removeEventListener("click", checkMouseClickMenu);
+    } else {
+      siteMenuToggle.ariaExpanded = "true";
+      siteMenuDropdown.classList.remove("lg:hidden");
+      window.addEventListener("keydown", checkEscapeMenu);
+      window.addEventListener("click", checkMouseClickMenu);
+    }
+  }
+  dataMenuToggle?.addEventListener("click", toggleDataMenuDropdown);
+  siteMenuToggle?.addEventListener("click", toggleSiteMenuDropdown);
 </script>
 
 <style>
@@ -230,11 +300,11 @@ const dataPaths = [
     background-image: url("/img/ui/icon_contact.png");
   }
 
-  a.subhref:hover {
+  a.subhref:hover, a.site:hover {
     position: relative;
   }
 
-  a.subhref::after {
+  a.subhref::after, a.site::after {
     content: "";
     width: 0px;
     background-color: white;
@@ -243,7 +313,7 @@ const dataPaths = [
     top: 0;
     left: 0;
   }
-  a.subhref:hover:after {
+  a.subhref:hover:after, a.site:hover:after {
     content: "";
     transition: width 0.15s;
     transition-delay: 0.05s;
@@ -258,7 +328,14 @@ const dataPaths = [
     border-right: 0.18em solid currentcolor;
     height: 0.9em;
   }
-  a.subhref:hover:before {
+  a.site::before {
+    content: "";
+    display: inline-block;
+    margin: 0 0.25em;
+    transform: skew(-18deg) translateY(0.05em);
+    height: 0.9em;
+  }
+  a.subhref:hover:before, a.site:hover:before {
     margin: 0 0.4em;
   }
 </style>
