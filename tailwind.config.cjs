@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -12,7 +14,6 @@ module.exports = {
       // Element related
       // light: used for card bg
       // slider: used for colored sliders
-      // N: bg layers
       imaginary: {
         DEFAULT: '#e5b909',
         light: "#E5BE5C",
@@ -33,9 +34,6 @@ module.exports = {
         DEFAULT: '#2192d6',
         light: "#57AED9",
         slider: "#81CDEF",
-        0: "#0F0F14",
-        1: "#161624",
-        2: "#110F1A",
       },
       fire: {
         DEFAULT: '#e62a29',
@@ -52,8 +50,8 @@ module.exports = {
 
       text: {
         DEFAULT: "#fafafa",
-        em: "DAB2F9",
-        links: "DAB2F9"
+        em: "#DAB2F9",
+        link: "#DAB2F9"
       },
 
       // primary background color; all content lays on top of this
@@ -62,15 +60,7 @@ module.exports = {
         dark: "#18151F",
       },
 
-      neutral: {
-        100: "#fafafa",
-        200: "#eee",
-        300: "#ccc",
-        400: "#aaa",
-        500: "#666",
-        600: "#535155",
-        800: "#333"
-      }
+      neutral: colors.neutral
     },
     extend: {
       aria: {
@@ -82,5 +72,7 @@ module.exports = {
     }
   },
   fontFamily: {},
-  plugins: [],
+  plugins: [
+    require("tailwindcss-radix")(),
+  ],
 }

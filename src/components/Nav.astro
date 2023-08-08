@@ -1,10 +1,5 @@
 ---
-/* TODO:
- * Add arrow key support for moving between menu items
- * Clean up scripts
- */
-
-/* BREAKPOINTS: SM, LG, XL */
+/* BREAKPOINTS: LG */
 
 import ExpandDown from "./ui/ExpandDown.astro";
 import Hamburger from "./ui/Hamburger.astro";
@@ -22,9 +17,9 @@ const dataPaths = [
 
 const sites = [
   {
-    "title": "KQM: Genshin",
-    "image": "/img/sites/kqm_gi_logo.png",
-    "link": "https://keqingmains.com/",
+    title: "KQM: Genshin",
+    image: "/img/sites/kqm_gi_logo.png",
+    link: "https://keqingmains.com/",
   },
 ];
 ---
@@ -97,10 +92,15 @@ const sites = [
   >
     <div class="flex items-center gap-2 z-30">
       <a href="/" class="flex items-center gap-2 z-30">
-        <img src="/img/logo_full.png" height="48" width="60" alt="KQM HSR Logo" />
-      <span class="text-lg font-bold pt-2 font-serif flex items-center gap-2">
-        KQM: Star Rail
-      </span>
+        <img
+          src="/img/logo_full.png"
+          height="48"
+          width="60"
+          alt="KQM HSR Logo"
+        />
+        <span class="text-lg font-bold pt-2 font-serif flex items-center gap-2">
+          KQM: Star Rail
+        </span>
       </a>
       <button
         id="nav-links-site-expand"
@@ -112,8 +112,8 @@ const sites = [
         <ExpandDown className="ml-auto mr-auto" width="12px" height="7px" />
       </button>
       <ul
-          id="nav-links-site-menu"
-          class="lg:hidden hidden lg:block lg:absolute w-64 -ml-4 top-full bg-bg"
+        id="nav-links-site-menu"
+        class="lg:hidden hidden lg:block lg:absolute w-64 -ml-4 top-full bg-bg"
       >
         {
           sites.map((pg) => (
@@ -170,7 +170,9 @@ const sites = [
                 <li class="block mb-1">
                   <a
                     class="block p-2 pl-4 subhref"
-                    href={"/data/" + pg.toLocaleLowerCase().replaceAll(" ", "-")}
+                    href={
+                      "/data/" + pg.toLocaleLowerCase().replaceAll(" ", "-")
+                    }
                   >
                     {pg}
                   </a>
@@ -192,78 +194,115 @@ const sites = [
   const dataMenuToggle = document.querySelector(
     "#nav-links-data-expand"
   ) as HTMLButtonElement;
-  const dataMenuDropdown = document.querySelector(
-    "#nav-links-data-menu"
-  ) as HTMLElement;
   const siteMenuToggle = document.querySelector(
     "#nav-links-site-expand"
   ) as HTMLButtonElement;
-  const siteMenuDropdown = document.querySelector(
-    "#nav-links-site-menu"
-  ) as HTMLElement;
 
-  // close nav menu when escape is pressed
-  function checkEscapeMenu(e: KeyboardEvent) {
-    // data menu
-    if (e.key === "Escape" && dataMenuToggle.ariaExpanded === "true") {
-      toggleDataMenuDropdown();
-      dataMenuToggle.focus();
-    }
-    // site menu
-    if (e.key === "Escape" && siteMenuToggle.ariaExpanded === "true") {
-      toggleSiteMenuDropdown();
-      siteMenuToggle.focus();
+  interface ControllerPair {
+    button: HTMLButtonElement;
+    controlledEl: HTMLElement;
+  }
+  let listeners: Partial<Record<keyof WindowEventMap, (e: any) => void>> = {};
+
+  function onToggleClick(this: HTMLButtonElement) {
+    const controlledId = this.getAttribute("aria-controls");
+    if (!controlledId) return;
+    const open = this.getAttribute("aria-expanded") === "true";
+    const controlledEl = document.getElementById(controlledId) as HTMLElement;
+
+    setMenuState.call({ button: this, controlledEl }, !open);
+  }
+  function setMenuState(this: ControllerPair, open: boolean) {
+    this.button.ariaExpanded = `${open}`;
+    if (open) {
+      this.controlledEl.classList.remove("lg:hidden");
+
+      listeners.keydown = handleKeyNav.bind(this);
+      listeners.mousedown = checkMouseClickMenu.bind(this);
+
+      Object.entries(listeners).forEach(([key, value]) => {
+        window.addEventListener(key, value);
+      });
+    } else {
+      this.controlledEl.classList.add("lg:hidden");
+      Object.entries(listeners).forEach(([key, value]) => {
+        window.removeEventListener(key, value);
+      });
+      listeners = {};
     }
   }
+
+  // Keyboard nav within a submenu
+  function handleKeyNav(this: ControllerPair, e: KeyboardEvent) {
+    if (this.button.ariaExpanded !== "true") return;
+
+    const children = this.controlledEl.querySelectorAll("a");
+    let n = -1;
+    children.forEach((el, i) => (n = document.activeElement === el ? i : n));
+
+    switch (e.key) {
+      case "Escape":
+        setMenuState.call(this, false);
+        this.button.focus();
+        break;
+      case "ArrowUp":
+      case "ArrowLeft":
+        switch (n) {
+          case -1:
+          case 0:
+            break;
+          default:
+            children[n - 1].focus();
+            break;
+        }
+        e.preventDefault();
+        break;
+      case "ArrowDown":
+      case "ArrowRight":
+        switch (n) {
+          case children.length - 1:
+            break;
+          default:
+            children[n + 1].focus();
+            break;
+        }
+        e.preventDefault();
+        break;
+      case "Home":
+        if (n !== -1) {
+          children[0].focus();
+          e.preventDefault();
+        }
+        break;
+      case "End":
+        if (n !== -1) {
+          children[children.length - 1].focus();
+          e.preventDefault();
+        }
+        break;
+      case "Tab":
+        if (n === children.length - 1 && !e.shiftKey) {
+          setMenuState.call(this, false);
+        } else if (n === 0 && e.shiftKey) {
+          setMenuState.call(this, false);
+        }
+        break;
+    }
+  }
+
   // close nav menu when click elsewhere
-  function checkMouseClickMenu(e: MouseEvent) {
+  function checkMouseClickMenu(this: ControllerPair, e: MouseEvent) {
     if (
-      !dataMenuToggle.contains(e.target as HTMLElement) &&
-      !dataMenuDropdown.contains(e.target as HTMLElement) &&
-      dataMenuToggle.ariaExpanded === "true"
+      !this.button.contains(e.target as HTMLElement) &&
+      !this.controlledEl.contains(e.target as HTMLElement) &&
+      this.button.ariaExpanded === "true"
     ) {
-      toggleDataMenuDropdown();
-      dataMenuToggle.focus();
-    }
-    if (
-      !siteMenuToggle.contains(e.target as HTMLElement) &&
-      !siteMenuDropdown.contains(e.target as HTMLElement) &&
-      siteMenuToggle.ariaExpanded === "true"
-    ) {
-      toggleSiteMenuDropdown();
-      siteMenuToggle.focus();
+      setMenuState.call(this, false);
     }
   }
 
-  function toggleDataMenuDropdown() {
-    if (dataMenuToggle.ariaExpanded === "true") {
-      dataMenuToggle.ariaExpanded = "false";
-      dataMenuDropdown.classList.add("lg:hidden");
-      window.removeEventListener("keydown", checkEscapeMenu);
-      window.removeEventListener("click", checkMouseClickMenu);
-    } else {
-      dataMenuToggle.ariaExpanded = "true";
-      dataMenuDropdown.classList.remove("lg:hidden");
-      window.addEventListener("keydown", checkEscapeMenu);
-      window.addEventListener("click", checkMouseClickMenu);
-    }
-  }
-
-  function toggleSiteMenuDropdown(){
-    if (siteMenuToggle.ariaExpanded === "true") {
-      siteMenuToggle.ariaExpanded = "false";
-      siteMenuDropdown.classList.add("lg:hidden");
-      window.removeEventListener("keydown", checkEscapeMenu);
-      window.removeEventListener("click", checkMouseClickMenu);
-    } else {
-      siteMenuToggle.ariaExpanded = "true";
-      siteMenuDropdown.classList.remove("lg:hidden");
-      window.addEventListener("keydown", checkEscapeMenu);
-      window.addEventListener("click", checkMouseClickMenu);
-    }
-  }
-  dataMenuToggle?.addEventListener("click", toggleDataMenuDropdown);
-  siteMenuToggle?.addEventListener("click", toggleSiteMenuDropdown);
+  dataMenuToggle?.addEventListener("click", onToggleClick.bind(dataMenuToggle));
+  siteMenuToggle?.addEventListener("click", onToggleClick.bind(siteMenuToggle));
 </script>
 
 <style>
@@ -300,11 +339,13 @@ const sites = [
     background-image: url("/img/ui/icon_contact.png");
   }
 
-  a.subhref:hover, a.site:hover {
+  a.subhref:is(:hover, :focus),
+  a.site:is(:hover, :focus) {
     position: relative;
   }
 
-  a.subhref::after, a.site::after {
+  a.subhref::after,
+  a.site::after {
     content: "";
     width: 0px;
     background-color: white;
@@ -313,7 +354,8 @@ const sites = [
     top: 0;
     left: 0;
   }
-  a.subhref:hover:after, a.site:hover:after {
+  a.subhref:is(:hover, :focus):after,
+  a.site:is(:hover, :focus):after {
     content: "";
     transition: width 0.15s;
     transition-delay: 0.05s;
@@ -335,7 +377,8 @@ const sites = [
     transform: skew(-18deg) translateY(0.05em);
     height: 0.9em;
   }
-  a.subhref:hover:before, a.site:hover:before {
+  a.subhref:is(:hover, :focus):before,
+  a.site:is(:hover, :focus):before {
     margin: 0 0.4em;
   }
 </style>
