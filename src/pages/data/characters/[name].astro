@@ -1,6 +1,7 @@
 ---
 /** TODO
- * Fix performance issues when changing to trace tab (resize observer triggers on reveal / hide)
+ * branch drawing script no longer works
+ * make a cleanup pass
  */
 
 /** BREAKPOINTS:
@@ -10,10 +11,8 @@
 
 import ParsedParams from "components/ParsedParams.astro";
 import CharInfo from "components/data/characters/CharInfo.astro";
-import CharacterPageTab from "components/data/characters/CharTab.astro";
 import CharTrace from "components/data/characters/CharTrace.astro";
-import ExpandDown from "components/ui/ExpandDown.astro";
-import Rarity from "components/ui/Rarity.astro";
+import CharTabRoot from "components/data/characters/TabRoot";
 import Layout from "layouts/Data.astro";
 import backgrounds from "styles/dynamic/element-backgrounds";
 import tabGradients from "styles/dynamic/tab-gradients";
@@ -53,8 +52,6 @@ const cardClass = "rounded-lg p-4 max-w-full md:max-w-sm relative pb-16";
 const bgClass = `card-bg-1 ${bgs[1]} bg-opacity-90 max-w-full relative`;
 
 const breadcrumbs = ["Data Bank", "Characters", charName];
-
-const src = `/img/characters/full/${name}.png`;
 ---
 
 <Layout title={name ?? "Characters"} description="" breadcrumbs={breadcrumbs}>
@@ -62,65 +59,11 @@ const src = `/img/characters/full/${name}.png`;
     <article
       class=`card-bg p-4 md:p-8 ${bgs[0]} max-w-4xl relative min-h-[700px]`
     >
-      <nav class=`bg-bg sidebar ${bgs[0]}`>
-        <ul
-          id="char-tablist"
-          role="tablist"
-          aria-label="Character Tabs"
-          class="flex max-w-full md:max-w-sm justify-around gap-2 xl:flex-col xl:w-40"
-        >
-          <li>
-            <button
-              class={tabClass}
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-1"
-              id="tab-0"
-              tabindex="-1"
-            >
-              Info
-            </button>
-          </li>
-          <li>
-            <button
-              class={tabClass}
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-2"
-              id="tab-1"
-              tabindex="-1"
-            >
-              Skills
-            </button>
-          </li>
-          <li>
-            <button
-              class={tabClass}
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-3"
-              id="tab-2"
-              tabindex="-1"
-            >
-              Eidolons
-            </button>
-          </li>
-          <li>
-            <button
-              class={tabClass}
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-4"
-              id="tab-3"
-              tabindex="-1"
-            >
-              Traces
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <CharacterPageTab index={1} src={src}>
+      <!-- TypeScript doesn't seem to recognize props passed through slots -->
+      <!-- @ts-ignore -->
+      <CharTabRoot name={name} tabClassName={tabClass} client:only="preact">
         <section
+          slot="info"
           class=`card-bg-1 ${bgs[1]} bg-opacity-90 max-w-full md:max-w-sm relative`
         >
           <CharInfo h1 {...char} />
@@ -132,22 +75,15 @@ const src = `/img/characters/full/${name}.png`;
             }
           </div>
         </section>
-      </CharacterPageTab>
-
-      <!-- SKILLS -->
-      <CharacterPageTab index={2} src={src}>
-        <section class={cardClass}>
+        <section slot="skills" class={cardClass}>
           <CharInfo {...char} />
         </section>
-        <section class={bgClass}></section>
-      </CharacterPageTab>
-
-      <!-- EIDOLONS -->
-      <CharacterPageTab index={3} src={src}>
-        <section class={cardClass}>
+        <section slot="skills" class={bgClass}></section>
+        
+        <section slot="traces" class={cardClass}>
           <CharInfo {...char} />
         </section>
-        <section class={bgClass}>
+        <section slot="traces" class={bgClass}>
           <ol class="flex flex-col gap-2">
             {
               eidolons.map((e, i) => (
@@ -173,14 +109,10 @@ const src = `/img/characters/full/${name}.png`;
             }
           </ol>
         </section>
-      </CharacterPageTab>
-
-      <!-- TRACES -->
-      <CharacterPageTab index={4} src={src}>
-        <section class={cardClass}>
+        <section slot="eidolons" class={cardClass}>
           <CharInfo {...char} />
         </section>
-        <section class={bgClass}>
+        <section slot="eidolons" class={bgClass}>
           <ol id="skill-tree" class="flex flex-col gap-4">
             {
               skillTree
@@ -193,188 +125,46 @@ const src = `/img/characters/full/${name}.png`;
             }
           </ol>
         </section>
-      </CharacterPageTab>
+      </CharTabRoot>
     </article>
   </main>
 </Layout>
+
 <script is:inline defer>
-  // Control tabs & navigation
-  const refs = ["", "#skills", "#eidolons", "#traces"];
+const tree = document.getElementById("skill-tree");
+const leaves = Array.from(tree.querySelectorAll(".tree-node")).map((leaf) => {
+  return {
+    leaf: leaf,
+    img: leaf.querySelector("img"),
+    parentImg: leaf.parentElement
+      ?.closest(".tree-node")
+      ?.querySelector("img"),
+  };
+});
 
-  const tabButtons = document.querySelectorAll(
-    "#char-tablist[role='tablist'] .tab"
-  );
+// Draw trace tree
+function drawBranches() {
+  leaves.forEach(({ leaf, img, parentImg }) => {
+    if (!parentImg) return;
+    const parentIconBounds = parentImg.getBoundingClientRect();
+    const leafImgBounds = img.getBoundingClientRect();
 
-  const targets = [];
-  tabButtons.forEach((b) => {
-    const targetId = b.getAttribute("aria-controls");
-    if (!targetId) return;
-    const el = document.getElementById(targetId);
-    if (el) targets.push(el);
+    leaf.style.setProperty(
+      "--deco-height",
+      `${(leafImgBounds.bottom + leafImgBounds.top) / 2 -
+      parentIconBounds.bottom
+      }px`
+    );
+    leaf.style.setProperty(
+      "--deco-width",
+      `${leafImgBounds.left -
+      (parentIconBounds.left + parentIconBounds.right) / 2
+      }px`
+    );
   });
+}
 
-  function changeTabTo(n) {
-    if (n < 0) n = 0;
-    if (n >= tabButtons.length) n = tabButtons.length - 1;
-
-    tabButtons.forEach((b, i) => {
-      if (n === i) {
-        b.tabIndex = 0;
-        b.ariaSelected = "true";
-        b.focus();
-      } else {
-        b.tabIndex = -1;
-        b.ariaSelected = "false";
-      }
-    });
-    targets.forEach((e, i) => {
-      if (n === i) {
-        e.hidden = false;
-      } else {
-        e.hidden = true;
-      }
-    });
-    if (window.location.hash != refs[n]) window.location.hash = refs[n];
-  }
-
-  // Manage hash changes
-  function onChangeTab(e) {
-    const target = e.currentTarget;
-    if (!target) return;
-    const n = parseInt(target.id.at(-1));
-    changeTabTo(n);
-  }
-  function onHashChange() {
-    let n = refs.findIndex((val) => val === window.location.hash);
-    if (n < 0 || tabButtons[n].ariaSelected !== "true") changeTabTo(n);
-  }
-  onHashChange();
-  window.addEventListener("hashchange", onHashChange);
-
-  // KB nav for tabs
-  function handleKeyDown(event) {
-    const id = document.activeElement.id;
-    if (!id) return;
-    const n = parseInt(id.at(-1));
-    switch (event.code) {
-      case "PageUp":
-        if (
-          tabButtons[0].getBoundingClientRect().top ===
-          tabButtons[1].getBoundingClientRect().top
-        )
-          break;
-      case "Home":
-        changeTabTo(0);
-        event.preventDefault();
-        break;
-      case "PageDown":
-        if (
-          tabButtons[0].getBoundingClientRect().top ===
-          tabButtons[1].getBoundingClientRect().top
-        )
-          break;
-      case "End":
-        changeTabTo(tabButtons.length - 1);
-        event.preventDefault();
-        break;
-      case "ArrowUp":
-        if (
-          tabButtons[0].getBoundingClientRect().top ===
-          tabButtons[1].getBoundingClientRect().top
-        )
-          break;
-        changeTabTo(n - 1);
-        event.preventDefault();
-        break;
-      case "ArrowLeft":
-        if (
-          tabButtons[0].getBoundingClientRect().left ===
-          tabButtons[1].getBoundingClientRect().left
-        )
-          break;
-        changeTabTo(n - 1);
-        event.preventDefault();
-        break;
-      case "ArrowDown":
-      case "ArrowUp":
-        if (
-          tabButtons[0].getBoundingClientRect().top ===
-          tabButtons[1].getBoundingClientRect().top
-        )
-          break;
-        changeTabTo(n + 1);
-        event.preventDefault();
-        break;
-      case "ArrowRight":
-        if (
-          tabButtons[0].getBoundingClientRect().left ===
-          tabButtons[1].getBoundingClientRect().left
-        )
-          break;
-        changeTabTo(n + 1);
-        event.preventDefault();
-        break;
-      default:
-        return;
-    }
-  }
-
-  tabButtons.forEach((b) => {
-    b.addEventListener("click", onChangeTab);
-    b.addEventListener("focus", () => {
-      // Add a keydown event listener to the document
-      document.addEventListener("keydown", handleKeyDown);
-    });
-    if (document.activeElement === b) {
-      document.addEventListener("keydown", handleKeyDown);
-    }
-    b.addEventListener("blur", () => {
-      document.removeEventListener("keydown", handleKeyDown);
-    });
-  });
+window.addEventListener("DOMContentLoaded", drawBranches);
+const resizeObserver = new ResizeObserver(drawBranches);
+resizeObserver.observe(tree);
 </script>
-<script is:inline defer>
-  const tree = document.getElementById("skill-tree");
-  const leaves = Array.from(tree.querySelectorAll(".tree-node")).map((leaf) => {
-    return {
-      leaf: leaf,
-      img: leaf.querySelector("img"),
-      parentImg: leaf.parentElement
-        ?.closest(".tree-node")
-        ?.querySelector("img"),
-    };
-  });
-
-  // Draw trace tree
-  function drawBranches() {
-    leaves.forEach(({ leaf, img, parentImg }) => {
-      if (!parentImg) return;
-      const parentIconBounds = parentImg.getBoundingClientRect();
-      const leafImgBounds = img.getBoundingClientRect();
-
-      leaf.style.setProperty(
-        "--deco-height",
-        `${
-          (leafImgBounds.bottom + leafImgBounds.top) / 2 -
-          parentIconBounds.bottom
-        }px`
-      );
-      leaf.style.setProperty(
-        "--deco-width",
-        `${
-          leafImgBounds.left -
-          (parentIconBounds.left + parentIconBounds.right) / 2
-        }px`
-      );
-    });
-  }
-
-  window.addEventListener("DOMContentLoaded", drawBranches);
-  const resizeObserver = new ResizeObserver(drawBranches);
-  resizeObserver.observe(tree);
-</script>
-
-<style>
-  ul[role="tablist"] > li > button {
-  }
-</style>
