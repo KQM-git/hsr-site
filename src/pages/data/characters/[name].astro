@@ -14,7 +14,6 @@ import CharInfo from "components/data/characters/CharInfo.astro";
 import CharTrace from "components/data/characters/CharTrace.astro";
 import CharTabRoot from "components/data/characters/TabRoot";
 import Layout from "layouts/Data.astro";
-import backgrounds from "styles/dynamic/element-backgrounds";
 import tabGradients from "styles/dynamic/tab-gradients";
 import type { Character } from "types/game-data";
 import splitTextIntoBlocks from "util/splitTextIntoBlocks";
@@ -35,7 +34,6 @@ const char = chars.find(
   (c) => c.name.replaceAll(" ", "_") === name
 ) as Character;
 
-const bgs = backgrounds[char?.element ?? "DEFAULT"];
 const {
   name: charName,
   element,
@@ -49,7 +47,7 @@ const {
 
 const tabClass = `tab ${tabGradients[element]}`;
 const cardClass = "rounded-lg p-4 max-w-full md:max-w-sm relative pb-16";
-const bgClass = `card-bg-1 ${bgs[1]} bg-opacity-90 max-w-full relative`;
+const bgClass = `card-bg-1 bg-opacity-90 max-w-full relative`;
 
 const breadcrumbs = ["Data Bank", "Characters", charName];
 ---
@@ -57,14 +55,14 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
 <Layout title={name ?? "Characters"} description="" breadcrumbs={breadcrumbs}>
   <main class="flex items-center flex-col">
     <article
-      class=`card-bg p-4 md:p-8 ${bgs[0]} max-w-4xl relative min-h-[700px]`
+      class=`card-bg p-4 md:p-8 max-w-4xl relative min-h-[700px]`
     >
       <!-- TypeScript doesn't seem to recognize props passed through slots -->
       <!-- @ts-ignore -->
       <CharTabRoot name={name} tabClassName={tabClass} client:only="preact">
         <section
           slot="info"
-          class=`card-bg-1 ${bgs[1]} bg-opacity-90 max-w-full md:max-w-sm relative`
+          class=`card-bg-1 bg-opacity-90 max-w-full md:max-w-sm relative`
         >
           <CharInfo h1 {...char} />
           <div class="subtitle text-xs font-bold">Introduction</div>
