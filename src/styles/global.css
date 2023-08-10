@@ -7,7 +7,7 @@
 
 @layer base {
   html {
-    @apply text-text bg-cover;
+    @apply text-neutral-50 bg-cover;
     background-color: #272232;
   }
 
@@ -53,19 +53,6 @@
   .bg-gradient {
     @apply from-10% to-85%;
     background: linear-gradient(188deg, var(--tw-gradient-stops));
-  }
-
-  /* Sidebar */
-  .sidebar {
-    @apply xl:absolute right-full xl:border-r border-r-neutral-200 xl:py-2 xl:rounded-l-lg text-neutral-300;
-  }
-
-  .sidebar .tab {
-    @apply px-4 py-2 lg:text-end w-full;
-  }
-
-  button[role="tab"][aria-selected="true"] {
-    @apply py-2 text-text font-bold bg-gradient-to-l;
   }
 
   /* Guides */

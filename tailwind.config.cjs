@@ -12,8 +12,9 @@ module.exports = {
         3: "#3E7FFD",
       },
 
-      // Element related
+      // Elements
 
+      // Use 300-500 for main element colors
       // Use 800-950 for background element accents
       // Haven't tested every single color - ping neia if anything looks off
       // Generated with https://www.tints.dev/
@@ -119,12 +120,20 @@ module.exports = {
 
       // Site related
 
-      // theme colors
-
-      text: {
-        DEFAULT: "#fafafa",
-        em: "#DAB2F9",
-        link: "#DAB2F9"
+      // Try to replace random stray colors with this
+      // links can use theme-200
+      theme: {
+        50: "#F8F0FE",
+        100: "#F0E0FF",
+        200: "#D5ACFB",
+        300: "#BC7FF5",
+        400: "#A356EB",
+        500: "#882CDD",
+        600: "#6D27B0",
+        700: "#50247B",
+        800: "#361D4E",
+        900: "#1A1122",
+        950: "#0D0A10"
       },
 
       // primary background color; all content lays on top of this
