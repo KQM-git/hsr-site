@@ -21,7 +21,7 @@ const dim = major ? "64" : "48";
 <li class=`tree-node depth-${depth} ${major ? "major" : "minor"}`>
   <div
     id={id.toString()}
-    class=`relative flex ${major ? "gap-4" :"gap-2"} items-start`
+    class=`relative flex ${major ? "gap-4" :"gap-2"} items-start mb-2`
   >
     <div class="relative shrink-0">
       <img src={`/img/traces/${icon}`} width={dim} height={dim} alt="" />
@@ -40,34 +40,29 @@ const dim = major ? "64" : "48";
   </div>
   {
     children && (
-      <ol class="">
-        {children.map((ch) => (
-          <Astro.self {...ch} depth={depth + 1} />
-        ))}
-      </ol>
+      <div class="flex flex-row">
+        <div
+          class="relative"
+          style={ `width:${dim}px` }
+        >
+          <div
+            class="absolute left-1/2 right-1/2 w-1 rounded-sm bg-[white]"
+            style={ `height:${children.length * 56 - 28}px` }
+          />
+            {children.map((child) => (
+              <div
+                class="absolute left-1/2 h-1 w-6 rounded-sm bg-[white]"
+                style={`top:${24 + children.indexOf(child) * 56}px`}
+              />
+            ))}
+        </div>
+      
+        <ol class="">
+          {children.map((ch) => (
+            <Astro.self {...ch} depth={depth + 1} />
+          ))}
+        </ol>
+      </div>
     )
   }
 </li>
-
-<style>
-  li.depth-0.tree-node > div {
-    margin-bottom: 16px;
-  }
-  li:not(.depth-0).tree-node {
-    margin-left: 48px;
-  }
-  li:not(.depth-0).tree-node > div {
-    margin-bottom: 16px;
-  }
-
-  li:not(.depth-0) > div::before {
-    content: "";
-    position: absolute;
-    width: var(--deco-width);
-    height: var(--deco-height);
-    border-left: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
-    right: 100%;
-    bottom: 50%;
-  }
-</style>
