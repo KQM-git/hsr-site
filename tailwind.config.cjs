@@ -136,6 +136,22 @@ module.exports = {
         950: "#0D0A10"
       },
 
+      // Note that this is a tinted grey.
+      // If you want a neutral grey, use neutral-X instead.
+      gray: {
+        50: "#F1F0F5",
+        100: "#E4E1EA",
+        200: "#C8C2D6",
+        300: "#ADA4C1",
+        400: "#9185AD",
+        500: "#766798",
+        600: "#5E527A",
+        700: "#473E5B",
+        800: "#2F293D",
+        900: "#18151F",
+        950: "#0C0A0F"
+      },
+
       // primary background color; all content lays on top of this
       bg: {
         DEFAULT: "#141214",

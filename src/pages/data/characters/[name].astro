@@ -78,10 +78,10 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
         </section>
         <section slot="skills" class={bgClass}></section>
         
-        <section slot="traces" class={cardClass}>
+        <section slot="eidolons" class={cardClass}>
           <CharInfo {...char} />
         </section>
-        <section slot="traces" class={bgClass}>
+        <section slot="eidolons" class={bgClass}>
           <ol class="flex flex-col gap-2">
             {
               eidolons.map((e, i) => (
@@ -107,10 +107,10 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
             }
           </ol>
         </section>
-        <section slot="eidolons" class={cardClass}>
+        <section slot="traces" class={cardClass}>
           <CharInfo {...char} />
         </section>
-        <section slot="eidolons" class={bgClass}>
+        <section slot="traces" class={bgClass}>
           <ol id="skill-tree" class="flex flex-col gap-4">
             {
               skillTree
