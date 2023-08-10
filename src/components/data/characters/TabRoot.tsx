@@ -17,7 +17,7 @@ export default function CharTabRoot(props: Props) {
 
   return (
     <Root defaultValue={tabs[0]}>
-      <List className="grid grid-cols-4 max-w-full md:max-w-sm justify-around gap-2 xl:flex-col">
+      <List className="grid grid-cols-4 max-w-full md:max-w-sm justify-around gap-2 xl:flex-col relative z-10">
         {tabs.map((tab) => (
           <Trigger value={tab} className={tabClassName}>
             {tab}
