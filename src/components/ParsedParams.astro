@@ -4,7 +4,33 @@ export interface Props {
   params: number[];
   className?: string;
 }
-const { data } = Astro.props;
+
+const { data, params } = Astro.props;
+
+const TAG_REGEX = /<unbreak>(.*?)<\/unbreak>/g;
+const STAT_REGEX = /#(\d+)\[(i|f\d)\](%?)/gi;
+
+//round down b/c mihoyo
+function fixed(val: number, precision: number) {
+  const decimals = Math.floor(Math.log10(val));
+  return (val - 0.05 * 10 ** decimals).toFixed(precision - decimals);
+}
+
+function round(val: number, decimals: string, percentage: boolean) {
+  if (percentage) val *= 100;
+  let res = decimals === "i" ? String(val): fixed(val, Number(decimals.slice(1)));
+  return percentage ? res + "%" : res;
+}
 ---
 
-{data.split("<")[0]}1
+<Fragment
+  set:html={data
+    .replaceAll(TAG_REGEX, (_, stat: string) =>
+      stat.replaceAll(
+        STAT_REGEX,
+        (_, index: number, decimals: string, percentage: string) =>
+          round(params[index - 1], decimals, !!percentage)
+      )
+    )
+    .replace("\\n", "<br>")}
+/>
