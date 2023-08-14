@@ -2,7 +2,7 @@
 layout: "layouts/Guide.astro"
 title: "Example Guide 1"
 description: "This is an example Markdown page."
-hero: "tb_guide.webp"
+hero: "/img/guides/tb_guide.webp"
 pubDate: "22-05-2023"
 tags:
 	- Long

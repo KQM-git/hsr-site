@@ -10,11 +10,9 @@
     @apply text-neutral-50 bg-cover;
     background-color: #272232;
   }
-
 }
 
 @layer components {
-
   /* Header */
   .search-box {
     border-radius: 999px;
@@ -26,8 +24,12 @@
   }
 
   /* Page Template */
+  .header {
+    @apply font-bold text-5xl m-7;
+  }
+
   .subheader {
-    @apply font-bold text-4xl mb-5;
+    @apply font-bold text-4xl m-5;
   }
 
   .subsubheader {
@@ -57,15 +59,14 @@
 
   /* Guides */
   .card-tag-chip {
-    @apply px-2 font-bold rounded-full text-bg
+    @apply px-2 font-bold rounded-full text-bg;
   }
 
   .tag.new {
-    background-color: #D1D35A;
+    background-color: #d1d35a;
   }
 
   .tag.long {
-    background-color: #D3945A;
+    background-color: #d3945a;
   }
-
 }
