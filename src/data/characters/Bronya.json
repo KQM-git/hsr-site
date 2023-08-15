@@ -1,275 +1,309 @@
 {
+  "id": "1101",
   "name": "Bronya",
+  "description": "Heir apparent to the Supreme Guardian of Belobog.\\nShe possesses pride befitting of a princess, but also the determination and integrity of a soldier.",
   "element": "Wind",
   "path": "Harmony",
   "rarity": 5,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 79.2,
-      "attackAdd": 3.96,
-      "hpBase": 168.96,
-      "hpAdd": 8.448,
-      "defenseBase": 72.6,
-      "defenseAdd": 3.63,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 110.88,
-      "attackAdd": 3.96,
-      "hpBase": 236.544,
-      "hpAdd": 8.448,
-      "defenseBase": 101.64,
-      "defenseAdd": 3.63,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 142.56,
-      "attackAdd": 3.96,
-      "hpBase": 304.128,
-      "hpAdd": 8.448,
-      "defenseBase": 130.68,
-      "defenseAdd": 3.63,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 174.24,
-      "attackAdd": 3.96,
-      "hpBase": 371.712,
-      "hpAdd": 8.448,
-      "defenseBase": 159.72,
-      "defenseAdd": 3.63,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 205.92,
-      "attackAdd": 3.96,
-      "hpBase": 439.296,
-      "hpAdd": 8.448,
-      "defenseBase": 188.76,
-      "defenseAdd": 3.63,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 237.6,
-      "attackAdd": 3.96,
-      "hpBase": 506.88,
-      "hpAdd": 8.448,
-      "defenseBase": 217.8,
-      "defenseAdd": 3.63,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 269.28,
-      "attackAdd": 3.96,
-      "hpBase": 574.464,
-      "hpAdd": 8.448,
-      "defenseBase": 246.84,
-      "defenseAdd": 3.63,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 99,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 120,
+  "icon": "icon/character/1101.png",
+  "preview": "image/character_preview/1101.png",
+  "portrait": "image/character_portrait/1101.png",
   "skills": [
     {
       "name": "Windrider Bullet",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Bronya's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Wind",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Wind DMG to a single enemy.",
+      "description": "Deals Wind DMG equal to #1[i]% of Bronya's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1101_basic_atk.png"
     },
     {
       "name": "Combat Redeployment",
-      "tag": "Support",
-      "type": "Skill",
-      "desc": "Dispels a <u>debuff</u> from a single ally, allows them to immediately take action, and increases their DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s).\\nWhen this Skill is used on Bronya herself, she cannot immediately take action again.",
+      "maxLevel": 15,
+      "element": "",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Support",
+      "simpleDescription": "Removes 1 debuff from a single ally, increases their DMG, and allows them to immediately take action.",
+      "description": "Dispels a debuff from a single ally, allows them to immediately take action, and increases their DMG by #1[i]% for #3[i] turn(s).\nWhen this Skill is used on Bronya herself, she cannot immediately take action again.",
       "params": [
-        [ 0.33, 0, 1, 1 ],
-        [ 0.363, 0, 1, 1 ],
-        [ 0.396, 0, 1, 1 ],
-        [ 0.429, 0, 1, 1 ],
-        [ 0.462, 0, 1, 1 ],
-        [ 0.495, 0, 1, 1 ],
-        [ 0.53625, 0, 1, 1 ],
-        [ 0.5775, 0, 1, 1 ],
-        [ 0.61875, 0, 1, 1 ],
-        [ 0.66, 0, 1, 1 ],
-        [ 0.693, 0, 1, 1 ],
-        [ 0.726, 0, 1, 1 ],
-        [ 0.759, 0, 1, 1 ],
-        [ 0.792, 0, 1, 1 ],
-        [ 0.825, 0, 1, 1 ]
+        [0.33, 0, 1, 1],
+        [0.363, 0, 1, 1],
+        [0.396, 0, 1, 1],
+        [0.429, 0, 1, 1],
+        [0.462, 0, 1, 1],
+        [0.495, 0, 1, 1],
+        [0.5363, 0, 1, 1],
+        [0.5775, 0, 1, 1],
+        [0.6188, 0, 1, 1],
+        [0.66, 0, 1, 1],
+        [0.693, 0, 1, 1],
+        [0.726, 0, 1, 1],
+        [0.759, 0, 1, 1],
+        [0.792, 0, 1, 1],
+        [0.825, 0, 1, 1]
       ],
-      "energyGain": 30
+      "icon": "icon/skill/1101_skill.png"
     },
     {
       "name": "The Belobog March",
-      "tag": "Support",
-      "type": "Ultimate",
-      "desc": "Increases the ATK of all allies by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and increases their CRIT DMG equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Bronya's CRIT DMG plus <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s).",
+      "maxLevel": 15,
+      "element": "",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Support",
+      "simpleDescription": "Increases ATK and CRIT DMG of all allies.",
+      "description": "Increases the ATK of all allies by #1[i]%, and increases their CRIT DMG equal to #2[f1]% of Bronya's CRIT DMG plus #3[f1]% for #4[i] turn(s).",
       "params": [
-        [ 0.33, 0.12, 0.12, 2 ],
-        [ 0.352, 0.124, 0.128, 2 ],
-        [ 0.374, 0.128, 0.136, 2 ],
-        [ 0.396, 0.132, 0.144, 2 ],
-        [ 0.418, 0.136, 0.152, 2 ],
-        [ 0.44, 0.14, 0.16, 2 ],
-        [ 0.4675, 0.145, 0.17, 2 ],
-        [ 0.495, 0.15, 0.18, 2 ],
-        [ 0.5225, 0.155, 0.19, 2 ],
-        [ 0.55, 0.16, 0.2, 2 ],
-        [ 0.572, 0.164, 0.208, 2 ],
-        [ 0.594, 0.168, 0.216, 2 ],
-        [ 0.616, 0.172, 0.224, 2 ],
-        [ 0.638, 0.176, 0.232, 2 ],
-        [ 0.66, 0.18, 0.24, 2 ]
+        [0.33, 0.12, 0.12, 2],
+        [0.352, 0.124, 0.128, 2],
+        [0.374, 0.128, 0.136, 2],
+        [0.396, 0.132, 0.144, 2],
+        [0.418, 0.136, 0.152, 2],
+        [0.44, 0.14, 0.16, 2],
+        [0.4675, 0.145, 0.17, 2],
+        [0.495, 0.15, 0.18, 2],
+        [0.5225, 0.155, 0.19, 2],
+        [0.55, 0.16, 0.2, 2],
+        [0.572, 0.164, 0.208, 2],
+        [0.594, 0.168, 0.216, 2],
+        [0.616, 0.172, 0.224, 2],
+        [0.638, 0.176, 0.232, 2],
+        [0.66, 0.18, 0.24, 2]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5
+      "icon": "icon/skill/1101_ultimate.png"
     },
     {
       "name": "Leading the Way",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "Wind",
       "type": "Talent",
-      "desc": "After using her Basic ATK, Bronya's next action will be <u>Advanced Forward</u> by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "After this character uses Basic ATK, their next action will be Advanced Forward.",
+      "description": "After using her Basic ATK, Bronya's next action will be Advanced Forward by #1[i]%.",
       "params": [
-        [ 0.15 ],
-        [ 0.165 ],
-        [ 0.18 ],
-        [ 0.195 ],
-        [ 0.21 ],
-        [ 0.225 ],
-        [ 0.24375 ],
-        [ 0.2625 ],
-        [ 0.28125 ],
-        [ 0.3 ],
-        [ 0.315 ],
-        [ 0.33 ],
-        [ 0.345 ],
-        [ 0.36 ],
-        [ 0.375 ]
+        [0.15],
+        [0.165],
+        [0.18],
+        [0.195],
+        [0.21],
+        [0.225],
+        [0.2438],
+        [0.2625],
+        [0.2813],
+        [0.3],
+        [0.315],
+        [0.33],
+        [0.345],
+        [0.36],
+        [0.375]
       ],
-      "energyGain": 5
+      "icon": "icon/skill/1101_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Wind",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1101_basic_atk.png"
     },
     {
       "name": "Banner of Command",
-      "tag": "Support",
-      "type": "Technique",
-      "desc": "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "params": [
-        [ 0.15, 2 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Support",
+      "simpleDescription": "After this character uses Technique, increases all allies' ATK at the start of the next battle.",
+      "description": "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by #1[i]% for #2[i] turn(s).",
+      "params": [[0.15, 2]],
+      "icon": "icon/skill/1101_technique.png"
     }
   ],
   "eidolons": [
     {
       "name": "Hone Your Strength",
-      "desc": "When using Skill, there is a <unbreak>#1[i]%</unbreak> fixed chance of recovering 1 Skill Point. This effect has a 1-turn cooldown.",
-      "params": [ 0.5 ]
+      "rank": 1,
+      "desc": "When using Skill, there is a 50% fixed chance of recovering 1 Skill Point. This effect has a 1-turn cooldown.",
+      "materials": [
+        {
+          "id": "11101",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1101_rank1.png"
     },
     {
       "name": "Quick March",
-      "desc": "When using Skill, the target ally's SPD increases by <unbreak>#1[i]%</unbreak> after taking action, lasting for 1 turn.",
-      "params": [ 0.3 ]
+      "rank": 2,
+      "desc": "When using Skill, the target ally's SPD increases by 30% after taking action, lasting for 1 turn.",
+      "materials": [
+        {
+          "id": "11101",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1101_rank2.png"
     },
     {
       "name": "Bombardment",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11101",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1101_skill.png"
     },
     {
       "name": "Take by Surprise",
-      "desc": "After an ally other than Bronya uses Basic ATK on an enemy with Wind Weakness, Bronya immediately launches a follow-up attack on the target, dealing Wind DMG equal to <unbreak>#1[i]%</unbreak> of Bronya's Basic ATK DMG. This effect can only be triggered 1 time per turn.",
-      "params": [ 0.8 ]
+      "rank": 4,
+      "desc": "After an ally other than Bronya uses Basic ATK on an enemy with Wind Weakness, Bronya immediately launches a follow-up attack on the target, dealing Wind DMG equal to 80% of Bronya's Basic ATK DMG. This effect can only be triggered 1 time per turn.",
+      "materials": [
+        {
+          "id": "11101",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1101_rank4.png"
     },
     {
       "name": "Unstoppable",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11101",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1101_ultimate.png"
     },
     {
       "name": "Piercing Rainbow",
-      "desc": "The duration of the DMG Boost effect placed by the Skill on the target ally increases by <unbreak>#1[i]</unbreak> turn(s).",
-      "params": [ 1 ]
+      "rank": 6,
+      "desc": "The duration of the DMG Boost effect placed by the Skill on the target ally increases by 1 turn(s).",
+      "materials": [
+        {
+          "id": "11101",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1101_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1101101,
+      "id": "1101101",
       "name": "Command",
-      "desc": "The CRIT Rate for Basic ATK increases to <unbreak>100%</unbreak>.",
-      "icon": "SkillIcon_1101_SkillTree1.png",
+      "maxLevel": 1,
+      "description": "The CRIT Rate for Basic ATK increases to 100%.",
       "params": [],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 5000
+            },
+            {
+              "id": "110161",
+              "num": 3
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1101_skilltree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1101202,
+          "id": "1101202",
           "name": "CRIT DMG Boost",
-          "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconCriticalDamage.png",
-          "params": [ 0.053 ],
+          "maxLevel": 1,
+          "description": "CRIT DMG increases by 5.3%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "CriticalDamageBase",
+                  "value": 0.053
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 5000
+                },
+                {
+                  "id": "110161",
+                  "num": 3
+                },
+                {
+                  "id": "112001",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconCriticalDamage.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1101203,
+              "id": "1101203",
               "name": "DMG Boost: Wind",
-              "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconWindAddedRatio.png",
-              "params": [ 0.032 ],
+              "maxLevel": 1,
+              "description": "Wind DMG Boost increases by 3.2%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "WindAddedRatio",
+                      "value": 0.032
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 10000
+                    },
+                    {
+                      "id": "110162",
+                      "num": 3
+                    },
+                    {
+                      "id": "112002",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconWindAddedRatio.png",
+              "major": false,
               "minAsc": 3
             }
           ]
@@ -277,27 +311,107 @@
       ]
     },
     {
-      "id": 1101102,
+      "id": "1101102",
       "name": "Battlefield",
-      "desc": "At the start of the battle, all allies' DEF increases by <unbreak>#2[i]%</unbreak> for <unbreak>#1[i]</unbreak> turn(s).",
-      "icon": "SkillIcon_1101_SkillTree2.png",
-      "params": [ 2, 0.2 ],
+      "maxLevel": 1,
+      "description": "At the start of the battle, all allies' DEF increases by #2[i]% for #1[i] turn(s).",
+      "params": [[2, 0.2]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 20000
+            },
+            {
+              "id": "110162",
+              "num": 5
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1101_skilltree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1101205,
+          "id": "1101205",
           "name": "DMG Boost: Wind",
-          "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconWindAddedRatio.png",
-          "params": [ 0.048 ],
+          "maxLevel": 1,
+          "description": "Wind DMG Boost increases by 4.8%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "WindAddedRatio",
+                  "value": 0.048
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 20000
+                },
+                {
+                  "id": "110162",
+                  "num": 5
+                },
+                {
+                  "id": "112002",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconWindAddedRatio.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1101206,
+              "id": "1101206",
               "name": "CRIT DMG Boost",
-              "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconCriticalDamage.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "CRIT DMG increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "CriticalDamageBase",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 45000
+                    },
+                    {
+                      "id": "110163",
+                      "num": 3
+                    },
+                    {
+                      "id": "112003",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconCriticalDamage.png",
+              "major": false,
               "minAsc": 5
             }
           ]
@@ -305,35 +419,144 @@
       ]
     },
     {
-      "id": 1101103,
+      "id": "1101103",
       "name": "Military Might",
-      "desc": "When Bronya is on the field, all allies deal <unbreak>#1[i]%</unbreak> more DMG.",
-      "icon": "SkillIcon_1101_SkillTree3.png",
-      "params": [ 0.1 ],
+      "maxLevel": 1,
+      "description": "When Bronya is on the field, all allies deal #1[i]% more DMG.",
+      "params": [[0.1]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110163",
+              "num": 8
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1101_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1101208,
+          "id": "1101208",
           "name": "Effect RES Boost",
-          "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusResistance.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "Effect RES increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "StatusResistanceBase",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110163",
+                  "num": 8
+                },
+                {
+                  "id": "112003",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusResistance.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 1101209,
+              "id": "1101209",
               "name": "CRIT DMG Boost",
-              "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconCriticalDamage.png",
-              "params": [ 0.107 ],
+              "maxLevel": 1,
+              "description": "CRIT DMG increases by 10.7%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "CriticalDamageBase",
+                      "value": 0.107
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110163",
+                      "num": 8
+                    },
+                    {
+                      "id": "112003",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconCriticalDamage.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 1101210,
+              "id": "1101210",
               "name": "DMG Boost: Wind",
-              "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconWindAddedRatio.png",
-              "params": [ 0.064 ],
+              "maxLevel": 1,
+              "description": "Wind DMG Boost increases by 6.4%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "WindAddedRatio",
+                      "value": 0.064
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110163",
+                      "num": 8
+                    },
+                    {
+                      "id": "112003",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconWindAddedRatio.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -341,30 +564,319 @@
       ]
     },
     {
-      "id": 1101201,
+      "id": "1101201",
       "name": "DMG Boost: Wind",
-      "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconWindAddedRatio.png",
-      "params": [ 0.032 ],
+      "maxLevel": 1,
+      "description": "Wind DMG Boost increases by 3.2%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "WindAddedRatio",
+              "value": 0.032
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2500
+            },
+            {
+              "id": "112001",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconWindAddedRatio.png",
+      "major": false,
+      "minAsc": 0,
       "children": [
         {
-          "id": 1101204,
+          "id": "1101204",
           "name": "Effect RES Boost",
-          "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusResistance.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "Effect RES increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 3,
+              "properties": [
+                {
+                  "type": "StatusResistanceBase",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 10000
+                },
+                {
+                  "id": "110162",
+                  "num": 3
+                },
+                {
+                  "id": "112002",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusResistance.png",
+          "major": false,
           "minAsc": 3
         },
         {
-          "id": 1101207,
+          "id": "1101207",
           "name": "DMG Boost: Wind",
-          "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconWindAddedRatio.png",
-          "params": [ 0.048 ],
+          "maxLevel": 1,
+          "description": "Wind DMG Boost increases by 4.8%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 5,
+              "properties": [
+                {
+                  "type": "WindAddedRatio",
+                  "value": 0.048
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 45000
+                },
+                {
+                  "id": "110163",
+                  "num": 3
+                },
+                {
+                  "id": "112003",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconWindAddedRatio.png",
+          "major": false,
           "minAsc": 5
         }
       ]
     }
   ],
-  "description": "Heir apparent to the Supreme Guardian of Belobog.\nShe possesses pride befitting of a princess, but also the determination and integrity of a soldier."
+  "stats": [
+    {
+      "health": {
+        "base": 168.96,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 79.2,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 72.6,
+        "step": 3.63
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 236.544,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 110.88,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 101.64,
+        "step": 3.63
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 304.128,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 142.56,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 130.68,
+        "step": 3.63
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 371.712,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 174.24,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 159.72,
+        "step": 3.63
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 439.296,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 205.92,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 188.76,
+        "step": 3.63
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 506.88,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 237.6,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 217.8,
+        "step": 3.63
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 574.464,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 269.28,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 246.84,
+        "step": 3.63
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

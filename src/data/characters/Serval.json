@@ -1,291 +1,344 @@
 {
+  "id": "1103",
   "name": "Serval",
+  "description": "A Belobog mechanic who used to be a researcher for the Technology Division of the Architects.\\nAs Gepard Landau's elder sister, her personality stands in stark contrast to her brother's.\\nShe loves an ancient form of music known as \"rock 'n' roll\" that was popular before the Eternal Freeze.",
   "element": "Lightning",
   "path": "Erudition",
   "rarity": 4,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 88.8,
-      "attackAdd": 4.44,
-      "hpBase": 124.8,
-      "hpAdd": 6.24,
-      "defenseBase": 51,
-      "defenseAdd": 2.55,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 104,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 124.32,
-      "attackAdd": 4.44,
-      "hpBase": 174.72,
-      "hpAdd": 6.24,
-      "defenseBase": 71.4,
-      "defenseAdd": 2.55,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 104,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 159.84,
-      "attackAdd": 4.44,
-      "hpBase": 224.64,
-      "hpAdd": 6.24,
-      "defenseBase": 91.8,
-      "defenseAdd": 2.55,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 104,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 195.36,
-      "attackAdd": 4.44,
-      "hpBase": 274.56,
-      "hpAdd": 6.24,
-      "defenseBase": 112.2,
-      "defenseAdd": 2.55,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 104,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 230.88,
-      "attackAdd": 4.44,
-      "hpBase": 324.48,
-      "hpAdd": 6.24,
-      "defenseBase": 132.6,
-      "defenseAdd": 2.55,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 104,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 266.4,
-      "attackAdd": 4.44,
-      "hpBase": 374.4,
-      "hpAdd": 6.24,
-      "defenseBase": 153,
-      "defenseAdd": 2.55,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 104,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 301.92,
-      "attackAdd": 4.44,
-      "hpBase": 424.32,
-      "hpAdd": 6.24,
-      "defenseBase": 173.4,
-      "defenseAdd": 2.55,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 104,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 100,
+  "icon": "icon/character/1103.png",
+  "preview": "image/character_preview/1103.png",
+  "portrait": "image/character_portrait/1103.png",
   "skills": [
     {
       "name": "Roaring Thunderclap",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Serval's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Thunder",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Lightning DMG to a single enemy.",
+      "description": "Deals Lightning DMG equal to #1[i]% of Serval's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1103_basic_atk.png"
     },
     {
       "name": "Lightning Flash",
-      "tag": "Blast",
-      "type": "Skill",
-      "desc": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Serval's ATK to a single enemy and Lightning DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Serval's ATK to enemies adjacent to it, with a <unbreak>#3[i]%</unbreak> <u>base chance</u> for enemies hit to become Shocked for <unbreak>#4[i]</unbreak> turn(s).\\nWhile Shocked, enemies take Lightning DoT equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of Serval's ATK at the beginning of each turn.",
+      "maxLevel": 15,
+      "element": "Thunder",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Blast",
+      "simpleDescription": "Deals minor Lightning DMG to a single enemy and enemies adjacent to it, with a high chance of Shocking enemies hit.",
+      "description": "Deals Lightning DMG equal to #1[i]% of Serval's ATK to a single enemy and Lightning DMG equal to #2[i]% of Serval's ATK to enemies adjacent to it, with a #3[i]% base chance for enemies hit to become Shocked for #4[i] turn(s).\nWhile Shocked, enemies take Lightning DoT equal to #5[i]% of Serval's ATK at the beginning of each turn.",
       "params": [
-        [ 0.7, 0.3, 0.8, 2, 0.4 ],
-        [ 0.77, 0.33, 0.8, 2, 0.44 ],
-        [ 0.84, 0.36, 0.8, 2, 0.48 ],
-        [ 0.91, 0.39, 0.8, 2, 0.52 ],
-        [ 0.98, 0.42, 0.8, 2, 0.56 ],
-        [ 1.05, 0.45, 0.8, 2, 0.62 ],
-        [ 1.1375, 0.4875, 0.8, 2, 0.7 ],
-        [ 1.225, 0.525, 0.8, 2, 0.8 ],
-        [ 1.3125, 0.5625, 0.8, 2, 0.92 ],
-        [ 1.4, 0.6, 0.8, 2, 1.04 ],
-        [ 1.47, 0.63, 0.8, 2, 1.092 ],
-        [ 1.54, 0.66, 0.8, 2, 1.144 ],
-        [ 1.61, 0.69, 0.8, 2, 1.196 ],
-        [ 1.68, 0.72, 0.8, 2, 1.248 ],
-        [ 1.75, 0.75, 0.8, 2, 1.3 ]
+        [0.7, 0.3, 0.8, 2, 0.4],
+        [0.77, 0.33, 0.8, 2, 0.44],
+        [0.84, 0.36, 0.8, 2, 0.48],
+        [0.91, 0.39, 0.8, 2, 0.52],
+        [0.98, 0.42, 0.8, 2, 0.56],
+        [1.05, 0.45, 0.8, 2, 0.62],
+        [1.1375, 0.4875, 0.8, 2, 0.7],
+        [1.225, 0.525, 0.8, 2, 0.8],
+        [1.3125, 0.5625, 0.8, 2, 0.92],
+        [1.4, 0.6, 0.8, 2, 1.04],
+        [1.47, 0.63, 0.8, 2, 1.092],
+        [1.54, 0.66, 0.8, 2, 1.144],
+        [1.61, 0.69, 0.8, 2, 1.196],
+        [1.68, 0.72, 0.8, 2, 1.248],
+        [1.75, 0.75, 0.8, 2, 1.3]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60,
-        "Adjacent": 30
-      }
+      "icon": "icon/skill/1103_skill.png"
     },
     {
       "name": "Here Comes the Mechanical Fever",
-      "tag": "AoE",
-      "type": "Ultimate",
-      "desc": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Serval's ATK to all enemies. Enemies already Shocked will extend the duration of their Shock state by <unbreak>#2[i]</unbreak> turn(s).",
+      "maxLevel": 15,
+      "element": "Thunder",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "AoEAttack",
+      "simpleDescription": "Deals Lightning DMG to all enemies and increases the duration of Shock.",
+      "description": "Deals Lightning DMG equal to #1[i]% of Serval's ATK to all enemies. Enemies already Shocked will extend the duration of their Shock state by #2[i] turn(s).",
       "params": [
-        [ 1.08, 2 ],
-        [ 1.152, 2 ],
-        [ 1.224, 2 ],
-        [ 1.296, 2 ],
-        [ 1.368, 2 ],
-        [ 1.44, 2 ],
-        [ 1.53, 2 ],
-        [ 1.62, 2 ],
-        [ 1.71, 2 ],
-        [ 1.8, 2 ],
-        [ 1.872, 2 ],
-        [ 1.944, 2 ],
-        [ 2.016, 2 ],
-        [ 2.088, 2 ],
-        [ 2.16, 2 ]
+        [1.08, 2],
+        [1.152, 2],
+        [1.224, 2],
+        [1.296, 2],
+        [1.368, 2],
+        [1.44, 2],
+        [1.53, 2],
+        [1.62, 2],
+        [1.71, 2],
+        [1.8, 2],
+        [1.872, 2],
+        [1.944, 2],
+        [2.016, 2],
+        [2.088, 2],
+        [2.16, 2]
       ],
-      "energyNeeded": 100,
-      "energyGain": 5,
-      "toughness": {
-        "All": 60
-      }
+      "icon": "icon/skill/1103_ultimate.png"
     },
     {
       "name": "Galvanic Chords",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "Thunder",
       "type": "Talent",
-      "desc": "After Serval attacks, deals <u>Additional</u> Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Serval's ATK to all Shocked enemies.",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "After using an attack, deals minor Additional DMG to all Shocked enemy targets.",
+      "description": "After Serval attacks, deals Additional Lightning DMG equal to #1[i]% of Serval's ATK to all Shocked enemies.",
       "params": [
-        [ 0.36 ],
-        [ 0.396 ],
-        [ 0.432 ],
-        [ 0.468 ],
-        [ 0.504 ],
-        [ 0.54 ],
-        [ 0.585 ],
-        [ 0.63 ],
-        [ 0.675 ],
-        [ 0.72 ],
-        [ 0.756 ],
-        [ 0.792 ],
-        [ 0.828 ],
-        [ 0.864 ],
-        [ 0.9 ]
-      ]
+        [0.36],
+        [0.396],
+        [0.432],
+        [0.468],
+        [0.504],
+        [0.54],
+        [0.585],
+        [0.63],
+        [0.675],
+        [0.72],
+        [0.756],
+        [0.792],
+        [0.828],
+        [0.864],
+        [0.9]
+      ],
+      "icon": "icon/skill/1103_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Thunder",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1103_basic_atk.png"
     },
     {
       "name": "Good Night, Belobog",
-      "type": "Technique",
-      "desc": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to <unbreak>#4[i]%</unbreak> of Serval's ATK to a random enemy, with a <unbreak>#1[i]%</unbreak> <u>base chance</u> for all enemies to become Shocked for <unbreak>#3[i]</unbreak> turn(s).\\nWhile Shocked, enemies will take Lightning DoT equal to <unbreak>#2[i]%</unbreak> of Serval's ATK at the beginning of each turn.",
-      "params": [
-        [ 1, 0.5, 3, 0.5 ]
-      ],
-      "toughness": {
-        "All": 60
-      }
+      "maxLevel": 1,
+      "element": "Thunder",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "MazeAttack",
+      "simpleDescription": "Attacks the enemy. After entering battle, deals minor DMG to a random single enemy, with a high chance of applying Shock to all enemy targets.",
+      "description": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to #4[i]% of Serval's ATK to a random enemy, with a #1[i]% base chance for all enemies to become Shocked for #3[i] turn(s).\nWhile Shocked, enemies will take Lightning DoT equal to #2[i]% of Serval's ATK at the beginning of each turn.",
+      "params": [[1, 0.5, 3, 0.5]],
+      "icon": "icon/skill/1103_technique.png"
     }
   ],
   "eidolons": [
     {
       "name": "Echo Chamber",
-      "desc": "Basic ATK deals Lightning DMG equal to <unbreak>#1[i]%</unbreak> of the Basic ATK's DMG to a random enemy adjacent to the target of the Basic ATK.",
-      "params": [ 0.6 ]
+      "rank": 1,
+      "desc": "Basic ATK deals Lightning DMG equal to 60% of the Basic ATK's DMG to a random enemy adjacent to the target of the Basic ATK.",
+      "materials": [
+        {
+          "id": "11103",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1103_rank1.png"
     },
     {
       "name": "Encore!",
-      "desc": "Every time Serval's Talent is triggered to deal Additional DMG, she regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "params": [ 4 ]
+      "rank": 2,
+      "desc": "Every time Serval's Talent is triggered to deal Additional DMG, she regenerates 4 Energy.",
+      "materials": [
+        {
+          "id": "11103",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1103_rank2.png"
     },
     {
       "name": "Listen, the Heartbeat of the Gears",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11103",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1103_skill.png"
     },
     {
       "name": "Make Some Noise!",
-      "desc": "Ultimate has a <unbreak>#1[i]%</unbreak> base chance to apply Shock to any enemies not currently Shocked. This Shock has the same effects as the one applied by Skill.",
-      "params": [ 1 ]
+      "rank": 4,
+      "desc": "Ultimate has a 100% base chance to apply Shock to any enemies not currently Shocked. This Shock has the same effects as the one applied by Skill.",
+      "materials": [
+        {
+          "id": "11103",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1103_rank4.png"
     },
     {
       "name": "Belobog's Loudest Roar!",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11103",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1103_ultimate.png"
     },
     {
       "name": "This Song Rocks to Heaven!",
-      "desc": "Serval deals <unbreak>#1[i]%</unbreak> more DMG to Shocked enemies.",
-      "params": [ 0.3 ]
+      "rank": 6,
+      "desc": "Serval deals 30% more DMG to Shocked enemies.",
+      "materials": [
+        {
+          "id": "11103",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1103_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1103101,
+      "id": "1103101",
       "name": "Rock 'n' Roll",
-      "desc": "Skill has a <unbreak>#1[i]%</unbreak> increased base chance to Shock enemies.",
-      "icon": "SkillIcon_1103_SkillTree1.png",
-      "params": [ 0.2 ],
+      "maxLevel": 1,
+      "description": "Skill has a #1[i]% increased base chance to Shock enemies.",
+      "params": [[0.2]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110131",
+              "num": 2
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1103_skilltree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1103202,
+          "id": "1103202",
           "name": "Effect Hit Rate Boost",
-          "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusProbability.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110131",
+                  "num": 2
+                },
+                {
+                  "id": "112001",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusProbability.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1103203,
+              "id": "1103203",
               "name": "CRIT Rate Boost",
-              "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconCriticalChance.png",
-              "params": [ 0.027 ],
+              "maxLevel": 1,
+              "description": "CRIT Rate increases by 2.7%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "CriticalChanceBase",
+                      "value": 0.027
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110132",
+                      "num": 2
+                    },
+                    {
+                      "id": "112002",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconCriticalChance.png",
+              "major": false,
               "minAsc": 3
             },
             {
-              "id": 1103204,
+              "id": "1103204",
               "name": "Effect RES Boost",
-              "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconStatusResistance.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "Effect RES increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "StatusResistanceBase",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110132",
+                      "num": 2
+                    },
+                    {
+                      "id": "112002",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconStatusResistance.png",
+              "major": false,
               "minAsc": 3
             }
           ]
@@ -293,35 +346,142 @@
       ]
     },
     {
-      "id": 1103102,
+      "id": "1103102",
       "name": "String Vibration",
-      "desc": "At the start of the battle, immediately regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "icon": "SkillIcon_1103_SkillTree2.png",
-      "params": [ 15 ],
+      "maxLevel": 1,
+      "description": "At the start of the battle, immediately regenerates #1[i] Energy.",
+      "params": [[15]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110132",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1103_skilltree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1103205,
+          "id": "1103205",
           "name": "CRIT Rate Boost",
-          "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconCriticalChance.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "CRIT Rate increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "CriticalChanceBase",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110132",
+                  "num": 4
+                },
+                {
+                  "id": "112002",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconCriticalChance.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1103206,
+              "id": "1103206",
               "name": "Effect Hit Rate Boost",
-              "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconStatusProbability.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "Effect Hit Rate increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "StatusProbabilityBase",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110133",
+                      "num": 2
+                    },
+                    {
+                      "id": "112003",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconStatusProbability.png",
+              "major": false,
               "minAsc": 5
             },
             {
-              "id": 1103207,
+              "id": "1103207",
               "name": "CRIT Rate Boost",
-              "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconCriticalChance.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "CRIT Rate increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "CriticalChanceBase",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110133",
+                      "num": 2
+                    },
+                    {
+                      "id": "112003",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconCriticalChance.png",
+              "major": false,
               "minAsc": 5
             }
           ]
@@ -329,46 +489,390 @@
       ]
     },
     {
-      "id": 1103103,
+      "id": "1103103",
       "name": "Mania",
-      "desc": "Upon defeating an enemy, ATK is increased by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "icon": "SkillIcon_1103_SkillTree3.png",
-      "params": [ 0.2, 2 ],
+      "maxLevel": 1,
+      "description": "Upon defeating an enemy, ATK is increased by #1[i]% for #2[i] turn(s).",
+      "params": [[0.2, 2]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110133",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1103_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1103208,
+          "id": "1103208",
           "name": "Effect RES Boost",
-          "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusResistance.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "Effect RES increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "StatusResistanceBase",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110133",
+                  "num": 6
+                },
+                {
+                  "id": "112003",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusResistance.png",
+          "major": false,
           "minAsc": 6
         },
         {
-          "id": 1103209,
+          "id": "1103209",
           "name": "Effect Hit Rate Boost",
-          "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusProbability.png",
-          "params": [ 0.08 ],
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110133",
+                  "num": 6
+                },
+                {
+                  "id": "112003",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusProbability.png",
+          "major": false,
+          "minAsc": 0,
           "minLevel": 75
         }
       ]
     },
     {
-      "id": 1103201,
+      "id": "1103201",
       "name": "CRIT Rate Boost",
-      "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconCriticalChance.png",
-      "params": [ 0.027 ]
+      "maxLevel": 1,
+      "description": "CRIT Rate increases by 2.7%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "CriticalChanceBase",
+              "value": 0.027
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "112001",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconCriticalChance.png",
+      "major": false,
+      "minAsc": 0
     },
     {
-      "id": 1103210,
+      "id": "1103210",
       "name": "CRIT Rate Boost",
-      "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconCriticalChance.png",
-      "params": [ 0.053 ],
+      "maxLevel": 1,
+      "description": "CRIT Rate increases by 5.3%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "CriticalChanceBase",
+              "value": 0.053
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110133",
+              "num": 6
+            },
+            {
+              "id": "112003",
+              "num": 6
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconCriticalChance.png",
+      "major": false,
+      "minAsc": 0,
       "minLevel": 80
     }
   ],
-  "description": "A Belobog mechanic who used to be a researcher for the Technology Division of the Architects.\nAs Gepard Landau's elder sister, her personality stands in stark contrast to her brother's.\nShe loves an ancient form of music known as \"rock 'n' roll\" that was popular before the Eternal Freeze."
+  "stats": [
+    {
+      "health": {
+        "base": 124.8,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 88.8,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 51,
+        "step": 2.55
+      },
+      "speed": {
+        "base": 104,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 174.72,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 124.32,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 71.4,
+        "step": 2.55
+      },
+      "speed": {
+        "base": 104,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 224.64,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 159.84,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 91.8,
+        "step": 2.55
+      },
+      "speed": {
+        "base": 104,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 274.56,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 195.36,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 112.2,
+        "step": 2.55
+      },
+      "speed": {
+        "base": 104,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 324.48,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 230.88,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 132.6,
+        "step": 2.55
+      },
+      "speed": {
+        "base": 104,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 374.4,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 266.4,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 153,
+        "step": 2.55
+      },
+      "speed": {
+        "base": 104,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 424.32,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 301.92,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 173.4,
+        "step": 2.55
+      },
+      "speed": {
+        "base": 104,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

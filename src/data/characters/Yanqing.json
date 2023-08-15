@@ -1,284 +1,309 @@
 {
+  "id": "1209",
   "name": "Yanqing",
+  "description": "General Jing Yuan's retainer. A gifted swordsman who hasn't even come of age.\\nNo one can best Yanqing when he holds a sword in hand.",
   "element": "Ice",
   "path": "The Hunt",
   "rarity": 5,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 92.4,
-      "attackAdd": 4.62,
-      "hpBase": 121.44,
-      "hpAdd": 6.072,
-      "defenseBase": 56.1,
-      "defenseAdd": 2.805,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 109,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 129.36,
-      "attackAdd": 4.62,
-      "hpBase": 170.016,
-      "hpAdd": 6.072,
-      "defenseBase": 78.54,
-      "defenseAdd": 2.805,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 109,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 166.32,
-      "attackAdd": 4.62,
-      "hpBase": 218.592,
-      "hpAdd": 6.072,
-      "defenseBase": 100.98,
-      "defenseAdd": 2.805,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 109,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 203.28,
-      "attackAdd": 4.62,
-      "hpBase": 267.168,
-      "hpAdd": 6.072,
-      "defenseBase": 123.42,
-      "defenseAdd": 2.805,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 109,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 240.24,
-      "attackAdd": 4.62,
-      "hpBase": 315.744,
-      "hpAdd": 6.072,
-      "defenseBase": 145.86,
-      "defenseAdd": 2.805,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 109,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 277.2,
-      "attackAdd": 4.62,
-      "hpBase": 364.32,
-      "hpAdd": 6.072,
-      "defenseBase": 168.3,
-      "defenseAdd": 2.805,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 109,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 314.16,
-      "attackAdd": 4.62,
-      "hpBase": 412.896,
-      "hpAdd": 6.072,
-      "defenseBase": 190.74,
-      "defenseAdd": 2.805,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 109,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 140,
+  "icon": "icon/character/1209.png",
+  "preview": "image/character_preview/1209.png",
+  "portrait": "image/character_portrait/1209.png",
   "skills": [
     {
       "name": "Frost Thorn",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Yanqing's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Ice",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Ice DMG to a single enemy.",
+      "description": "Deals Ice DMG equal to #1[i]% of Yanqing's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1209_basic_atk.png"
     },
     {
       "name": "Darting Ironthorn",
-      "tag": "Single Target",
-      "type": "Skill",
-      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Yanqing's ATK to a single enemy and activates Soulsteel Sync for 1 turn.",
+      "maxLevel": 15,
+      "element": "Ice",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals Ice DMG to a single enemy and activates the Soulsteel Sync.",
+      "description": "Deals Ice DMG equal to #1[i]% of Yanqing's ATK to a single enemy and activates Soulsteel Sync for 1 turn.",
       "params": [
-        [ 1.1 ],
-        [ 1.21 ],
-        [ 1.32 ],
-        [ 1.43 ],
-        [ 1.54 ],
-        [ 1.65 ],
-        [ 1.7875 ],
-        [ 1.925 ],
-        [ 2.0625 ],
-        [ 2.2 ],
-        [ 2.31 ],
-        [ 2.42 ],
-        [ 2.53 ],
-        [ 2.64 ],
-        [ 2.75 ]
+        [1.1],
+        [1.21],
+        [1.32],
+        [1.43],
+        [1.54],
+        [1.65],
+        [1.7875],
+        [1.925],
+        [2.0625],
+        [2.2],
+        [2.31],
+        [2.42],
+        [2.53],
+        [2.64],
+        [2.75]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60
-      }
+      "icon": "icon/skill/1209_skill.png"
     },
     {
       "name": "Amidst the Raining Bliss",
-      "tag": "Single Target",
-      "type": "Ultimate",
-      "desc": "Increases Yanqing's CRIT Rate by <unbreak>#1[i]%</unbreak>. When Soulsteel Sync is active, increases Yanqing's CRIT DMG by an extra <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. This <u>buff</u> lasts for one turn. Afterwards, deals Ice DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Yanqing's ATK to a single enemy.",
+      "maxLevel": 15,
+      "element": "Ice",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "SingleAttack",
+      "simpleDescription": "Increases Yanqing's CRIT Rate. Enhances \"Soulsteel Sync\" and deals massive Ice DMG to a single enemy.",
+      "description": "Increases Yanqing's CRIT Rate by #1[i]%. When Soulsteel Sync is active, increases Yanqing's CRIT DMG by an extra #2[i]%. This buff lasts for one turn. Afterwards, deals Ice DMG equal to #3[i]% of Yanqing's ATK to a single enemy.",
       "params": [
-        [ 0.6, 0.3, 2.1 ],
-        [ 0.6, 0.32, 2.24 ],
-        [ 0.6, 0.34, 2.38 ],
-        [ 0.6, 0.36, 2.52 ],
-        [ 0.6, 0.38, 2.66 ],
-        [ 0.6, 0.4, 2.8 ],
-        [ 0.6, 0.425, 2.975 ],
-        [ 0.6, 0.45, 3.15 ],
-        [ 0.6, 0.475, 3.325 ],
-        [ 0.6, 0.5, 3.5 ],
-        [ 0.6, 0.52, 3.64 ],
-        [ 0.6, 0.54, 3.78 ],
-        [ 0.6, 0.56, 3.92 ],
-        [ 0.6, 0.58, 4.06 ],
-        [ 0.6, 0.6, 4.2 ]
+        [0.6, 0.3, 2.1],
+        [0.6, 0.32, 2.24],
+        [0.6, 0.34, 2.38],
+        [0.6, 0.36, 2.52],
+        [0.6, 0.38, 2.66],
+        [0.6, 0.4, 2.8],
+        [0.6, 0.425, 2.975],
+        [0.6, 0.45, 3.15],
+        [0.6, 0.475, 3.325],
+        [0.6, 0.5, 3.5],
+        [0.6, 0.52, 3.64],
+        [0.6, 0.54, 3.78],
+        [0.6, 0.56, 3.92],
+        [0.6, 0.58, 4.06],
+        [0.6, 0.6, 4.2]
       ],
-      "energyNeeded": 140,
-      "energyGain": 5,
-      "toughness": {
-        "Target": 90
-      }
+      "icon": "icon/skill/1209_ultimate.png"
     },
     {
       "name": "One With the Sword",
-      "tag": "Single Target",
+      "maxLevel": 15,
+      "element": "Ice",
       "type": "Talent",
-      "desc": "When Soulsteel Sync is active, Yanqing is less likely to be attacked by enemies. Yanqing's CRIT Rate increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and his CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After Yanqing attacks an enemy, there is a <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> <u>fixed chance</u> to perform a <u>follow-up attack</u>, dealing Ice DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Yanqing's ATK to the enemy, which has a <unbreak>#6[i]%</unbreak> <u>base chance</u> to Freeze the enemy for 1 turn.\\nThe Frozen target cannot take action and receives <u>Additional</u> Ice DMG equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of Yanqing's ATK at the beginning of each turn.\\nWhen Yanqing receives DMG, the Soulsteel Sync effect will disappear.",
+      "typeText": "Talent",
+      "effect": "SingleAttack",
+      "simpleDescription": "During Soulsteel Sync, reduces the chance of this character being attacked and increases their own CRIT Rate and CRIT DMG. After attacking an enemy, there is a chance of launching a follow-up attack, dealing Ice DMG with a chance to Freeze the target.\nSoulsteel Sync will be removed after this character receives DMG.",
+      "description": "When Soulsteel Sync is active, Yanqing is less likely to be attacked by enemies. Yanqing's CRIT Rate increases by #1[f1]% and his CRIT DMG increases by #2[i]%. After Yanqing attacks an enemy, there is a #3[i]% fixed chance to perform a follow-up attack, dealing Ice DMG equal to #4[i]% of Yanqing's ATK to the enemy, which has a #6[i]% base chance to Freeze the enemy for 1 turn.\nThe Frozen target cannot take action and receives Additional Ice DMG equal to #5[i]% of Yanqing's ATK at the beginning of each turn.\nWhen Yanqing receives DMG, the Soulsteel Sync effect will disappear.",
       "params": [
-        [ 0.15, 0.15, 0.5, 0.25, 0.25, 0.65 ],
-        [ 0.155, 0.165, 0.51, 0.275, 0.275, 0.65 ],
-        [ 0.16, 0.18, 0.52, 0.3, 0.3, 0.65 ],
-        [ 0.165, 0.195, 0.53, 0.325, 0.325, 0.65 ],
-        [ 0.17, 0.21, 0.54, 0.35, 0.35, 0.65 ],
-        [ 0.175, 0.225, 0.55, 0.375, 0.375, 0.65 ],
-        [ 0.18125, 0.24375, 0.5625, 0.40625, 0.40625, 0.65 ],
-        [ 0.1875, 0.2625, 0.575, 0.4375, 0.4375, 0.65 ],
-        [ 0.19375, 0.28125, 0.5875, 0.46875, 0.46875, 0.65 ],
-        [ 0.2, 0.3, 0.6, 0.5, 0.5, 0.65 ],
-        [ 0.205, 0.315, 0.61, 0.525, 0.525, 0.65 ],
-        [ 0.21, 0.33, 0.62, 0.55, 0.55, 0.65 ],
-        [ 0.215, 0.345, 0.63, 0.575, 0.575, 0.65 ],
-        [ 0.22, 0.36, 0.64, 0.6, 0.6, 0.65 ],
-        [ 0.225, 0.375, 0.65, 0.625, 0.625, 0.65 ]
+        [0.15, 0.15, 0.5, 0.25, 0.25, 0.65],
+        [0.155, 0.165, 0.51, 0.275, 0.275, 0.65],
+        [0.16, 0.18, 0.52, 0.3, 0.3, 0.65],
+        [0.165, 0.195, 0.53, 0.325, 0.325, 0.65],
+        [0.17, 0.21, 0.54, 0.35, 0.35, 0.65],
+        [0.175, 0.225, 0.55, 0.375, 0.375, 0.65],
+        [0.1813, 0.2438, 0.5625, 0.4063, 0.4063, 0.65],
+        [0.1875, 0.2625, 0.575, 0.4375, 0.4375, 0.65],
+        [0.1938, 0.2813, 0.5875, 0.4688, 0.4688, 0.65],
+        [0.2, 0.3, 0.6, 0.5, 0.5, 0.65],
+        [0.205, 0.315, 0.61, 0.525, 0.525, 0.65],
+        [0.21, 0.33, 0.62, 0.55, 0.55, 0.65],
+        [0.215, 0.345, 0.63, 0.575, 0.575, 0.65],
+        [0.22, 0.36, 0.64, 0.6, 0.6, 0.65],
+        [0.225, 0.375, 0.65, 0.625, 0.625, 0.65]
       ],
-      "energyGain": 10,
-      "toughness": {
-        "Target": 30
-      }
+      "icon": "icon/skill/1209_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Ice",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1209_basic_atk.png"
     },
     {
       "name": "The One True Sword",
-      "tag": "Enhance",
-      "type": "Technique",
-      "desc": "After using his Technique, at the start of the next battle, Yanqing deals <unbreak>#2[i]%</unbreak> more DMG for <unbreak>#3[i]</unbreak> turn(s) to enemies whose current HP is <unbreak>#1[i]%</unbreak> or higher.",
-      "params": [
-        [ 0.5, 0.3, 2 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Enhance",
+      "simpleDescription": "After this character uses Technique, at the start of the next battle, increases the DMG dealt by this character to enemy targets whose HP is 50% or higher.",
+      "description": "After using his Technique, at the start of the next battle, Yanqing deals #2[i]% more DMG for #3[i] turn(s) to enemies whose current HP is #1[i]% or higher.",
+      "params": [[0.5, 0.3, 2]],
+      "icon": "icon/skill/1209_technique.png"
     }
   ],
   "eidolons": [
     {
       "name": "Svelte Saber",
-      "desc": "When Yanqing attacks a Frozen enemy, he deals Additional Ice DMG equal to <unbreak>#1[i]%</unbreak> of his ATK.",
-      "params": [ 0.6 ]
+      "rank": 1,
+      "desc": "When Yanqing attacks a Frozen enemy, he deals Additional Ice DMG equal to 60% of his ATK.",
+      "materials": [
+        {
+          "id": "11209",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1209_rank1.png"
     },
     {
       "name": "Supine Serenade",
-      "desc": "When Soulsteel Sync is active, Energy Regeneration Rate increases by an extra <unbreak>#1[i]%</unbreak>.",
-      "params": [ 0.1 ]
+      "rank": 2,
+      "desc": "When Soulsteel Sync is active, Energy Regeneration Rate increases by an extra 10%.",
+      "materials": [
+        {
+          "id": "11209",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1209_rank2.png"
     },
     {
       "name": "Sword Savant",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11209",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1209_skill.png"
     },
     {
       "name": "Searing Sting",
-      "desc": "When the current HP percentage is <unbreak>#1[i]%</unbreak> or higher, Ice RES PEN increases by <unbreak>#2[i]%</unbreak>.",
-      "params": [ 0.8, 0.12 ]
+      "rank": 4,
+      "desc": "When the current HP percentage is 80% or higher, Ice RES PEN increases by 12%.",
+      "materials": [
+        {
+          "id": "11209",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1209_rank4.png"
     },
     {
       "name": "Surging Strife",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11209",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1209_ultimate.png"
     },
     {
       "name": "Swift Swoop",
-      "desc": "If the Ultimate's buffs are still in effect when an enemy is defeated, their duration is extended by 1 turn.",
-      "params": []
+      "rank": 6,
+      "desc": "If the buffs from Soulsteel Sync or the Ultimate are in effect when an enemy is defeated, the duration of these buffs is extended by 1 turn.",
+      "materials": [
+        {
+          "id": "11209",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1209_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1209101,
+      "id": "1209101",
       "name": "Icing on the Kick",
-      "desc": "When Yanqing attacks, deals Additional Ice DMG equal to <unbreak>#1[i]%</unbreak> of Yanqing's ATK to enemies with Ice Weakness.",
-      "icon": "SkillIcon_1209_SkillTree1.png",
-      "params": [ 0.3 ],
+      "maxLevel": 1,
+      "description": "When Yanqing attacks, deals Additional Ice DMG equal to #1[i]% of Yanqing's ATK to enemies with Ice Weakness.",
+      "params": [[0.3]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 5000
+            },
+            {
+              "id": "110121",
+              "num": 3
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1209_skilltree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1209202,
+          "id": "1209202",
           "name": "DMG Boost: Ice",
-          "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconIceAddedRatio.png",
-          "params": [ 0.032 ],
+          "maxLevel": 1,
+          "description": "Ice DMG Boost increases by 3.2%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "IceAddedRatio",
+                  "value": 0.032
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 5000
+                },
+                {
+                  "id": "110121",
+                  "num": 3
+                },
+                {
+                  "id": "111011",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconIceAddedRatio.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1209203,
+              "id": "1209203",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 10000
+                    },
+                    {
+                      "id": "110122",
+                      "num": 3
+                    },
+                    {
+                      "id": "111012",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 3
             }
           ]
@@ -286,27 +311,107 @@
       ]
     },
     {
-      "id": 1209102,
+      "id": "1209102",
       "name": "Frost Favors the Brave",
-      "desc": "When Soulsteel Sync is active, Effect RES increases by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1209_SkillTree2.png",
-      "params": [ 0.2 ],
+      "maxLevel": 1,
+      "description": "When Soulsteel Sync is active, Effect RES increases by #1[i]%.",
+      "params": [[0.2]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 20000
+            },
+            {
+              "id": "110122",
+              "num": 5
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1209_skilltree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1209205,
+          "id": "1209205",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 20000
+                },
+                {
+                  "id": "110122",
+                  "num": 5
+                },
+                {
+                  "id": "111012",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1209206,
+              "id": "1209206",
               "name": "DMG Boost: Ice",
-              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconIceAddedRatio.png",
-              "params": [ 0.048 ],
+              "maxLevel": 1,
+              "description": "Ice DMG Boost increases by 4.8%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "IceAddedRatio",
+                      "value": 0.048
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 45000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 3
+                    },
+                    {
+                      "id": "111013",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconIceAddedRatio.png",
+              "major": false,
               "minAsc": 5
             }
           ]
@@ -314,35 +419,144 @@
       ]
     },
     {
-      "id": 1209103,
+      "id": "1209103",
       "name": "Gentle Blade",
-      "desc": "When a CRIT Hit is triggered, increases SPD by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "icon": "SkillIcon_1209_SkillTree3.png",
-      "params": [ 0.1, 2 ],
+      "maxLevel": 1,
+      "description": "When a CRIT Hit is triggered, increases SPD by #1[i]% for #2[i] turn(s).",
+      "params": [[0.1, 2]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110123",
+              "num": 8
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1209_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1209208,
+          "id": "1209208",
           "name": "HP Boost",
-          "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconMaxHP.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "HP increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "HPAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110123",
+                  "num": 8
+                },
+                {
+                  "id": "111013",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconMaxHP.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 1209209,
+              "id": "1209209",
               "name": "DMG Boost: Ice",
-              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconIceAddedRatio.png",
-              "params": [ 0.064 ],
+              "maxLevel": 1,
+              "description": "Ice DMG Boost increases by 6.4%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "IceAddedRatio",
+                      "value": 0.064
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 8
+                    },
+                    {
+                      "id": "111013",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconIceAddedRatio.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 1209210,
+              "id": "1209210",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 8
+                    },
+                    {
+                      "id": "111013",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -350,28 +564,317 @@
       ]
     },
     {
-      "id": 1209201,
+      "id": "1209201",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.04 ]
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2500
+            },
+            {
+              "id": "111011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0
     },
     {
-      "id": 1209204,
+      "id": "1209204",
       "name": "HP Boost",
-      "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconMaxHP.png",
-      "params": [ 0.04 ],
+      "maxLevel": 1,
+      "description": "HP increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 3,
+          "properties": [
+            {
+              "type": "HPAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 10000
+            },
+            {
+              "id": "110122",
+              "num": 3
+            },
+            {
+              "id": "111012",
+              "num": 3
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconMaxHP.png",
+      "major": false,
       "minAsc": 3
     },
     {
-      "id": 1209207,
+      "id": "1209207",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.06 ],
+      "maxLevel": 1,
+      "description": "ATK increases by 6.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 5,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.06
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 45000
+            },
+            {
+              "id": "110123",
+              "num": 3
+            },
+            {
+              "id": "111013",
+              "num": 3
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconAttack.png",
+      "major": false,
       "minAsc": 5
     }
   ],
-  "description": "General Jing Yuan's retainer. A gifted swordsman who hasn't even come of age.\nNo one can best Yanqing when he holds a sword in hand."
+  "stats": [
+    {
+      "health": {
+        "base": 121.44,
+        "step": 6.072
+      },
+      "attack": {
+        "base": 92.4,
+        "step": 4.62
+      },
+      "defense": {
+        "base": 56.1,
+        "step": 2.805
+      },
+      "speed": {
+        "base": 109,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 170.016,
+        "step": 6.072
+      },
+      "attack": {
+        "base": 129.36,
+        "step": 4.62
+      },
+      "defense": {
+        "base": 78.54,
+        "step": 2.805
+      },
+      "speed": {
+        "base": 109,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 218.592,
+        "step": 6.072
+      },
+      "attack": {
+        "base": 166.32,
+        "step": 4.62
+      },
+      "defense": {
+        "base": 100.98,
+        "step": 2.805
+      },
+      "speed": {
+        "base": 109,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 267.168,
+        "step": 6.072
+      },
+      "attack": {
+        "base": 203.28,
+        "step": 4.62
+      },
+      "defense": {
+        "base": 123.42,
+        "step": 2.805
+      },
+      "speed": {
+        "base": 109,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 315.744,
+        "step": 6.072
+      },
+      "attack": {
+        "base": 240.24,
+        "step": 4.62
+      },
+      "defense": {
+        "base": 145.86,
+        "step": 2.805
+      },
+      "speed": {
+        "base": 109,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 364.32,
+        "step": 6.072
+      },
+      "attack": {
+        "base": 277.2,
+        "step": 4.62
+      },
+      "defense": {
+        "base": 168.3,
+        "step": 2.805
+      },
+      "speed": {
+        "base": 109,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 412.896,
+        "step": 6.072
+      },
+      "attack": {
+        "base": 314.16,
+        "step": 4.62
+      },
+      "defense": {
+        "base": 190.74,
+        "step": 2.805
+      },
+      "speed": {
+        "base": 109,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

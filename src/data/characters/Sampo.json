@@ -1,289 +1,344 @@
 {
+  "id": "1108",
   "name": "Sampo",
+  "description": "A merchant who freely travels between the Overworld and the Underworld.\\nHe acts like he is everyone's friend, is enthusiastically humorous, and is good at bantering.",
   "element": "Wind",
   "path": "Nihility",
   "rarity": 4,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 84,
-      "attackAdd": 4.2,
-      "hpBase": 139.2,
-      "hpAdd": 6.96,
-      "defenseBase": 54,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 102,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 117.6,
-      "attackAdd": 4.2,
-      "hpBase": 194.88,
-      "hpAdd": 6.96,
-      "defenseBase": 75.6,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 102,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 151.2,
-      "attackAdd": 4.2,
-      "hpBase": 250.56,
-      "hpAdd": 6.96,
-      "defenseBase": 97.2,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 102,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 184.8,
-      "attackAdd": 4.2,
-      "hpBase": 306.24,
-      "hpAdd": 6.96,
-      "defenseBase": 118.8,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 102,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 218.4,
-      "attackAdd": 4.2,
-      "hpBase": 361.92,
-      "hpAdd": 6.96,
-      "defenseBase": 140.4,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 102,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 252,
-      "attackAdd": 4.2,
-      "hpBase": 417.6,
-      "hpAdd": 6.96,
-      "defenseBase": 162,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 102,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 285.6,
-      "attackAdd": 4.2,
-      "hpBase": 473.28,
-      "hpAdd": 6.96,
-      "defenseBase": 183.6,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 102,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 120,
+  "icon": "icon/character/1108.png",
+  "preview": "image/character_preview/1108.png",
+  "portrait": "image/character_portrait/1108.png",
   "skills": [
     {
       "name": "Dazzling Blades",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Sampo's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Wind",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Wind DMG to a single enemy.",
+      "description": "Deals Wind DMG equal to #1[i]% of Sampo's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1108_basic_atk.png"
     },
     {
       "name": "Ricochet Love",
-      "tag": "Bounce",
-      "type": "Skill",
-      "desc": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Sampo's ATK to a single enemy, and further deals DMG for <unbreak>#1[i]</unbreak> extra time(s), with each time dealing Wind DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Sampo's ATK to a random enemy.",
+      "maxLevel": 15,
+      "element": "Wind",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Bounce",
+      "simpleDescription": "Deals minor Wind DMG to single enemy targets with 5 Bounces in total.",
+      "description": "Deals Wind DMG equal to #2[i]% of Sampo's ATK to a single enemy, and further deals DMG for #1[i] extra time(s), with each time dealing Wind DMG equal to #2[i]% of Sampo's ATK to a random enemy.",
       "params": [
-        [ 4, 0.28 ],
-        [ 4, 0.308 ],
-        [ 4, 0.336 ],
-        [ 4, 0.364 ],
-        [ 4, 0.392 ],
-        [ 4, 0.42 ],
-        [ 4, 0.455 ],
-        [ 4, 0.49 ],
-        [ 4, 0.525 ],
-        [ 4, 0.56 ],
-        [ 4, 0.588 ],
-        [ 4, 0.616 ],
-        [ 4, 0.644 ],
-        [ 4, 0.672 ],
-        [ 4, 0.7 ]
+        [4, 0.28],
+        [4, 0.308],
+        [4, 0.336],
+        [4, 0.364],
+        [4, 0.392],
+        [4, 0.42],
+        [4, 0.455],
+        [4, 0.49],
+        [4, 0.525],
+        [4, 0.56],
+        [4, 0.588],
+        [4, 0.616],
+        [4, 0.644],
+        [4, 0.672],
+        [4, 0.7]
       ],
-      "energyGain": 6,
-      "toughness": {
-        "Target": 30,
-        "Bounce": 15
-      }
+      "icon": "icon/skill/1108_skill.png"
     },
     {
       "name": "Surprise Present",
-      "tag": "Impair",
-      "type": "Ultimate",
-      "desc": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Sampo's ATK to all enemies, with a <unbreak>#4[i]%</unbreak> <u>base chance</u> to increase the targets' DoT taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s).",
+      "maxLevel": 15,
+      "element": "Wind",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Impair",
+      "simpleDescription": "Deals Wind DMG to all enemies with a high chance to increase the DoT dealt to the targets.",
+      "description": "Deals Wind DMG equal to #1[i]% of Sampo's ATK to all enemies, with a #4[i]% base chance to increase the targets' DoT taken by #2[i]% for #3[i] turn(s).",
       "params": [
-        [ 0.96, 0.2, 2, 1 ],
-        [ 1.024, 0.21, 2, 1 ],
-        [ 1.088, 0.22, 2, 1 ],
-        [ 1.152, 0.23, 2, 1 ],
-        [ 1.216, 0.24, 2, 1 ],
-        [ 1.28, 0.25, 2, 1 ],
-        [ 1.36, 0.2625, 2, 1 ],
-        [ 1.44, 0.275, 2, 1 ],
-        [ 1.52, 0.2875, 2, 1 ],
-        [ 1.6, 0.3, 2, 1 ],
-        [ 1.664, 0.31, 2, 1 ],
-        [ 1.728, 0.32, 2, 1 ],
-        [ 1.792, 0.33, 2, 1 ],
-        [ 1.856, 0.34, 2, 1 ],
-        [ 1.92, 0.35, 2, 1 ]
+        [0.96, 0.2, 2, 1],
+        [1.024, 0.21, 2, 1],
+        [1.088, 0.22, 2, 1],
+        [1.152, 0.23, 2, 1],
+        [1.216, 0.24, 2, 1],
+        [1.28, 0.25, 2, 1],
+        [1.36, 0.2625, 2, 1],
+        [1.44, 0.275, 2, 1],
+        [1.52, 0.2875, 2, 1],
+        [1.6, 0.3, 2, 1],
+        [1.664, 0.31, 2, 1],
+        [1.728, 0.32, 2, 1],
+        [1.792, 0.33, 2, 1],
+        [1.856, 0.34, 2, 1],
+        [1.92, 0.35, 2, 1]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5,
-      "toughness": {
-        "All": 60
-      }
+      "icon": "icon/skill/1108_ultimate.png"
     },
     {
       "name": "Windtorn Dagger",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "",
       "type": "Talent",
-      "desc": "Sampo's attacks have a <unbreak>#1[i]%</unbreak> <u>base chance</u> to inflict Wind Shear for <unbreak>#3[i]</unbreak> turn(s).\\nEnemies inflicted with Wind Shear will take Wind DoT equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Sampo's ATK at the beginning of each turn. Wind Shear can stack up to <unbreak>#4[i]</unbreak> time(s).",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "After this character hits an enemy, there is a chance of inflicting Wind Shear on the target.",
+      "description": "Sampo's attacks have a #1[i]% base chance to inflict Wind Shear for #3[i] turn(s).\nEnemies inflicted with Wind Shear will take Wind DoT equal to #2[i]% of Sampo's ATK at the beginning of each turn. Wind Shear can stack up to #4[i] time(s).",
       "params": [
-        [ 0.65, 0.2, 3, 5 ],
-        [ 0.65, 0.22, 3, 5 ],
-        [ 0.65, 0.24, 3, 5 ],
-        [ 0.65, 0.26, 3, 5 ],
-        [ 0.65, 0.28, 3, 5 ],
-        [ 0.65, 0.31, 3, 5 ],
-        [ 0.65, 0.35, 3, 5 ],
-        [ 0.65, 0.4, 3, 5 ],
-        [ 0.65, 0.46, 3, 5 ],
-        [ 0.65, 0.52, 3, 5 ],
-        [ 0.65, 0.546, 3, 5 ],
-        [ 0.65, 0.572, 3, 5 ],
-        [ 0.65, 0.598, 3, 5 ],
-        [ 0.65, 0.624, 3, 5 ],
-        [ 0.65, 0.65, 3, 5 ]
-      ]
+        [0.65, 0.2, 3, 5],
+        [0.65, 0.22, 3, 5],
+        [0.65, 0.24, 3, 5],
+        [0.65, 0.26, 3, 5],
+        [0.65, 0.28, 3, 5],
+        [0.65, 0.31, 3, 5],
+        [0.65, 0.35, 3, 5],
+        [0.65, 0.4, 3, 5],
+        [0.65, 0.46, 3, 5],
+        [0.65, 0.52, 3, 5],
+        [0.65, 0.546, 3, 5],
+        [0.65, 0.572, 3, 5],
+        [0.65, 0.598, 3, 5],
+        [0.65, 0.624, 3, 5],
+        [0.65, 0.65, 3, 5]
+      ],
+      "icon": "icon/skill/1108_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Wind",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1108_basic_atk.png"
     },
     {
       "name": "Shining Bright",
-      "tag": "Impair",
-      "type": "Technique",
-      "desc": "After Sampo uses his Technique, enemies in a set area are inflicted with Blind for <unbreak>#1[i]</unbreak> second(s). Blinded enemies cannot detect your team.\\nWhen initiating combat against a Blinded enemy, there is a <unbreak>#2[i]%</unbreak> <u>fixed chance</u> to delay all enemies' action by <unbreak>#3[i]%</unbreak>.",
-      "params": [
-        [ 10, 1, 0.25 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Impair",
+      "simpleDescription": "Enemies in a set area are Blinded. When initiating battle against a Blinded enemy, there is a high chance to delay all enemies' actions.",
+      "description": "After Sampo uses his Technique, enemies in a set area are inflicted with Blind for #1[i] second(s). Blinded enemies cannot detect your team.\nWhen initiating combat against a Blinded enemy, there is a #2[i]% fixed chance to delay all enemies' action by #3[i]%.",
+      "params": [[10, 1, 0.25]],
+      "icon": "icon/skill/1108_technique.png"
     }
   ],
   "eidolons": [
     {
       "name": "Rising Love",
-      "desc": "When using Skill, deals DMG for <unbreak>#1[i]</unbreak> extra time(s) to a random enemy.",
-      "params": [ 1 ]
+      "rank": 1,
+      "desc": "When using Skill, deals DMG for 1 extra time(s) to a random enemy.",
+      "materials": [
+        {
+          "id": "11108",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1108_rank1.png"
     },
     {
       "name": "Infectious Enthusiasm",
-      "desc": "Defeating an enemy with Wind Shear has a <unbreak>#1[i]%</unbreak> base chance to inflict all enemies with <unbreak>#2[i]</unbreak> stack(s) of Wind Shear, equivalent to the Talent's Wind Shear.",
-      "params": [ 1, 1 ]
+      "rank": 2,
+      "desc": "Defeating an enemy with Wind Shear has a 100% base chance to inflict all enemies with 1 stack(s) of Wind Shear, equivalent to the Talent's Wind Shear.",
+      "materials": [
+        {
+          "id": "11108",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1108_rank2.png"
     },
     {
       "name": "Big Money!",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11108",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1108_skill.png"
     },
     {
       "name": "The Deeper the Love, the Stronger the Hate",
-      "desc": "When Skill hits an enemy with <unbreak>#1[i]</unbreak> or more stack(s) of Wind Shear, the enemy immediately takes <unbreak>#2[i]%</unbreak> of current Wind Shear DMG.",
-      "params": [ 5, 0.08 ]
+      "rank": 4,
+      "desc": "When Skill hits an enemy with 5 or more stack(s) of Wind Shear, the enemy immediately takes 8% of current Wind Shear DMG.",
+      "materials": [
+        {
+          "id": "11108",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1108_rank4.png"
     },
     {
       "name": "Huuuuge Money!",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11108",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1108_ultimate.png"
     },
     {
       "name": "Increased Spending",
-      "desc": "Talent's Wind Shear DMG multiplier increases by <unbreak>#1[i]%</unbreak>.",
-      "params": [ 0.15 ]
+      "rank": 6,
+      "desc": "Talent's Wind Shear DMG multiplier increases by 15%.",
+      "materials": [
+        {
+          "id": "11108",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1108_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1108101,
+      "id": "1108101",
       "name": "Trap",
-      "desc": "Extends the duration of Wind Shear caused by Talent by <unbreak>#1[i]</unbreak> turn(s).",
-      "icon": "SkillIcon_1108_SkillTree1.png",
-      "params": [ 1 ],
+      "maxLevel": 1,
+      "description": "Extends the duration of Wind Shear caused by Talent by #1[i] turn(s).",
+      "params": [[1]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110151",
+              "num": 2
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1108_skilltree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1108202,
+          "id": "1108202",
           "name": "Effect Hit Rate Boost",
-          "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusProbability.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110151",
+                  "num": 2
+                },
+                {
+                  "id": "112011",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusProbability.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1108203,
+              "id": "1108203",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110152",
+                      "num": 2
+                    },
+                    {
+                      "id": "112012",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 3,
               "children": [
                 {
-                  "id": 1108204,
+                  "id": "1108204",
                   "name": "Effect RES Boost",
-                  "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconStatusResistance.png",
-                  "params": [ 0.04 ],
+                  "maxLevel": 1,
+                  "description": "Effect RES increases by 4.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "StatusResistanceBase",
+                          "value": 0.04
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 8000
+                        },
+                        {
+                          "id": "110152",
+                          "num": 2
+                        },
+                        {
+                          "id": "112012",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconStatusResistance.png",
+                  "major": false,
                   "minAsc": 3
                 }
               ]
@@ -293,35 +348,142 @@
       ]
     },
     {
-      "id": 1108102,
+      "id": "1108102",
       "name": "Defensive Position",
-      "desc": "Using Ultimate additionally regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "icon": "SkillIcon_1108_SkillTree2.png",
-      "params": [ 10 ],
+      "maxLevel": 1,
+      "description": "Using Ultimate additionally regenerates #1[i] Energy.",
+      "params": [[10]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110152",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1108_skilltree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1108205,
+          "id": "1108205",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110152",
+                  "num": 4
+                },
+                {
+                  "id": "112012",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1108206,
+              "id": "1108206",
               "name": "Effect Hit Rate Boost",
-              "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconStatusProbability.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "Effect Hit Rate increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "StatusProbabilityBase",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110153",
+                      "num": 2
+                    },
+                    {
+                      "id": "112013",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconStatusProbability.png",
+              "major": false,
               "minAsc": 5,
               "children": [
                 {
-                  "id": 1108207,
+                  "id": "1108207",
                   "name": "ATK Boost",
-                  "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconAttack.png",
-                  "params": [ 0.06 ],
+                  "maxLevel": 1,
+                  "description": "ATK increases by 6.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "AttackAddedRatio",
+                          "value": 0.06
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 36000
+                        },
+                        {
+                          "id": "110153",
+                          "num": 2
+                        },
+                        {
+                          "id": "112013",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconAttack.png",
+                  "major": false,
                   "minAsc": 5
                 }
               ]
@@ -331,48 +493,392 @@
       ]
     },
     {
-      "id": 1108103,
+      "id": "1108103",
       "name": "Spice Up",
-      "desc": "Enemies with Wind Shear effect deal <unbreak>#1[i]%</unbreak> less DMG to Sampo.",
-      "icon": "SkillIcon_1108_SkillTree3.png",
-      "params": [ 0.15 ],
+      "maxLevel": 1,
+      "description": "Enemies with Wind Shear effect deal #1[i]% less DMG to Sampo.",
+      "params": [[0.15]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110153",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1108_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1108208,
+          "id": "1108208",
           "name": "Effect RES Boost",
-          "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusResistance.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "Effect RES increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "StatusResistanceBase",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "112013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusResistance.png",
+          "major": false,
           "minAsc": 6
         },
         {
-          "id": 1108209,
+          "id": "1108209",
           "name": "Effect Hit Rate Boost",
-          "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusProbability.png",
-          "params": [ 0.08 ],
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "112013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusProbability.png",
+          "major": false,
+          "minAsc": 0,
           "minLevel": 75
         }
       ]
     },
     {
-      "id": 1108201,
+      "id": "1108201",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.04 ],
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "112011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0,
       "children": [
         {
-          "id": 1108210,
+          "id": "1108210",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.08 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "112013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconAttack.png",
+          "major": false,
+          "minAsc": 0,
           "minLevel": 80
         }
       ]
     }
   ],
-  "description": "A merchant who freely travels between the Overworld and the Underworld.\nHe acts like he is everyone's friend, is enthusiastically humorous, and is good at bantering."
+  "stats": [
+    {
+      "health": {
+        "base": 139.2,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 84,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 54,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 194.88,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 117.6,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 75.6,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 250.56,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 151.2,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 97.2,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 306.24,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 184.8,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 118.8,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 361.92,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 218.4,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 140.4,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 417.6,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 252,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 162,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 473.28,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 285.6,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 183.6,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

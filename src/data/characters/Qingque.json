@@ -1,306 +1,366 @@
 {
+  "id": "1201",
   "name": "Qingque",
+  "description": "Diviner of the Divination Commission on the Xianzhou Luofu, and a librarian.\\nAlways slacks off and is about to be demoted to a \"door guardian.\"",
   "element": "Quantum",
   "path": "Erudition",
   "rarity": 4,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 88.8,
-      "attackAdd": 4.44,
-      "hpBase": 139.2,
-      "hpAdd": 6.96,
-      "defenseBase": 60,
-      "defenseAdd": 3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 124.32,
-      "attackAdd": 4.44,
-      "hpBase": 194.88,
-      "hpAdd": 6.96,
-      "defenseBase": 84,
-      "defenseAdd": 3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 159.84,
-      "attackAdd": 4.44,
-      "hpBase": 250.56,
-      "hpAdd": 6.96,
-      "defenseBase": 108,
-      "defenseAdd": 3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 195.36,
-      "attackAdd": 4.44,
-      "hpBase": 306.24,
-      "hpAdd": 6.96,
-      "defenseBase": 132,
-      "defenseAdd": 3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 230.88,
-      "attackAdd": 4.44,
-      "hpBase": 361.92,
-      "hpAdd": 6.96,
-      "defenseBase": 156,
-      "defenseAdd": 3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 266.4,
-      "attackAdd": 4.44,
-      "hpBase": 417.6,
-      "hpAdd": 6.96,
-      "defenseBase": 180,
-      "defenseAdd": 3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 301.92,
-      "attackAdd": 4.44,
-      "hpBase": 473.28,
-      "hpAdd": 6.96,
-      "defenseBase": 204,
-      "defenseAdd": 3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 98,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 140,
+  "icon": "icon/character/1201.png",
+  "preview": "image/character_preview/1201.png",
+  "portrait": "image/character_portrait/1201.png",
   "skills": [
     {
       "name": "Flower Pick",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Tosses 1 jade tile from the suit with the fewest tiles in hand to deal Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Qingque's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Quantum",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Tosses a tile to deal minor Quantum DMG to a single enemy.",
+      "description": "Tosses 1 jade tile from the suit with the fewest tiles in hand to deal Quantum DMG equal to #1[i]% of Qingque's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1201_basic_atk.png"
     },
     {
       "name": "A Scoop of Moon",
-      "tag": "Enhance",
-      "type": "Skill",
-      "desc": "Immediately draws <unbreak>#1[i]</unbreak> jade tile(s) and increases DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> until the end of the current turn. This effect can stack up to <unbreak>#3[i]</unbreak> time(s). The turn will not end after this Skill is used.",
+      "maxLevel": 15,
+      "element": "",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Enhance",
+      "simpleDescription": "Draw Tile, increases Qingque's DMG, and this turn does not end.",
+      "description": "Immediately draws #1[i] jade tile(s) and increases DMG by #2[i]% until the end of the current turn. This effect can stack up to #3[i] time(s). The turn will not end after this Skill is used.",
       "params": [
-        [ 2, 0.14, 4 ],
-        [ 2, 0.154, 4 ],
-        [ 2, 0.168, 4 ],
-        [ 2, 0.182, 4 ],
-        [ 2, 0.196, 4 ],
-        [ 2, 0.21, 4 ],
-        [ 2, 0.2275, 4 ],
-        [ 2, 0.245, 4 ],
-        [ 2, 0.2625, 4 ],
-        [ 2, 0.28, 4 ],
-        [ 2, 0.294, 4 ],
-        [ 2, 0.308, 4 ],
-        [ 2, 0.322, 4 ],
-        [ 2, 0.336, 4 ],
-        [ 2, 0.35, 4 ]
-      ]
+        [2, 0.14, 4],
+        [2, 0.154, 4],
+        [2, 0.168, 4],
+        [2, 0.182, 4],
+        [2, 0.196, 4],
+        [2, 0.21, 4],
+        [2, 0.2275, 4],
+        [2, 0.245, 4],
+        [2, 0.2625, 4],
+        [2, 0.28, 4],
+        [2, 0.294, 4],
+        [2, 0.308, 4],
+        [2, 0.322, 4],
+        [2, 0.336, 4],
+        [2, 0.35, 4]
+      ],
+      "icon": "icon/skill/1201_skill.png"
     },
     {
       "name": "A Quartet? Woo-hoo!",
-      "tag": "AoE",
-      "type": "Ultimate",
-      "desc": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Qingque's ATK to all enemies, and obtain 4 jade tiles of the same suit.",
+      "maxLevel": 15,
+      "element": "Quantum",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "AoEAttack",
+      "simpleDescription": "Deals Quantum DMG to all enemies, then obtains 4 tiles of the same suit.",
+      "description": "Deals Quantum DMG equal to #1[i]% of Qingque's ATK to all enemies, and obtains 4 jade tiles of the same suit.",
       "params": [
-        [ 1.2 ],
-        [ 1.28 ],
-        [ 1.36 ],
-        [ 1.44 ],
-        [ 1.52 ],
-        [ 1.6 ],
-        [ 1.7 ],
-        [ 1.8 ],
-        [ 1.9 ],
-        [ 2 ],
-        [ 2.08 ],
-        [ 2.16 ],
-        [ 2.24 ],
-        [ 2.32 ],
-        [ 2.4 ]
+        [1.2],
+        [1.28],
+        [1.36],
+        [1.44],
+        [1.52],
+        [1.6],
+        [1.7],
+        [1.8],
+        [1.9],
+        [2],
+        [2.08],
+        [2.16],
+        [2.24],
+        [2.32],
+        [2.4]
       ],
-      "energyNeeded": 140,
-      "energyGain": 5,
-      "toughness": {
-        "All": 60
-      }
+      "icon": "icon/skill/1201_ultimate.png"
     },
     {
       "name": "Celestial Jade",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "",
       "type": "Talent",
-      "desc": "When an ally's turn starts, Qingque randomly draws 1 tile from 3 different suits and can hold up to 4 tiles at one time.\\nIf Qingque starts her turn with 4 tiles of the same suit, she consumes all tiles to enter the \"Hidden Hand\" state.\\nWhile in this state, Qingque cannot use her Skill again. At the same time, Qingque's ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and her Basic ATK \"Flower Pick\" is enhanced, becoming \"Cherry on Top!\" The \"Hidden Hand\" state ends after using \"Cherry on Top!\".",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "At the start of any ally's turn, draws a tile. At the start of their own turn, if they hold 4 tiles from the same suit, remove all tiles in possession and Enhance this Basic Attack while increasing their own ATK.",
+      "description": "When an ally's turn starts, Qingque randomly draws 1 tile from 3 different suits and can hold up to 4 tiles at one time.\nIf Qingque starts her turn with 4 tiles of the same suit, she consumes all tiles to enter the \"Hidden Hand\" state.\nWhile in this state, Qingque cannot use her Skill again. At the same time, Qingque's ATK increases by #1[i]%, and her Basic ATK \"Flower Pick\" is enhanced, becoming \"Cherry on Top!\" The \"Hidden Hand\" state ends after using \"Cherry on Top!\".",
       "params": [
-        [ 0.36 ],
-        [ 0.396 ],
-        [ 0.432 ],
-        [ 0.468 ],
-        [ 0.504 ],
-        [ 0.54 ],
-        [ 0.585 ],
-        [ 0.63 ],
-        [ 0.675 ],
-        [ 0.72 ],
-        [ 0.756 ],
-        [ 0.792 ],
-        [ 0.828 ],
-        [ 0.864 ],
-        [ 0.9 ]
-      ]
+        [0.36],
+        [0.396],
+        [0.432],
+        [0.468],
+        [0.504],
+        [0.54],
+        [0.585],
+        [0.63],
+        [0.675],
+        [0.72],
+        [0.756],
+        [0.792],
+        [0.828],
+        [0.864],
+        [0.9]
+      ],
+      "icon": "icon/skill/1201_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Quantum",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1201_basic_atk.png"
     },
     {
       "name": "Game Solitaire",
-      "tag": "Enhance",
-      "type": "Technique",
-      "desc": "After using Technique, Qingque draws <unbreak>#1[i]</unbreak> jade tile(s) when the battle starts.",
-      "params": [
-        [ 2 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Enhance",
+      "simpleDescription": "After they use their Technique, draw a tile at the start of the next battle.",
+      "description": "After using Technique, Qingque draws #1[i] jade tile(s) when the battle starts.",
+      "params": [[2]],
+      "icon": "icon/skill/1201_technique.png"
     },
     {
       "name": "Cherry on Top!",
-      "tag": "Blast",
-      "type": "Basic ATK",
-      "desc": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Qingque's ATK to a single enemy, and deals Quantum DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Qingque's ATK to enemies adjacent to it.\\n\"Cherry on Top!\" cannot recover Skill Points.",
+      "maxLevel": 9,
+      "element": "Quantum",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "Blast",
+      "simpleDescription": "Deals Quantum DMG to a single enemy and minor Quantum DMG to enemies adjacent to it.",
+      "description": "Deals Quantum DMG equal to #1[i]% of Qingque's ATK to a single enemy, and deals Quantum DMG equal to #2[i]% of Qingque's ATK to enemies adjacent to it.\n\"Cherry on Top!\" cannot recover Skill Points.",
       "params": [
-        [ 1.2, 0.5 ],
-        [ 1.44, 0.6 ],
-        [ 1.68, 0.7 ],
-        [ 1.92, 0.8 ],
-        [ 2.16, 0.9 ],
-        [ 2.4, 1 ],
-        [ 2.64, 1.1 ],
-        [ 2.88, 1.2 ],
-        [ 3.12, 1.3 ]
+        [1.2, 0.5],
+        [1.44, 0.6],
+        [1.68, 0.7],
+        [1.92, 0.8],
+        [2.16, 0.9],
+        [2.4, 1],
+        [2.64, 1.1],
+        [2.88, 1.2],
+        [3.12, 1.3]
       ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 60,
-        "Adjacent": 30
-      }
+      "icon": "icon/skill/1201_basic_atk.png"
     }
   ],
   "eidolons": [
     {
       "name": "Rise Through the Tiles",
-      "desc": "Ultimate deals <unbreak>#1[i]%</unbreak> more DMG.",
-      "params": [ 0.1 ]
+      "rank": 1,
+      "desc": "Ultimate deals 10% more DMG.",
+      "materials": [
+        {
+          "id": "11201",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1201_rank1.png"
     },
     {
       "name": "Sleep on the Tiles",
-      "desc": "Every time Draw Tile is triggered, Qingque immediately regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "params": [ 1 ]
+      "rank": 2,
+      "desc": "Every time Draw Tile is triggered, Qingque immediately regenerates 1 Energy.",
+      "materials": [
+        {
+          "id": "11201",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1201_rank2.png"
     },
     {
       "name": "Read Between the Tiles",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11201",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1201_skill.png"
     },
     {
       "name": "Right on the Tiles",
-      "desc": "After this character's Skill is used, there is a <unbreak>#1[i]%</unbreak> fixed chance to gain Autarky, which lasts until the end of the current turn. \\nWith Autarky, using Basic ATK or Enhanced Basic ATK immediately launches 1 follow-up attack on the same target, dealing Quantum DMG equal to <unbreak>100%</unbreak> of the previous Basic ATK (or Enhanced Basic ATK)'s DMG.",
-      "params": [ 0.24 ]
+      "rank": 4,
+      "desc": "After this character's Skill is used, there is a 24% fixed chance to gain Autarky, which lasts until the end of the current turn. \\nWith Autarky, using Basic ATK or Enhanced Basic ATK immediately launches 1 follow-up attack on the same target, dealing Quantum DMG equal to 100% of the previous Basic ATK (or Enhanced Basic ATK)'s DMG.",
+      "materials": [
+        {
+          "id": "11201",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1201_rank4.png"
     },
     {
       "name": "Gambit for the Tiles",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11201",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1201_ultimate.png"
     },
     {
       "name": "Prevail Beyond the Tiles",
+      "rank": 6,
       "desc": "Recovers 1 Skill Point after using Enhanced Basic ATK.",
-      "params": []
+      "materials": [
+        {
+          "id": "11201",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1201_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1201101,
+      "id": "1201101",
       "name": "Tile Battle",
-      "desc": "Restores 1 Skill Point when using the Skill. This effect can only be triggered 1 time per battle.",
-      "icon": "SkillIcon_1201_SkillTree1.png",
+      "maxLevel": 1,
+      "description": "Restores 1 Skill Point when using the Skill. This effect can only be triggered 1 time per battle.",
       "params": [],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110131",
+              "num": 2
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1201_skilltree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1201202,
+          "id": "1201202",
           "name": "DMG Boost: Quantum",
-          "desc": "Quantum DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconQuantumAddedRatio.png",
-          "params": [ 0.032 ],
+          "maxLevel": 1,
+          "description": "Quantum DMG Boost increases by 3.2%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "QuantumAddedRatio",
+                  "value": 0.032
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110131",
+                  "num": 2
+                },
+                {
+                  "id": "111011",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconQuantumAddedRatio.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1201203,
+              "id": "1201203",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110132",
+                      "num": 2
+                    },
+                    {
+                      "id": "111012",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 3
             },
             {
-              "id": 1201204,
+              "id": "1201204",
               "name": "DEF Boost",
-              "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconDefence.png",
-              "params": [ 0.05 ],
+              "maxLevel": 1,
+              "description": "DEF increases by 5.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "DefenceAddedRatio",
+                      "value": 0.05
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110132",
+                      "num": 2
+                    },
+                    {
+                      "id": "111012",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconDefence.png",
+              "major": false,
               "minAsc": 3
             }
           ]
@@ -308,35 +368,142 @@
       ]
     },
     {
-      "id": 1201102,
+      "id": "1201102",
       "name": "Bide Time",
-      "desc": "Using the Skill increases DMG Boost effect of attacks by an extra <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1201_SkillTree2.png",
-      "params": [ 0.1 ],
+      "maxLevel": 1,
+      "description": "Using the Skill increases DMG Boost effect of attacks by an extra #1[i]%.",
+      "params": [[0.1]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110132",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1201_skilltree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1201205,
+          "id": "1201205",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110132",
+                  "num": 4
+                },
+                {
+                  "id": "111012",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1201206,
+              "id": "1201206",
               "name": "DMG Boost: Quantum",
-              "desc": "Quantum DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconQuantumAddedRatio.png",
-              "params": [ 0.048 ],
+              "maxLevel": 1,
+              "description": "Quantum DMG Boost increases by 4.8%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "QuantumAddedRatio",
+                      "value": 0.048
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110133",
+                      "num": 2
+                    },
+                    {
+                      "id": "111013",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconQuantumAddedRatio.png",
+              "major": false,
               "minAsc": 5
             },
             {
-              "id": 1201207,
+              "id": "1201207",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110133",
+                      "num": 2
+                    },
+                    {
+                      "id": "111013",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 5
             }
           ]
@@ -344,46 +511,390 @@
       ]
     },
     {
-      "id": 1201103,
+      "id": "1201103",
       "name": "Winning Hand",
-      "desc": "Qingque's SPD increases by <unbreak>#1[i]%</unbreak> for 1 turn after using the Enhanced Basic ATK.",
-      "icon": "SkillIcon_1201_SkillTree3.png",
-      "params": [ 0.1 ],
+      "maxLevel": 1,
+      "description": "Qingque's SPD increases by #1[i]% for 1 turn after using the Enhanced Basic ATK.",
+      "params": [[0.1]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110133",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1201_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1201208,
+          "id": "1201208",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.075 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 7.5%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.075
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110133",
+                  "num": 6
+                },
+                {
+                  "id": "111013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconDefence.png",
+          "major": false,
           "minAsc": 6
         },
         {
-          "id": 1201209,
+          "id": "1201209",
           "name": "DMG Boost: Quantum",
-          "desc": "Quantum DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconQuantumAddedRatio.png",
-          "params": [ 0.064 ],
+          "maxLevel": 1,
+          "description": "Quantum DMG Boost increases by 6.4%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "QuantumAddedRatio",
+                  "value": 0.064
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110133",
+                  "num": 6
+                },
+                {
+                  "id": "111013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconQuantumAddedRatio.png",
+          "major": false,
+          "minAsc": 0,
           "minLevel": 75
         }
       ]
     },
     {
-      "id": 1201201,
+      "id": "1201201",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.04 ]
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "111011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0
     },
     {
-      "id": 1201210,
+      "id": "1201210",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.08 ],
+      "maxLevel": 1,
+      "description": "ATK increases by 8.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.08
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110133",
+              "num": 6
+            },
+            {
+              "id": "111013",
+              "num": 6
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0,
       "minLevel": 80
     }
   ],
-  "description": "Diviner of the Divination Commission on the Xianzhou Luofu, and a librarian.\nAlways slacks off and is about to be demoted to a \"door guardian.\""
+  "stats": [
+    {
+      "health": {
+        "base": 139.2,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 88.8,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 60,
+        "step": 3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 194.88,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 124.32,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 84,
+        "step": 3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 250.56,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 159.84,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 108,
+        "step": 3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 306.24,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 195.36,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 132,
+        "step": 3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 361.92,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 230.88,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 156,
+        "step": 3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 417.6,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 266.4,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 180,
+        "step": 3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 473.28,
+        "step": 6.96
+      },
+      "attack": {
+        "base": 301.92,
+        "step": 4.44
+      },
+      "defense": {
+        "base": 204,
+        "step": 3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

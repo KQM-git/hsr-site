@@ -1,0 +1,979 @@
+{
+  "id": "1213",
+  "name": "Dan Heng • Imbibitor Lunae",
+  "element": "Imaginary",
+  "path": "Destruction",
+  "rarity": 5,
+  "maxSkillPoints": 140,
+  "icon": "",
+  "preview": "",
+  "portrait": "image/character_portrait/1213.png",
+  "skills": [
+    {
+      "name": "",
+      "maxLevel": 9,
+      "element": "Imaginary",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "",
+      "description": "",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1213_basic_atk.png"
+    },
+    {
+      "name": "",
+      "maxLevel": 15,
+      "element": "",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Enhance",
+      "simpleDescription": "",
+      "description": "",
+      "params": [
+        [1.3, 0.6, 0.3, 0.06, 4, 0.6, 0.6],
+        [1.43, 0.66, 0.33, 0.066, 4, 0.66, 0.66],
+        [1.56, 0.72, 0.36, 0.072, 4, 0.72, 0.72],
+        [1.69, 0.78, 0.39, 0.078, 4, 0.78, 0.78],
+        [1.82, 0.84, 0.42, 0.084, 4, 0.84, 0.84],
+        [1.95, 0.9, 0.45, 0.09, 4, 0.9, 0.9],
+        [2.1125, 0.975, 0.4875, 0.0975, 4, 0.975, 0.975],
+        [2.275, 1.05, 0.525, 0.105, 4, 1.05, 1.05],
+        [2.4375, 1.125, 0.5625, 0.1125, 4, 1.125, 1.125],
+        [2.6, 1.2, 0.6, 0.12, 4, 1.2, 1.2],
+        [2.73, 1.26, 0.63, 0.126, 4, 1.26, 1.26],
+        [2.86, 1.32, 0.66, 0.132, 4, 1.32, 1.32],
+        [2.99, 1.38, 0.69, 0.138, 4, 1.38, 1.38],
+        [3.12, 1.44, 0.72, 0.144, 4, 1.44, 1.44],
+        [3.25, 1.5, 0.75, 0.15, 4, 1.5, 1.5]
+      ],
+      "icon": "icon/skill/1213_skill.png"
+    },
+    {
+      "name": "",
+      "maxLevel": 15,
+      "element": "Imaginary",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Blast",
+      "simpleDescription": "",
+      "description": "",
+      "params": [
+        [1.8, 0.84, 2, 3],
+        [1.92, 0.896, 2, 3],
+        [2.04, 0.952, 2, 3],
+        [2.16, 1.008, 2, 3],
+        [2.28, 1.064, 2, 3],
+        [2.4, 1.12, 2, 3],
+        [2.55, 1.19, 2, 3],
+        [2.7, 1.26, 2, 3],
+        [2.85, 1.33, 2, 3],
+        [3, 1.4, 2, 3],
+        [3.12, 1.456, 2, 3],
+        [3.24, 1.512, 2, 3],
+        [3.36, 1.568, 2, 3],
+        [3.48, 1.624, 2, 3],
+        [3.6, 1.68, 2, 3]
+      ],
+      "icon": "icon/skill/1213_ultimate.png"
+    },
+    {
+      "name": "",
+      "maxLevel": 15,
+      "element": "",
+      "type": "Talent",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "",
+      "description": "",
+      "params": [
+        [0.09, 5],
+        [0.095, 5],
+        [0.1, 5],
+        [0.105, 5],
+        [0.11, 5],
+        [0.115, 5],
+        [0.1213, 5],
+        [0.1275, 5],
+        [0.1338, 5],
+        [0.14, 5],
+        [0.145, 5],
+        [0.15, 5],
+        [0.155, 5],
+        [0.16, 5],
+        [0.165, 5]
+      ],
+      "icon": "icon/skill/1213_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Imaginary",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1213_basic_atk.png"
+    },
+    {
+      "name": "",
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Enhance",
+      "simpleDescription": "",
+      "description": "",
+      "params": [[1, 20]],
+      "icon": "icon/skill/1213_technique.png"
+    },
+    {
+      "name": "",
+      "maxLevel": 15,
+      "element": "Imaginary",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "",
+      "description": "",
+      "params": [
+        [1.3],
+        [1.43],
+        [1.56],
+        [1.69],
+        [1.82],
+        [1.95],
+        [2.1125],
+        [2.275],
+        [2.4375],
+        [2.6],
+        [2.73],
+        [2.86],
+        [2.99],
+        [3.12],
+        [3.25]
+      ],
+      "icon": "icon/skill/1213_basic_atk.png"
+    },
+    {
+      "name": "",
+      "maxLevel": 1,
+      "element": "",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Support",
+      "simpleDescription": "",
+      "description": "",
+      "params": [],
+      "icon": "icon/skill/1213_skill.png"
+    },
+    {
+      "name": "",
+      "maxLevel": 15,
+      "element": "Imaginary",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "Blast",
+      "simpleDescription": "",
+      "description": "",
+      "params": [
+        [1.3, 0.6, 0.3, 0.06, 4],
+        [1.43, 0.66, 0.33, 0.066, 4],
+        [1.56, 0.72, 0.36, 0.072, 4],
+        [1.69, 0.78, 0.39, 0.078, 4],
+        [1.82, 0.84, 0.42, 0.084, 4],
+        [1.95, 0.9, 0.45, 0.09, 4],
+        [2.1125, 0.975, 0.4875, 0.0975, 4],
+        [2.275, 1.05, 0.525, 0.105, 4],
+        [2.4375, 1.125, 0.5625, 0.1125, 4],
+        [2.6, 1.2, 0.6, 0.12, 4],
+        [2.73, 1.26, 0.63, 0.126, 4],
+        [2.86, 1.32, 0.66, 0.132, 4],
+        [2.99, 1.38, 0.69, 0.138, 4],
+        [3.12, 1.44, 0.72, 0.144, 4],
+        [3.25, 1.5, 0.75, 0.15, 4]
+      ],
+      "icon": "icon/skill/1213_basic_atk.png"
+    },
+    {
+      "name": "",
+      "maxLevel": 15,
+      "element": "Imaginary",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "Blast",
+      "simpleDescription": "",
+      "description": "",
+      "params": [
+        [1.3, 0.6, 0.3, 0.06, 4, 0.6, 0.6],
+        [1.43, 0.66, 0.33, 0.066, 4, 0.66, 0.66],
+        [1.56, 0.72, 0.36, 0.072, 4, 0.72, 0.72],
+        [1.69, 0.78, 0.39, 0.078, 4, 0.78, 0.78],
+        [1.82, 0.84, 0.42, 0.084, 4, 0.84, 0.84],
+        [1.95, 0.9, 0.45, 0.09, 4, 0.9, 0.9],
+        [2.1125, 0.975, 0.4875, 0.0975, 4, 0.975, 0.975],
+        [2.275, 1.05, 0.525, 0.105, 4, 1.05, 1.05],
+        [2.4375, 1.125, 0.5625, 0.1125, 4, 1.125, 1.125],
+        [2.6, 1.2, 0.6, 0.12, 4, 1.2, 1.2],
+        [2.73, 1.26, 0.63, 0.126, 4, 1.26, 1.26],
+        [2.86, 1.32, 0.66, 0.132, 4, 1.32, 1.32],
+        [2.99, 1.38, 0.69, 0.138, 4, 1.38, 1.38],
+        [3.12, 1.44, 0.72, 0.144, 4, 1.44, 1.44],
+        [3.25, 1.5, 0.75, 0.15, 4, 1.5, 1.5]
+      ],
+      "icon": "icon/skill/1213_basic_atk.png"
+    }
+  ],
+  "eidolons": [
+    {
+      "name": "",
+      "rank": 1,
+      "desc": "",
+      "materials": [
+        {
+          "id": "11213",
+          "num": 1
+        }
+      ],
+      "icon": ""
+    },
+    {
+      "name": "",
+      "rank": 2,
+      "desc": "",
+      "materials": [
+        {
+          "id": "11213",
+          "num": 1
+        }
+      ],
+      "icon": ""
+    },
+    {
+      "name": "",
+      "rank": 3,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11213",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1213_skill.png"
+    },
+    {
+      "name": "",
+      "rank": 4,
+      "desc": "",
+      "materials": [
+        {
+          "id": "11213",
+          "num": 1
+        }
+      ],
+      "icon": ""
+    },
+    {
+      "name": "",
+      "rank": 5,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11213",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1213_ultimate.png"
+    },
+    {
+      "name": "",
+      "rank": 6,
+      "desc": "",
+      "materials": [
+        {
+          "id": "11213",
+          "num": 1
+        }
+      ],
+      "icon": ""
+    }
+  ],
+  "traces": [
+    {
+      "id": "1213101",
+      "name": "",
+      "maxLevel": 1,
+      "description": "",
+      "params": [[1]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 5000
+            },
+            {
+              "id": "110111",
+              "num": 3
+            },
+            {
+              "id": "110503",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1213_skilltree1.png",
+      "major": false,
+      "minAsc": 2,
+      "children": [
+        {
+          "id": "1213202",
+          "name": "DMG Boost: Imaginary",
+          "maxLevel": 1,
+          "description": "CRIT Rate increases by 2.7%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "CriticalChanceBase",
+                  "value": 0.027
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 5000
+                },
+                {
+                  "id": "110111",
+                  "num": 3
+                },
+                {
+                  "id": "113001",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconCriticalChance.png",
+          "major": false,
+          "minAsc": 2,
+          "children": [
+            {
+              "id": "1213203",
+              "name": "Enhance Attack",
+              "maxLevel": 1,
+              "description": "Imaginary DMG Boost increases by 3.2%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "ImaginaryAddedRatio",
+                      "value": 0.032
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 10000
+                    },
+                    {
+                      "id": "110112",
+                      "num": 3
+                    },
+                    {
+                      "id": "113002",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconImaginaryAddedRatio.png",
+              "major": false,
+              "minAsc": 3,
+              "children": [
+                {
+                  "id": "1213204",
+                  "name": "HP Boost",
+                  "maxLevel": 1,
+                  "description": "HP increases by 4.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "HPAddedRatio",
+                          "value": 0.04
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 10000
+                        },
+                        {
+                          "id": "110112",
+                          "num": 3
+                        },
+                        {
+                          "id": "113002",
+                          "num": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconMaxHP.png",
+                  "major": false,
+                  "minAsc": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1213102",
+      "name": "",
+      "maxLevel": 1,
+      "description": "",
+      "params": [[0.35]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 20000
+            },
+            {
+              "id": "110112",
+              "num": 5
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110503",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1213_skilltree2.png",
+      "major": false,
+      "minAsc": 4,
+      "children": [
+        {
+          "id": "1213205",
+          "name": "Enhance Attack",
+          "maxLevel": 1,
+          "description": "Imaginary DMG Boost increases by 4.8%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "ImaginaryAddedRatio",
+                  "value": 0.048
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 20000
+                },
+                {
+                  "id": "110112",
+                  "num": 5
+                },
+                {
+                  "id": "113002",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconImaginaryAddedRatio.png",
+          "major": false,
+          "minAsc": 4,
+          "children": [
+            {
+              "id": "1213206",
+              "name": "DMG Boost: Imaginary",
+              "maxLevel": 1,
+              "description": "CRIT Rate increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "CriticalChanceBase",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 45000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 3
+                    },
+                    {
+                      "id": "113003",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconCriticalChance.png",
+              "major": false,
+              "minAsc": 5,
+              "children": [
+                {
+                  "id": "1213207",
+                  "name": "Enhance Attack",
+                  "maxLevel": 1,
+                  "description": "Imaginary DMG Boost increases by 4.8%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "ImaginaryAddedRatio",
+                          "value": 0.048
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 45000
+                        },
+                        {
+                          "id": "110113",
+                          "num": 3
+                        },
+                        {
+                          "id": "113003",
+                          "num": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconImaginaryAddedRatio.png",
+                  "major": false,
+                  "minAsc": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1213103",
+      "name": "",
+      "maxLevel": 1,
+      "description": "",
+      "params": [[0.12]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110113",
+              "num": 8
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110503",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1213_skilltree3.png",
+      "major": false,
+      "minAsc": 6,
+      "children": [
+        {
+          "id": "1213208",
+          "name": "HP Boost",
+          "maxLevel": 1,
+          "description": "HP increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "HPAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110113",
+                  "num": 8
+                },
+                {
+                  "id": "113003",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconMaxHP.png",
+          "major": false,
+          "minAsc": 6,
+          "children": [
+            {
+              "id": "1213209",
+              "name": "DMG Boost: Imaginary",
+              "maxLevel": 1,
+              "description": "CRIT Rate increases by 5.3%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "CriticalChanceBase",
+                      "value": 0.053
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 8
+                    },
+                    {
+                      "id": "113003",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconCriticalChance.png",
+              "major": false,
+              "minAsc": 0,
+              "minLevel": 75
+            },
+            {
+              "id": "1213210",
+              "name": "ATK Boost",
+              "maxLevel": 1,
+              "description": "Imaginary DMG Boost increases by 6.4%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "ImaginaryAddedRatio",
+                      "value": 0.064
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 8
+                    },
+                    {
+                      "id": "113003",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconImaginaryAddedRatio.png",
+              "major": false,
+              "minAsc": 0,
+              "minLevel": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1213201",
+      "name": "Enhance Attack",
+      "maxLevel": 1,
+      "description": "Imaginary DMG Boost increases by 3.2%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "ImaginaryAddedRatio",
+              "value": 0.032
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2500
+            },
+            {
+              "id": "113001",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconImaginaryAddedRatio.png",
+      "major": false,
+      "minAsc": 0
+    }
+  ],
+  "stats": [
+    {
+      "health": {
+        "base": 168.96,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 95.04,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 49.5,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 236.544,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 133.056,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 69.3,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 304.128,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 171.072,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 89.1,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 371.712,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 209.088,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 108.9,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 439.296,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 247.104,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 128.7,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 506.88,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 285.12,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 148.5,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 574.464,
+        "step": 8.448
+      },
+      "attack": {
+        "base": 323.136,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 168.3,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 102,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
+}

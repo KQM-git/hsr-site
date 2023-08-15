@@ -1,318 +1,372 @@
 {
+  "id": "1109",
   "name": "Hook",
+  "description": "Boss (self-proclaimed) of an Underworld adventure squad, The Moles.\\nShe loves freedom and sees life as a series of adventures.",
   "element": "Fire",
   "path": "Destruction",
   "rarity": 4,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 84,
-      "attackAdd": 4.2,
-      "hpBase": 182.4,
-      "hpAdd": 9.12,
-      "defenseBase": 48,
-      "defenseAdd": 2.4,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 94,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 117.6,
-      "attackAdd": 4.2,
-      "hpBase": 255.36,
-      "hpAdd": 9.12,
-      "defenseBase": 67.2,
-      "defenseAdd": 2.4,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 94,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 151.2,
-      "attackAdd": 4.2,
-      "hpBase": 328.32,
-      "hpAdd": 9.12,
-      "defenseBase": 86.4,
-      "defenseAdd": 2.4,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 94,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 184.8,
-      "attackAdd": 4.2,
-      "hpBase": 401.28,
-      "hpAdd": 9.12,
-      "defenseBase": 105.6,
-      "defenseAdd": 2.4,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 94,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 218.4,
-      "attackAdd": 4.2,
-      "hpBase": 474.24,
-      "hpAdd": 9.12,
-      "defenseBase": 124.8,
-      "defenseAdd": 2.4,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 94,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 252,
-      "attackAdd": 4.2,
-      "hpBase": 547.2,
-      "hpAdd": 9.12,
-      "defenseBase": 144,
-      "defenseAdd": 2.4,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 94,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 285.6,
-      "attackAdd": 4.2,
-      "hpBase": 620.16,
-      "hpAdd": 9.12,
-      "defenseBase": 163.2,
-      "defenseAdd": 2.4,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 94,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 120,
+  "icon": "icon/character/1109.png",
+  "preview": "image/character_preview/1109.png",
+  "portrait": "image/character_portrait/1109.png",
   "skills": [
     {
       "name": "Hehe! Don't Get Burned!",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hook's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Fire",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Fire DMG to a single enemy.",
+      "description": "Deals Fire DMG equal to #1[i]% of Hook's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1109_basic_atk.png"
     },
     {
       "name": "Hey! Remember Hook?",
-      "tag": "Single Target",
-      "type": "Skill",
-      "desc": "Deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hook's ATK to a single enemy. In addition, there is a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict Burn for <unbreak>#3[i]</unbreak> turn(s).\\nWhen afflicted with Burn, enemies will take Fire DoT equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Hook's ATK at the beginning of each turn.",
+      "maxLevel": 15,
+      "element": "Fire",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals Fire DMG to a single enemy, with a high chance to inflict Burn on the enemy.",
+      "description": "Deals Fire DMG equal to #1[i]% of Hook's ATK to a single enemy. In addition, there is a #2[i]% base chance to inflict Burn for #3[i] turn(s).\nWhen afflicted with Burn, enemies will take Fire DoT equal to #4[i]% of Hook's ATK at the beginning of each turn.",
       "params": [
-        [ 1.2, 1, 2, 0.25 ],
-        [ 1.32, 1, 2, 0.275 ],
-        [ 1.44, 1, 2, 0.3 ],
-        [ 1.56, 1, 2, 0.325 ],
-        [ 1.68, 1, 2, 0.35 ],
-        [ 1.8, 1, 2, 0.3875 ],
-        [ 1.95, 1, 2, 0.4375 ],
-        [ 2.1, 1, 2, 0.5 ],
-        [ 2.25, 1, 2, 0.575 ],
-        [ 2.4, 1, 2, 0.65 ],
-        [ 2.52, 1, 2, 0.6825 ],
-        [ 2.64, 1, 2, 0.715 ],
-        [ 2.76, 1, 2, 0.7475 ],
-        [ 2.88, 1, 2, 0.78 ],
-        [ 3, 1, 2, 0.8125 ]
+        [1.2, 1, 2, 0.25],
+        [1.32, 1, 2, 0.275],
+        [1.44, 1, 2, 0.3],
+        [1.56, 1, 2, 0.325],
+        [1.68, 1, 2, 0.35],
+        [1.8, 1, 2, 0.3875],
+        [1.95, 1, 2, 0.4375],
+        [2.1, 1, 2, 0.5],
+        [2.25, 1, 2, 0.575],
+        [2.4, 1, 2, 0.65],
+        [2.52, 1, 2, 0.6825],
+        [2.64, 1, 2, 0.715],
+        [2.76, 1, 2, 0.7475],
+        [2.88, 1, 2, 0.78],
+        [3, 1, 2, 0.8125]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60
-      }
+      "icon": "icon/skill/1109_skill.png"
     },
     {
       "name": "Boom! Here Comes the Fire!",
-      "tag": "Single Target",
-      "type": "Ultimate",
-      "desc": "Deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hook's ATK to a single enemy.\\nAfter using Ultimate, the next Skill to be used is Enhanced, which deals DMG to a single enemy and enemies adjacent to it.",
+      "maxLevel": 15,
+      "element": "Fire",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals massive Fire DMG to a single enemy and Enhances Hook's next Skill.",
+      "description": "Deals Fire DMG equal to #1[i]% of Hook's ATK to a single enemy.\nAfter using Ultimate, the next Skill to be used is Enhanced, which deals DMG to a single enemy and enemies adjacent to it.",
       "params": [
-        [ 2.4 ],
-        [ 2.56 ],
-        [ 2.72 ],
-        [ 2.88 ],
-        [ 3.04 ],
-        [ 3.2 ],
-        [ 3.4 ],
-        [ 3.6 ],
-        [ 3.8 ],
-        [ 4 ],
-        [ 4.16 ],
-        [ 4.32 ],
-        [ 4.48 ],
-        [ 4.64 ],
-        [ 4.8 ]
+        [2.4],
+        [2.56],
+        [2.72],
+        [2.88],
+        [3.04],
+        [3.2],
+        [3.4],
+        [3.6],
+        [3.8],
+        [4],
+        [4.16],
+        [4.32],
+        [4.48],
+        [4.64],
+        [4.8]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5,
-      "toughness": {
-        "Target": 90
-      }
+      "icon": "icon/skill/1109_ultimate.png"
     },
     {
       "name": "Ha! Oil to the Flames!",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "Fire",
       "type": "Talent",
-      "desc": "When attacking a target afflicted with Burn, deals <u>Additional</u> Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hook's ATK and regenerates <unbreak>#2[i]</unbreak> extra Energy.",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "",
+      "description": "When attacking a target afflicted with Burn, deals Additional Fire DMG equal to #1[i]% of Hook's ATK and regenerates #2[i] extra Energy.",
       "params": [
-        [ 0.5, 5 ],
-        [ 0.55, 5 ],
-        [ 0.6, 5 ],
-        [ 0.65, 5 ],
-        [ 0.7, 5 ],
-        [ 0.75, 5 ],
-        [ 0.8125, 5 ],
-        [ 0.875, 5 ],
-        [ 0.9375, 5 ],
-        [ 1, 5 ],
-        [ 1.05, 5 ],
-        [ 1.1, 5 ],
-        [ 1.15, 5 ],
-        [ 1.2, 5 ],
-        [ 1.25, 5 ]
-      ]
+        [0.5, 5],
+        [0.55, 5],
+        [0.6, 5],
+        [0.65, 5],
+        [0.7, 5],
+        [0.75, 5],
+        [0.8125, 5],
+        [0.875, 5],
+        [0.9375, 5],
+        [1, 5],
+        [1.05, 5],
+        [1.1, 5],
+        [1.15, 5],
+        [1.2, 5],
+        [1.25, 5]
+      ],
+      "icon": "icon/skill/1109_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Fire",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1109_basic_atk.png"
     },
     {
       "name": "Ack! Look at This Mess!",
-      "type": "Technique",
-      "desc": "Immediately attacks the enemy. Upon entering battle, Hook deals Fire DMG equal to <unbreak>#4[i]%</unbreak> of her ATK to a random enemy. In addition, there is a <unbreak>#1[i]%</unbreak> <u>base chance</u> to inflict Burn on every enemy for <unbreak>#3[i]</unbreak> turn(s).\\nWhen afflicted with Burn, enemies will take Fire DoT equal to <unbreak>#2[i]%</unbreak> of Hook's ATK at the beginning of each turn.",
-      "params": [
-        [ 1, 0.5, 3, 0.5 ]
-      ],
-      "toughness": {
-        "All": 60
-      }
+      "maxLevel": 1,
+      "element": "Fire",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Immediately attacks the enemy. Upon entering battle, Hook deals Fire DMG equal to #4[i]% of her ATK to a random enemy. In addition, there is a #1[i]% base chance to inflict Burn on every enemy for #3[i] turn(s).\nWhen afflicted with Burn, enemies will take Fire DoT equal to #2[i]% of Hook's ATK at the beginning of each turn.",
+      "params": [[1, 0.5, 3, 0.5]],
+      "icon": "icon/skill/1109_technique.png"
     },
     {
       "name": "Hey! Remember Hook?",
-      "tag": "Blast",
-      "type": "Skill",
-      "desc": "Deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hook's ATK to a single enemy, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to Burn them for <unbreak>#3[i]</unbreak> turn(s). Additionally, deals Fire DMG equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of Hook's ATK to enemies adjacent to it.\\nWhen afflicted with Burn, enemies will take Fire DoT equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Hook's ATK at the beginning of each turn.",
+      "maxLevel": 15,
+      "element": "Fire",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Blast",
+      "simpleDescription": "Deals Fire DMG to a single enemy with a high chance of inflicting Burn, also deals minor Fire DMG to enemies adjacent to it.",
+      "description": "Deals Fire DMG equal to #1[i]% of Hook's ATK to a single enemy, with a #2[i]% base chance to Burn them for #3[i] turn(s). Additionally, deals Fire DMG equal to #5[i]% of Hook's ATK to enemies adjacent to it.\nWhen afflicted with Burn, enemies will take Fire DoT equal to #4[i]% of Hook's ATK at the beginning of each turn.",
       "params": [
-        [ 1.4, 1, 2, 0.25, 0.4 ],
-        [ 1.54, 1, 2, 0.275, 0.44 ],
-        [ 1.68, 1, 2, 0.3, 0.48 ],
-        [ 1.82, 1, 2, 0.325, 0.52 ],
-        [ 1.96, 1, 2, 0.35, 0.56 ],
-        [ 2.1, 1, 2, 0.3875, 0.6 ],
-        [ 2.275, 1, 2, 0.4375, 0.65 ],
-        [ 2.45, 1, 2, 0.5, 0.7 ],
-        [ 2.625, 1, 2, 0.575, 0.75 ],
-        [ 2.8, 1, 2, 0.65, 0.8 ],
-        [ 2.94, 1, 2, 0.6825, 0.84 ],
-        [ 3.08, 1, 2, 0.715, 0.88 ],
-        [ 3.22, 1, 2, 0.7475, 0.92 ],
-        [ 3.36, 1, 2, 0.78, 0.96 ],
-        [ 3.5, 1, 2, 0.8125, 1 ]
+        [1.4, 1, 2, 0.25, 0.4],
+        [1.54, 1, 2, 0.275, 0.44],
+        [1.68, 1, 2, 0.3, 0.48],
+        [1.82, 1, 2, 0.325, 0.52],
+        [1.96, 1, 2, 0.35, 0.56],
+        [2.1, 1, 2, 0.3875, 0.6],
+        [2.275, 1, 2, 0.4375, 0.65],
+        [2.45, 1, 2, 0.5, 0.7],
+        [2.625, 1, 2, 0.575, 0.75],
+        [2.8, 1, 2, 0.65, 0.8],
+        [2.94, 1, 2, 0.6825, 0.84],
+        [3.08, 1, 2, 0.715, 0.88],
+        [3.22, 1, 2, 0.7475, 0.92],
+        [3.36, 1, 2, 0.78, 0.96],
+        [3.5, 1, 2, 0.8125, 1]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60,
-        "Adjacent": 30
-      }
+      "icon": "icon/skill/1109_skill.png"
     }
   ],
   "eidolons": [
     {
       "name": "Early to Bed, Early to Rise",
-      "desc": "Enhanced Skill deals <unbreak>#1[i]%</unbreak> increased DMG.",
-      "params": [ 0.2 ]
+      "rank": 1,
+      "desc": "Enhanced Skill deals 20% increased DMG.",
+      "materials": [
+        {
+          "id": "11109",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1109_rank1.png"
     },
     {
       "name": "Happy Tummy, Happy Body",
-      "desc": "Extends the duration of Burn caused by Skill by <unbreak>#1[i]</unbreak> turn(s).",
-      "params": [ 1 ]
+      "rank": 2,
+      "desc": "Extends the duration of Burn caused by Skill by 1 turn(s).",
+      "materials": [
+        {
+          "id": "11109",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1109_rank2.png"
     },
     {
       "name": "Don't Be Picky, Nothing's Icky",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11109",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1109_skill.png"
     },
     {
       "name": "It's Okay to Not Know",
-      "desc": "When Talent is triggered, there is a <unbreak>#1[i]%</unbreak> base chance to Burn enemies adjacent to the target enemy, equivalent to that of Skill.",
-      "params": [ 1 ]
+      "rank": 4,
+      "desc": "When Talent is triggered, there is a 100% base chance to Burn enemies adjacent to the target enemy, equivalent to that of Skill.",
+      "materials": [
+        {
+          "id": "11109",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1109_rank4.png"
     },
     {
       "name": "Let the Moles' Deeds Be Known",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11109",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1109_ultimate.png"
     },
     {
       "name": "Always Ready to Punch and Kick",
-      "desc": "Hook deals <unbreak>#1[i]%</unbreak> more DMG to enemies afflicted with Burn.",
-      "params": [ 0.2 ]
+      "rank": 6,
+      "desc": "Hook deals 20% more DMG to enemies afflicted with Burn.",
+      "materials": [
+        {
+          "id": "11109",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1109_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1109101,
+      "id": "1109101",
       "name": "Innocence",
-      "desc": "Hook restores HP equal to <unbreak>#1[i]%</unbreak> of her Max HP whenever her Talent is triggered.",
-      "icon": "SkillIcon_1109_SkillTree1.png",
-      "params": [ 0.05 ],
+      "maxLevel": 1,
+      "description": "Hook restores HP equal to #1[i]% of her Max HP whenever her Talent is triggered.",
+      "params": [[0.05]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110111",
+              "num": 2
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1109_skilltree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1109202,
+          "id": "1109202",
           "name": "HP Boost",
-          "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconMaxHP.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "HP increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "HPAddedRatio",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110111",
+                  "num": 2
+                },
+                {
+                  "id": "112011",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconMaxHP.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1109203,
+              "id": "1109203",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110112",
+                      "num": 2
+                    },
+                    {
+                      "id": "112012",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 3,
               "children": [
                 {
-                  "id": 1109204,
+                  "id": "1109204",
                   "name": "CRIT DMG Boost",
-                  "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconCriticalDamage.png",
-                  "params": [ 0.053 ],
+                  "maxLevel": 1,
+                  "description": "CRIT DMG increases by 5.3%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "CriticalDamageBase",
+                          "value": 0.053
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 8000
+                        },
+                        {
+                          "id": "110112",
+                          "num": 2
+                        },
+                        {
+                          "id": "112012",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconCriticalDamage.png",
+                  "major": false,
                   "minAsc": 3
                 }
               ]
@@ -322,35 +376,142 @@
       ]
     },
     {
-      "id": 1109102,
+      "id": "1109102",
       "name": "Naivete",
-      "desc": "The chance to resist Crowd Control Debuffs increases by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1109_SkillTree2.png",
-      "params": [ 0.35 ],
+      "maxLevel": 1,
+      "description": "The chance to resist Crowd Control Debuffs increases by #1[i]%.",
+      "params": [[0.35]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110112",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1109_skilltree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1109205,
+          "id": "1109205",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110112",
+                  "num": 4
+                },
+                {
+                  "id": "112012",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1109206,
+              "id": "1109206",
               "name": "HP Boost",
-              "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconMaxHP.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "HP increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "HPAddedRatio",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 2
+                    },
+                    {
+                      "id": "112013",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconMaxHP.png",
+              "major": false,
               "minAsc": 5,
               "children": [
                 {
-                  "id": 1109207,
+                  "id": "1109207",
                   "name": "ATK Boost",
-                  "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconAttack.png",
-                  "params": [ 0.06 ],
+                  "maxLevel": 1,
+                  "description": "ATK increases by 6.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "AttackAddedRatio",
+                          "value": 0.06
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 36000
+                        },
+                        {
+                          "id": "110113",
+                          "num": 2
+                        },
+                        {
+                          "id": "112013",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconAttack.png",
+                  "major": false,
                   "minAsc": 5
                 }
               ]
@@ -360,35 +521,144 @@
       ]
     },
     {
-      "id": 1109103,
+      "id": "1109103",
       "name": "Playing With Fire",
-      "desc": "When using her Ultimate, Hook has her action Advanced Forward by <unbreak>#2[i]%</unbreak> and Hook additionally regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "icon": "SkillIcon_1109_SkillTree3.png",
-      "params": [ 5, 0.2 ],
+      "maxLevel": 1,
+      "description": "When using her Ultimate, Hook has her action Advanced Forward by #2[i]% and Hook additionally regenerates #1[i] Energy.",
+      "params": [[5, 0.2]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110113",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1109_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1109208,
+          "id": "1109208",
           "name": "CRIT DMG Boost",
-          "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconCriticalDamage.png",
-          "params": [ 0.08 ],
+          "maxLevel": 1,
+          "description": "CRIT DMG increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "CriticalDamageBase",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110113",
+                  "num": 6
+                },
+                {
+                  "id": "112013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconCriticalDamage.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 1109209,
+              "id": "1109209",
               "name": "HP Boost",
-              "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconMaxHP.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "HP increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "HPAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 6
+                    },
+                    {
+                      "id": "112013",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconMaxHP.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 1109210,
+              "id": "1109210",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 6
+                    },
+                    {
+                      "id": "112013",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -396,12 +666,247 @@
       ]
     },
     {
-      "id": 1109201,
+      "id": "1109201",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.04 ]
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "112011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0
     }
   ],
-  "description": "Boss (self-proclaimed) of an Underworld adventure squad, The Moles.\nShe loves freedom and sees life as a series of adventures."
+  "stats": [
+    {
+      "health": {
+        "base": 182.4,
+        "step": 9.12
+      },
+      "attack": {
+        "base": 84,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 48,
+        "step": 2.4
+      },
+      "speed": {
+        "base": 94,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 255.36,
+        "step": 9.12
+      },
+      "attack": {
+        "base": 117.6,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 67.2,
+        "step": 2.4
+      },
+      "speed": {
+        "base": 94,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 328.32,
+        "step": 9.12
+      },
+      "attack": {
+        "base": 151.2,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 86.4,
+        "step": 2.4
+      },
+      "speed": {
+        "base": 94,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 401.28,
+        "step": 9.12
+      },
+      "attack": {
+        "base": 184.8,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 105.6,
+        "step": 2.4
+      },
+      "speed": {
+        "base": 94,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 474.24,
+        "step": 9.12
+      },
+      "attack": {
+        "base": 218.4,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 124.8,
+        "step": 2.4
+      },
+      "speed": {
+        "base": 94,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 547.2,
+        "step": 9.12
+      },
+      "attack": {
+        "base": 252,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 144,
+        "step": 2.4
+      },
+      "speed": {
+        "base": 94,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 620.16,
+        "step": 9.12
+      },
+      "attack": {
+        "base": 285.6,
+        "step": 4.2
+      },
+      "defense": {
+        "base": 163.2,
+        "step": 2.4
+      },
+      "speed": {
+        "base": 94,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

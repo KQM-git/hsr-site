@@ -1,285 +1,350 @@
 {
+  "id": "1104",
   "name": "Gepard",
+  "description": "A captain in the Silvermane Guards and an outstanding warrior of Belobog.\\nHe is meticulous and vigilant to the core and is always true to himself.",
   "element": "Ice",
   "path": "Preservation",
   "rarity": 5,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 73.92,
-      "attackAdd": 3.696,
-      "hpBase": 190.08,
-      "hpAdd": 9.504,
-      "defenseBase": 89.1,
-      "defenseAdd": 4.455,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 92,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 103.488,
-      "attackAdd": 3.696,
-      "hpBase": 266.112,
-      "hpAdd": 9.504,
-      "defenseBase": 124.74,
-      "defenseAdd": 4.455,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 92,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 133.056,
-      "attackAdd": 3.696,
-      "hpBase": 342.144,
-      "hpAdd": 9.504,
-      "defenseBase": 160.38,
-      "defenseAdd": 4.455,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 92,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 162.624,
-      "attackAdd": 3.696,
-      "hpBase": 418.176,
-      "hpAdd": 9.504,
-      "defenseBase": 196.02,
-      "defenseAdd": 4.455,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 92,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 192.192,
-      "attackAdd": 3.696,
-      "hpBase": 494.208,
-      "hpAdd": 9.504,
-      "defenseBase": 231.66,
-      "defenseAdd": 4.455,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 92,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 221.76,
-      "attackAdd": 3.696,
-      "hpBase": 570.24,
-      "hpAdd": 9.504,
-      "defenseBase": 267.3,
-      "defenseAdd": 4.455,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 92,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 251.328,
-      "attackAdd": 3.696,
-      "hpBase": 646.272,
-      "hpAdd": 9.504,
-      "defenseBase": 302.94,
-      "defenseAdd": 4.455,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 92,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 100,
+  "icon": "icon/character/1104.png",
+  "preview": "image/character_preview/1104.png",
+  "portrait": "image/character_portrait/1104.png",
   "skills": [
     {
       "name": "Fist of Conviction",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Gepard's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Ice",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Ice DMG to a single enemy.",
+      "description": "Deals Ice DMG equal to #1[i]% of Gepard's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1104_basic_atk.png"
     },
     {
       "name": "Daunting Smite",
-      "tag": "Impair",
-      "type": "Skill",
-      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Gepard's ATK to a single enemy, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to Freeze the enemy for <unbreak>#3[i]</unbreak> turn(s).\\nWhile Frozen, the enemy cannot take action and will take <u>Additional</u> Ice DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Gepard's ATK at the beginning of each turn.",
+      "maxLevel": 15,
+      "element": "Ice",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Impair",
+      "simpleDescription": "Deals Ice DMG to a single enemy, with a chance of Freezing them.",
+      "description": "Deals Ice DMG equal to #1[i]% of Gepard's ATK to a single enemy, with a #2[i]% base chance to Freeze the enemy for #3[i] turn(s).\nWhile Frozen, the enemy cannot take action and will take Additional Ice DMG equal to #4[i]% of Gepard's ATK at the beginning of each turn.",
       "params": [
-        [ 1, 0.65, 1, 0.3 ],
-        [ 1.1, 0.65, 1, 0.33 ],
-        [ 1.2, 0.65, 1, 0.36 ],
-        [ 1.3, 0.65, 1, 0.39 ],
-        [ 1.4, 0.65, 1, 0.42 ],
-        [ 1.5, 0.65, 1, 0.45 ],
-        [ 1.625, 0.65, 1, 0.4875 ],
-        [ 1.75, 0.65, 1, 0.525 ],
-        [ 1.875, 0.65, 1, 0.5625 ],
-        [ 2, 0.65, 1, 0.6 ],
-        [ 2.1, 0.65, 1, 0.63 ],
-        [ 2.2, 0.65, 1, 0.66 ],
-        [ 2.3, 0.65, 1, 0.69 ],
-        [ 2.4, 0.65, 1, 0.72 ],
-        [ 2.5, 0.65, 1, 0.75 ]
+        [1, 0.65, 1, 0.3],
+        [1.1, 0.65, 1, 0.33],
+        [1.2, 0.65, 1, 0.36],
+        [1.3, 0.65, 1, 0.39],
+        [1.4, 0.65, 1, 0.42],
+        [1.5, 0.65, 1, 0.45],
+        [1.625, 0.65, 1, 0.4875],
+        [1.75, 0.65, 1, 0.525],
+        [1.875, 0.65, 1, 0.5625],
+        [2, 0.65, 1, 0.6],
+        [2.1, 0.65, 1, 0.63],
+        [2.2, 0.65, 1, 0.66],
+        [2.3, 0.65, 1, 0.69],
+        [2.4, 0.65, 1, 0.72],
+        [2.5, 0.65, 1, 0.75]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60
-      }
+      "icon": "icon/skill/1104_skill.png"
     },
     {
       "name": "Enduring Bulwark",
-      "tag": "Defense",
-      "type": "Ultimate",
-      "desc": "Applies a Shield to all allies, absorbing DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Gepard's DEF plus <color=#f29e38ff><unbreak>#3[i]</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).",
+      "maxLevel": 15,
+      "element": "",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Defence",
+      "simpleDescription": "Shields all allies.",
+      "description": "Applies a Shield to all allies, absorbing DMG equal to #1[i]% of Gepard's DEF plus #3[i] for #2[i] turn(s).",
       "params": [
-        [ 0.3, 3, 150 ],
-        [ 0.31875, 3, 240 ],
-        [ 0.3375, 3, 307.5 ],
-        [ 0.35625, 3, 375 ],
-        [ 0.375, 3, 420 ],
-        [ 0.39, 3, 465 ],
-        [ 0.405, 3, 498.75 ],
-        [ 0.42, 3, 532.5 ],
-        [ 0.435, 3, 566.25 ],
-        [ 0.45, 3, 600 ],
-        [ 0.465, 3, 633.75 ],
-        [ 0.48, 3, 667.5 ],
-        [ 0.495, 3, 701.25 ],
-        [ 0.51, 3, 735 ],
-        [ 0.525, 3, 768.75 ]
+        [0.3, 3, 150],
+        [0.3188, 3, 240],
+        [0.3375, 3, 307.5],
+        [0.3563, 3, 375],
+        [0.375, 3, 420],
+        [0.39, 3, 465],
+        [0.405, 3, 498.75],
+        [0.42, 3, 532.5],
+        [0.435, 3, 566.25],
+        [0.45, 3, 600],
+        [0.465, 3, 633.75],
+        [0.48, 3, 667.5],
+        [0.495, 3, 701.25],
+        [0.51, 3, 735],
+        [0.525, 3, 768.75]
       ],
-      "energyNeeded": 100,
-      "energyGain": 5
+      "icon": "icon/skill/1104_ultimate.png"
     },
     {
       "name": "Unyielding Will",
-      "tag": "Restore",
+      "maxLevel": 15,
+      "element": "",
       "type": "Talent",
-      "desc": "When struck with a killing blow, instead of becoming <u>knocked down</u>, Gepard's HP immediately restores to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of his Max HP. This effect can only trigger once per battle.",
+      "typeText": "Talent",
+      "effect": "Restore",
+      "simpleDescription": "When struck by a killing blow, instead of being knocked down, immediately restores HP. This effect can only trigger 1 time per battle.",
+      "description": "When struck with a killing blow, instead of becoming knocked down, Gepard's HP immediately restores to #1[i]% of his Max HP. This effect can only trigger once per battle.",
       "params": [
-        [ 0.25 ],
-        [ 0.275 ],
-        [ 0.3 ],
-        [ 0.325 ],
-        [ 0.35 ],
-        [ 0.375 ],
-        [ 0.40625 ],
-        [ 0.4375 ],
-        [ 0.46875 ],
-        [ 0.5 ],
-        [ 0.525 ],
-        [ 0.55 ],
-        [ 0.575 ],
-        [ 0.6 ],
-        [ 0.625 ]
-      ]
+        [0.25],
+        [0.275],
+        [0.3],
+        [0.325],
+        [0.35],
+        [0.375],
+        [0.4063],
+        [0.4375],
+        [0.4688],
+        [0.5],
+        [0.525],
+        [0.55],
+        [0.575],
+        [0.6],
+        [0.625]
+      ],
+      "icon": "icon/skill/1104_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Ice",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1104_basic_atk.png"
     },
     {
       "name": "Comradery",
-      "tag": "Defense",
-      "type": "Technique",
-      "desc": "After Gepard uses his Technique, when the next battle begins, a Shield will be applied to all allies, absorbing DMG equal to <unbreak>#1[i]%</unbreak> of Gepard's DEF plus <unbreak>#3[i]</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "params": [
-        [ 0.24, 2, 150 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Defence",
+      "simpleDescription": "After this character uses Technique, all allies gain a Shield at the start of the next battle.",
+      "description": "After Gepard uses his Technique, when the next battle begins, a Shield will be applied to all allies, absorbing DMG equal to #1[i]% of Gepard's DEF plus #3[i] for #2[i] turn(s).",
+      "params": [[0.24, 2, 150]],
+      "icon": "icon/skill/1104_technique.png"
     }
   ],
   "eidolons": [
     {
       "name": "Due Diligence",
-      "desc": "When using Skill, increases the base chance to Freeze enemies by <unbreak>#1[i]%</unbreak>.",
-      "params": [ 0.35 ]
+      "rank": 1,
+      "desc": "When using Skill, increases the base chance to Freeze target enemy by 35%.",
+      "materials": [
+        {
+          "id": "11104",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1104_rank1.png"
     },
     {
       "name": "Lingering Cold",
-      "desc": "After an enemy Frozen by Skill is unfrozen, their SPD is reduced by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "params": [ 0.2, 1 ]
+      "rank": 2,
+      "desc": "After an enemy Frozen by Skill is unfrozen, their SPD is reduced by 20% for 1 turn(s).",
+      "materials": [
+        {
+          "id": "11104",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1104_rank2.png"
     },
     {
       "name": "Never Surrender",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11104",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1104_skill.png"
     },
     {
       "name": "Faith Moves Mountains",
-      "desc": "When Gepard is in battle, all allies' Effect RES increases by <unbreak>#1[i]%</unbreak>.",
-      "params": [ 0.2 ]
+      "rank": 4,
+      "desc": "When Gepard is in battle, all allies' Effect RES increases by 20%.",
+      "materials": [
+        {
+          "id": "11104",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1104_rank4.png"
     },
     {
       "name": "Cold Iron Fist",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11104",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1104_ultimate.png"
     },
     {
       "name": "Unyielding Resolve",
-      "desc": "When his Talent is triggered, Gepard's action is Advanced Forward by <unbreak>100%</unbreak>, and he restores extra HP equal to <unbreak>#1[i]%</unbreak> of his Max HP.",
-      "params": [ 0.5 ]
+      "rank": 6,
+      "desc": "When his Talent is triggered, Gepard immediately takes action again and restores extra HP equal to 50% of his Max HP.",
+      "materials": [
+        {
+          "id": "11104",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1104_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1104103,
+      "id": "1104103",
       "name": "Fighting Spirit",
-      "desc": "Gepard's ATK increases by <unbreak>#1[i]%</unbreak> of his current DEF. This effect will refresh at the start of each turn.",
-      "icon": "SkillIcon_1104_SkillTree3.png",
-      "params": [ 0.35 ],
+      "maxLevel": 1,
+      "description": "Gepard's ATK increases by #1[i]% of his current DEF. This effect will refresh at the start of each turn.",
+      "params": [[0.35]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110143",
+              "num": 8
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1104_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1104208,
+          "id": "1104208",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.075 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 7.5%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.075
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110143",
+                  "num": 8
+                },
+                {
+                  "id": "112003",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconDefence.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 1104209,
+              "id": "1104209",
               "name": "Effect RES Boost",
-              "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconStatusResistance.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "Effect RES increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "StatusResistanceBase",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110143",
+                      "num": 8
+                    },
+                    {
+                      "id": "112003",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconStatusResistance.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 1104210,
+              "id": "1104210",
               "name": "DMG Boost: Ice",
-              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconIceAddedRatio.png",
-              "params": [ 0.064 ],
+              "maxLevel": 1,
+              "description": "Ice DMG Boost increases by 6.4%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "IceAddedRatio",
+                      "value": 0.064
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110143",
+                      "num": 8
+                    },
+                    {
+                      "id": "112003",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconIceAddedRatio.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -287,34 +352,134 @@
       ]
     },
     {
-      "id": 1104201,
+      "id": "1104201",
       "name": "DMG Boost: Ice",
-      "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconIceAddedRatio.png",
-      "params": [ 0.032 ],
+      "maxLevel": 1,
+      "description": "Ice DMG Boost increases by 3.2%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "IceAddedRatio",
+              "value": 0.032
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2500
+            },
+            {
+              "id": "112001",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconIceAddedRatio.png",
+      "major": false,
+      "minAsc": 0,
       "children": [
         {
-          "id": 1104101,
+          "id": "1104101",
           "name": "Integrity",
-          "desc": "Gepard has a higher chance to be attacked by enemies.",
-          "icon": "SkillIcon_1104_SkillTree1.png",
-          "params": [ 3 ],
+          "maxLevel": 1,
+          "description": "Gepard has a higher chance to be attacked by enemies.",
+          "params": [[3]],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 5000
+                },
+                {
+                  "id": "110141",
+                  "num": 3
+                },
+                {
+                  "id": "110502",
+                  "num": 1
+                }
+              ]
+            }
+          ],
+          "icon": "icon/skill/1104_skilltree1.png",
+          "major": true,
           "minAsc": 2,
           "children": [
             {
-              "id": 1104202,
+              "id": "1104202",
               "name": "Effect RES Boost",
-              "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconStatusResistance.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "Effect RES increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 2,
+                  "properties": [
+                    {
+                      "type": "StatusResistanceBase",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 5000
+                    },
+                    {
+                      "id": "110141",
+                      "num": 3
+                    },
+                    {
+                      "id": "112001",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconStatusResistance.png",
+              "major": false,
               "minAsc": 2,
               "children": [
                 {
-                  "id": 1104203,
+                  "id": "1104203",
                   "name": "DMG Boost: Ice",
-                  "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconIceAddedRatio.png",
-                  "params": [ 0.032 ],
+                  "maxLevel": 1,
+                  "description": "Ice DMG Boost increases by 3.2%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "IceAddedRatio",
+                          "value": 0.032
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 10000
+                        },
+                        {
+                          "id": "110142",
+                          "num": 3
+                        },
+                        {
+                          "id": "112002",
+                          "num": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconIceAddedRatio.png",
+                  "major": false,
                   "minAsc": 3
                 }
               ]
@@ -322,27 +487,107 @@
           ]
         },
         {
-          "id": 1104102,
+          "id": "1104102",
           "name": "Commander",
-          "desc": "When \"Unyielding Will\" is triggered, Gepard's Energy will be restored to <unbreak>100%</unbreak>.",
-          "icon": "SkillIcon_1104_SkillTree2.png",
+          "maxLevel": 1,
+          "description": "When \"Unyielding Will\" is triggered, Gepard's Energy will be restored to 100%.",
           "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 20000
+                },
+                {
+                  "id": "110142",
+                  "num": 5
+                },
+                {
+                  "id": "241",
+                  "num": 1
+                },
+                {
+                  "id": "110502",
+                  "num": 1
+                }
+              ]
+            }
+          ],
+          "icon": "icon/skill/1104_skilltree2.png",
+          "major": true,
           "minAsc": 4,
           "children": [
             {
-              "id": 1104205,
+              "id": "1104205",
               "name": "DMG Boost: Ice",
-              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconIceAddedRatio.png",
-              "params": [ 0.048 ],
+              "maxLevel": 1,
+              "description": "Ice DMG Boost increases by 4.8%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 4,
+                  "properties": [
+                    {
+                      "type": "IceAddedRatio",
+                      "value": 0.048
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 20000
+                    },
+                    {
+                      "id": "110142",
+                      "num": 5
+                    },
+                    {
+                      "id": "112002",
+                      "num": 4
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconIceAddedRatio.png",
+              "major": false,
               "minAsc": 4,
               "children": [
                 {
-                  "id": 1104206,
+                  "id": "1104206",
                   "name": "Effect RES Boost",
-                  "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconStatusResistance.png",
-                  "params": [ 0.06 ],
+                  "maxLevel": 1,
+                  "description": "Effect RES increases by 6.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "StatusResistanceBase",
+                          "value": 0.06
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 45000
+                        },
+                        {
+                          "id": "110143",
+                          "num": 3
+                        },
+                        {
+                          "id": "112003",
+                          "num": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconStatusResistance.png",
+                  "major": false,
                   "minAsc": 5
                 }
               ]
@@ -352,21 +597,286 @@
       ]
     },
     {
-      "id": 1104204,
+      "id": "1104204",
       "name": "DEF Boost",
-      "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconDefence.png",
-      "params": [ 0.05 ],
+      "maxLevel": 1,
+      "description": "DEF increases by 5.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 3,
+          "properties": [
+            {
+              "type": "DefenceAddedRatio",
+              "value": 0.05
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 10000
+            },
+            {
+              "id": "110142",
+              "num": 3
+            },
+            {
+              "id": "112002",
+              "num": 3
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconDefence.png",
+      "major": false,
       "minAsc": 3
     },
     {
-      "id": 1104207,
+      "id": "1104207",
       "name": "DMG Boost: Ice",
-      "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconIceAddedRatio.png",
-      "params": [ 0.048 ],
+      "maxLevel": 1,
+      "description": "Ice DMG Boost increases by 4.8%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 5,
+          "properties": [
+            {
+              "type": "IceAddedRatio",
+              "value": 0.048
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 45000
+            },
+            {
+              "id": "110143",
+              "num": 3
+            },
+            {
+              "id": "112003",
+              "num": 3
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconIceAddedRatio.png",
+      "major": false,
       "minAsc": 5
     }
   ],
-  "description": "A captain in the Silvermane Guards and an outstanding warrior of Belobog.\nHe is meticulous and vigilant to the core and is always true to himself."
+  "stats": [
+    {
+      "health": {
+        "base": 190.08,
+        "step": 9.504
+      },
+      "attack": {
+        "base": 73.92,
+        "step": 3.696
+      },
+      "defense": {
+        "base": 89.1,
+        "step": 4.455
+      },
+      "speed": {
+        "base": 92,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 266.112,
+        "step": 9.504
+      },
+      "attack": {
+        "base": 103.488,
+        "step": 3.696
+      },
+      "defense": {
+        "base": 124.74,
+        "step": 4.455
+      },
+      "speed": {
+        "base": 92,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 342.144,
+        "step": 9.504
+      },
+      "attack": {
+        "base": 133.056,
+        "step": 3.696
+      },
+      "defense": {
+        "base": 160.38,
+        "step": 4.455
+      },
+      "speed": {
+        "base": 92,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 418.176,
+        "step": 9.504
+      },
+      "attack": {
+        "base": 162.624,
+        "step": 3.696
+      },
+      "defense": {
+        "base": 196.02,
+        "step": 4.455
+      },
+      "speed": {
+        "base": 92,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 494.208,
+        "step": 9.504
+      },
+      "attack": {
+        "base": 192.192,
+        "step": 3.696
+      },
+      "defense": {
+        "base": 231.66,
+        "step": 4.455
+      },
+      "speed": {
+        "base": 92,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 570.24,
+        "step": 9.504
+      },
+      "attack": {
+        "base": 221.76,
+        "step": 3.696
+      },
+      "defense": {
+        "base": 267.3,
+        "step": 4.455
+      },
+      "speed": {
+        "base": 92,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 646.272,
+        "step": 9.504
+      },
+      "attack": {
+        "base": 251.328,
+        "step": 3.696
+      },
+      "defense": {
+        "base": 302.94,
+        "step": 4.455
+      },
+      "speed": {
+        "base": 92,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

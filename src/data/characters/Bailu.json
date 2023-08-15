@@ -1,282 +1,344 @@
 {
+  "id": "1211",
   "name": "Bailu",
+  "description": "The High Elder of the Vidyadhara, who is also known as the \"Healer Lady\" on the Luofu.\\nShe uses her unique medical science and the medical treatment that can only be provided by the Vidyadhara dragon race to save lives.",
   "element": "Lightning",
   "path": "Abundance",
   "rarity": 5,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 76.56,
-      "attackAdd": 3.828,
-      "hpBase": 179.52,
-      "hpAdd": 8.976,
-      "defenseBase": 66,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 107.184,
-      "attackAdd": 3.828,
-      "hpBase": 251.328,
-      "hpAdd": 8.976,
-      "defenseBase": 92.4,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 137.808,
-      "attackAdd": 3.828,
-      "hpBase": 323.136,
-      "hpAdd": 8.976,
-      "defenseBase": 118.8,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 168.432,
-      "attackAdd": 3.828,
-      "hpBase": 394.944,
-      "hpAdd": 8.976,
-      "defenseBase": 145.2,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 199.056,
-      "attackAdd": 3.828,
-      "hpBase": 466.752,
-      "hpAdd": 8.976,
-      "defenseBase": 171.6,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 229.68,
-      "attackAdd": 3.828,
-      "hpBase": 538.56,
-      "hpAdd": 8.976,
-      "defenseBase": 198,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 98,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 260.304,
-      "attackAdd": 3.828,
-      "hpBase": 610.368,
-      "hpAdd": 8.976,
-      "defenseBase": 224.4,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 98,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 100,
+  "icon": "icon/character/1211.png",
+  "preview": "image/character_preview/1211.png",
+  "portrait": "image/character_portrait/1211.png",
   "skills": [
     {
       "name": "Diagnostic Kick",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Bailu's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Thunder",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Lightning DMG to a single enemy.",
+      "description": "Deals Lightning DMG equal to #1[i]% of Bailu's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/1211_basic_atk.png"
     },
     {
       "name": "Singing Among Clouds",
-      "tag": "Restore",
-      "type": "Skill",
-      "desc": "Heals a single ally for <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Bailu's Max HP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. Bailu then heals random allies <unbreak>#4[i]</unbreak> time(s). After each healing, HP restored from the next healing is reduced by <unbreak>#3[i]%</unbreak>.",
+      "maxLevel": 15,
+      "element": "",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Restore",
+      "simpleDescription": "Restores HP for a single ally, then heals random allies.",
+      "description": "Heals a single ally for #1[f1]% of Bailu's Max HP plus #2[i]. Bailu then heals random allies #4[i] time(s). After each healing, HP restored from the next healing is reduced by #3[i]%.",
       "params": [
-        [ 0.078, 78, 0.15, 2 ],
-        [ 0.082875, 124.8, 0.15, 2 ],
-        [ 0.08775, 159.9, 0.15, 2 ],
-        [ 0.092625, 195, 0.15, 2 ],
-        [ 0.0975, 218.4, 0.15, 2 ],
-        [ 0.1014, 241.8, 0.15, 2 ],
-        [ 0.1053, 259.35, 0.15, 2 ],
-        [ 0.1092, 276.9, 0.15, 2 ],
-        [ 0.1131, 294.45, 0.15, 2 ],
-        [ 0.117, 312, 0.15, 2 ],
-        [ 0.1209, 329.55, 0.15, 2 ],
-        [ 0.1248, 347.1, 0.15, 2 ],
-        [ 0.1287, 364.65, 0.15, 2 ],
-        [ 0.1326, 382.2, 0.15, 2 ],
-        [ 0.1365, 399.75, 0.15, 2 ]
+        [0.078, 78, 0.15, 2],
+        [0.0829, 124.8, 0.15, 2],
+        [0.0878, 159.9, 0.15, 2],
+        [0.0926, 195, 0.15, 2],
+        [0.0975, 218.4, 0.15, 2],
+        [0.1014, 241.8, 0.15, 2],
+        [0.1053, 259.35, 0.15, 2],
+        [0.1092, 276.9, 0.15, 2],
+        [0.1131, 294.45, 0.15, 2],
+        [0.117, 312, 0.15, 2],
+        [0.1209, 329.55, 0.15, 2],
+        [0.1248, 347.1, 0.15, 2],
+        [0.1287, 364.65, 0.15, 2],
+        [0.1326, 382.2, 0.15, 2],
+        [0.1365, 399.75, 0.15, 2]
       ],
-      "energyGain": 30
+      "icon": "icon/skill/1211_skill.png"
     },
     {
       "name": "Felicitous Thunderleap",
-      "tag": "Restore",
-      "type": "Ultimate",
-      "desc": "Heals all allies for <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Bailu's Max HP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color>.\\nBailu applies Invigoration to allies that are not already Invigorated. For those already Invigorated, Bailu extends the duration of their Invigoration by 1 turn.\\nThe effect of Invigoration can last for <unbreak>#3[i]</unbreak> turn(s). This effect cannot stack.",
+      "maxLevel": 15,
+      "element": "",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Restore",
+      "simpleDescription": "Restores HP for all allies, and grants them Invigoration, or prolongs the duration of their Invigoration.",
+      "description": "Heals all allies for #1[f1]% of Bailu's Max HP plus #2[i].\nBailu applies Invigoration to allies that are not already Invigorated. For those already Invigorated, Bailu extends the duration of their Invigoration by 1 turn.\nThe effect of Invigoration can last for #3[i] turn(s). This effect cannot stack.",
       "params": [
-        [ 0.09, 90, 2 ],
-        [ 0.095625, 144, 2 ],
-        [ 0.10125, 184.5, 2 ],
-        [ 0.106875, 225, 2 ],
-        [ 0.1125, 252, 2 ],
-        [ 0.117, 279, 2 ],
-        [ 0.1215, 299.25, 2 ],
-        [ 0.126, 319.5, 2 ],
-        [ 0.1305, 339.75, 2 ],
-        [ 0.135, 360, 2 ],
-        [ 0.1395, 380.25, 2 ],
-        [ 0.144, 400.5, 2 ],
-        [ 0.1485, 420.75, 2 ],
-        [ 0.153, 441, 2 ],
-        [ 0.1575, 461.25, 2 ]
+        [0.09, 90, 2],
+        [0.0956, 144, 2],
+        [0.1013, 184.5, 2],
+        [0.1069, 225, 2],
+        [0.1125, 252, 2],
+        [0.117, 279, 2],
+        [0.1215, 299.25, 2],
+        [0.126, 319.5, 2],
+        [0.1305, 339.75, 2],
+        [0.135, 360, 2],
+        [0.1395, 380.25, 2],
+        [0.144, 400.5, 2],
+        [0.1485, 420.75, 2],
+        [0.153, 441, 2],
+        [0.1575, 461.25, 2]
       ],
-      "energyNeeded": 100,
-      "energyGain": 5
+      "icon": "icon/skill/1211_ultimate.png"
     },
     {
       "name": "Gourdful of Elixir",
-      "tag": "Restore",
+      "maxLevel": 15,
+      "element": "",
       "type": "Talent",
-      "desc": "After an ally with Invigoration is hit, restores the ally's HP for <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Bailu's Max HP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. This effect can trigger <unbreak>#5[i]</unbreak> time(s).\\nWhen an ally receives a killing blow, they will not be <u>knocked down</u>. Bailu immediately heals the ally for <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Bailu's Max HP plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color> HP. This effect can be triggered 1 time per battle.",
+      "typeText": "Talent",
+      "effect": "Restore",
+      "simpleDescription": "Allies with Invigoration restore HP after they are attacked.\nWhen an ally suffers a killing blow, Bailu immediately restores their HP. This effect can only trigger 1 time per battle.",
+      "description": "After an ally with Invigoration is hit, restores the ally's HP for #1[f1]% of Bailu's Max HP plus #2[i]. This effect can trigger #5[i] time(s).\nWhen an ally receives a killing blow, they will not be knocked down. Bailu immediately heals the ally for #3[i]% of Bailu's Max HP plus #4[i] HP. This effect can be triggered 1 time per battle.",
       "params": [
-        [ 0.036, 36, 0.12, 120, 2 ],
-        [ 0.03825, 57.6, 0.1275, 192, 2 ],
-        [ 0.0405, 73.8, 0.135, 246, 2 ],
-        [ 0.04275, 90, 0.1425, 300, 2 ],
-        [ 0.045, 100.8, 0.15, 336, 2 ],
-        [ 0.0468, 111.6, 0.156, 372, 2 ],
-        [ 0.0486, 119.7, 0.162, 399, 2 ],
-        [ 0.0504, 127.8, 0.168, 426, 2 ],
-        [ 0.0522, 135.9, 0.174, 453, 2 ],
-        [ 0.054, 144, 0.18, 480, 2 ],
-        [ 0.0558, 152.1, 0.186, 507, 2 ],
-        [ 0.0576, 160.2, 0.192, 534, 2 ],
-        [ 0.0594, 168.3, 0.198, 561, 2 ],
-        [ 0.0612, 176.4, 0.204, 588, 2 ],
-        [ 0.063, 184.5, 0.21, 615, 2 ]
-      ]
+        [0.036, 36, 0.12, 120, 2],
+        [0.0382, 57.6, 0.1275, 192, 2],
+        [0.0405, 73.8, 0.135, 246, 2],
+        [0.0428, 90, 0.1425, 300, 2],
+        [0.045, 100.8, 0.15, 336, 2],
+        [0.0468, 111.6, 0.156, 372, 2],
+        [0.0486, 119.7, 0.162, 399, 2],
+        [0.0504, 127.8, 0.168, 426, 2],
+        [0.0522, 135.9, 0.174, 453, 2],
+        [0.054, 144, 0.18, 480, 2],
+        [0.0558, 152.1, 0.186, 507, 2],
+        [0.0576, 160.2, 0.192, 534, 2],
+        [0.0594, 168.3, 0.198, 561, 2],
+        [0.0612, 176.4, 0.204, 588, 2],
+        [0.063, 184.5, 0.21, 615, 2]
+      ],
+      "icon": "icon/skill/1211_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Thunder",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/1211_basic_atk.png"
     },
     {
       "name": "Saunter in the Rain",
-      "tag": "Support",
-      "type": "Technique",
-      "desc": "After using Technique, at the start of the next battle, all allies are granted Invigoration for <unbreak>#1[i]</unbreak> turn(s).",
-      "params": [
-        [ 2 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Restore",
+      "simpleDescription": "After this character uses Technique, at the start of the next battle, all allies are granted Invigoration.",
+      "description": "After Technique is used, at the start of the next battle, all allies are granted Invigoration for #1[i] turn(s).",
+      "params": [[2]],
+      "icon": "icon/skill/1211_technique.png"
     }
   ],
   "eidolons": [
     {
       "name": "Ambrosial Aqua",
-      "desc": "If the target ally's current HP is equal to their Max HP when Invigoration ends, regenerates <unbreak>#1[i]</unbreak> extra Energy for this target.",
-      "params": [ 8 ]
+      "rank": 1,
+      "desc": "If the target ally's current HP is equal to their Max HP when Invigoration ends, regenerates 8 extra Energy for this target.",
+      "materials": [
+        {
+          "id": "11211",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1211_rank1.png"
     },
     {
       "name": "Sylphic Slumber",
-      "desc": "After using her Ultimate, Bailu's Outgoing Healing increases by an additional <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "params": [ 0.15, 2 ]
+      "rank": 2,
+      "desc": "After using her Ultimate, Bailu's Outgoing Healing increases by an additional 15% for 2 turn(s).",
+      "materials": [
+        {
+          "id": "11211",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1211_rank2.png"
     },
     {
       "name": "Omniscient Opulence",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11211",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1211_skill.png"
     },
     {
       "name": "Evil Excision",
-      "desc": "Every healing provided by the Skill makes the recipient deal <unbreak>#1[i]%</unbreak> more DMG for <unbreak>#3[i]</unbreak> turn(s). This effect can stack up to <unbreak>#2[i]</unbreak> time(s).",
-      "params": [ 0.1, 3, 2 ]
+      "rank": 4,
+      "desc": "Every healing provided by the Skill makes the recipient deal 10% more DMG for 2 turn(s). This effect can stack up to 3 time(s).",
+      "materials": [
+        {
+          "id": "11211",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1211_rank4.png"
     },
     {
       "name": "Waning Worries",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11211",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1211_ultimate.png"
     },
     {
       "name": "Drooling Drop of Draconic Divinity",
-      "desc": "Bailu can heal allies who received a killing blow <unbreak>#1[i]</unbreak> more time(s) in a single battle.",
-      "params": [ 1 ]
+      "rank": 6,
+      "desc": "Bailu can heal allies who received a killing blow 1 more time(s) in a single battle.",
+      "materials": [
+        {
+          "id": "11211",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/1211_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1211101,
+      "id": "1211101",
       "name": "Qihuang Analects",
-      "desc": "When Bailu heals a target ally above their normal Max HP, the target's Max HP increases by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turns.",
-      "icon": "SkillIcon_1211_SkillTree1.png",
-      "params": [ 0.1, 2 ],
+      "maxLevel": 1,
+      "description": "When Bailu heals a target ally above their normal Max HP, the target's Max HP increases by #1[i]% for #2[i] turns.",
+      "params": [[0.1, 2]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 5000
+            },
+            {
+              "id": "110171",
+              "num": 3
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1211_skilltree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1211202,
+          "id": "1211202",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.05 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 5.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.05
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 5000
+                },
+                {
+                  "id": "110171",
+                  "num": 3
+                },
+                {
+                  "id": "111001",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconDefence.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1211203,
+              "id": "1211203",
               "name": "HP Boost",
-              "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconMaxHP.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "HP increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "HPAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 10000
+                    },
+                    {
+                      "id": "110172",
+                      "num": 3
+                    },
+                    {
+                      "id": "111002",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconMaxHP.png",
+              "major": false,
               "minAsc": 3,
               "children": [
                 {
-                  "id": 1211204,
+                  "id": "1211204",
                   "name": "Effect RES Boost",
-                  "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconStatusResistance.png",
-                  "params": [ 0.04 ],
+                  "maxLevel": 1,
+                  "description": "Effect RES increases by 4.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "StatusResistanceBase",
+                          "value": 0.04
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 10000
+                        },
+                        {
+                          "id": "110172",
+                          "num": 3
+                        },
+                        {
+                          "id": "111002",
+                          "num": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconStatusResistance.png",
+                  "major": false,
                   "minAsc": 3
                 }
               ]
@@ -286,35 +348,142 @@
       ]
     },
     {
-      "id": 1211102,
+      "id": "1211102",
       "name": "Vidyadhara Ichor Lines",
-      "desc": "Invigoration can trigger <unbreak>#1[i]</unbreak> more time(s).",
-      "icon": "SkillIcon_1211_SkillTree2.png",
-      "params": [ 1 ],
+      "maxLevel": 1,
+      "description": "Invigoration can trigger #1[i] more time(s).",
+      "params": [[1]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 20000
+            },
+            {
+              "id": "110172",
+              "num": 5
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1211_skilltree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1211205,
+          "id": "1211205",
           "name": "HP Boost",
-          "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconMaxHP.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "HP increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "HPAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 20000
+                },
+                {
+                  "id": "110172",
+                  "num": 5
+                },
+                {
+                  "id": "111002",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconMaxHP.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1211206,
+              "id": "1211206",
               "name": "DEF Boost",
-              "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconDefence.png",
-              "params": [ 0.075 ],
+              "maxLevel": 1,
+              "description": "DEF increases by 7.5%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "DefenceAddedRatio",
+                      "value": 0.075
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 45000
+                    },
+                    {
+                      "id": "110173",
+                      "num": 3
+                    },
+                    {
+                      "id": "111003",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconDefence.png",
+              "major": false,
               "minAsc": 5,
               "children": [
                 {
-                  "id": 1211207,
+                  "id": "1211207",
                   "name": "HP Boost",
-                  "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconMaxHP.png",
-                  "params": [ 0.06 ],
+                  "maxLevel": 1,
+                  "description": "HP increases by 6.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "HPAddedRatio",
+                          "value": 0.06
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 45000
+                        },
+                        {
+                          "id": "110173",
+                          "num": 3
+                        },
+                        {
+                          "id": "111003",
+                          "num": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconMaxHP.png",
+                  "major": false,
                   "minAsc": 5
                 }
               ]
@@ -324,46 +493,390 @@
       ]
     },
     {
-      "id": 1211103,
+      "id": "1211103",
       "name": "Aquatic Benediction",
-      "desc": "Characters with Invigoration receive <unbreak>#1[i]%</unbreak> less DMG.",
-      "icon": "SkillIcon_1211_SkillTree3.png",
-      "params": [ 0.1 ],
+      "maxLevel": 1,
+      "description": "Characters with Invigoration receive #1[i]% less DMG.",
+      "params": [[0.1]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110173",
+              "num": 8
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/1211_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1211208,
+          "id": "1211208",
           "name": "Effect RES Boost",
-          "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusResistance.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "Effect RES increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "StatusResistanceBase",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110173",
+                  "num": 8
+                },
+                {
+                  "id": "111003",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconStatusResistance.png",
+          "major": false,
           "minAsc": 6
         },
         {
-          "id": 1211209,
+          "id": "1211209",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.1 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 10.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.1
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110173",
+                  "num": 8
+                },
+                {
+                  "id": "111003",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconDefence.png",
+          "major": false,
+          "minAsc": 0,
           "minLevel": 75
         }
       ]
     },
     {
-      "id": 1211201,
+      "id": "1211201",
       "name": "HP Boost",
-      "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconMaxHP.png",
-      "params": [ 0.04 ]
+      "maxLevel": 1,
+      "description": "HP increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "HPAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2500
+            },
+            {
+              "id": "111001",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconMaxHP.png",
+      "major": false,
+      "minAsc": 0
     },
     {
-      "id": 1211210,
+      "id": "1211210",
       "name": "HP Boost",
-      "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconMaxHP.png",
-      "params": [ 0.08 ],
+      "maxLevel": 1,
+      "description": "HP increases by 8.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "HPAddedRatio",
+              "value": 0.08
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110173",
+              "num": 8
+            },
+            {
+              "id": "111003",
+              "num": 8
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconMaxHP.png",
+      "major": false,
+      "minAsc": 0,
       "minLevel": 80
     }
   ],
-  "description": "The High Elder of the Vidyadhara, who is also known as the \"Healer Lady\" on the Luofu.\nShe uses her unique medical science and the medical treatment that can only be provided by the Vidyadhara dragon race to save lives."
+  "stats": [
+    {
+      "health": {
+        "base": 179.52,
+        "step": 8.976
+      },
+      "attack": {
+        "base": 76.56,
+        "step": 3.828
+      },
+      "defense": {
+        "base": 66,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 251.328,
+        "step": 8.976
+      },
+      "attack": {
+        "base": 107.184,
+        "step": 3.828
+      },
+      "defense": {
+        "base": 92.4,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 323.136,
+        "step": 8.976
+      },
+      "attack": {
+        "base": 137.808,
+        "step": 3.828
+      },
+      "defense": {
+        "base": 118.8,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 394.944,
+        "step": 8.976
+      },
+      "attack": {
+        "base": 168.432,
+        "step": 3.828
+      },
+      "defense": {
+        "base": 145.2,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 466.752,
+        "step": 8.976
+      },
+      "attack": {
+        "base": 199.056,
+        "step": 3.828
+      },
+      "defense": {
+        "base": 171.6,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 538.56,
+        "step": 8.976
+      },
+      "attack": {
+        "base": 229.68,
+        "step": 3.828
+      },
+      "defense": {
+        "base": 198,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 610.368,
+        "step": 8.976
+      },
+      "attack": {
+        "base": 260.304,
+        "step": 3.828
+      },
+      "defense": {
+        "base": 224.4,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 98,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

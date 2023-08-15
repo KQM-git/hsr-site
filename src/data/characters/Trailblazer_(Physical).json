@@ -1,343 +1,400 @@
 {
+  "id": "8002",
   "name": "Trailblazer (Physical)",
+  "description": "A {F#girl}{M#boy} who boarded the Astral Express.\\nThey chose to travel with the Astral Express to eliminate the dangers posed by the Stellaron.",
   "element": "Physical",
   "path": "Destruction",
   "rarity": 5,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 84.48,
-      "attackAdd": 4.224,
-      "hpBase": 163.68,
-      "hpAdd": 8.184,
-      "defenseBase": 62.7,
-      "defenseAdd": 3.135,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 100,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 118.272,
-      "attackAdd": 4.224,
-      "hpBase": 229.152,
-      "hpAdd": 8.184,
-      "defenseBase": 87.78,
-      "defenseAdd": 3.135,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 100,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 152.064,
-      "attackAdd": 4.224,
-      "hpBase": 294.624,
-      "hpAdd": 8.184,
-      "defenseBase": 112.86,
-      "defenseAdd": 3.135,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 100,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 185.856,
-      "attackAdd": 4.224,
-      "hpBase": 360.096,
-      "hpAdd": 8.184,
-      "defenseBase": 137.94,
-      "defenseAdd": 3.135,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 100,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 219.648,
-      "attackAdd": 4.224,
-      "hpBase": 425.568,
-      "hpAdd": 8.184,
-      "defenseBase": 163.02,
-      "defenseAdd": 3.135,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 100,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 253.44,
-      "attackAdd": 4.224,
-      "hpBase": 491.04,
-      "hpAdd": 8.184,
-      "defenseBase": 188.1,
-      "defenseAdd": 3.135,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 100,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 287.232,
-      "attackAdd": 4.224,
-      "hpBase": 556.512,
-      "hpAdd": 8.184,
-      "defenseBase": 213.18,
-      "defenseAdd": 3.135,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 125,
-      "speedBase": 100,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 120,
+  "icon": "icon/character/8002.png",
+  "preview": "image/character_preview/8002.png",
+  "portrait": "image/character_portrait/8002.png",
   "skills": [
     {
       "name": "Farewell Hit",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the Trailblazer's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Physical",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Physical DMG to a single enemy.",
+      "description": "Deals Physical DMG equal to #1[i]% of the Trailblazer's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "icon/skill/8002_basic_atk.png"
     },
     {
       "name": "RIP Home Run",
-      "tag": "Blast",
-      "type": "Skill",
-      "desc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the Trailblazer's ATK to a single enemy and enemies adjacent to it.",
+      "maxLevel": 15,
+      "element": "Physical",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Blast",
+      "simpleDescription": "Deals Physical DMG to a single enemy and enemies adjacent to it.",
+      "description": "Deals Physical DMG equal to #1[i]% of the Trailblazer's ATK to a single enemy and enemies adjacent to it.",
       "params": [
-        [ 0.625 ],
-        [ 0.6875 ],
-        [ 0.75 ],
-        [ 0.8125 ],
-        [ 0.875 ],
-        [ 0.9375 ],
-        [ 1.015625 ],
-        [ 1.09375 ],
-        [ 1.171875 ],
-        [ 1.25 ],
-        [ 1.3125 ],
-        [ 1.375 ],
-        [ 1.4375 ],
-        [ 1.5 ],
-        [ 1.5625 ]
+        [0.625],
+        [0.6875],
+        [0.75],
+        [0.8125],
+        [0.875],
+        [0.9375],
+        [1.0156],
+        [1.0938],
+        [1.1719],
+        [1.25],
+        [1.3125],
+        [1.375],
+        [1.4375],
+        [1.5],
+        [1.5625]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60,
-        "Adjacent": 30
-      }
+      "icon": "icon/skill/8002_skill.png"
     },
     {
       "name": "Stardust Ace",
-      "tag": "Enhance",
-      "type": "Ultimate",
-      "desc": "Choose between two attack modes to deliver a full strike.\\nBlowout: Farewell Hit deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the Trailblazer's ATK to a single enemy.\\nBlowout: RIP Home Run deals Physical DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the Trailblazer's ATK to a single enemy, and Physical DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of the Trailblazer's ATK to enemies adjacent to it.",
+      "maxLevel": 15,
+      "element": "Physical",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Enhance",
+      "simpleDescription": "Uses Single Target ATK or Blast to strike with full force.",
+      "description": "Choose between two attack modes to deliver a full strike.\nBlowout: Farewell Hit deals Physical DMG equal to #1[i]% of the Trailblazer's ATK to a single enemy.\nBlowout: RIP Home Run deals Physical DMG equal to #2[i]% of the Trailblazer's ATK to a single enemy, and Physical DMG equal to #3[i]% of the Trailblazer's ATK to enemies adjacent to it.",
       "params": [
-        [ 3, 1.8, 1.08 ],
-        [ 3.15, 1.89, 1.134 ],
-        [ 3.3, 1.98, 1.188 ],
-        [ 3.45, 2.07, 1.242 ],
-        [ 3.6, 2.16, 1.296 ],
-        [ 3.75, 2.25, 1.35 ],
-        [ 3.9375, 2.3625, 1.4175 ],
-        [ 4.125, 2.475, 1.485 ],
-        [ 4.3125, 2.5875, 1.5525 ],
-        [ 4.5, 2.7, 1.62 ],
-        [ 4.65, 2.79, 1.674 ],
-        [ 4.8, 2.88, 1.728 ],
-        [ 4.95, 2.97, 1.782 ],
-        [ 5.1, 3.06, 1.836 ],
-        [ 5.25, 3.15, 1.89 ]
+        [3, 1.8, 1.08],
+        [3.15, 1.89, 1.134],
+        [3.3, 1.98, 1.188],
+        [3.45, 2.07, 1.242],
+        [3.6, 2.16, 1.296],
+        [3.75, 2.25, 1.35],
+        [3.9375, 2.3625, 1.4175],
+        [4.125, 2.475, 1.485],
+        [4.3125, 2.5875, 1.5525],
+        [4.5, 2.7, 1.62],
+        [4.65, 2.79, 1.674],
+        [4.8, 2.88, 1.728],
+        [4.95, 2.97, 1.782],
+        [5.1, 3.06, 1.836],
+        [5.25, 3.15, 1.89]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5
+      "icon": "icon/skill/8002_ultimate.png"
     },
     {
       "name": "Perfect Pickoff",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "",
       "type": "Talent",
-      "desc": "Each time after this character inflicts Weakness Break on an enemy, ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect stacks up to <unbreak>#2[i]</unbreak> time(s).",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "",
+      "description": "Each time after this character inflicts Weakness Break on an enemy, ATK increases by #1[i]%. This effect stacks up to #2[i] time(s).",
       "params": [
-        [ 0.1, 2 ],
-        [ 0.11, 2 ],
-        [ 0.12, 2 ],
-        [ 0.13, 2 ],
-        [ 0.14, 2 ],
-        [ 0.15, 2 ],
-        [ 0.1625, 2 ],
-        [ 0.175, 2 ],
-        [ 0.1875, 2 ],
-        [ 0.2, 2 ],
-        [ 0.21, 2 ],
-        [ 0.22, 2 ],
-        [ 0.23, 2 ],
-        [ 0.24, 2 ],
-        [ 0.25, 2 ]
-      ]
+        [0.1, 2],
+        [0.11, 2],
+        [0.12, 2],
+        [0.13, 2],
+        [0.14, 2],
+        [0.15, 2],
+        [0.1625, 2],
+        [0.175, 2],
+        [0.1875, 2],
+        [0.2, 2],
+        [0.21, 2],
+        [0.22, 2],
+        [0.23, 2],
+        [0.24, 2],
+        [0.25, 2]
+      ],
+      "icon": "icon/skill/8002_talent.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Physical",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "icon/skill/8002_basic_atk.png"
     },
     {
       "name": "Immortal Third Strike",
-      "tag": "Restore",
-      "type": "Technique",
-      "desc": "Immediately heals all allies for <unbreak>#1[i]%</unbreak> of their respective Max HP after using this Technique.",
-      "params": [
-        [ 0.15 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Restore",
+      "simpleDescription": "",
+      "description": "Immediately heals all allies for #1[i]% of their respective Max HP after using this Technique.",
+      "params": [[0.15]],
+      "icon": "icon/skill/8002_technique.png"
     },
     {
       "name": "Blowout: Farewell Hit",
-      "tag": "Single Target",
-      "type": "Ultimate",
-      "desc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the Trailblazer's ATK to a single enemy.",
+      "maxLevel": 15,
+      "element": "Physical",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals massive Physical DMG to a single enemy.",
+      "description": "Deals Physical DMG equal to #1[i]% of the Trailblazer's ATK to a single enemy.",
       "params": [
-        [ 3 ],
-        [ 3.15 ],
-        [ 3.3 ],
-        [ 3.45 ],
-        [ 3.6 ],
-        [ 3.75 ],
-        [ 3.9375 ],
-        [ 4.125 ],
-        [ 4.3125 ],
-        [ 4.5 ],
-        [ 4.65 ],
-        [ 4.8 ],
-        [ 4.95 ],
-        [ 5.1 ],
-        [ 5.25 ]
+        [3],
+        [3.15],
+        [3.3],
+        [3.45],
+        [3.6],
+        [3.75],
+        [3.9375],
+        [4.125],
+        [4.3125],
+        [4.5],
+        [4.65],
+        [4.8],
+        [4.95],
+        [5.1],
+        [5.25]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5,
-      "toughness": {
-        "Target": 90
-      }
+      "icon": "icon/skill/8002_ultimate.png"
     },
     {
       "name": "Blowout: RIP Home Run",
-      "tag": "Blast",
-      "type": "Ultimate",
-      "desc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Trailblazer's ATK to a single enemy and Physical DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Trailblazer's ATK to enemies adjacent to it.",
+      "maxLevel": 15,
+      "element": "Physical",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Blast",
+      "simpleDescription": "Deals Physical DMG to a single enemy and enemies adjacent to it.",
+      "description": "Deals Physical DMG equal to #1[i]% of Trailblazer's ATK to a single enemy and Physical DMG equal to #2[i]% of Trailblazer's ATK to enemies adjacent to it.",
       "params": [
-        [ 1.8, 1.08 ],
-        [ 1.89, 1.134 ],
-        [ 1.98, 1.188 ],
-        [ 2.07, 1.242 ],
-        [ 2.16, 1.296 ],
-        [ 2.25, 1.35 ],
-        [ 2.3625, 1.4175 ],
-        [ 2.475, 1.485 ],
-        [ 2.5875, 1.5525 ],
-        [ 2.7, 1.62 ],
-        [ 2.79, 1.674 ],
-        [ 2.88, 1.728 ],
-        [ 2.97, 1.782 ],
-        [ 3.06, 1.836 ],
-        [ 3.15, 1.89 ]
+        [1.8, 1.08],
+        [1.89, 1.134],
+        [1.98, 1.188],
+        [2.07, 1.242],
+        [2.16, 1.296],
+        [2.25, 1.35],
+        [2.3625, 1.4175],
+        [2.475, 1.485],
+        [2.5875, 1.5525],
+        [2.7, 1.62],
+        [2.79, 1.674],
+        [2.88, 1.728],
+        [2.97, 1.782],
+        [3.06, 1.836],
+        [3.15, 1.89]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5,
-      "toughness": {
-        "Target": 60,
-        "Adjacent": 60
-      }
+      "icon": "icon/skill/8002_ultimate.png"
     }
   ],
   "eidolons": [
     {
       "name": "A Falling Star",
-      "desc": "When enemies are defeated due to the Trailblazer's Ultimate, the Trailblazer regenerates <unbreak>#1[i]</unbreak> extra Energy. This effect can only be triggered once per attack.",
-      "params": [ 10 ]
+      "rank": 1,
+      "desc": "When enemies are defeated due to the Trailblazer's Ultimate, the Trailblazer regenerates 10 extra Energy. This effect can only be triggered once per attack.",
+      "materials": [
+        {
+          "id": "18001",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/8002_rank1.png"
     },
     {
       "name": "An Unwilling Host",
-      "desc": "Attacking enemies with Physical Weakness restores the Trailblazer's HP equal to <unbreak>#1[i]%</unbreak> of the Trailblazer's ATK.",
-      "params": [ 0.05 ]
+      "rank": 2,
+      "desc": "Attacking enemies with Physical Weakness restores the Trailblazer's HP equal to 5% of the Trailblazer's ATK.",
+      "materials": [
+        {
+          "id": "18001",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/8002_rank2.png"
     },
     {
       "name": "A Leading Whisper",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "18001",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/8002_skill.png"
     },
     {
       "name": "A Destructing Glance",
-      "desc": "When attacking an enemy with Weakness Break, CRIT Rate is increased by <unbreak>#1[i]%</unbreak>.",
-      "params": [ 0.25 ]
+      "rank": 4,
+      "desc": "When attacking an enemy with Weakness Break, CRIT Rate is increased by 25%.",
+      "materials": [
+        {
+          "id": "18001",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/8002_rank4.png"
     },
     {
       "name": "A Surviving Hope",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "18001",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/8002_ultimate.png"
     },
     {
       "name": "A Trailblazing Will",
+      "rank": 6,
       "desc": "The Trailblazer's Talent is also triggered when they defeat an enemy.",
-      "params": [ 1 ]
+      "materials": [
+        {
+          "id": "18001",
+          "num": 1
+        }
+      ],
+      "icon": "icon/skill/8002_rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 8002101,
+      "id": "8002101",
       "name": "Ready for Battle",
-      "desc": "At the start of the battle, immediately regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "icon": "SkillIcon_8001_SkillTree1.png",
-      "params": [ 15 ],
+      "maxLevel": 1,
+      "description": "At the start of the battle, immediately regenerates #1[i] Energy.",
+      "params": [[15]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110111",
+              "num": 2
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/8002_skilltree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 8002202,
+          "id": "8002202",
           "name": "HP Boost",
-          "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconMaxHP.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "HP increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "HPAddedRatio",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110111",
+                  "num": 2
+                },
+                {
+                  "id": "111011",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconMaxHP.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 8002203,
+              "id": "8002203",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110112",
+                      "num": 2
+                    },
+                    {
+                      "id": "111012",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 3,
               "children": [
                 {
-                  "id": 8002204,
+                  "id": "8002204",
                   "name": "DEF Boost",
-                  "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconDefence.png",
-                  "params": [ 0.05 ],
+                  "maxLevel": 1,
+                  "description": "DEF increases by 5.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "DefenceAddedRatio",
+                          "value": 0.05
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 8000
+                        },
+                        {
+                          "id": "110112",
+                          "num": 2
+                        },
+                        {
+                          "id": "111012",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconDefence.png",
+                  "major": false,
                   "minAsc": 3
                 }
               ]
@@ -347,35 +404,142 @@
       ]
     },
     {
-      "id": 8002102,
+      "id": "8002102",
       "name": "Perseverance",
-      "desc": "Each Talent stack increases the Trailblazer's DEF by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_8001_SkillTree2.png",
-      "params": [ 0.1 ],
+      "maxLevel": 1,
+      "description": "Each Talent stack increases the Trailblazer's DEF by #1[i]%.",
+      "params": [[0.1]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110112",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/8002_skilltree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 8002205,
+          "id": "8002205",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110112",
+                  "num": 4
+                },
+                {
+                  "id": "111012",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 8002206,
+              "id": "8002206",
               "name": "HP Boost",
-              "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconMaxHP.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "HP increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "HPAddedRatio",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 2
+                    },
+                    {
+                      "id": "111013",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconMaxHP.png",
+              "major": false,
               "minAsc": 5,
               "children": [
                 {
-                  "id": 8002207,
+                  "id": "8002207",
                   "name": "ATK Boost",
-                  "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconAttack.png",
-                  "params": [ 0.06 ],
+                  "maxLevel": 1,
+                  "description": "ATK increases by 6.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "AttackAddedRatio",
+                          "value": 0.06
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 36000
+                        },
+                        {
+                          "id": "110113",
+                          "num": 2
+                        },
+                        {
+                          "id": "111013",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "icon/property/IconAttack.png",
+                  "major": false,
                   "minAsc": 5
                 }
               ]
@@ -385,35 +549,144 @@
       ]
     },
     {
-      "id": 8002103,
+      "id": "8002103",
       "name": "Fighting Will",
-      "desc": "When using Skill or Ultimate \"Blowout: RIP Home Run\", DMG dealt to the target enemy is increased by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_8001_SkillTree3.png",
-      "params": [ 0.25 ],
+      "maxLevel": 1,
+      "description": "When using Skill or Ultimate \"Blowout: RIP Home Run\", DMG dealt to the target enemy is increased by #1[i]%.",
+      "params": [[0.25]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110113",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "icon/skill/8002_skilltree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 8002208,
+          "id": "8002208",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.075 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 7.5%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.075
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110113",
+                  "num": 6
+                },
+                {
+                  "id": "111013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "icon/property/IconDefence.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 8002209,
+              "id": "8002209",
               "name": "HP Boost",
-              "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconMaxHP.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "HP increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "HPAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 6
+                    },
+                    {
+                      "id": "111013",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconMaxHP.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 8002210,
+              "id": "8002210",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110113",
+                      "num": 6
+                    },
+                    {
+                      "id": "111013",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "icon/property/IconAttack.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -421,11 +694,247 @@
       ]
     },
     {
-      "id": 8002201,
+      "id": "8002201",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.04 ]
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "111011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0
+    }
+  ],
+  "stats": [
+    {
+      "health": {
+        "base": 163.68,
+        "step": 8.184
+      },
+      "attack": {
+        "base": 84.48,
+        "step": 4.224
+      },
+      "defense": {
+        "base": 62.7,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 100,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 229.152,
+        "step": 8.184
+      },
+      "attack": {
+        "base": 118.272,
+        "step": 4.224
+      },
+      "defense": {
+        "base": 87.78,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 100,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 294.624,
+        "step": 8.184
+      },
+      "attack": {
+        "base": 152.064,
+        "step": 4.224
+      },
+      "defense": {
+        "base": 112.86,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 100,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 360.096,
+        "step": 8.184
+      },
+      "attack": {
+        "base": 185.856,
+        "step": 4.224
+      },
+      "defense": {
+        "base": 137.94,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 100,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 425.568,
+        "step": 8.184
+      },
+      "attack": {
+        "base": 219.648,
+        "step": 4.224
+      },
+      "defense": {
+        "base": 163.02,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 100,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 491.04,
+        "step": 8.184
+      },
+      "attack": {
+        "base": 253.44,
+        "step": 4.224
+      },
+      "defense": {
+        "base": 188.1,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 100,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 556.512,
+        "step": 8.184
+      },
+      "attack": {
+        "base": 287.232,
+        "step": 4.224
+      },
+      "defense": {
+        "base": 213.18,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 100,
+        "step": 0
+      },
+      "taunt": {
+        "base": 125,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
     }
   ]
 }
