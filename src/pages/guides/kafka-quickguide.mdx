@@ -12,7 +12,7 @@ authors:
   - Sushou
 ---
 
-import { Troll } from "../../components/mdx/Guide.tsx";
+import { Troll, Priority } from "../../components/mdx/Guide.tsx";
 export { components } from "../../components/mdx/Guide.tsx";
 
 # Kafka Quick Guide
@@ -52,20 +52,39 @@ Replace this with a tabbedpage component
 
 #### Ability Level Priority
 
-> [!progression]
-> Ultimate:/kafka-quick-guide/Ability_Twilight_Trill.webp
-> Skill:/kafka-quick-guide/Ability_Caressing_Moonlight.webp
-> Talent:/kafka-quick-guide/Ability_Gentle_but_Cruel.webp
-> Basic:/kafka-quick-guide/Ability_Midnight_Tumult.webp
+<Priority.Table>
+  <Priority.Item
+    name="Ultimate"
+    image="/kafka-quick-guide/Ability_Twilight_Trill.webp"
+  />
+  <Priority.Arrow />
+  <Priority.Item
+    name="Skill"
+    image="/kafka-quick-guide/Ability_Caressing_Moonlight.webp"
+  />
+  <Priority.Arrow />
+  <Priority.Item
+    name="Talent"
+    image="/kafka-quick-guide/Ability_Gentle_but_Cruel.webp"
+  />
+  <Priority.Arrow />
+  <Priority.Item
+    name="Basic"
+    image="/kafka-quick-guide/Ability_Midnight_Tumult.webp"
+  />
+</Priority.Table>
 
 Both Kafka’s Ultimate and Skill offer great damage, but her Talent’s follow-up attack inflicts the same DoT as her Ultimate, meaning her Ultimate is the top priority to level.
 
 #### Bonus Ability Priority
 
-> [!progression]
-> A2:/kafka-quick-guide/Trace_Torture.webp
-> A6:/kafka-quick-guide/Trace_Thorns.webp
-> A4:/kafka-quick-guide/Trace_Plunder.webp
+<Priority.Table>
+  <Priority.Item name="A2" image="/kafka-quick-guide/Trace_Torture.webp" />
+  <Priority.Arrow />
+  <Priority.Item name="A6" image="/kafka-quick-guide/Trace_Thorns.webp" />
+  <Priority.Arrow />
+  <Priority.Item name="A4" image="/kafka-quick-guide/Trace_Plunder.webp" />
+</Priority.Table>
 
 A2 will generally be the highest priority Bonus Ability to unlock, unless you are playing Kafka without any other DoT characters.
 

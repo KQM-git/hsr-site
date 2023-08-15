@@ -7,23 +7,17 @@
 import type { Character } from "types/game-data";
 import Rarity from "../ui/Rarity.astro";
 import gradients from "styles/dynamic/element-gradients";
-;
-
 export interface Props extends Character {}
 
-const { name, element, path, rarity } = Astro.props;
+const { preview, name, element, path, rarity } = Astro.props;
 
 // leave only letters, numbers, and dashes
 let href = name.replaceAll(" ", "_");
 
-const charUrl = `url(/img/characters/portraits/${href.replaceAll("(", "\\(").replaceAll(")", "\\)")}.png)`;
-
-
+const charUrl = `url(/${preview})`;
 ---
 
-<li
-  class=`rounded-lg w-full bg-gradient ${gradients[element]}`
->
+<li class=`rounded-lg w-full bg-gradient ${gradients[element]}`>
   <a href=`/data/characters/${href}` class="char">
     <div class="flex flex-col mx-2 -mt-8">
       <Rarity rarity={rarity} className="max-h-4" />
@@ -32,7 +26,7 @@ const charUrl = `url(/img/characters/portraits/${href.replaceAll("(", "\\(").rep
       </h3>
       <div class="flex text-xs subtitle font-medium mb-auto gap-1 pb-1">
         <img
-          src=`/img/elements/${element}.png`
+          src=`/icon/element/${element}.png`
           width="16"
           height="16"
           alt={element}
@@ -50,6 +44,6 @@ const charUrl = `url(/img/characters/portraits/${href.replaceAll("(", "\\(").rep
     background-repeat: no-repeat;
     display: block;
     width: 100%;
-    padding-top: 140%
+    padding-top: 140%;
   }
 </style>

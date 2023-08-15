@@ -9,13 +9,12 @@
  * XL: Collapse tablist to top of page
  */
 
-import ParsedParams from "components/ParsedParams.astro";
 import CharInfo from "components/data/characters/CharInfo.astro";
 import CharTrace from "components/data/characters/CharTrace.astro";
 import CharTabbedPage from "components/data/characters/CharTabbedPage";
 import Layout from "layouts/Data.astro";
 import type { Character } from "types/game-data";
-import splitTextIntoBlocks from "util/splitTextIntoBlocks";
+import splitLines from "util/splitLines";
 
 export async function getStaticPaths() {
   const chars = (await Astro.glob(
@@ -33,16 +32,7 @@ const char = chars.find(
   (c) => c.name.replaceAll(" ", "_") === name
 ) as Character;
 
-const {
-  name: charName,
-  element,
-  path,
-  rarity,
-  description,
-  skills,
-  eidolons,
-  skillTree,
-} = char;
+const { name: charName, id, description, eidolons, traces } = char;
 
 const cardClass = "rounded-lg p-4 max-w-full md:max-w-sm relative pb-16";
 const bgClass = `card-bg-1 bg-opacity-90 max-w-full relative`;
@@ -50,7 +40,11 @@ const bgClass = `card-bg-1 bg-opacity-90 max-w-full relative`;
 const breadcrumbs = ["Data Bank", "Characters", charName];
 ---
 
-<Layout title={name ?? "Characters"} description="" breadcrumbs={breadcrumbs}>
+<Layout
+  title={name?.replaceAll("_", " ") ?? "Characters"}
+  description=""
+  breadcrumbs={breadcrumbs}
+>
   <main class="flex items-center flex-col">
     <article class=`card-bg p-4 md:p-8 max-w-4xl relative min-h-[700px]`>
       <CharTabbedPage {char} client:only="preact">
@@ -61,10 +55,7 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
           <CharInfo h1 {...char} />
           <div class="subtitle text-xs font-bold">Introduction</div>
           <div class="mt-1 space-y-1">
-            {
-              description &&
-                splitTextIntoBlocks(description).map((p) => <p>{p}</p>)
-            }
+            {description && splitLines(description).map((p) => <p>{p}</p>)}
           </div>
         </section>
         <section slot="skills" class={cardClass}>
@@ -77,10 +68,11 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
         <section slot="eidolons" class={bgClass}>
           <ol class="flex flex-col gap-2">
             {
+              // can also use e.id for eidolon image
               eidolons.map((e, i) => (
                 <li class="flex gap-2 md:gap-4 items-start">
                   <img
-                    src={`/img/characters/eidolons/${name}/${i + 1}.png`}
+                    src={`/image/character_eidolon/${id}_Rank_${i + 1}.png`}
                     width="120"
                     height="120"
                     class="scale-75 md:scale-100"
@@ -92,7 +84,12 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
                       {e.name}
                     </h2>
                     <div>
-                      <ParsedParams data={e.desc} params={e.params} />
+                      {splitLines(e.desc).map((line, inx) => (
+                        <>
+                          {inx !== 0 && <br />}
+                          {line}
+                        </>
+                      ))}
                     </div>
                   </div>
                 </li>
@@ -106,7 +103,7 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
         <section slot="traces" class={bgClass}>
           <ol id="skill-tree" class="flex flex-col gap-4">
             {
-              skillTree
+              traces
                 .sort(
                   (a, b) =>
                     (a.minAsc ?? 0) - (b.minAsc ?? 0) ||

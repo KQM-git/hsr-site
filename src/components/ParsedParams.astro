@@ -1,4 +1,6 @@
 ---
+import splitLines from 'util/splitLines';
+
 export interface Props {
   data: string;
   params: number[];
@@ -119,13 +121,13 @@ function stringifyHelper(node: Node): string {
     case "color": return `<span style="color: ${node.value}">${children}</span>`
     case "size": return `<span style="fontSize: ${node.value}px">${children}</span>`
     case "align": return `<span style="textAlign: ${node.value as "left" | "right" | "center"}>${children}</span>`
-    case "value": return `<span title="Raw value: ${node.value}" className="value">${children}</span>`;
-    case "br": return `<br>`;
+    case "value": return `<span title="Raw value: ${node.value}" class="value">${children}</span>`;
+    case "br": return `<br><br/>`;
     default: throw `Unsupported tag ${node.tag}`;
   }
 }
 
-//round down b/c mihoyo
+//nd down b/c mihoyo
 function fixed(val: number, precision: number): string {
   const decimals = Math.floor(Math.log10(val));
   return (val - 0.05 * 10 ** decimals).toFixed(precision - decimals);
@@ -133,21 +135,21 @@ function fixed(val: number, precision: number): string {
 
 function round(val: number, decimals: string, percentage: string): string {
   if (percentage) val *= 100;
-  return decimals === "i"
-    ? String(val)
-    : (fixed(val, Number(decimals.slice(1))) + percentage);
+  return (decimals === "i"
+    ? String(Math.floor(val))
+    : (fixed(val, Number(decimals.slice(1))))) + percentage;
 }
 
-const replaced = data
+const replaced = splitLines(data
   .replaceAll(
     STAT_REGEX,
-    (_, index: number, decimals: string, percentage: string) => {
-      const value = params[index - 1];
+    (_, index: string, decimals: string, percentage: string) => {
+      const value = params[Number.parseInt(index) - 1];
       const rounded = round(value, decimals, percentage);
       return `<value=${value}>${rounded}</value>`;
     }
-  )
-  .replace("\\n", "<br></br>");
+  ))
+  .join("<br>");
 
 const html = stringify(parse(replaced));
 ---

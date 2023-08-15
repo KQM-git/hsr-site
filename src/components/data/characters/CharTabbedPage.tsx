@@ -2,6 +2,7 @@ import { Tab, TabbedPage, type TabNames } from "components/TabbedPage";
 import type { ComponentChildren } from "preact";
 import tabGradients from "styles/dynamic/tab-gradients";
 import type { Character } from "types/game-data";
+import CharInfo from "./CharInfo.astro";
 
 const charTabNames: TabNames = {
   info: "Info",
@@ -20,7 +21,8 @@ type CharTabbedPage = {
 };
 
 export default function CharTabbedPage(props: CharTabbedPage) {
-  const { element, name } = props.char;
+  const char = props.char;
+  const { element, portrait } = char;
 
   return (
     <TabbedPage
@@ -32,7 +34,7 @@ export default function CharTabbedPage(props: CharTabbedPage) {
         <Tab id={id}>
           <img
             slot={id}
-            src={`/img/characters/full/${name}.png`}
+            src={`/${portrait}`}
             width={i ? "360" : "640"}
             height={i ? "360" : "640"}
             class={`${

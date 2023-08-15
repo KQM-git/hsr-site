@@ -1,35 +1,10 @@
-import type { ComponentChildren, ComponentChild, VNode } from "preact";
+import type { ComponentChildren } from "preact";
 
 interface Props {
   children: ComponentChildren;
 }
 
 const textBox: string = "rounded-2xl p-4";
-
-interface BlockQuoteProps {
-  content: string[];
-}
-
-function ProgressionBlockQuote(props: BlockQuoteProps) {
-  return (
-    <div
-      class={`${textBox} bg-lightning-950 border-lightning-800 border-4 flex justify-center text-4xl`}
-    >
-      {props.content.map((line, index) => {
-        const [caption, link] = line.split(":");
-        return (
-          <>
-            {index !== 0 && <span> {">"} </span>}
-            <div class="flex flex-col">
-              <img src={link} width="65px" />
-              <span class="subsubheader flex justify-center">{caption}</span>
-            </div>
-          </>
-        );
-      })}
-    </div>
-  );
-}
 
 export const components = {
   h1: (props: Props) => (
@@ -62,18 +37,6 @@ export const components = {
   ),
 
   p: (props: Props) => <p class="m-4">{props.children}</p>,
-
-  blockquote: (props: Props) => {
-    const content: string[] = (props.children as VNode<any>).props.value
-      .replace(/<.+>/g, "")
-      .split(/\r?\n/);
-    switch (content[1]) {
-      case "[!progression]":
-        return <ProgressionBlockQuote content={content.slice(2, -1)} />;
-    }
-
-    return <blockquote>{props.children}</blockquote>;
-  },
 };
 
 export function Troll(props: Props) {
@@ -86,3 +49,23 @@ export function Troll(props: Props) {
     </div>
   );
 }
+
+export const Priority = {
+  Item: (props: { name: string; image: string }) => (
+    <div class="flex flex-col items-center">
+      <img src={props.image} class="w-16 h-16" />
+      <span class="subsubheader">{props.name}</span>
+    </div>
+  ),
+  Arrow: () => (
+    <span class="text-6xl mx-4 inline-flex items-center">{" > "}</span>
+  ),
+
+  Table: (props: Props) => (
+    <div
+      class={`${textBox} bg-lightning-950 border-lightning-800 border-4 flex justify-center text-4xl`}
+    >
+      {props.children}
+    </div>
+  ),
+};
