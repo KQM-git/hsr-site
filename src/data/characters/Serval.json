@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1103_rank1.png"
+      "icon": "icon/skill/SkillIcon_1103_Rank1.png"
     },
     {
       "name": "Encore!",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1103_rank2.png"
+      "icon": "icon/skill/SkillIcon_1103_Rank2.png"
     },
     {
       "name": "Listen, the Heartbeat of the Gears",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1103_skill.png"
+      "icon": "icon/skill/SkillIcon_1103_BP.png"
     },
     {
       "name": "Make Some Noise!",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1103_rank4.png"
+      "icon": "icon/skill/SkillIcon_1103_Rank4.png"
     },
     {
       "name": "Belobog's Loudest Roar!",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1103_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1103_Ultra_on.png"
     },
     {
       "name": "This Song Rocks to Heaven!",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1103_rank6.png"
+      "icon": "icon/skill/SkillIcon_1103_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1103_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1103_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -375,7 +375,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1103_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1103_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -518,7 +518,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1103_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1103_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

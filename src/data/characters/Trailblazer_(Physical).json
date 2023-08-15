@@ -198,7 +198,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/8002_rank1.png"
+      "icon": "icon/skill/SkillIcon_8002_Rank1.png"
     },
     {
       "name": "An Unwilling Host",
@@ -210,7 +210,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/8002_rank2.png"
+      "icon": "icon/skill/SkillIcon_8002_Rank2.png"
     },
     {
       "name": "A Leading Whisper",
@@ -222,7 +222,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/8002_skill.png"
+      "icon": "icon/skill/SkillIcon_8002_BP.png"
     },
     {
       "name": "A Destructing Glance",
@@ -234,7 +234,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/8002_rank4.png"
+      "icon": "icon/skill/SkillIcon_8002_Rank4.png"
     },
     {
       "name": "A Surviving Hope",
@@ -246,7 +246,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/8002_ultimate.png"
+      "icon": "icon/skill/SkillIcon_8002_Ultra_on.png"
     },
     {
       "name": "A Trailblazing Will",
@@ -258,7 +258,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/8002_rank6.png"
+      "icon": "icon/skill/SkillIcon_8002_Rank6.png"
     }
   ],
   "traces": [
@@ -288,7 +288,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/8002_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_8002_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -433,7 +433,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/8002_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_8002_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -578,7 +578,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/8002_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_8002_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

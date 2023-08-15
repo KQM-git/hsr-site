@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1204_rank1.png"
+      "icon": "icon/skill/SkillIcon_1204_Rank1.png"
     },
     {
       "name": "Swing, Skies Squashed",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1204_rank2.png"
+      "icon": "icon/skill/SkillIcon_1204_Rank2.png"
     },
     {
       "name": "Strike, Suns Subdued",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1204_skill.png"
+      "icon": "icon/skill/SkillIcon_1204_BP.png"
     },
     {
       "name": "Spin, Stars Sieged",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1204_rank4.png"
+      "icon": "icon/skill/SkillIcon_1204_Rank4.png"
     },
     {
       "name": "Stride, Spoils Seized",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1204_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1204_Ultra_on.png"
     },
     {
       "name": "Sweep, Souls Slain",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1204_rank6.png"
+      "icon": "icon/skill/SkillIcon_1204_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1204_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1204_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -375,7 +375,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1204_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1204_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -518,7 +518,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1204_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1204_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

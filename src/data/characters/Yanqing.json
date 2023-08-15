@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1209_rank1.png"
+      "icon": "icon/skill/SkillIcon_1209_Rank1.png"
     },
     {
       "name": "Supine Serenade",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1209_rank2.png"
+      "icon": "icon/skill/SkillIcon_1209_Rank2.png"
     },
     {
       "name": "Sword Savant",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1209_skill.png"
+      "icon": "icon/skill/SkillIcon_1209_BP.png"
     },
     {
       "name": "Searing Sting",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1209_rank4.png"
+      "icon": "icon/skill/SkillIcon_1209_Rank4.png"
     },
     {
       "name": "Surging Strife",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1209_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1209_Ultra_on.png"
     },
     {
       "name": "Swift Swoop",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1209_rank6.png"
+      "icon": "icon/skill/SkillIcon_1209_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1209_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1209_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1209_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1209_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1209_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1209_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

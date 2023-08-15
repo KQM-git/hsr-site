@@ -261,7 +261,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1213_skill.png"
+      "icon": "icon/skill/SkillIcon_1213_BP.png"
     },
     {
       "name": "",
@@ -285,7 +285,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1213_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1213_Ultra_on.png"
     },
     {
       "name": "",
@@ -327,7 +327,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1213_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1213_SkillTree1.png",
       "major": false,
       "minAsc": 2,
       "children": [
@@ -472,7 +472,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1213_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1213_SkillTree2.png",
       "major": false,
       "minAsc": 4,
       "children": [
@@ -617,7 +617,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1213_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1213_SkillTree3.png",
       "major": false,
       "minAsc": 6,
       "children": [

@@ -164,7 +164,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1201_rank1.png"
+      "icon": "icon/skill/SkillIcon_1201_Rank1.png"
     },
     {
       "name": "Sleep on the Tiles",
@@ -176,7 +176,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1201_rank2.png"
+      "icon": "icon/skill/SkillIcon_1201_Rank2.png"
     },
     {
       "name": "Read Between the Tiles",
@@ -188,7 +188,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1201_skill.png"
+      "icon": "icon/skill/SkillIcon_1201_BP.png"
     },
     {
       "name": "Right on the Tiles",
@@ -200,7 +200,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1201_rank4.png"
+      "icon": "icon/skill/SkillIcon_1201_Rank4.png"
     },
     {
       "name": "Gambit for the Tiles",
@@ -212,7 +212,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1201_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1201_Ultra_on.png"
     },
     {
       "name": "Prevail Beyond the Tiles",
@@ -224,7 +224,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1201_rank6.png"
+      "icon": "icon/skill/SkillIcon_1201_Rank6.png"
     }
   ],
   "traces": [
@@ -254,7 +254,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1201_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1201_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -397,7 +397,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1201_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1201_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -540,7 +540,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1201_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1201_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

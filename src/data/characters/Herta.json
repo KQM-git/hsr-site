@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1013_rank1.png"
+      "icon": "icon/skill/SkillIcon_1013_Rank1.png"
     },
     {
       "name": "Keep the Ball Rolling",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1013_rank2.png"
+      "icon": "icon/skill/SkillIcon_1013_Rank2.png"
     },
     {
       "name": "That's the Kind of Girl I Am",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1013_skill.png"
+      "icon": "icon/skill/SkillIcon_1013_BP.png"
     },
     {
       "name": "Hit Where It Hurts",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1013_rank4.png"
+      "icon": "icon/skill/SkillIcon_1013_Rank4.png"
     },
     {
       "name": "Cuss Big or Cuss Nothing",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1013_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1013_Ultra_on.png"
     },
     {
       "name": "No One Can Betray Me",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1013_rank6.png"
+      "icon": "icon/skill/SkillIcon_1013_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1013_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1013_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -375,7 +375,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1013_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1013_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -518,7 +518,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1013_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1013_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

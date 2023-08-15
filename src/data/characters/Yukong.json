@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1207_rank1.png"
+      "icon": "icon/skill/SkillIcon_1207_Rank1.png"
     },
     {
       "name": "Skyward Command",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1207_rank2.png"
+      "icon": "icon/skill/SkillIcon_1207_Rank2.png"
     },
     {
       "name": "Torrential Fusillade",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1207_skill.png"
+      "icon": "icon/skill/SkillIcon_1207_BP.png"
     },
     {
       "name": "Zephyrean Echoes",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1207_rank4.png"
+      "icon": "icon/skill/SkillIcon_1207_Rank4.png"
     },
     {
       "name": "August Deadshot",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1207_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1207_Ultra_on.png"
     },
     {
       "name": "Bowstring Thunderclap",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1207_rank6.png"
+      "icon": "icon/skill/SkillIcon_1207_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1207_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1207_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1207_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1207_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1207_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1207_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

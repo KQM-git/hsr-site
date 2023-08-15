@@ -164,7 +164,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1205_rank1.png"
+      "icon": "icon/skill/SkillIcon_1205_Rank1.png"
     },
     {
       "name": "Ten Thousand Sorrows From One Broken Dream",
@@ -176,7 +176,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1205_rank2.png"
+      "icon": "icon/skill/SkillIcon_1205_Rank2.png"
     },
     {
       "name": "Hardened Blade Bleeds Coldest Shade",
@@ -188,7 +188,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1205_skill.png"
+      "icon": "icon/skill/SkillIcon_1205_BP.png"
     },
     {
       "name": "Rejected by Death, Infected With Life",
@@ -200,7 +200,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1205_rank4.png"
+      "icon": "icon/skill/SkillIcon_1205_Rank4.png"
     },
     {
       "name": "Death By Ten Lords' Gaze",
@@ -212,7 +212,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1205_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1205_Ultra_on.png"
     },
     {
       "name": "Reborn Into an Empty Husk",
@@ -224,7 +224,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1205_rank6.png"
+      "icon": "icon/skill/SkillIcon_1205_Rank6.png"
     }
   ],
   "traces": [
@@ -254,7 +254,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1205_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1205_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -399,7 +399,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1205_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1205_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -544,7 +544,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1205_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1205_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

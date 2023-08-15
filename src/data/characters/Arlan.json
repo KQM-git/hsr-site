@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1008_rank1.png"
+      "icon": "icon/skill/SkillIcon_1008_Rank1.png"
     },
     {
       "name": "Breaking Free",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1008_rank2.png"
+      "icon": "icon/skill/SkillIcon_1008_Rank2.png"
     },
     {
       "name": "Power Through",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1008_skill.png"
+      "icon": "icon/skill/SkillIcon_1008_BP.png"
     },
     {
       "name": "Turn the Tables",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1008_rank4.png"
+      "icon": "icon/skill/SkillIcon_1008_Rank4.png"
     },
     {
       "name": "Hammer and Tongs",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1008_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1008_Ultra_on.png"
     },
     {
       "name": "Self-Sacrifice",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1008_rank6.png"
+      "icon": "icon/skill/SkillIcon_1008_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1008_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1008_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1008_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1008_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1008_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1008_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

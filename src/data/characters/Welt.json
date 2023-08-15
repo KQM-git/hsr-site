@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1004_rank1.png"
+      "icon": "icon/skill/SkillIcon_1004_Rank1.png"
     },
     {
       "name": "Conflux of Stars",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1004_rank2.png"
+      "icon": "icon/skill/SkillIcon_1004_Rank2.png"
     },
     {
       "name": "Prayer of Peace",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1004_skill.png"
+      "icon": "icon/skill/SkillIcon_1004_BP.png"
     },
     {
       "name": "Appellation of Justice",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1004_rank4.png"
+      "icon": "icon/skill/SkillIcon_1004_Rank4.png"
     },
     {
       "name": "Power of Kindness",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1004_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1004_Ultra_on.png"
     },
     {
       "name": "Prospect of Glory",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1004_rank6.png"
+      "icon": "icon/skill/SkillIcon_1004_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1004_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1004_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1004_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1004_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1004_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1004_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

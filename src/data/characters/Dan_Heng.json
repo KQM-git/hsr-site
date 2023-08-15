@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1002_rank1.png"
+      "icon": "icon/skill/SkillIcon_1002_Rank1.png"
     },
     {
       "name": "Quell the Venom Octet, Quench the Vice O'Flame",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1002_rank2.png"
+      "icon": "icon/skill/SkillIcon_1002_Rank2.png"
     },
     {
       "name": "Seen and Unseen",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1002_skill.png"
+      "icon": "icon/skill/SkillIcon_1002_BP.png"
     },
     {
       "name": "Roaring Dragon and Soaring Sun",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1002_rank4.png"
+      "icon": "icon/skill/SkillIcon_1002_Rank4.png"
     },
     {
       "name": "A Drop of Rain Feeds a Torrent",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1002_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1002_Ultra_on.png"
     },
     {
       "name": "The Troubled Soul Lies in Wait",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1002_rank6.png"
+      "icon": "icon/skill/SkillIcon_1002_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1002_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1002_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1002_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1002_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1002_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1002_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

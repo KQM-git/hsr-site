@@ -170,7 +170,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1109_rank1.png"
+      "icon": "icon/skill/SkillIcon_1109_Rank1.png"
     },
     {
       "name": "Happy Tummy, Happy Body",
@@ -182,7 +182,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1109_rank2.png"
+      "icon": "icon/skill/SkillIcon_1109_Rank2.png"
     },
     {
       "name": "Don't Be Picky, Nothing's Icky",
@@ -194,7 +194,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1109_skill.png"
+      "icon": "icon/skill/SkillIcon_1109_BP.png"
     },
     {
       "name": "It's Okay to Not Know",
@@ -206,7 +206,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1109_rank4.png"
+      "icon": "icon/skill/SkillIcon_1109_Rank4.png"
     },
     {
       "name": "Let the Moles' Deeds Be Known",
@@ -218,7 +218,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1109_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1109_Ultra_on.png"
     },
     {
       "name": "Always Ready to Punch and Kick",
@@ -230,7 +230,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1109_rank6.png"
+      "icon": "icon/skill/SkillIcon_1109_Rank6.png"
     }
   ],
   "traces": [
@@ -260,7 +260,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1109_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1109_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -405,7 +405,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1109_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1109_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -550,7 +550,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1109_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1109_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

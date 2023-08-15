@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1211_rank1.png"
+      "icon": "icon/skill/SkillIcon_1211_Rank1.png"
     },
     {
       "name": "Sylphic Slumber",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1211_rank2.png"
+      "icon": "icon/skill/SkillIcon_1211_Rank2.png"
     },
     {
       "name": "Omniscient Opulence",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1211_skill.png"
+      "icon": "icon/skill/SkillIcon_1211_BP.png"
     },
     {
       "name": "Evil Excision",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1211_rank4.png"
+      "icon": "icon/skill/SkillIcon_1211_Rank4.png"
     },
     {
       "name": "Waning Worries",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1211_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1211_Ultra_on.png"
     },
     {
       "name": "Drooling Drop of Draconic Divinity",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1211_rank6.png"
+      "icon": "icon/skill/SkillIcon_1211_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1211_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1211_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1211_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1211_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1211_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1211_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

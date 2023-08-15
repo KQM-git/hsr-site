@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1106_rank1.png"
+      "icon": "icon/skill/SkillIcon_1106_Rank1.png"
     },
     {
       "name": "Adamant Charge",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1106_rank2.png"
+      "icon": "icon/skill/SkillIcon_1106_Rank2.png"
     },
     {
       "name": "Suppressive Force",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1106_skill.png"
+      "icon": "icon/skill/SkillIcon_1106_BP.png"
     },
     {
       "name": "Full Analysis",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1106_rank4.png"
+      "icon": "icon/skill/SkillIcon_1106_Rank4.png"
     },
     {
       "name": "Absolute Jeopardy",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1106_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1106_Ultra_on.png"
     },
     {
       "name": "Feeble Pursuit",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1106_rank6.png"
+      "icon": "icon/skill/SkillIcon_1106_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1106_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1106_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1106_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1106_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1106_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1106_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

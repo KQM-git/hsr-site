@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1108_rank1.png"
+      "icon": "icon/skill/SkillIcon_1108_Rank1.png"
     },
     {
       "name": "Infectious Enthusiasm",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1108_rank2.png"
+      "icon": "icon/skill/SkillIcon_1108_Rank2.png"
     },
     {
       "name": "Big Money!",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1108_skill.png"
+      "icon": "icon/skill/SkillIcon_1108_BP.png"
     },
     {
       "name": "The Deeper the Love, the Stronger the Hate",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1108_rank4.png"
+      "icon": "icon/skill/SkillIcon_1108_Rank4.png"
     },
     {
       "name": "Huuuuge Money!",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1108_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1108_Ultra_on.png"
     },
     {
       "name": "Increased Spending",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1108_rank6.png"
+      "icon": "icon/skill/SkillIcon_1108_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1108_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1108_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1108_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1108_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1108_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1108_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

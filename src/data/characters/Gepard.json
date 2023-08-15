@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1104_rank1.png"
+      "icon": "icon/skill/SkillIcon_1104_Rank1.png"
     },
     {
       "name": "Lingering Cold",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1104_rank2.png"
+      "icon": "icon/skill/SkillIcon_1104_Rank2.png"
     },
     {
       "name": "Never Surrender",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1104_skill.png"
+      "icon": "icon/skill/SkillIcon_1104_BP.png"
     },
     {
       "name": "Faith Moves Mountains",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1104_rank4.png"
+      "icon": "icon/skill/SkillIcon_1104_Rank4.png"
     },
     {
       "name": "Cold Iron Fist",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1104_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1104_Ultra_on.png"
     },
     {
       "name": "Unyielding Resolve",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1104_rank6.png"
+      "icon": "icon/skill/SkillIcon_1104_Rank6.png"
     }
   ],
   "traces": [
@@ -236,7 +236,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1104_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1104_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -408,7 +408,7 @@
               ]
             }
           ],
-          "icon": "icon/skill/1104_skilltree1.png",
+          "icon": "icon/skill/SkillIcon_1104_SkillTree1.png",
           "major": true,
           "minAsc": 2,
           "children": [
@@ -516,7 +516,7 @@
               ]
             }
           ],
-          "icon": "icon/skill/1104_skilltree2.png",
+          "icon": "icon/skill/SkillIcon_1104_SkillTree2.png",
           "major": true,
           "minAsc": 4,
           "children": [

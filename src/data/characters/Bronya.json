@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1101_rank1.png"
+      "icon": "icon/skill/SkillIcon_1101_Rank1.png"
     },
     {
       "name": "Quick March",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1101_rank2.png"
+      "icon": "icon/skill/SkillIcon_1101_Rank2.png"
     },
     {
       "name": "Bombardment",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1101_skill.png"
+      "icon": "icon/skill/SkillIcon_1101_BP.png"
     },
     {
       "name": "Take by Surprise",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1101_rank4.png"
+      "icon": "icon/skill/SkillIcon_1101_Rank4.png"
     },
     {
       "name": "Unstoppable",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1101_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1101_Ultra_on.png"
     },
     {
       "name": "Piercing Rainbow",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1101_rank6.png"
+      "icon": "icon/skill/SkillIcon_1101_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1101_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1101_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1101_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1101_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1101_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1101_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

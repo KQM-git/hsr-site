@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1001_rank1.png"
+      "icon": "icon/skill/SkillIcon_1001_Rank1.png"
     },
     {
       "name": "Memory of It",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1001_rank2.png"
+      "icon": "icon/skill/SkillIcon_1001_Rank2.png"
     },
     {
       "name": "Memory of Everything",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1001_skill.png"
+      "icon": "icon/skill/SkillIcon_1001_BP.png"
     },
     {
       "name": "Never Forfeit Again",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1001_rank4.png"
+      "icon": "icon/skill/SkillIcon_1001_Rank4.png"
     },
     {
       "name": "Never Forget Again",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1001_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1001_Ultra_on.png"
     },
     {
       "name": "Just Like This, Always...",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1001_rank6.png"
+      "icon": "icon/skill/SkillIcon_1001_Rank6.png"
     }
   ],
   "traces": [
@@ -236,7 +236,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1001_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1001_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -408,7 +408,7 @@
               ]
             }
           ],
-          "icon": "icon/skill/1001_skilltree1.png",
+          "icon": "icon/skill/SkillIcon_1001_SkillTree1.png",
           "major": true,
           "minAsc": 2,
           "children": [
@@ -516,7 +516,7 @@
               ]
             }
           ],
-          "icon": "icon/skill/1001_skilltree2.png",
+          "icon": "icon/skill/SkillIcon_1001_SkillTree2.png",
           "major": true,
           "minAsc": 4,
           "children": [

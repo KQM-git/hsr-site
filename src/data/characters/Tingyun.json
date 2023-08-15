@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1202_rank1.png"
+      "icon": "icon/skill/SkillIcon_1202_Rank1.png"
     },
     {
       "name": "Gainfully Gives, Givingly Gains",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1202_rank2.png"
+      "icon": "icon/skill/SkillIcon_1202_Rank2.png"
     },
     {
       "name": "Halcyon Bequest",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1202_skill.png"
+      "icon": "icon/skill/SkillIcon_1202_BP.png"
     },
     {
       "name": "Jovial Versatility",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1202_rank4.png"
+      "icon": "icon/skill/SkillIcon_1202_Rank4.png"
     },
     {
       "name": "Sauntering Coquette",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1202_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1202_Ultra_on.png"
     },
     {
       "name": "Peace Brings Wealth to All",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1202_rank6.png"
+      "icon": "icon/skill/SkillIcon_1202_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1202_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1202_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1202_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1202_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1202_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1202_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

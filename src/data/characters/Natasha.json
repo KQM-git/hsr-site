@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1105_rank1.png"
+      "icon": "icon/skill/SkillIcon_1105_Rank1.png"
     },
     {
       "name": "Clinical Research",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1105_rank2.png"
+      "icon": "icon/skill/SkillIcon_1105_Rank2.png"
     },
     {
       "name": "The Right Cure",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1105_skill.png"
+      "icon": "icon/skill/SkillIcon_1105_BP.png"
     },
     {
       "name": "Miracle Cure",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1105_rank4.png"
+      "icon": "icon/skill/SkillIcon_1105_Rank4.png"
     },
     {
       "name": "Preventive Treatment",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1105_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1105_Ultra_on.png"
     },
     {
       "name": "Doctor's Grace",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1105_rank6.png"
+      "icon": "icon/skill/SkillIcon_1105_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1105_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1105_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1105_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1105_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1105_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1105_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

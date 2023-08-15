@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1206_rank1.png"
+      "icon": "icon/skill/SkillIcon_1206_Rank1.png"
     },
     {
       "name": "Refine in Toil",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1206_rank2.png"
+      "icon": "icon/skill/SkillIcon_1206_Rank2.png"
     },
     {
       "name": "Rise From Fame",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1206_skill.png"
+      "icon": "icon/skill/SkillIcon_1206_BP.png"
     },
     {
       "name": "Cleave With Heart",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1206_rank4.png"
+      "icon": "icon/skill/SkillIcon_1206_Rank4.png"
     },
     {
       "name": "Prevail via Taixu",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1206_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1206_Ultra_on.png"
     },
     {
       "name": "Dwell Like Water",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1206_rank6.png"
+      "icon": "icon/skill/SkillIcon_1206_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1206_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1206_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1206_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1206_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1206_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1206_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

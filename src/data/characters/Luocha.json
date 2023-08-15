@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1203_rank1.png"
+      "icon": "icon/skill/SkillIcon_1203_Rank1.png"
     },
     {
       "name": "Bestowal From the Pure",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1203_rank2.png"
+      "icon": "icon/skill/SkillIcon_1203_Rank2.png"
     },
     {
       "name": "Surveyal by the Fool",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1203_skill.png"
+      "icon": "icon/skill/SkillIcon_1203_BP.png"
     },
     {
       "name": "Heavy Lies the Crown",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1203_rank4.png"
+      "icon": "icon/skill/SkillIcon_1203_Rank4.png"
     },
     {
       "name": "Cicatrix 'Neath the Pain",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1203_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1203_Ultra_on.png"
     },
     {
       "name": "Reunion With the Dust",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1203_rank6.png"
+      "icon": "icon/skill/SkillIcon_1203_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1203_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1203_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1203_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1203_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1203_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1203_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

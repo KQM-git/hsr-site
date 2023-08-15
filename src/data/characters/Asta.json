@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1009_rank1.png"
+      "icon": "icon/skill/SkillIcon_1009_Rank1.png"
     },
     {
       "name": "Moon Speaks in Wax and Wane",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1009_rank2.png"
+      "icon": "icon/skill/SkillIcon_1009_Rank2.png"
     },
     {
       "name": "Meteor Showers for Wish and Want",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1009_skill.png"
+      "icon": "icon/skill/SkillIcon_1009_BP.png"
     },
     {
       "name": "Aurora Basks in Beauty and Bliss",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1009_rank4.png"
+      "icon": "icon/skill/SkillIcon_1009_Rank4.png"
     },
     {
       "name": "Nebula Secludes in Runes and Riddles",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1009_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1009_Ultra_on.png"
     },
     {
       "name": "Galaxy Dreams in Calm and Comfort",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1009_rank6.png"
+      "icon": "icon/skill/SkillIcon_1009_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1009_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1009_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1009_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1009_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1009_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1009_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [

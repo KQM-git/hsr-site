@@ -164,7 +164,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1111_rank1.png"
+      "icon": "icon/skill/SkillIcon_1111_Rank1.png"
     },
     {
       "name": "The Enemy is Weak, I am Strong",
@@ -176,7 +176,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1111_rank2.png"
+      "icon": "icon/skill/SkillIcon_1111_Rank2.png"
     },
     {
       "name": "Born for the Ring",
@@ -188,7 +188,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1111_skill.png"
+      "icon": "icon/skill/SkillIcon_1111_BP.png"
     },
     {
       "name": "Never Turning Back",
@@ -200,7 +200,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1111_rank4.png"
+      "icon": "icon/skill/SkillIcon_1111_Rank4.png"
     },
     {
       "name": "The Spirit of Wildfire",
@@ -212,7 +212,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1111_ultimate.png"
+      "icon": "icon/skill/SkillIcon_1111_Ultra_on.png"
     },
     {
       "name": "A Champion's Applause",
@@ -224,7 +224,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/1111_rank6.png"
+      "icon": "icon/skill/SkillIcon_1111_Rank6.png"
     }
   ],
   "traces": [
@@ -254,7 +254,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1111_skilltree1.png",
+      "icon": "icon/skill/SkillIcon_1111_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -399,7 +399,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1111_skilltree2.png",
+      "icon": "icon/skill/SkillIcon_1111_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -544,7 +544,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/1111_skilltree3.png",
+      "icon": "icon/skill/SkillIcon_1111_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
