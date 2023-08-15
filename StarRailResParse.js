@@ -1,8 +1,3 @@
-// Clone https://github.com/Mar-7th/StarRailRes and put this in root
-// run `npm i prettier`
-// run `node StarRailResParse.js`
-// files will be generated in kqm/*
-
 const fs = require("fs");
 const prettier = require("prettier");
 
@@ -76,13 +71,34 @@ function convertDesc(data) {
   return `${properties[type].name} increases by ${num}`;
 }
 
+const SKILL_ICON_MAP = {
+  basic_atk: "Normal",
+  skill: "BP",
+  technique: "Maze",
+  talent: "Passive",
+  ultimate: "Ultra_on",
+  skilltree1: "SkillTree1",
+  skilltree2: "SkillTree2",
+  skilltree3: "SkillTree3",
+  rank1: "Rank1",
+  rank2: "Rank2",
+  rank4: "Rank4",
+  rank6: "Rank6",
+};
+
 function loadTraces() {
   data = JSON.parse(
     fs.readFileSync(`index_new/en/character_skill_trees.json`, "utf8")
   );
 
   Object.entries(data).forEach(([k, v]) => {
-    // prePoints -> parent
+    let icon = v.icon;
+    if (!v.icon.includes("property")) {
+      const oldIcon = v.icon.match(/\d+_(.+)\.png/);
+      let charId = k.slice(0, 4);
+      if (charId >= 8000) charId--;
+      icon = `icon/skill/SkillIcon_${charId}_${SKILL_ICON_MAP[oldIcon[1]]}.png`;
+    }
 
     // traces for skills are weird
     if (v.level_up_skills.length > 0) {
@@ -91,6 +107,11 @@ function loadTraces() {
       v.params = skills[v.level_up_skills[0].id].params;
       return;
     }
+    const minAsc = Math.min.apply(
+      Math,
+      v.levels.map((l) => l.promotion)
+    );
+
     traces[k] = {
       id: k,
       name: v.name,
@@ -98,13 +119,10 @@ function loadTraces() {
       description: v.desc || convertDesc(v.levels[0].properties),
       params: v.params,
       levels: v.levels,
-      icon: v.icon,
-      major: v.major,
+      icon: icon,
+      major: !!v.desc, // minor traces need auto generated description
 
-      minAsc: Math.min.apply(
-        Math,
-        v.levels.map((l) => l.promotion)
-      ),
+      minAsc: minAsc,
     };
   });
   Object.values(charData).forEach((c) => {
@@ -112,6 +130,7 @@ function loadTraces() {
     traces[c.skill_trees.slice(-2)[0]].minLevel = 75;
   });
   Object.values(data).forEach((v) => {
+    // prePoints -> parent
     v.pre_points
       .map((id) => traces[id])
       .forEach(
@@ -128,6 +147,15 @@ function loadEidolons() {
     fs.readFileSync(`index_new/en/character_ranks.json`, "utf8")
   );
   Object.entries(data).forEach(([k, v]) => {
+    if (!v.icon.includes("property")) {
+      const oldIcon = v.icon.match(/\d+_(.+)\.png/);
+      let charId = k.slice(0, 4);
+      if (charId >= 8000) charId--;
+      if (oldIcon)
+        v.icon = `icon/skill/SkillIcon_${charId}_${
+          SKILL_ICON_MAP[oldIcon[1]]
+        }.png`;
+    }
     delete v.id;
     delete v.level_up_skills;
     eidolons[k] = v;

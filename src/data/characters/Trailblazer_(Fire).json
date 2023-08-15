@@ -164,7 +164,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8004_Rank1.png"
+      "icon": "icon/skill/SkillIcon_8003_Rank1.png"
     },
     {
       "name": "Time-Defying Tenacity",
@@ -176,7 +176,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8004_Rank2.png"
+      "icon": "icon/skill/SkillIcon_8003_Rank2.png"
     },
     {
       "name": "Trail-Blazing Blueprint",
@@ -188,7 +188,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8004_BP.png"
+      "icon": "icon/skill/SkillIcon_8003_BP.png"
     },
     {
       "name": "Nation-Building Oath",
@@ -200,7 +200,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8004_Rank4.png"
+      "icon": "icon/skill/SkillIcon_8003_Rank4.png"
     },
     {
       "name": "Spirit-Warming Flame",
@@ -212,7 +212,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8004_Ultra_on.png"
+      "icon": "icon/skill/SkillIcon_8003_Ultra_on.png"
     },
     {
       "name": "City-Forging Bulwarks",
@@ -224,7 +224,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8004_Rank6.png"
+      "icon": "icon/skill/SkillIcon_8003_Rank6.png"
     }
   ],
   "traces": [
@@ -258,7 +258,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_8004_SkillTree3.png",
+      "icon": "icon/skill/SkillIcon_8003_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -430,7 +430,7 @@
               ]
             }
           ],
-          "icon": "icon/skill/SkillIcon_8004_SkillTree1.png",
+          "icon": "icon/skill/SkillIcon_8003_SkillTree1.png",
           "major": true,
           "minAsc": 2,
           "children": [
@@ -538,7 +538,7 @@
               ]
             }
           ],
-          "icon": "icon/skill/SkillIcon_8004_SkillTree2.png",
+          "icon": "icon/skill/SkillIcon_8003_SkillTree2.png",
           "major": true,
           "minAsc": 4,
           "children": [
