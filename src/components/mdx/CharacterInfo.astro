@@ -1,0 +1,121 @@
+---
+import { parse } from "node-html-parser";
+import { getImage, getText } from "./CharacterData";
+
+const { char } = Astro.props;
+const id = Math.random().toString();
+
+const TAG_NAME: any = {
+  basic: "Basic ATK",
+  skill: "Skill",
+  ultimate: "Ultimate",
+  talent: "Talent",
+  technique: "Technique",
+
+  a2: "A2 Bonus",
+  a4: "A4 Bonus",
+  a6: "A6 Bonus",
+};
+
+const pattern = /\|(.+?)\|(.+?)\|/g;
+
+let html = await Astro.slots.render("default");
+const replacements = (await Promise.all(
+  Array.from(html.matchAll(pattern), async (match) => {
+    const data = match[0].split("|");
+
+    switch (data[1]) {
+      case "type":
+        return TAG_NAME[data[2]];
+      case "name":
+        return await getText(char, data[2]);
+      case "img":
+        return await getImage(char, data[2]);
+    }
+
+    console.log(data);
+    return "placeholder";
+  })
+)) as string[];
+let i = 0;
+html = html.replace(pattern, () => replacements[i++]);
+
+const children = Array.from(parse(html).querySelectorAll("> *"));
+const tabs = children.map((child) => child.id);
+---
+
+<div class="tabpage" id={id}>
+  <div class="tabheader">
+    {
+      tabs.map((tab, inx) => (
+        <button
+          id={`${tab}:${id}`}
+          class={`tablink rounded-3xl p-4 m-2 tablink-${inx ? "in" : ""}active`}
+        >
+          {TAG_NAME[tab]}
+        </button>
+      ))
+    }
+  </div>
+  <div class="tabbody">
+    {
+      children.map((child, inx) => {
+        child.setAttribute("style", `display: ${inx ? "none" : "block"};`);
+        child.setAttribute("id", `${child.getAttribute("id")}:${id}`);
+
+        return child;
+      })
+    }
+  </div>
+</div>
+<script>
+  function disableAll(id) {
+    document.querySelectorAll(".tablink").forEach((button) => {
+      const [_, buttonId] = button.id.split(":");
+      if (id === buttonId) {
+        button.className = button.className.replace(
+          "tablink-active",
+          "tablink-inactive"
+        );
+      }
+    });
+
+    document.querySelectorAll(".tabcontent").forEach((content) => {
+      content.style.display = content.id === id ? "block" : "none";
+    });
+  }
+
+  function selectTab(id) {
+    document.querySelectorAll(".tablink").forEach((button) => {
+      if (id === button.id)
+        button.className = button.className.replace(
+          "tablink-inactive",
+          "tablink-active"
+        );
+    });
+
+    document.querySelectorAll(".tabcontent").forEach((content) => {
+      console.log(content);
+      if (id === content.id) content.style.display = "block";
+    });
+  }
+
+  document.querySelectorAll(".tablink").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const id = e.target.id;
+      const [_, pageId] = id.split(":");
+
+      disableAll(pageId);
+      selectTab(id);
+    });
+  });
+</script>
+<style>
+  .tablink-inactive {
+    @apply bg-theme-800;
+  }
+
+  .tablink-active {
+    @apply bg-theme-600;
+  }
+</style>

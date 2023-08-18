@@ -12,8 +12,11 @@ authors:
   - Sushou
 ---
 
-import { Troll, Priority } from "../../components/mdx/Guide.tsx";
-export { components } from "../../components/mdx/Guide.tsx";
+import PriorityTable from "../../components/mdx/PriorityTable.astro";
+import PriorityItem from "../../components/mdx/PriorityItem.astro";
+import CharacterInfo from "../../components/mdx/CharacterInfo.astro";
+import Info from "../../components/mdx/Info.astro";
+export { components } from "../../components/mdx/Styles.tsx";
 
 # Kafka Quick Guide
 
@@ -45,46 +48,67 @@ Due to these interactions, Kafka’s Ultimate is the most important aspect of he
 
 ### Traces
 
-Replace this with a tabbedpage component
-![Placeholder](https://i.imgur.com/QIUBRzO.jpg)
+<CharacterInfo char="Kafka">
+  <Info id="basic">
+    If you’re using this, it typically means that you’ve done something wrong.
+  </Info>
+  <Info id="skill">
+    Any DoTs that are detonated by Kafka’s skill but don’t belong to her, such
+    as Sampo’s Wind Shear, will still scale off of the character with DoT
+    ownership. Second highest priority after Ultimate, as this is Kafka’s most
+    used ability.
+  </Info>
+  <Info id="ultimate">
+    Like her Skill, DoT damage depends on the stats of the DoT effect’s owner.
+    Highest priority to level, as Kafka’s Shock DoT scales off of Ultimate’s
+    Trace Level.<br></br>This also affects her Talent and Technique, since both of
+    those inflict the Ultimate’s DoT onto enemies.
+  </Info>
+  <Info id="talent">
+    The value of the DoT effect inflicted by this skill is dependent on the
+    current Ultimate Trace Level.
+  </Info>
+  <Info id="technique">
+    Applies Ultimate’s Shock DoT to all enemies and deals improved Toughness
+    damage. Can be used for a slightly faster ramp-up, but often is not as
+    powerful as other techniques to engage.
+  </Info>
+  <Info id="a2">
+    Allows Kafka to detonate DoT effects from other units, not just her own
+    Shocks.<br></br>Invaluable if using DoT inflicting characters with Kafka.
+  </Info>
+  <Info id="a4">
+    Can offer potentially significant Energy gains but only in situations with
+    lots of weaker enemies or summons.
+  </Info>
+  <Info id="a6">
+    Substantially reduces Kafka’s need for EHR stats, outside of E1, reducing
+    her recommended EHR total to about 28.3%. Since Kafka gains 18% from Minor
+    Traces, you only need about 10% from substats in total (about 2-3 subs
+    worth) or other outside sources.
+  </Info>
+</CharacterInfo>
 
 ### Trace Priority
 
 #### Ability Level Priority
 
-<Priority.Table>
-  <Priority.Item
-    name="Ultimate"
-    image="/kafka-quick-guide/Ability_Twilight_Trill.webp"
-  />
-  <Priority.Arrow />
-  <Priority.Item
-    name="Skill"
-    image="/kafka-quick-guide/Ability_Caressing_Moonlight.webp"
-  />
-  <Priority.Arrow />
-  <Priority.Item
-    name="Talent"
-    image="/kafka-quick-guide/Ability_Gentle_but_Cruel.webp"
-  />
-  <Priority.Arrow />
-  <Priority.Item
-    name="Basic"
-    image="/kafka-quick-guide/Ability_Midnight_Tumult.webp"
-  />
-</Priority.Table>
+<PriorityTable char="Kafka">
+  <PriorityItem type="Ultimate" />
+  <PriorityItem type="Skill" />
+  <PriorityItem type="Talent" />
+  <PriorityItem type="Basic" />
+</PriorityTable>
 
 Both Kafka’s Ultimate and Skill offer great damage, but her Talent’s follow-up attack inflicts the same DoT as her Ultimate, meaning her Ultimate is the top priority to level.
 
 #### Bonus Ability Priority
 
-<Priority.Table>
-  <Priority.Item name="A2" image="/kafka-quick-guide/Trace_Torture.webp" />
-  <Priority.Arrow />
-  <Priority.Item name="A6" image="/kafka-quick-guide/Trace_Thorns.webp" />
-  <Priority.Arrow />
-  <Priority.Item name="A4" image="/kafka-quick-guide/Trace_Plunder.webp" />
-</Priority.Table>
+<PriorityTable char="Kafka">
+  <PriorityItem type="A2" />
+  <PriorityItem type="A6" />
+  <PriorityItem type="A4" />
+</PriorityTable>
 
 A2 will generally be the highest priority Bonus Ability to unlock, unless you are playing Kafka without any other DoT characters.
 
@@ -137,7 +161,12 @@ One thing to keep in mind is that building Break Effect% is only an effective st
 
 One thing to keep in mind is that building Break Effect% is only an effective strategy when built on a single character of a team, since an enemy can only be Weakness Broken by one character at a time.
 
-<Troll />
+<div
+  class="flex justify-center p-5 m-5"
+  style=" background-position:50% 50%;background-image:url(https://hsr.keqingmains.com/wp-content/uploads/2023/08/408001-1.webp)"
+>
+  <span class="header">Do NOT Build CRIT.</span>
+</div>
 
 DoT cannot crit and Kafka’s DoT detonation effect similarly cannot crit, leaving her CRIT-scaling multipliers which are nothing short of **abysmal**. The CRIT-scaling hit of her Ultimate has an 80% multiplier per enemy at Trace level 10, **which is even less than her Basic ATK**. In comparison, her DoT damage from Shock (which is completely incapable of hitting crits) is 290% of her ATK at the same level.
 

@@ -1,0 +1,17 @@
+---
+export interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+---
+
+<div class="tabcontent border-theme-400 my-3 border-4 rounded-2xl" id={id}>
+  <div class="m-4 text-2xl">
+    <img class="inline" width="48" height="48" src={`|img|${id}|`} />
+    <span class="font-bold">|type|{id}|</span>
+    <span>|</span>
+    <span class="italic">|name|{id}|</span>
+  </div>
+  <slot />
+</div>

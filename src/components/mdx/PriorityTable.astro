@@ -1,0 +1,39 @@
+---
+import { parse } from "node-html-parser";
+import { getImage } from "./CharacterData";
+
+export interface Props {
+  char: string;
+}
+
+const pattern = /\|icon\|(.+?)\|/g;
+
+const { char } = Astro.props;
+
+let html = await Astro.slots.render("default");
+const replacements = (await Promise.all(
+  Array.from(html.matchAll(pattern), async (match) => {
+    const data = match[0].split("|");
+    return await getImage(char, data[2])!;
+  })
+)) as string[];
+let i = 0;
+html = html.replace(pattern, () => replacements[i++]);
+
+const children = Array.from(parse(html).querySelectorAll("> *"));
+---
+
+<div
+  class="rounded-2xl p-4 bg-lightning-950 border-lightning-800 border-4 flex justify-center text-4xl"
+>
+  {
+    children.map((child, inx) => (
+      <>
+        {inx !== 0 && (
+          <span class="text-6xl mx-4 inline-flex items-center">{" > "}</span>
+        )}
+        {child}
+      </>
+    ))
+  }
+</div>
