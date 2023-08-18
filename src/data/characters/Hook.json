@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Fire DMG to a single enemy.",
       "description": "Deals Fire DMG equal to #1[i]% of Hook's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1109_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1109_Normal.png"
     },
     {
       "name": "Hey! Remember Hook?",
@@ -48,7 +48,7 @@
         [2.88, 1, 2, 0.78],
         [3, 1, 2, 0.8125]
       ],
-      "icon": "icon/skill/1109_skill.png"
+      "icon": "/icon/skill/SkillIcon_1109_BP.png"
     },
     {
       "name": "Boom! Here Comes the Fire!",
@@ -76,7 +76,7 @@
         [4.64],
         [4.8]
       ],
-      "icon": "icon/skill/1109_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1109_Ultra_on.png"
     },
     {
       "name": "Ha! Oil to the Flames!",
@@ -104,7 +104,7 @@
         [1.2, 5],
         [1.25, 5]
       ],
-      "icon": "icon/skill/1109_talent.png"
+      "icon": "/icon/skill/SkillIcon_1109_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1109_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1109_Normal.png"
     },
     {
       "name": "Ack! Look at This Mess!",
@@ -128,7 +128,7 @@
       "simpleDescription": "",
       "description": "Immediately attacks the enemy. Upon entering battle, Hook deals Fire DMG equal to #4[i]% of her ATK to a random enemy. In addition, there is a #1[i]% base chance to inflict Burn on every enemy for #3[i] turn(s).\nWhen afflicted with Burn, enemies will take Fire DoT equal to #2[i]% of Hook's ATK at the beginning of each turn.",
       "params": [[1, 0.5, 3, 0.5]],
-      "icon": "icon/skill/1109_technique.png"
+      "icon": "/icon/skill/SkillIcon_1109_Maze.png"
     },
     {
       "name": "Hey! Remember Hook?",
@@ -156,7 +156,7 @@
         [3.36, 1, 2, 0.78, 0.96],
         [3.5, 1, 2, 0.8125, 1]
       ],
-      "icon": "icon/skill/1109_skill.png"
+      "icon": "/icon/skill/SkillIcon_1109_BP.png"
     }
   ],
   "eidolons": [
@@ -170,7 +170,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1109_Rank1.png"
     },
     {
       "name": "Happy Tummy, Happy Body",
@@ -182,7 +182,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1109_Rank2.png"
     },
     {
       "name": "Don't Be Picky, Nothing's Icky",
@@ -194,7 +194,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_BP.png"
+      "icon": "/icon/skill/SkillIcon_1109_BP.png"
     },
     {
       "name": "It's Okay to Not Know",
@@ -206,7 +206,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1109_Rank4.png"
     },
     {
       "name": "Let the Moles' Deeds Be Known",
@@ -218,7 +218,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1109_Ultra_on.png"
     },
     {
       "name": "Always Ready to Punch and Kick",
@@ -230,7 +230,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1109_Rank6.png"
     }
   ],
   "traces": [
@@ -260,7 +260,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1109_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -295,7 +295,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -330,7 +330,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -365,7 +365,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconCriticalDamage.png",
+                  "icon": "/icon/property/IconCriticalDamage.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -405,7 +405,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1109_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -440,7 +440,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -475,7 +475,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -510,7 +510,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -550,7 +550,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1109_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1109_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -585,7 +585,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconCriticalDamage.png",
+          "icon": "/icon/property/IconCriticalDamage.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -620,7 +620,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -656,7 +656,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -692,7 +692,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     }

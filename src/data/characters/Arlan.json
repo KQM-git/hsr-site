@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Lightning DMG to a single enemy.",
       "description": "Deals Lightning DMG equal to #1[i]% of Arlan's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1008_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1008_Normal.png"
     },
     {
       "name": "Shackle Breaker",
@@ -48,7 +48,7 @@
         [0.15, 2.88],
         [0.15, 3]
       ],
-      "icon": "icon/skill/1008_skill.png"
+      "icon": "/icon/skill/SkillIcon_1008_BP.png"
     },
     {
       "name": "Frenzied Punishment",
@@ -76,7 +76,7 @@
         [3.712, 1.856],
         [3.84, 1.92]
       ],
-      "icon": "icon/skill/1008_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1008_Ultra_on.png"
     },
     {
       "name": "Pain and Anger",
@@ -104,7 +104,7 @@
         [0.864],
         [0.9]
       ],
-      "icon": "icon/skill/1008_talent.png"
+      "icon": "/icon/skill/SkillIcon_1008_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1008_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1008_Normal.png"
     },
     {
       "name": "Swift Harvest",
@@ -128,7 +128,7 @@
       "simpleDescription": "Attacks the enemy. After entering battle, deals minor Lightning DMG to all enemies.",
       "description": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to #1[i]% of Arlan's ATK to all enemies.",
       "params": [[0.8]],
-      "icon": "icon/skill/1008_technique.png"
+      "icon": "/icon/skill/SkillIcon_1008_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1008_Rank1.png"
     },
     {
       "name": "Breaking Free",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1008_Rank2.png"
     },
     {
       "name": "Power Through",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_BP.png"
+      "icon": "/icon/skill/SkillIcon_1008_BP.png"
     },
     {
       "name": "Turn the Tables",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1008_Rank4.png"
     },
     {
       "name": "Hammer and Tongs",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1008_Ultra_on.png"
     },
     {
       "name": "Self-Sacrifice",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1008_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1008_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusResistance.png",
+          "icon": "/icon/property/IconStatusResistance.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconMaxHP.png",
+                  "icon": "/icon/property/IconMaxHP.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1008_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusResistance.png",
+              "icon": "/icon/property/IconStatusResistance.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1008_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1008_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -592,7 +592,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusResistance.png",
+              "icon": "/icon/property/IconStatusResistance.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -628,7 +628,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -664,7 +664,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     }

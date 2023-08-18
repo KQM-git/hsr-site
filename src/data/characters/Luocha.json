@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Imaginary DMG to a single enemy.",
       "description": "Deals Imaginary DMG equal to #1[i]% of Luocha's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1203_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1203_Normal.png"
     },
     {
       "name": "Prayer of Abyss Flower",
@@ -48,7 +48,7 @@
         [0.68, 980, 0.5, 2],
         [0.7, 1025, 0.5, 2]
       ],
-      "icon": "icon/skill/1203_skill.png"
+      "icon": "/icon/skill/SkillIcon_1203_BP.png"
     },
     {
       "name": "Death Wish",
@@ -76,7 +76,7 @@
         [2.32, 1],
         [2.4, 1]
       ],
-      "icon": "icon/skill/1203_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1203_Ultra_on.png"
     },
     {
       "name": "Cycle of Life",
@@ -104,7 +104,7 @@
         [2, 0.204, 2, 294],
         [2, 0.21, 2, 307.5]
       ],
-      "icon": "icon/skill/1203_talent.png"
+      "icon": "/icon/skill/SkillIcon_1203_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1203_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1203_Normal.png"
     },
     {
       "name": "Mercy of a Fool",
@@ -128,7 +128,7 @@
       "simpleDescription": "After the Technique is used, immediately trigger the effect of the Talent at the start of the next battle.",
       "description": "After the Technique is used, the Talent will be immediately triggered at the start of the next battle.",
       "params": [],
-      "icon": "icon/skill/1203_technique.png"
+      "icon": "/icon/skill/SkillIcon_1203_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1203_Rank1.png"
     },
     {
       "name": "Bestowal From the Pure",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1203_Rank2.png"
     },
     {
       "name": "Surveyal by the Fool",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_BP.png"
+      "icon": "/icon/skill/SkillIcon_1203_BP.png"
     },
     {
       "name": "Heavy Lies the Crown",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1203_Rank4.png"
     },
     {
       "name": "Cicatrix 'Neath the Pain",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1203_Ultra_on.png"
     },
     {
       "name": "Reunion With the Dust",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1203_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1203_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconDefence.png",
+                  "icon": "/icon/property/IconDefence.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1203_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1203_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1203_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 6
         },
@@ -592,7 +592,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -626,7 +626,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     },
@@ -661,7 +661,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0,
       "minLevel": 80

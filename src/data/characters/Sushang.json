@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Physical DMG to a single enemy.",
       "description": "Deals Physical DMG equal to #1[i]% of Sushang's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1206_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1206_Normal.png"
     },
     {
       "name": "Cloudfencer Art: Mountainfall",
@@ -48,7 +48,7 @@
         [2.52, 1.2, 0.33],
         [2.625, 1.25, 0.33]
       ],
-      "icon": "icon/skill/1206_skill.png"
+      "icon": "/icon/skill/SkillIcon_1206_BP.png"
     },
     {
       "name": "Shape of Taixu: Dawn Herald",
@@ -76,7 +76,7 @@
         [3.712, 2, 0.5, 0.348],
         [3.84, 2, 0.5, 0.36]
       ],
-      "icon": "icon/skill/1206_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1206_Ultra_on.png"
     },
     {
       "name": "Dancing Blade",
@@ -104,7 +104,7 @@
         [0.22, 2],
         [0.225, 2]
       ],
-      "icon": "icon/skill/1206_talent.png"
+      "icon": "/icon/skill/SkillIcon_1206_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1206_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1206_Normal.png"
     },
     {
       "name": "Cloudfencer Art: Warcry",
@@ -128,7 +128,7 @@
       "simpleDescription": "Attacks the enemy. After entering battle, deals minor Physical DMG to all enemies.",
       "description": "Immediately attacks the enemy. Upon entering battle, Sushang deals Physical DMG equal to #1[i]% of her ATK to all enemies.",
       "params": [[0.8]],
-      "icon": "icon/skill/1206_technique.png"
+      "icon": "/icon/skill/SkillIcon_1206_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1206_Rank1.png"
     },
     {
       "name": "Refine in Toil",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1206_Rank2.png"
     },
     {
       "name": "Rise From Fame",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_BP.png"
+      "icon": "/icon/skill/SkillIcon_1206_BP.png"
     },
     {
       "name": "Cleave With Heart",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1206_Rank4.png"
     },
     {
       "name": "Prevail via Taixu",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1206_Ultra_on.png"
     },
     {
       "name": "Dwell Like Water",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1206_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1206_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3
             }
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1206_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -375,7 +375,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -410,7 +410,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 5
             }
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1206_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1206_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -483,7 +483,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -518,7 +518,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -554,7 +554,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -590,7 +590,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     },
@@ -625,7 +625,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconDefence.png",
+      "icon": "/icon/property/IconDefence.png",
       "major": false,
       "minAsc": 3
     },
@@ -660,7 +660,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 5
     }

@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Quantum DMG to a single enemy.",
       "description": "Deals Quantum DMG equal to #1[i]% of Seele's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1102_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1102_Normal.png"
     },
     {
       "name": "Sheathed Blade",
@@ -48,7 +48,7 @@
         [2.64, 0.25, 2],
         [2.75, 0.25, 2]
       ],
-      "icon": "icon/skill/1102_skill.png"
+      "icon": "/icon/skill/SkillIcon_1102_BP.png"
     },
     {
       "name": "Butterfly Flurry",
@@ -76,7 +76,7 @@
         [4.93],
         [5.1]
       ],
-      "icon": "icon/skill/1102_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1102_Ultra_on.png"
     },
     {
       "name": "Resurgence",
@@ -104,7 +104,7 @@
         [0.96, 1],
         [1, 1]
       ],
-      "icon": "icon/skill/1102_talent.png"
+      "icon": "/icon/skill/SkillIcon_1102_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1102_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1102_Normal.png"
     },
     {
       "name": "Phantom Illusion",
@@ -128,7 +128,7 @@
       "simpleDescription": "",
       "description": "After using her Technique, Seele gains Stealth for #1[i] second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering battle by attacking enemies, Seele will immediately enter the buffed state.",
       "params": [[20]],
-      "icon": "icon/skill/1102_technique.png"
+      "icon": "/icon/skill/SkillIcon_1102_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1102_Rank1.png"
     },
     {
       "name": "Dancing Butterfly",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1102_Rank2.png"
     },
     {
       "name": "Dazzling Tumult",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_BP.png"
+      "icon": "/icon/skill/SkillIcon_1102_BP.png"
     },
     {
       "name": "Flitting Phantasm",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1102_Rank4.png"
     },
     {
       "name": "Piercing Shards",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1102_Ultra_on.png"
     },
     {
       "name": "Shattering Shambles",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1102_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1102_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconCriticalDamage.png",
+          "icon": "/icon/property/IconCriticalDamage.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3
             }
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1102_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -375,7 +375,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -410,7 +410,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconCriticalDamage.png",
+              "icon": "/icon/property/IconCriticalDamage.png",
               "major": false,
               "minAsc": 5
             }
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1102_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1102_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -483,7 +483,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -518,7 +518,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconCriticalDamage.png",
+              "icon": "/icon/property/IconCriticalDamage.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -554,7 +554,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -590,7 +590,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     },
@@ -625,7 +625,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconDefence.png",
+      "icon": "/icon/property/IconDefence.png",
       "major": false,
       "minAsc": 3
     },
@@ -660,7 +660,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 5
     }

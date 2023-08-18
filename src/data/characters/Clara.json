@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Physical DMG to a single enemy.",
       "description": "Deals Physical DMG equal to #1[i]% of Clara's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1107_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1107_Normal.png"
     },
     {
       "name": "Svarog Watches Over You",
@@ -48,7 +48,7 @@
         [1.44, 1.44],
         [1.5, 1.5]
       ],
-      "icon": "icon/skill/1107_skill.png"
+      "icon": "/icon/skill/SkillIcon_1107_BP.png"
     },
     {
       "name": "Promise, Not Command",
@@ -76,7 +76,7 @@
         [5, 1.856, 2, 0.29, 2],
         [5, 1.92, 2, 0.3, 2]
       ],
-      "icon": "icon/skill/1107_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1107_Ultra_on.png"
     },
     {
       "name": "Because We're Family",
@@ -104,7 +104,7 @@
         [1, 1.92, 0.1],
         [1, 2, 0.1]
       ],
-      "icon": "icon/skill/1107_talent.png"
+      "icon": "/icon/skill/SkillIcon_1107_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1107_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1107_Normal.png"
     },
     {
       "name": "A Small Price for Victory",
@@ -128,7 +128,7 @@
       "simpleDescription": "Attacks the enemy. After entering battle, this character's chance of being attacked by enemies increases.",
       "description": "Immediately attacks the enemy. Upon entering battle, the chance Clara will be attacked by enemies increases for #1[i] turn(s).",
       "params": [[2, 5]],
-      "icon": "icon/skill/1107_technique.png"
+      "icon": "/icon/skill/SkillIcon_1107_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1107_Rank1.png"
     },
     {
       "name": "A Tight Embrace",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1107_Rank2.png"
     },
     {
       "name": "Cold Steel Armor",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_BP.png"
+      "icon": "/icon/skill/SkillIcon_1107_BP.png"
     },
     {
       "name": "Family's Warmth",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1107_Rank4.png"
     },
     {
       "name": "A Small Promise",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1107_Ultra_on.png"
     },
     {
       "name": "Long Company",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1107_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1107_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconPhysicalAddedRatio.png",
+          "icon": "/icon/property/IconPhysicalAddedRatio.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconMaxHP.png",
+                  "icon": "/icon/property/IconMaxHP.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1107_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconPhysicalAddedRatio.png",
+              "icon": "/icon/property/IconPhysicalAddedRatio.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1107_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1107_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -592,7 +592,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconPhysicalAddedRatio.png",
+              "icon": "/icon/property/IconPhysicalAddedRatio.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -628,7 +628,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -664,7 +664,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     }

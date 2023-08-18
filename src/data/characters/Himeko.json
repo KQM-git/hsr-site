@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Fire DMG to a single enemy.",
       "description": "Deals Fire DMG equal to #1[i]% of Himeko's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1003_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1003_Normal.png"
     },
     {
       "name": "Molten Detonation",
@@ -48,7 +48,7 @@
         [2.4, 0.96],
         [2.5, 1]
       ],
-      "icon": "icon/skill/1003_skill.png"
+      "icon": "/icon/skill/SkillIcon_1003_BP.png"
     },
     {
       "name": "Heavenly Flare",
@@ -76,7 +76,7 @@
         [2.668, 5],
         [2.76, 5]
       ],
-      "icon": "icon/skill/1003_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1003_Ultra_on.png"
     },
     {
       "name": "Victory Rush",
@@ -104,7 +104,7 @@
         [1.68, 3],
         [1.75, 3]
       ],
-      "icon": "icon/skill/1003_talent.png"
+      "icon": "/icon/skill/SkillIcon_1003_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1003_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1003_Normal.png"
     },
     {
       "name": "Incomplete Combustion",
@@ -128,7 +128,7 @@
       "simpleDescription": "Creates a dimension. After entering combat with enemies in the dimension, there is a high chance to increase Fire DMG taken by enemies.",
       "description": "After using Technique, creates a dimension that lasts for #4[i] second(s). After entering battle with enemies in the dimension, there is a #1[i]% base chance to increase Fire DMG taken by enemies by #2[i]% for #3[i] turn(s). Only 1 dimension created by allies can exist at the same time.",
       "params": [[1, 0.1, 2, 15]],
-      "icon": "icon/skill/1003_technique.png"
+      "icon": "/icon/skill/SkillIcon_1003_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1003_Rank1.png"
     },
     {
       "name": "Convergence",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1003_Rank2.png"
     },
     {
       "name": "Poised",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_BP.png"
+      "icon": "/icon/skill/SkillIcon_1003_BP.png"
     },
     {
       "name": "Dedication",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1003_Rank4.png"
     },
     {
       "name": "Aspiration",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1003_Ultra_on.png"
     },
     {
       "name": "Trailblaze!",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1003_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1003_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconFireAddedRatio.png",
+              "icon": "/icon/property/IconFireAddedRatio.png",
               "major": false,
               "minAsc": 3
             },
@@ -337,7 +337,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusResistance.png",
+              "icon": "/icon/property/IconStatusResistance.png",
               "major": false,
               "minAsc": 3
             }
@@ -375,7 +375,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1003_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -410,7 +410,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconFireAddedRatio.png",
+          "icon": "/icon/property/IconFireAddedRatio.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -445,7 +445,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 5
             },
@@ -480,7 +480,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconFireAddedRatio.png",
+              "icon": "/icon/property/IconFireAddedRatio.png",
               "major": false,
               "minAsc": 5
             }
@@ -518,7 +518,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1003_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1003_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -553,7 +553,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusResistance.png",
+          "icon": "/icon/property/IconStatusResistance.png",
           "major": false,
           "minAsc": 6
         },
@@ -588,7 +588,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -622,7 +622,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconFireAddedRatio.png",
+      "icon": "/icon/property/IconFireAddedRatio.png",
       "major": false,
       "minAsc": 0
     },
@@ -657,7 +657,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconFireAddedRatio.png",
+      "icon": "/icon/property/IconFireAddedRatio.png",
       "major": false,
       "minAsc": 0,
       "minLevel": 80

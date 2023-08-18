@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Lightning DMG to a single enemy.",
       "description": "Deals Lightning DMG equal to #1[i]% of Kafka's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1005_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1005_Normal.png"
     },
     {
       "name": "Caressing Moonlight",
@@ -48,7 +48,7 @@
         [1.92, 0.81, 0.72],
         [2, 0.825, 0.75]
       ],
-      "icon": "icon/skill/1005_skill.png"
+      "icon": "/icon/skill/SkillIcon_1005_BP.png"
     },
     {
       "name": "Twilight Trill",
@@ -76,7 +76,7 @@
         [0.928, 1, 2, 3.4655, 1.08],
         [0.96, 1, 2, 3.6069, 1.1]
       ],
-      "icon": "icon/skill/1005_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1005_Ultra_on.png"
     },
     {
       "name": "Gentle but Cruel",
@@ -104,7 +104,7 @@
         [1.792, 1, 2],
         [1.89, 1, 2]
       ],
-      "icon": "icon/skill/1005_talent.png"
+      "icon": "/icon/skill/SkillIcon_1005_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1005_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1005_Normal.png"
     },
     {
       "name": "Mercy Is Not Forgiveness",
@@ -128,7 +128,7 @@
       "simpleDescription": "Attacks all enemies within range. After entering battle, deals minor Lightning DMG to all enemies with a high chance of Shocking them.",
       "description": "Immediately attacks all enemies within a set range. After entering battle, deals Lightning DMG equal to #3[i]% of Kafka's ATK to all enemies, with a #1[i]% base chance to inflict Shock equivalent to that applied by her Ultimate on every enemy target for #2[i] turn(s).",
       "params": [[1, 2, 0.5]],
-      "icon": "icon/skill/1005_technique.png"
+      "icon": "/icon/skill/SkillIcon_1005_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1005_Rank1.png"
     },
     {
       "name": "Fortississimo",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1005_Rank2.png"
     },
     {
       "name": "Capriccio",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_BP.png"
+      "icon": "/icon/skill/SkillIcon_1005_BP.png"
     },
     {
       "name": "Recitativo",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1005_Rank4.png"
     },
     {
       "name": "Doloroso",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1005_Ultra_on.png"
     },
     {
       "name": "Leggiero",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1005_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1005_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconMaxHP.png",
+                  "icon": "/icon/property/IconMaxHP.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1005_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusProbability.png",
+              "icon": "/icon/property/IconStatusProbability.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1005_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1005_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 6
         },
@@ -592,7 +592,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -626,7 +626,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0,
       "children": [
@@ -661,7 +661,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 80

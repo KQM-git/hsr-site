@@ -19,7 +19,7 @@
       "simpleDescription": "",
       "description": "",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1213_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1213_Normal.png"
     },
     {
       "name": "",
@@ -47,7 +47,7 @@
         [3.12, 1.44, 0.72, 0.144, 4, 1.44, 1.44],
         [3.25, 1.5, 0.75, 0.15, 4, 1.5, 1.5]
       ],
-      "icon": "icon/skill/1213_skill.png"
+      "icon": "/icon/skill/SkillIcon_1213_BP.png"
     },
     {
       "name": "",
@@ -75,7 +75,7 @@
         [3.48, 1.624, 2, 3],
         [3.6, 1.68, 2, 3]
       ],
-      "icon": "icon/skill/1213_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1213_Ultra_on.png"
     },
     {
       "name": "",
@@ -103,7 +103,7 @@
         [0.16, 5],
         [0.165, 5]
       ],
-      "icon": "icon/skill/1213_talent.png"
+      "icon": "/icon/skill/SkillIcon_1213_Passive.png"
     },
     {
       "name": "Attack",
@@ -115,7 +115,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1213_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1213_Normal.png"
     },
     {
       "name": "",
@@ -127,7 +127,7 @@
       "simpleDescription": "",
       "description": "",
       "params": [[1, 20]],
-      "icon": "icon/skill/1213_technique.png"
+      "icon": "/icon/skill/SkillIcon_1213_Maze.png"
     },
     {
       "name": "",
@@ -155,7 +155,7 @@
         [3.12],
         [3.25]
       ],
-      "icon": "icon/skill/1213_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1213_Normal.png"
     },
     {
       "name": "",
@@ -167,7 +167,7 @@
       "simpleDescription": "",
       "description": "",
       "params": [],
-      "icon": "icon/skill/1213_skill.png"
+      "icon": "/icon/skill/SkillIcon_1213_BP.png"
     },
     {
       "name": "",
@@ -195,7 +195,7 @@
         [3.12, 1.44, 0.72, 0.144, 4],
         [3.25, 1.5, 0.75, 0.15, 4]
       ],
-      "icon": "icon/skill/1213_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1213_Normal.png"
     },
     {
       "name": "",
@@ -223,7 +223,7 @@
         [3.12, 1.44, 0.72, 0.144, 4, 1.44, 1.44],
         [3.25, 1.5, 0.75, 0.15, 4, 1.5, 1.5]
       ],
-      "icon": "icon/skill/1213_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1213_Normal.png"
     }
   ],
   "eidolons": [
@@ -237,7 +237,7 @@
           "num": 1
         }
       ],
-      "icon": ""
+      "icon": "/"
     },
     {
       "name": "",
@@ -249,7 +249,7 @@
           "num": 1
         }
       ],
-      "icon": ""
+      "icon": "/"
     },
     {
       "name": "",
@@ -261,7 +261,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1213_BP.png"
+      "icon": "/icon/skill/SkillIcon_1213_BP.png"
     },
     {
       "name": "",
@@ -273,7 +273,7 @@
           "num": 1
         }
       ],
-      "icon": ""
+      "icon": "/"
     },
     {
       "name": "",
@@ -285,7 +285,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1213_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1213_Ultra_on.png"
     },
     {
       "name": "",
@@ -297,7 +297,7 @@
           "num": 1
         }
       ],
-      "icon": ""
+      "icon": "/"
     }
   ],
   "traces": [
@@ -327,7 +327,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1213_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1213_SkillTree1.png",
       "major": false,
       "minAsc": 2,
       "children": [
@@ -362,7 +362,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconCriticalChance.png",
+          "icon": "/icon/property/IconCriticalChance.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -397,7 +397,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconImaginaryAddedRatio.png",
+              "icon": "/icon/property/IconImaginaryAddedRatio.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -432,7 +432,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconMaxHP.png",
+                  "icon": "/icon/property/IconMaxHP.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -472,7 +472,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1213_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1213_SkillTree2.png",
       "major": false,
       "minAsc": 4,
       "children": [
@@ -507,7 +507,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconImaginaryAddedRatio.png",
+          "icon": "/icon/property/IconImaginaryAddedRatio.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -542,7 +542,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconCriticalChance.png",
+              "icon": "/icon/property/IconCriticalChance.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -577,7 +577,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconImaginaryAddedRatio.png",
+                  "icon": "/icon/property/IconImaginaryAddedRatio.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -617,7 +617,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1213_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1213_SkillTree3.png",
       "major": false,
       "minAsc": 6,
       "children": [
@@ -652,7 +652,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -687,7 +687,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconCriticalChance.png",
+              "icon": "/icon/property/IconCriticalChance.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -723,7 +723,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconImaginaryAddedRatio.png",
+              "icon": "/icon/property/IconImaginaryAddedRatio.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -759,7 +759,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconImaginaryAddedRatio.png",
+      "icon": "/icon/property/IconImaginaryAddedRatio.png",
       "major": false,
       "minAsc": 0
     }

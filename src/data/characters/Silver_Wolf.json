@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Quantum DMG to a single enemy.",
       "description": "Deals Quantum DMG equal to #1[i]% of Silver Wolf's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1006_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1006_Normal.png"
     },
     {
       "name": "Allow Changes?",
@@ -48,7 +48,7 @@
         [2.352, 0.89, 2, 0.2, 1, 0.11, 2],
         [2.45, 0.9, 2, 0.2, 1, 0.1125, 2]
       ],
-      "icon": "icon/skill/1006_skill.png"
+      "icon": "/icon/skill/SkillIcon_1006_BP.png"
     },
     {
       "name": "User Banned",
@@ -76,7 +76,7 @@
         [4.408, 1.06, 0.486, 3],
         [4.56, 1.075, 0.495, 3]
       ],
-      "icon": "icon/skill/1006_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1006_Ultra_on.png"
     },
     {
       "name": "Awaiting System Response...",
@@ -104,7 +104,7 @@
         [0.12, 0.096, 0.072, 0.768, 3],
         [0.125, 0.1, 0.075, 0.78, 3]
       ],
-      "icon": "icon/skill/1006_talent.png"
+      "icon": "/icon/skill/SkillIcon_1006_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1006_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1006_Normal.png"
     },
     {
       "name": "Force Quit Program",
@@ -128,7 +128,7 @@
       "simpleDescription": "Attacks the enemy. After entering battle, deals minor amounts of DMG to all enemies and reduces Toughness of all enemies irrespective of Weakness Types.",
       "description": "Immediately attacks the enemy. After entering battle, deals Quantum DMG equal to #1[i]% of Silver Wolf's ATK to all enemies, and ignores Weakness Types and reduces Toughness from all enemies. Enemies with their Weakness Broken in this way will trigger the Quantum Weakness Break effect.",
       "params": [[0.8]],
-      "icon": "icon/skill/1006_technique.png"
+      "icon": "/icon/skill/SkillIcon_1006_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1006_Rank1.png"
     },
     {
       "name": "Zombie Network",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1006_Rank2.png"
     },
     {
       "name": "Payload",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_BP.png"
+      "icon": "/icon/skill/SkillIcon_1006_BP.png"
     },
     {
       "name": "Bounce Attack",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1006_Rank4.png"
     },
     {
       "name": "Brute Force Attack",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1006_Ultra_on.png"
     },
     {
       "name": "Overlay Network",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1006_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1006_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconQuantumAddedRatio.png",
+                  "icon": "/icon/property/IconQuantumAddedRatio.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1006_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusProbability.png",
+              "icon": "/icon/property/IconStatusProbability.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1006_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1006_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconQuantumAddedRatio.png",
+          "icon": "/icon/property/IconQuantumAddedRatio.png",
           "major": false,
           "minAsc": 6
         },
@@ -592,7 +592,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -626,7 +626,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0,
       "children": [
@@ -661,7 +661,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 80

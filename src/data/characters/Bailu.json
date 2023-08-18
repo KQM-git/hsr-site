@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Lightning DMG to a single enemy.",
       "description": "Deals Lightning DMG equal to #1[i]% of Bailu's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1211_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1211_Normal.png"
     },
     {
       "name": "Singing Among Clouds",
@@ -48,7 +48,7 @@
         [0.1326, 382.2, 0.15, 2],
         [0.1365, 399.75, 0.15, 2]
       ],
-      "icon": "icon/skill/1211_skill.png"
+      "icon": "/icon/skill/SkillIcon_1211_BP.png"
     },
     {
       "name": "Felicitous Thunderleap",
@@ -76,7 +76,7 @@
         [0.153, 441, 2],
         [0.1575, 461.25, 2]
       ],
-      "icon": "icon/skill/1211_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1211_Ultra_on.png"
     },
     {
       "name": "Gourdful of Elixir",
@@ -104,7 +104,7 @@
         [0.0612, 176.4, 0.204, 588, 2],
         [0.063, 184.5, 0.21, 615, 2]
       ],
-      "icon": "icon/skill/1211_talent.png"
+      "icon": "/icon/skill/SkillIcon_1211_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1211_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1211_Normal.png"
     },
     {
       "name": "Saunter in the Rain",
@@ -128,7 +128,7 @@
       "simpleDescription": "After this character uses Technique, at the start of the next battle, all allies are granted Invigoration.",
       "description": "After Technique is used, at the start of the next battle, all allies are granted Invigoration for #1[i] turn(s).",
       "params": [[2]],
-      "icon": "icon/skill/1211_technique.png"
+      "icon": "/icon/skill/SkillIcon_1211_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1211_Rank1.png"
     },
     {
       "name": "Sylphic Slumber",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1211_Rank2.png"
     },
     {
       "name": "Omniscient Opulence",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_BP.png"
+      "icon": "/icon/skill/SkillIcon_1211_BP.png"
     },
     {
       "name": "Evil Excision",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1211_Rank4.png"
     },
     {
       "name": "Waning Worries",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1211_Ultra_on.png"
     },
     {
       "name": "Drooling Drop of Draconic Divinity",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1211_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1211_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconStatusResistance.png",
+                  "icon": "/icon/property/IconStatusResistance.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1211_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconDefence.png",
+              "icon": "/icon/property/IconDefence.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconMaxHP.png",
+                  "icon": "/icon/property/IconMaxHP.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1211_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1211_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusResistance.png",
+          "icon": "/icon/property/IconStatusResistance.png",
           "major": false,
           "minAsc": 6
         },
@@ -592,7 +592,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -626,7 +626,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconMaxHP.png",
+      "icon": "/icon/property/IconMaxHP.png",
       "major": false,
       "minAsc": 0
     },
@@ -661,7 +661,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconMaxHP.png",
+      "icon": "/icon/property/IconMaxHP.png",
       "major": false,
       "minAsc": 0,
       "minLevel": 80

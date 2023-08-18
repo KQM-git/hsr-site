@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Ice DMG to a single enemy.",
       "description": "Deals Ice DMG equal to #1[i]% of Pela's ATK to a single target enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1106_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1106_Normal.png"
     },
     {
       "name": "Frostbite",
@@ -48,7 +48,7 @@
         [2.52, 1],
         [2.625, 1]
       ],
-      "icon": "icon/skill/1106_skill.png"
+      "icon": "/icon/skill/SkillIcon_1106_BP.png"
     },
     {
       "name": "Zone Suppression",
@@ -76,7 +76,7 @@
         [1, 0.44, 2, 1.16],
         [1, 0.45, 2, 1.2]
       ],
-      "icon": "icon/skill/1106_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1106_Ultra_on.png"
     },
     {
       "name": "Data Collecting",
@@ -104,7 +104,7 @@
         [12],
         [12.5]
       ],
-      "icon": "icon/skill/1106_talent.png"
+      "icon": "/icon/skill/SkillIcon_1106_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1106_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1106_Normal.png"
     },
     {
       "name": "Preemptive Strike",
@@ -128,7 +128,7 @@
       "simpleDescription": "Attacks the enemy. After entering battle, deals minor DMG to a random single enemy, with a high chance of lowering the DEF of all enemy targets.",
       "description": "Immediately attacks the enemy. Upon entering battle, Pela deals Ice DMG equal to #4[i]% of her ATK to a random enemy, with a #1[i]% base chance of lowering the DEF of all enemies by #2[i]% for #3[i] turn(s).",
       "params": [[1, 0.2, 2, 0.8]],
-      "icon": "icon/skill/1106_technique.png"
+      "icon": "/icon/skill/SkillIcon_1106_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1106_Rank1.png"
     },
     {
       "name": "Adamant Charge",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1106_Rank2.png"
     },
     {
       "name": "Suppressive Force",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_BP.png"
+      "icon": "/icon/skill/SkillIcon_1106_BP.png"
     },
     {
       "name": "Full Analysis",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1106_Rank4.png"
     },
     {
       "name": "Absolute Jeopardy",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1106_Ultra_on.png"
     },
     {
       "name": "Feeble Pursuit",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1106_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1106_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconIceAddedRatio.png",
+              "icon": "/icon/property/IconIceAddedRatio.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconStatusProbability.png",
+                  "icon": "/icon/property/IconStatusProbability.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1106_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconIceAddedRatio.png",
+          "icon": "/icon/property/IconIceAddedRatio.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconIceAddedRatio.png",
+                  "icon": "/icon/property/IconIceAddedRatio.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1106_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1106_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 6
         },
@@ -592,7 +592,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -626,7 +626,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconIceAddedRatio.png",
+      "icon": "/icon/property/IconIceAddedRatio.png",
       "major": false,
       "minAsc": 0,
       "children": [
@@ -661,7 +661,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconIceAddedRatio.png",
+          "icon": "/icon/property/IconIceAddedRatio.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 80

@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Wind DMG to a single enemy.",
       "description": "Deals Wind DMG equal to #1[i]% of Sampo's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1108_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1108_Normal.png"
     },
     {
       "name": "Ricochet Love",
@@ -48,7 +48,7 @@
         [4, 0.672],
         [4, 0.7]
       ],
-      "icon": "icon/skill/1108_skill.png"
+      "icon": "/icon/skill/SkillIcon_1108_BP.png"
     },
     {
       "name": "Surprise Present",
@@ -76,7 +76,7 @@
         [1.856, 0.34, 2, 1],
         [1.92, 0.35, 2, 1]
       ],
-      "icon": "icon/skill/1108_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1108_Ultra_on.png"
     },
     {
       "name": "Windtorn Dagger",
@@ -104,7 +104,7 @@
         [0.65, 0.624, 3, 5],
         [0.65, 0.65, 3, 5]
       ],
-      "icon": "icon/skill/1108_talent.png"
+      "icon": "/icon/skill/SkillIcon_1108_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1108_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1108_Normal.png"
     },
     {
       "name": "Shining Bright",
@@ -128,7 +128,7 @@
       "simpleDescription": "Enemies in a set area are Blinded. When initiating battle against a Blinded enemy, there is a high chance to delay all enemies' actions.",
       "description": "After Sampo uses his Technique, enemies in a set area are inflicted with Blind for #1[i] second(s). Blinded enemies cannot detect your team.\nWhen initiating combat against a Blinded enemy, there is a #2[i]% fixed chance to delay all enemies' action by #3[i]%.",
       "params": [[10, 1, 0.25]],
-      "icon": "icon/skill/1108_technique.png"
+      "icon": "/icon/skill/SkillIcon_1108_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1108_Rank1.png"
     },
     {
       "name": "Infectious Enthusiasm",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1108_Rank2.png"
     },
     {
       "name": "Big Money!",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_BP.png"
+      "icon": "/icon/skill/SkillIcon_1108_BP.png"
     },
     {
       "name": "The Deeper the Love, the Stronger the Hate",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1108_Rank4.png"
     },
     {
       "name": "Huuuuge Money!",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1108_Ultra_on.png"
     },
     {
       "name": "Increased Spending",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1108_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1108_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconStatusResistance.png",
+                  "icon": "/icon/property/IconStatusResistance.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1108_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusProbability.png",
+              "icon": "/icon/property/IconStatusProbability.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1108_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1108_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusResistance.png",
+          "icon": "/icon/property/IconStatusResistance.png",
           "major": false,
           "minAsc": 6
         },
@@ -592,7 +592,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -626,7 +626,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0,
       "children": [
@@ -661,7 +661,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 80

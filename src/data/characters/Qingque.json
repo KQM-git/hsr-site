@@ -20,7 +20,7 @@
       "simpleDescription": "Tosses a tile to deal minor Quantum DMG to a single enemy.",
       "description": "Tosses 1 jade tile from the suit with the fewest tiles in hand to deal Quantum DMG equal to #1[i]% of Qingque's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1201_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1201_Normal.png"
     },
     {
       "name": "A Scoop of Moon",
@@ -48,7 +48,7 @@
         [2, 0.336, 4],
         [2, 0.35, 4]
       ],
-      "icon": "icon/skill/1201_skill.png"
+      "icon": "/icon/skill/SkillIcon_1201_BP.png"
     },
     {
       "name": "A Quartet? Woo-hoo!",
@@ -76,7 +76,7 @@
         [2.32],
         [2.4]
       ],
-      "icon": "icon/skill/1201_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1201_Ultra_on.png"
     },
     {
       "name": "Celestial Jade",
@@ -104,7 +104,7 @@
         [0.864],
         [0.9]
       ],
-      "icon": "icon/skill/1201_talent.png"
+      "icon": "/icon/skill/SkillIcon_1201_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1201_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1201_Normal.png"
     },
     {
       "name": "Game Solitaire",
@@ -128,7 +128,7 @@
       "simpleDescription": "After they use their Technique, draw a tile at the start of the next battle.",
       "description": "After using Technique, Qingque draws #1[i] jade tile(s) when the battle starts.",
       "params": [[2]],
-      "icon": "icon/skill/1201_technique.png"
+      "icon": "/icon/skill/SkillIcon_1201_Maze.png"
     },
     {
       "name": "Cherry on Top!",
@@ -150,7 +150,7 @@
         [2.88, 1.2],
         [3.12, 1.3]
       ],
-      "icon": "icon/skill/1201_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1201_Normal.png"
     }
   ],
   "eidolons": [
@@ -164,7 +164,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1201_Rank1.png"
     },
     {
       "name": "Sleep on the Tiles",
@@ -176,7 +176,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1201_Rank2.png"
     },
     {
       "name": "Read Between the Tiles",
@@ -188,7 +188,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_BP.png"
+      "icon": "/icon/skill/SkillIcon_1201_BP.png"
     },
     {
       "name": "Right on the Tiles",
@@ -200,7 +200,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1201_Rank4.png"
     },
     {
       "name": "Gambit for the Tiles",
@@ -212,7 +212,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1201_Ultra_on.png"
     },
     {
       "name": "Prevail Beyond the Tiles",
@@ -224,7 +224,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1201_Rank6.png"
     }
   ],
   "traces": [
@@ -254,7 +254,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1201_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -289,7 +289,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconQuantumAddedRatio.png",
+          "icon": "/icon/property/IconQuantumAddedRatio.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -324,7 +324,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3
             },
@@ -359,7 +359,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconDefence.png",
+              "icon": "/icon/property/IconDefence.png",
               "major": false,
               "minAsc": 3
             }
@@ -397,7 +397,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1201_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -432,7 +432,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -467,7 +467,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconQuantumAddedRatio.png",
+              "icon": "/icon/property/IconQuantumAddedRatio.png",
               "major": false,
               "minAsc": 5
             },
@@ -502,7 +502,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 5
             }
@@ -540,7 +540,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1201_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1201_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -575,7 +575,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 6
         },
@@ -610,7 +610,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconQuantumAddedRatio.png",
+          "icon": "/icon/property/IconQuantumAddedRatio.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -644,7 +644,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     },
@@ -679,7 +679,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0,
       "minLevel": 80

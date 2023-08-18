@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Wind DMG to a single enemy.",
       "description": "Deals Wind DMG equal to #1[i]% of Bronya's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1101_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1101_Normal.png"
     },
     {
       "name": "Combat Redeployment",
@@ -48,7 +48,7 @@
         [0.792, 0, 1, 1],
         [0.825, 0, 1, 1]
       ],
-      "icon": "icon/skill/1101_skill.png"
+      "icon": "/icon/skill/SkillIcon_1101_BP.png"
     },
     {
       "name": "The Belobog March",
@@ -76,7 +76,7 @@
         [0.638, 0.176, 0.232, 2],
         [0.66, 0.18, 0.24, 2]
       ],
-      "icon": "icon/skill/1101_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1101_Ultra_on.png"
     },
     {
       "name": "Leading the Way",
@@ -104,7 +104,7 @@
         [0.36],
         [0.375]
       ],
-      "icon": "icon/skill/1101_talent.png"
+      "icon": "/icon/skill/SkillIcon_1101_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1101_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1101_Normal.png"
     },
     {
       "name": "Banner of Command",
@@ -128,7 +128,7 @@
       "simpleDescription": "After this character uses Technique, increases all allies' ATK at the start of the next battle.",
       "description": "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by #1[i]% for #2[i] turn(s).",
       "params": [[0.15, 2]],
-      "icon": "icon/skill/1101_technique.png"
+      "icon": "/icon/skill/SkillIcon_1101_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1101_Rank1.png"
     },
     {
       "name": "Quick March",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1101_Rank2.png"
     },
     {
       "name": "Bombardment",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_BP.png"
+      "icon": "/icon/skill/SkillIcon_1101_BP.png"
     },
     {
       "name": "Take by Surprise",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1101_Rank4.png"
     },
     {
       "name": "Unstoppable",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1101_Ultra_on.png"
     },
     {
       "name": "Piercing Rainbow",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1101_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1101_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconCriticalDamage.png",
+          "icon": "/icon/property/IconCriticalDamage.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconWindAddedRatio.png",
+              "icon": "/icon/property/IconWindAddedRatio.png",
               "major": false,
               "minAsc": 3
             }
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1101_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -375,7 +375,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconWindAddedRatio.png",
+          "icon": "/icon/property/IconWindAddedRatio.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -410,7 +410,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconCriticalDamage.png",
+              "icon": "/icon/property/IconCriticalDamage.png",
               "major": false,
               "minAsc": 5
             }
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1101_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1101_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -483,7 +483,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusResistance.png",
+          "icon": "/icon/property/IconStatusResistance.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -518,7 +518,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconCriticalDamage.png",
+              "icon": "/icon/property/IconCriticalDamage.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -554,7 +554,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconWindAddedRatio.png",
+              "icon": "/icon/property/IconWindAddedRatio.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -590,7 +590,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconWindAddedRatio.png",
+      "icon": "/icon/property/IconWindAddedRatio.png",
       "major": false,
       "minAsc": 0,
       "children": [
@@ -625,7 +625,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusResistance.png",
+          "icon": "/icon/property/IconStatusResistance.png",
           "major": false,
           "minAsc": 3
         },
@@ -660,7 +660,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconWindAddedRatio.png",
+          "icon": "/icon/property/IconWindAddedRatio.png",
           "major": false,
           "minAsc": 5
         }

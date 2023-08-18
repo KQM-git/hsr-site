@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Imaginary DMG to a single enemy.",
       "description": "Deals Imaginary DMG equal to #1[i]% of Welt's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1004_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1004_Normal.png"
     },
     {
       "name": "Edge of the Void",
@@ -48,7 +48,7 @@
         [0.864, 0.79, 0.1, 2],
         [0.9, 0.8, 0.1, 2]
       ],
-      "icon": "icon/skill/1004_skill.png"
+      "icon": "/icon/skill/SkillIcon_1004_BP.png"
     },
     {
       "name": "Synthetic Black Hole",
@@ -76,7 +76,7 @@
         [1.74, 0.432, 1, 0.1],
         [1.8, 0.44, 1, 0.1]
       ],
-      "icon": "icon/skill/1004_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1004_Ultra_on.png"
     },
     {
       "name": "Time Distortion",
@@ -104,7 +104,7 @@
         [0.72],
         [0.75]
       ],
-      "icon": "icon/skill/1004_talent.png"
+      "icon": "/icon/skill/SkillIcon_1004_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1004_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1004_Normal.png"
     },
     {
       "name": "Gravitational Imprisonment",
@@ -128,7 +128,7 @@
       "simpleDescription": "Creates a dimension. Enemies in this dimension have their Movement SPD reduced. After entering combat with enemies in the dimension, there is a high chance for the enemies to become Imprisoned.",
       "description": "After using Welt's Technique, create a dimension that lasts for #4[i] second(s). Enemies in this dimension have their Movement SPD reduced by #5[i]%. After entering battle with enemies in the dimension, there is a #1[i]% base chance to Imprison the enemies for 1 turn.\nImprisoned enemies have their actions delayed by #2[i]% and SPD reduced by #3[i]%. Only 1 dimension created by allies can exist at the same time.",
       "params": [[1, 0.2, 0.1, 15, 0.5]],
-      "icon": "icon/skill/1004_technique.png"
+      "icon": "/icon/skill/SkillIcon_1004_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1004_Rank1.png"
     },
     {
       "name": "Conflux of Stars",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1004_Rank2.png"
     },
     {
       "name": "Prayer of Peace",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_BP.png"
+      "icon": "/icon/skill/SkillIcon_1004_BP.png"
     },
     {
       "name": "Appellation of Justice",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1004_Rank4.png"
     },
     {
       "name": "Power of Kindness",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1004_Ultra_on.png"
     },
     {
       "name": "Prospect of Glory",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1004_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1004_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconImaginaryAddedRatio.png",
+          "icon": "/icon/property/IconImaginaryAddedRatio.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -337,7 +337,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconStatusResistance.png",
+                  "icon": "/icon/property/IconStatusResistance.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -377,7 +377,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1004_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -412,7 +412,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -447,7 +447,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconImaginaryAddedRatio.png",
+              "icon": "/icon/property/IconImaginaryAddedRatio.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -482,7 +482,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -522,7 +522,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1004_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1004_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -557,7 +557,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusResistance.png",
+          "icon": "/icon/property/IconStatusResistance.png",
           "major": false,
           "minAsc": 6
         },
@@ -592,7 +592,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconImaginaryAddedRatio.png",
+          "icon": "/icon/property/IconImaginaryAddedRatio.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -626,7 +626,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0,
       "children": [
@@ -661,7 +661,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 80

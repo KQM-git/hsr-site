@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Physical DMG to a single enemy.",
       "description": "Deals Physical DMG equal to #1[i]% of Luka's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1111_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1111_Normal.png"
     },
     {
       "name": "Lacerating Fist",
@@ -48,7 +48,7 @@
         [1.44, 1, 0.24, 4.056, 3],
         [1.5, 1, 0.24, 4.225, 3]
       ],
-      "icon": "icon/skill/1111_skill.png"
+      "icon": "/icon/skill/SkillIcon_1111_BP.png"
     },
     {
       "name": "Coup de Grâce",
@@ -76,7 +76,7 @@
         [3.828, 1, 0.232, 3, 2],
         [3.96, 1, 0.24, 3, 2]
       ],
-      "icon": "icon/skill/1111_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1111_Ultra_on.png"
     },
     {
       "name": "Flying Sparks",
@@ -104,7 +104,7 @@
         [1, 0.918],
         [1, 0.935]
       ],
-      "icon": "icon/skill/1111_talent.png"
+      "icon": "/icon/skill/SkillIcon_1111_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1111_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1111_Normal.png"
     },
     {
       "name": "Anticipator",
@@ -128,7 +128,7 @@
       "simpleDescription": "Attacks the enemy. After entering battle, deals minor Physical DMG to a random single enemy, with a high chance to inflict Bleed to the target. Luka then gains 1 stack of Fighting Will.",
       "description": "Immediately attacks the enemy. Upon entering battle, Luka deals Physical DMG equal to #1[i]% of his ATK to a random single enemy with a #2[i]% base chance to inflict his Skill's Bleed effect on the target. Then, Luka gains 1 additional stack of Fighting Will.",
       "params": [[0.5, 1]],
-      "icon": "icon/skill/1111_technique.png"
+      "icon": "/icon/skill/SkillIcon_1111_Maze.png"
     },
     {
       "name": "Sky-Shatter Fist",
@@ -150,7 +150,7 @@
         [0.24, 0.96],
         [0.26, 1.04]
       ],
-      "icon": "icon/skill/1111_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1111_Normal.png"
     }
   ],
   "eidolons": [
@@ -164,7 +164,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1111_Rank1.png"
     },
     {
       "name": "The Enemy is Weak, I am Strong",
@@ -176,7 +176,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1111_Rank2.png"
     },
     {
       "name": "Born for the Ring",
@@ -188,7 +188,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_BP.png"
+      "icon": "/icon/skill/SkillIcon_1111_BP.png"
     },
     {
       "name": "Never Turning Back",
@@ -200,7 +200,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1111_Rank4.png"
     },
     {
       "name": "The Spirit of Wildfire",
@@ -212,7 +212,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1111_Ultra_on.png"
     },
     {
       "name": "A Champion's Applause",
@@ -224,7 +224,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1111_Rank6.png"
     }
   ],
   "traces": [
@@ -254,7 +254,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1111_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -289,7 +289,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -324,7 +324,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -359,7 +359,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconDefence.png",
+                  "icon": "/icon/property/IconDefence.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -399,7 +399,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1111_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -434,7 +434,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -469,7 +469,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusProbability.png",
+              "icon": "/icon/property/IconStatusProbability.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -504,7 +504,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -544,7 +544,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1111_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1111_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -579,7 +579,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 6
         },
@@ -614,7 +614,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusProbability.png",
+          "icon": "/icon/property/IconStatusProbability.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 75
@@ -648,7 +648,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0,
       "children": [
@@ -683,7 +683,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 0,
           "minLevel": 80

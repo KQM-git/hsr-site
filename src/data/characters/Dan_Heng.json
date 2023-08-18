@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Wind DMG to a single enemy.",
       "description": "Deals Wind DMG equal to #1[i]% of Dan Heng's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1002_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1002_Normal.png"
     },
     {
       "name": "Cloudlancer Art: Torrent",
@@ -48,7 +48,7 @@
         [3.12, 0.12, 2, 1],
         [3.25, 0.12, 2, 1]
       ],
-      "icon": "icon/skill/1002_skill.png"
+      "icon": "/icon/skill/SkillIcon_1002_BP.png"
     },
     {
       "name": "Ethereal Dream",
@@ -76,7 +76,7 @@
         [4.64, 1.392],
         [4.8, 1.44]
       ],
-      "icon": "icon/skill/1002_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1002_Ultra_on.png"
     },
     {
       "name": "Superiority of Reach",
@@ -104,7 +104,7 @@
         [0.432, 2],
         [0.45, 2]
       ],
-      "icon": "icon/skill/1002_talent.png"
+      "icon": "/icon/skill/SkillIcon_1002_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1002_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1002_Normal.png"
     },
     {
       "name": "Splitting Spearhead",
@@ -128,7 +128,7 @@
       "simpleDescription": "After they use their Technique, their ATK is increased at the start of the next battle.",
       "description": "After Dan Heng uses his Technique, his ATK increases by #1[i]% at the start of the next battle for #2[i] turn(s).",
       "params": [[0.4, 3]],
-      "icon": "icon/skill/1002_technique.png"
+      "icon": "/icon/skill/SkillIcon_1002_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1002_Rank1.png"
     },
     {
       "name": "Quell the Venom Octet, Quench the Vice O'Flame",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1002_Rank2.png"
     },
     {
       "name": "Seen and Unseen",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_BP.png"
+      "icon": "/icon/skill/SkillIcon_1002_BP.png"
     },
     {
       "name": "Roaring Dragon and Soaring Sun",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1002_Rank4.png"
     },
     {
       "name": "A Drop of Rain Feeds a Torrent",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1002_Ultra_on.png"
     },
     {
       "name": "The Troubled Soul Lies in Wait",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1002_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1002_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconWindAddedRatio.png",
+              "icon": "/icon/property/IconWindAddedRatio.png",
               "major": false,
               "minAsc": 3
             }
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1002_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -375,7 +375,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconWindAddedRatio.png",
+          "icon": "/icon/property/IconWindAddedRatio.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -410,7 +410,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 5
             }
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1002_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1002_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -483,7 +483,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -518,7 +518,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -554,7 +554,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconWindAddedRatio.png",
+              "icon": "/icon/property/IconWindAddedRatio.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -590,7 +590,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconWindAddedRatio.png",
+      "icon": "/icon/property/IconWindAddedRatio.png",
       "major": false,
       "minAsc": 0
     },
@@ -625,7 +625,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconDefence.png",
+      "icon": "/icon/property/IconDefence.png",
       "major": false,
       "minAsc": 3
     },
@@ -660,7 +660,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconWindAddedRatio.png",
+      "icon": "/icon/property/IconWindAddedRatio.png",
       "major": false,
       "minAsc": 5
     }

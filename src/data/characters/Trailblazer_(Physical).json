@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Physical DMG to a single enemy.",
       "description": "Deals Physical DMG equal to #1[i]% of the Trailblazer's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/8002_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_8001_Normal.png"
     },
     {
       "name": "RIP Home Run",
@@ -48,7 +48,7 @@
         [1.5],
         [1.5625]
       ],
-      "icon": "icon/skill/8002_skill.png"
+      "icon": "/icon/skill/SkillIcon_8001_BP.png"
     },
     {
       "name": "Stardust Ace",
@@ -76,7 +76,7 @@
         [5.1, 3.06, 1.836],
         [5.25, 3.15, 1.89]
       ],
-      "icon": "icon/skill/8002_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_8001_Ultra_on.png"
     },
     {
       "name": "Perfect Pickoff",
@@ -104,7 +104,7 @@
         [0.24, 2],
         [0.25, 2]
       ],
-      "icon": "icon/skill/8002_talent.png"
+      "icon": "/icon/skill/SkillIcon_8001_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/8002_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_8001_Normal.png"
     },
     {
       "name": "Immortal Third Strike",
@@ -128,7 +128,7 @@
       "simpleDescription": "",
       "description": "Immediately heals all allies for #1[i]% of their respective Max HP after using this Technique.",
       "params": [[0.15]],
-      "icon": "icon/skill/8002_technique.png"
+      "icon": "/icon/skill/SkillIcon_8001_Maze.png"
     },
     {
       "name": "Blowout: Farewell Hit",
@@ -156,7 +156,7 @@
         [5.1],
         [5.25]
       ],
-      "icon": "icon/skill/8002_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_8001_Ultra_on.png"
     },
     {
       "name": "Blowout: RIP Home Run",
@@ -184,7 +184,7 @@
         [3.06, 1.836],
         [3.15, 1.89]
       ],
-      "icon": "icon/skill/8002_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_8001_Ultra_on.png"
     }
   ],
   "eidolons": [
@@ -198,7 +198,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_8001_Rank1.png"
     },
     {
       "name": "An Unwilling Host",
@@ -210,7 +210,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_8001_Rank2.png"
     },
     {
       "name": "A Leading Whisper",
@@ -222,7 +222,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_BP.png"
+      "icon": "/icon/skill/SkillIcon_8001_BP.png"
     },
     {
       "name": "A Destructing Glance",
@@ -234,7 +234,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_8001_Rank4.png"
     },
     {
       "name": "A Surviving Hope",
@@ -246,7 +246,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_8001_Ultra_on.png"
     },
     {
       "name": "A Trailblazing Will",
@@ -258,7 +258,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_8001_Rank6.png"
     }
   ],
   "traces": [
@@ -288,7 +288,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_8001_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -323,7 +323,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -358,7 +358,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -393,7 +393,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconDefence.png",
+                  "icon": "/icon/property/IconDefence.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -433,7 +433,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_8001_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -468,7 +468,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -503,7 +503,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -538,7 +538,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconAttack.png",
+                  "icon": "/icon/property/IconAttack.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -578,7 +578,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_8001_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_8001_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -613,7 +613,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -648,7 +648,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -684,7 +684,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -720,7 +720,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     }

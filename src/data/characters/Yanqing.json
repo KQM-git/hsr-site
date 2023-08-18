@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Ice DMG to a single enemy.",
       "description": "Deals Ice DMG equal to #1[i]% of Yanqing's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1209_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1209_Normal.png"
     },
     {
       "name": "Darting Ironthorn",
@@ -48,7 +48,7 @@
         [2.64],
         [2.75]
       ],
-      "icon": "icon/skill/1209_skill.png"
+      "icon": "/icon/skill/SkillIcon_1209_BP.png"
     },
     {
       "name": "Amidst the Raining Bliss",
@@ -76,7 +76,7 @@
         [0.6, 0.58, 4.06],
         [0.6, 0.6, 4.2]
       ],
-      "icon": "icon/skill/1209_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1209_Ultra_on.png"
     },
     {
       "name": "One With the Sword",
@@ -104,7 +104,7 @@
         [0.22, 0.36, 0.64, 0.6, 0.6, 0.65],
         [0.225, 0.375, 0.65, 0.625, 0.625, 0.65]
       ],
-      "icon": "icon/skill/1209_talent.png"
+      "icon": "/icon/skill/SkillIcon_1209_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1209_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1209_Normal.png"
     },
     {
       "name": "The One True Sword",
@@ -128,7 +128,7 @@
       "simpleDescription": "After this character uses Technique, at the start of the next battle, increases the DMG dealt by this character to enemy targets whose HP is 50% or higher.",
       "description": "After using his Technique, at the start of the next battle, Yanqing deals #2[i]% more DMG for #3[i] turn(s) to enemies whose current HP is #1[i]% or higher.",
       "params": [[0.5, 0.3, 2]],
-      "icon": "icon/skill/1209_technique.png"
+      "icon": "/icon/skill/SkillIcon_1209_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1209_Rank1.png"
     },
     {
       "name": "Supine Serenade",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1209_Rank2.png"
     },
     {
       "name": "Sword Savant",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_BP.png"
+      "icon": "/icon/skill/SkillIcon_1209_BP.png"
     },
     {
       "name": "Searing Sting",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1209_Rank4.png"
     },
     {
       "name": "Surging Strife",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1209_Ultra_on.png"
     },
     {
       "name": "Swift Swoop",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1209_Rank6.png"
     }
   ],
   "traces": [
@@ -232,7 +232,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1209_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -267,7 +267,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconIceAddedRatio.png",
+          "icon": "/icon/property/IconIceAddedRatio.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -302,7 +302,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 3
             }
@@ -340,7 +340,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1209_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -375,7 +375,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconAttack.png",
+          "icon": "/icon/property/IconAttack.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -410,7 +410,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconIceAddedRatio.png",
+              "icon": "/icon/property/IconIceAddedRatio.png",
               "major": false,
               "minAsc": 5
             }
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1209_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1209_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -483,7 +483,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -518,7 +518,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconIceAddedRatio.png",
+              "icon": "/icon/property/IconIceAddedRatio.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -554,7 +554,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconAttack.png",
+              "icon": "/icon/property/IconAttack.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -590,7 +590,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 0
     },
@@ -625,7 +625,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconMaxHP.png",
+      "icon": "/icon/property/IconMaxHP.png",
       "major": false,
       "minAsc": 3
     },
@@ -660,7 +660,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconAttack.png",
+      "icon": "/icon/property/IconAttack.png",
       "major": false,
       "minAsc": 5
     }

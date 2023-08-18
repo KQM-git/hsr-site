@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Wind DMG to an enemy.",
       "description": "Deals #1[i]% of Blade's ATK as Wind DMG to a target enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1205_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1205_Normal.png"
     },
     {
       "name": "Hellscape",
@@ -48,7 +48,7 @@
         [0.3, 3, 1, 0.512],
         [0.3, 3, 1, 0.54]
       ],
-      "icon": "icon/skill/1205_skill.png"
+      "icon": "/icon/skill/SkillIcon_1205_BP.png"
     },
     {
       "name": "Death Sentence",
@@ -76,7 +76,7 @@
         [0.464, 1.16, 0.1856, 0.464, 1.16, 0.464, 0.9],
         [0.48, 1.2, 0.192, 0.48, 1.2, 0.48, 0.9]
       ],
-      "icon": "icon/skill/1205_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1205_Ultra_on.png"
     },
     {
       "name": "Shuhu's Gift",
@@ -104,7 +104,7 @@
         [3, 0.528, 0.25, 1.32],
         [3, 0.55, 0.25, 1.375]
       ],
-      "icon": "icon/skill/1205_talent.png"
+      "icon": "/icon/skill/SkillIcon_1205_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1205_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1205_Normal.png"
     },
     {
       "name": "Karma Wind",
@@ -128,7 +128,7 @@
       "simpleDescription": "Attacks the enemy. After entering combat, consumes own HP and deals Wind DMG to all enemies.",
       "description": "Immediately attacks the enemy. After entering combat, consumes #2[i]% of Blade's Max HP while dealing Wind DMG equal to #1[i]% of his Max HP to all enemies.\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used.",
       "params": [[0.4, 0.2]],
-      "icon": "icon/skill/1205_technique.png"
+      "icon": "/icon/skill/SkillIcon_1205_Maze.png"
     },
     {
       "name": "Forest of Swords",
@@ -150,7 +150,7 @@
         [0.1, 0.48, 0.192, 1.2, 0.48],
         [0.1, 0.52, 0.208, 1.3, 0.52]
       ],
-      "icon": "icon/skill/1205_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1205_Normal.png"
     }
   ],
   "eidolons": [
@@ -164,7 +164,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1205_Rank1.png"
     },
     {
       "name": "Ten Thousand Sorrows From One Broken Dream",
@@ -176,7 +176,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1205_Rank2.png"
     },
     {
       "name": "Hardened Blade Bleeds Coldest Shade",
@@ -188,7 +188,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_BP.png"
+      "icon": "/icon/skill/SkillIcon_1205_BP.png"
     },
     {
       "name": "Rejected by Death, Infected With Life",
@@ -200,7 +200,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1205_Rank4.png"
     },
     {
       "name": "Death By Ten Lords' Gaze",
@@ -212,7 +212,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1205_Ultra_on.png"
     },
     {
       "name": "Reborn Into an Empty Husk",
@@ -224,7 +224,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1205_Rank6.png"
     }
   ],
   "traces": [
@@ -254,7 +254,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_SkillTree1.png",
+      "icon": "/icon/skill/SkillIcon_1205_SkillTree1.png",
       "major": true,
       "minAsc": 2,
       "children": [
@@ -289,7 +289,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconCriticalChance.png",
+          "icon": "/icon/property/IconCriticalChance.png",
           "major": false,
           "minAsc": 2,
           "children": [
@@ -324,7 +324,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 3,
               "children": [
@@ -359,7 +359,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconStatusResistance.png",
+                  "icon": "/icon/property/IconStatusResistance.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -399,7 +399,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_SkillTree2.png",
+      "icon": "/icon/skill/SkillIcon_1205_SkillTree2.png",
       "major": true,
       "minAsc": 4,
       "children": [
@@ -434,7 +434,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconMaxHP.png",
+          "icon": "/icon/property/IconMaxHP.png",
           "major": false,
           "minAsc": 4,
           "children": [
@@ -469,7 +469,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconCriticalChance.png",
+              "icon": "/icon/property/IconCriticalChance.png",
               "major": false,
               "minAsc": 5,
               "children": [
@@ -504,7 +504,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconMaxHP.png",
+                  "icon": "/icon/property/IconMaxHP.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -544,7 +544,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1205_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1205_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -579,7 +579,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconStatusResistance.png",
+          "icon": "/icon/property/IconStatusResistance.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -614,7 +614,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconCriticalChance.png",
+              "icon": "/icon/property/IconCriticalChance.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -650,7 +650,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconMaxHP.png",
+              "icon": "/icon/property/IconMaxHP.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -686,7 +686,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconMaxHP.png",
+      "icon": "/icon/property/IconMaxHP.png",
       "major": false,
       "minAsc": 0
     }

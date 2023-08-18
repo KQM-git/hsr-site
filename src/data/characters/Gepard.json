@@ -20,7 +20,7 @@
       "simpleDescription": "Deals minor Ice DMG to a single enemy.",
       "description": "Deals Ice DMG equal to #1[i]% of Gepard's ATK to a single enemy.",
       "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
-      "icon": "icon/skill/1104_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1104_Normal.png"
     },
     {
       "name": "Daunting Smite",
@@ -48,7 +48,7 @@
         [2.4, 0.65, 1, 0.72],
         [2.5, 0.65, 1, 0.75]
       ],
-      "icon": "icon/skill/1104_skill.png"
+      "icon": "/icon/skill/SkillIcon_1104_BP.png"
     },
     {
       "name": "Enduring Bulwark",
@@ -76,7 +76,7 @@
         [0.51, 3, 735],
         [0.525, 3, 768.75]
       ],
-      "icon": "icon/skill/1104_ultimate.png"
+      "icon": "/icon/skill/SkillIcon_1104_Ultra_on.png"
     },
     {
       "name": "Unyielding Will",
@@ -104,7 +104,7 @@
         [0.6],
         [0.625]
       ],
-      "icon": "icon/skill/1104_talent.png"
+      "icon": "/icon/skill/SkillIcon_1104_Passive.png"
     },
     {
       "name": "Attack",
@@ -116,7 +116,7 @@
       "simpleDescription": "",
       "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
       "params": [],
-      "icon": "icon/skill/1104_basic_atk.png"
+      "icon": "/icon/skill/SkillIcon_1104_Normal.png"
     },
     {
       "name": "Comradery",
@@ -128,7 +128,7 @@
       "simpleDescription": "After this character uses Technique, all allies gain a Shield at the start of the next battle.",
       "description": "After Gepard uses his Technique, when the next battle begins, a Shield will be applied to all allies, absorbing DMG equal to #1[i]% of Gepard's DEF plus #3[i] for #2[i] turn(s).",
       "params": [[0.24, 2, 150]],
-      "icon": "icon/skill/1104_technique.png"
+      "icon": "/icon/skill/SkillIcon_1104_Maze.png"
     }
   ],
   "eidolons": [
@@ -142,7 +142,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1104_Rank1.png"
+      "icon": "/icon/skill/SkillIcon_1104_Rank1.png"
     },
     {
       "name": "Lingering Cold",
@@ -154,7 +154,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1104_Rank2.png"
+      "icon": "/icon/skill/SkillIcon_1104_Rank2.png"
     },
     {
       "name": "Never Surrender",
@@ -166,7 +166,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1104_BP.png"
+      "icon": "/icon/skill/SkillIcon_1104_BP.png"
     },
     {
       "name": "Faith Moves Mountains",
@@ -178,7 +178,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1104_Rank4.png"
+      "icon": "/icon/skill/SkillIcon_1104_Rank4.png"
     },
     {
       "name": "Cold Iron Fist",
@@ -190,7 +190,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1104_Ultra_on.png"
+      "icon": "/icon/skill/SkillIcon_1104_Ultra_on.png"
     },
     {
       "name": "Unyielding Resolve",
@@ -202,7 +202,7 @@
           "num": 1
         }
       ],
-      "icon": "icon/skill/SkillIcon_1104_Rank6.png"
+      "icon": "/icon/skill/SkillIcon_1104_Rank6.png"
     }
   ],
   "traces": [
@@ -236,7 +236,7 @@
           ]
         }
       ],
-      "icon": "icon/skill/SkillIcon_1104_SkillTree3.png",
+      "icon": "/icon/skill/SkillIcon_1104_SkillTree3.png",
       "major": true,
       "minAsc": 6,
       "children": [
@@ -271,7 +271,7 @@
               ]
             }
           ],
-          "icon": "icon/property/IconDefence.png",
+          "icon": "/icon/property/IconDefence.png",
           "major": false,
           "minAsc": 6,
           "children": [
@@ -306,7 +306,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusResistance.png",
+              "icon": "/icon/property/IconStatusResistance.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 75
@@ -342,7 +342,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconIceAddedRatio.png",
+              "icon": "/icon/property/IconIceAddedRatio.png",
               "major": false,
               "minAsc": 0,
               "minLevel": 80
@@ -378,7 +378,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconIceAddedRatio.png",
+      "icon": "/icon/property/IconIceAddedRatio.png",
       "major": false,
       "minAsc": 0,
       "children": [
@@ -408,7 +408,7 @@
               ]
             }
           ],
-          "icon": "icon/skill/SkillIcon_1104_SkillTree1.png",
+          "icon": "/icon/skill/SkillIcon_1104_SkillTree1.png",
           "major": true,
           "minAsc": 2,
           "children": [
@@ -443,7 +443,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconStatusResistance.png",
+              "icon": "/icon/property/IconStatusResistance.png",
               "major": false,
               "minAsc": 2,
               "children": [
@@ -478,7 +478,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconIceAddedRatio.png",
+                  "icon": "/icon/property/IconIceAddedRatio.png",
                   "major": false,
                   "minAsc": 3
                 }
@@ -516,7 +516,7 @@
               ]
             }
           ],
-          "icon": "icon/skill/SkillIcon_1104_SkillTree2.png",
+          "icon": "/icon/skill/SkillIcon_1104_SkillTree2.png",
           "major": true,
           "minAsc": 4,
           "children": [
@@ -551,7 +551,7 @@
                   ]
                 }
               ],
-              "icon": "icon/property/IconIceAddedRatio.png",
+              "icon": "/icon/property/IconIceAddedRatio.png",
               "major": false,
               "minAsc": 4,
               "children": [
@@ -586,7 +586,7 @@
                       ]
                     }
                   ],
-                  "icon": "icon/property/IconStatusResistance.png",
+                  "icon": "/icon/property/IconStatusResistance.png",
                   "major": false,
                   "minAsc": 5
                 }
@@ -627,7 +627,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconDefence.png",
+      "icon": "/icon/property/IconDefence.png",
       "major": false,
       "minAsc": 3
     },
@@ -662,7 +662,7 @@
           ]
         }
       ],
-      "icon": "icon/property/IconIceAddedRatio.png",
+      "icon": "/icon/property/IconIceAddedRatio.png",
       "major": false,
       "minAsc": 5
     }
