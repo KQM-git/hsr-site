@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 110,
   "icon": "icon/character/1006.png",
-  "preview": "image/character_preview/1006.png",
-  "portrait": "image/character_portrait/1006.png",
+  "preview": "/image/character_preview/1006.png",
+  "portrait": "/image/character_portrait/1006.png",
   "skills": [
     {
       "name": "System Warning",

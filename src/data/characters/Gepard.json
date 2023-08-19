@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 100,
   "icon": "icon/character/1104.png",
-  "preview": "image/character_preview/1104.png",
-  "portrait": "image/character_portrait/1104.png",
+  "preview": "/image/character_preview/1104.png",
+  "portrait": "/image/character_portrait/1104.png",
   "skills": [
     {
       "name": "Fist of Conviction",

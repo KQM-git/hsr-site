@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 120,
   "icon": "icon/character/1101.png",
-  "preview": "image/character_preview/1101.png",
-  "portrait": "image/character_portrait/1101.png",
+  "preview": "/image/character_preview/1101.png",
+  "portrait": "/image/character_portrait/1101.png",
   "skills": [
     {
       "name": "Windrider Bullet",

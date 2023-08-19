@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 100,
   "icon": "icon/character/1203.png",
-  "preview": "image/character_preview/1203.png",
-  "portrait": "image/character_portrait/1203.png",
+  "preview": "/image/character_preview/1203.png",
+  "portrait": "/image/character_portrait/1203.png",
   "skills": [
     {
       "name": "Thorns of the Abyss",

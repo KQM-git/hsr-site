@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 110,
   "icon": "icon/character/1107.png",
-  "preview": "image/character_preview/1107.png",
-  "portrait": "image/character_portrait/1107.png",
+  "preview": "/image/character_preview/1107.png",
+  "portrait": "/image/character_portrait/1107.png",
   "skills": [
     {
       "name": "I Want to Help",

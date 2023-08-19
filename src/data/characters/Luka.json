@@ -7,8 +7,8 @@
   "rarity": 4,
   "maxSkillPoints": 130,
   "icon": "icon/character/1111.png",
-  "preview": "image/character_preview/1111.png",
-  "portrait": "image/character_portrait/1111.png",
+  "preview": "/image/character_preview/1111.png",
+  "portrait": "/image/character_portrait/1111.png",
   "skills": [
     {
       "name": "Direct Punch",

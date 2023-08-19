@@ -7,8 +7,8 @@
   "rarity": 4,
   "maxSkillPoints": 120,
   "icon": "icon/character/1109.png",
-  "preview": "image/character_preview/1109.png",
-  "portrait": "image/character_portrait/1109.png",
+  "preview": "/image/character_preview/1109.png",
+  "portrait": "/image/character_portrait/1109.png",
   "skills": [
     {
       "name": "Hehe! Don't Get Burned!",

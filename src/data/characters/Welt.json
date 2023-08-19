@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 120,
   "icon": "icon/character/1004.png",
-  "preview": "image/character_preview/1004.png",
-  "portrait": "image/character_portrait/1004.png",
+  "preview": "/image/character_preview/1004.png",
+  "portrait": "/image/character_portrait/1004.png",
   "skills": [
     {
       "name": "Gravity Suppression",

@@ -7,8 +7,8 @@
   "rarity": 4,
   "maxSkillPoints": 120,
   "icon": "icon/character/1001.png",
-  "preview": "image/character_preview/1001.png",
-  "portrait": "image/character_portrait/1001.png",
+  "preview": "/image/character_preview/1001.png",
+  "portrait": "/image/character_portrait/1001.png",
   "skills": [
     {
       "name": "Frigid Cold Arrow",

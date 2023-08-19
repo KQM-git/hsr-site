@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 130,
   "icon": "icon/character/1205.png",
-  "preview": "image/character_preview/1205.png",
-  "portrait": "image/character_portrait/1205.png",
+  "preview": "/image/character_preview/1205.png",
+  "portrait": "/image/character_portrait/1205.png",
   "skills": [
     {
       "name": "Shard Sword",

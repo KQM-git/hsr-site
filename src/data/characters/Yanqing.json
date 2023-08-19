@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 140,
   "icon": "icon/character/1209.png",
-  "preview": "image/character_preview/1209.png",
-  "portrait": "image/character_portrait/1209.png",
+  "preview": "/image/character_preview/1209.png",
+  "portrait": "/image/character_portrait/1209.png",
   "skills": [
     {
       "name": "Frost Thorn",

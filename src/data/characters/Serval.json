@@ -7,8 +7,8 @@
   "rarity": 4,
   "maxSkillPoints": 100,
   "icon": "icon/character/1103.png",
-  "preview": "image/character_preview/1103.png",
-  "portrait": "image/character_portrait/1103.png",
+  "preview": "/image/character_preview/1103.png",
+  "portrait": "/image/character_portrait/1103.png",
   "skills": [
     {
       "name": "Roaring Thunderclap",

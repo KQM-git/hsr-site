@@ -6,8 +6,8 @@
   "rarity": 5,
   "maxSkillPoints": 140,
   "icon": "",
-  "preview": "",
-  "portrait": "image/character_portrait/1213.png",
+  "preview": "/",
+  "portrait": "/image/character_portrait/1213.png",
   "skills": [
     {
       "name": "",

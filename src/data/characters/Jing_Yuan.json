@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 130,
   "icon": "icon/character/1204.png",
-  "preview": "image/character_preview/1204.png",
-  "portrait": "image/character_portrait/1204.png",
+  "preview": "/image/character_preview/1204.png",
+  "portrait": "/image/character_portrait/1204.png",
   "skills": [
     {
       "name": "Glistening Light",

@@ -7,8 +7,8 @@
   "rarity": 5,
   "maxSkillPoints": 120,
   "icon": "icon/character/1003.png",
-  "preview": "image/character_preview/1003.png",
-  "portrait": "image/character_portrait/1003.png",
+  "preview": "/image/character_preview/1003.png",
+  "portrait": "/image/character_portrait/1003.png",
   "skills": [
     {
       "name": "Sawblade Tuning",

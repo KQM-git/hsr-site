@@ -7,8 +7,8 @@
   "rarity": 4,
   "maxSkillPoints": 90,
   "icon": "icon/character/1105.png",
-  "preview": "image/character_preview/1105.png",
-  "portrait": "image/character_portrait/1105.png",
+  "preview": "/image/character_preview/1105.png",
+  "portrait": "/image/character_portrait/1105.png",
   "skills": [
     {
       "name": "Behind the Kindness",
