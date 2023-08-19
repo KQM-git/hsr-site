@@ -1,4 +1,5 @@
 ---
+import TabContent from "components/tabpage/TabContent.astro";
 export interface Props {
   id: string;
 }
@@ -6,7 +7,7 @@ export interface Props {
 const { id } = Astro.props;
 ---
 
-<div class="tabcontent border-theme-400 my-3 border-4 rounded-2xl" id={id}>
+<TabContent id={id} class="border-theme-400 my-3 border-4 rounded-2xl">
   <div class="m-4 text-2xl">
     <img class="inline" width="48" height="48" src={`|img|${id}|`} />
     <span class="font-bold">|type|{id}|</span>
@@ -14,4 +15,4 @@ const { id } = Astro.props;
     <span class="italic">|name|{id}|</span>
   </div>
   <slot />
-</div>
+</TabContent>

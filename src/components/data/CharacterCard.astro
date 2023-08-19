@@ -14,7 +14,7 @@ const { preview, name, element, path, rarity } = Astro.props;
 // leave only letters, numbers, and dashes
 let href = name.replaceAll(" ", "_");
 
-const charUrl = `url(/${preview})`;
+const charUrl = `url(${preview})`;
 ---
 
 <li class=`rounded-lg w-full bg-gradient ${gradients[element]}`>

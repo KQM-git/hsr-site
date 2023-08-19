@@ -11,10 +11,13 @@
 
 import CharInfo from "components/data/characters/CharInfo.astro";
 import CharTrace from "components/data/characters/CharTrace.astro";
-import CharTabbedPage from "components/data/characters/CharTabbedPage";
 import Layout from "layouts/Data.astro";
 import type { Character } from "types/game-data";
 import splitLines from "util/splitLines";
+import TabPage from "components/tabpage/TabPage.astro";
+import TabContent from "components/tabpage/TabContent.astro";
+import CharPortrait from "components/data/characters/CharPortrait.astro";
+import { getCharacter } from "components/mdx/CharacterData";
 
 export async function getStaticPaths() {
   const chars = (await Astro.glob(
@@ -27,10 +30,7 @@ export async function getStaticPaths() {
 }
 
 const { name } = Astro.params;
-const chars = (await Astro.glob(`/src/data/characters/*.json`)) as Character[];
-const char = chars.find(
-  (c) => c.name.replaceAll(" ", "_") === name
-) as Character;
+const char = (await getCharacter(name!))!;
 
 const { name: charName, id, description, eidolons, traces } = char;
 
@@ -38,6 +38,13 @@ const cardClass = "rounded-lg p-4 max-w-full md:max-w-sm relative pb-16";
 const bgClass = `card-bg-1 bg-opacity-90 max-w-full relative`;
 
 const breadcrumbs = ["Data Bank", "Characters", charName];
+
+const tabLabels = {
+  info: "Info",
+  skills: "Skills",
+  eidolons: "Eidolons",
+  traces: "Traces",
+};
 ---
 
 <Layout
@@ -47,25 +54,38 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
 >
   <main class="flex items-center flex-col">
     <article class=`card-bg p-4 md:p-8 max-w-4xl relative min-h-[700px]`>
-      <CharTabbedPage {char} client:only="preact">
-        <section
-          slot="info"
-          class=`card-bg-1 bg-opacity-90 max-w-full md:max-w-sm relative`
+      <TabPage
+        names={tabLabels}
+        buttonClass="m-2 rounded-2xl z-10"
+        headerClass="grid grid-cols-4 md:max-w-sm"
+      >
+        {
+          Object.keys(tabLabels).map((id, inx) => (
+            <TabContent id={id}>
+              <CharPortrait char={char} big={!!inx} />
+            </TabContent>
+          ))
+        }
+        <TabContent
+          id="info"
+          class="card-bg-1 bg-opacity-90 max-w-full md:max-w-sm relative"
         >
           <CharInfo h1 {...char} />
           <div class="subtitle text-xs font-bold">Introduction</div>
           <div class="mt-1 space-y-1">
             {description && splitLines(description).map((p) => <p>{p}</p>)}
           </div>
-        </section>
-        <section slot="skills" class={cardClass}>
+        </TabContent>
+
+        <TabContent id="skills" class={cardClass}>
           <CharInfo {...char} />
-        </section>
-        <section slot="skills" class={bgClass}></section>
-        <section slot="eidolons" class={cardClass}>
+        </TabContent>
+        <TabContent id="skills" class={bgClass} />
+
+        <TabContent id="eidolons" class={cardClass}>
           <CharInfo {...char} />
-        </section>
-        <section slot="eidolons" class={bgClass}>
+        </TabContent>
+        <TabContent id="eidolons" class={bgClass}>
           <ol class="flex flex-col gap-2">
             {
               // can also use e.icon for eidolon image
@@ -96,11 +116,12 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
               ))
             }
           </ol>
-        </section>
-        <section slot="traces" class={cardClass}>
+        </TabContent>
+
+        <TabContent id="traces" class={cardClass}>
           <CharInfo {...char} />
-        </section>
-        <section slot="traces" class={bgClass}>
+        </TabContent>
+        <TabContent id="traces" class={bgClass}>
           <ol id="skill-tree" class="flex flex-col gap-4">
             {
               traces
@@ -112,8 +133,8 @@ const breadcrumbs = ["Data Bank", "Characters", charName];
                 .map((trace) => <CharTrace {...trace} depth={0} />)
             }
           </ol>
-        </section>
-      </CharTabbedPage>
+        </TabContent>
+      </TabPage>
     </article>
   </main>
 </Layout>
