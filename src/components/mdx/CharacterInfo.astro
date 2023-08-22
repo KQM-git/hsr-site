@@ -1,7 +1,8 @@
 ---
 import { parse } from "node-html-parser";
-import { getImage, getText } from "./CharacterData";
+import { getDescription, getImage, getName, getParams } from "./CharacterData";
 import TabPage from "components/tabpage/TabPage.astro";
+import { parseParams } from "util/parseParams";
 
 const { char } = Astro.props;
 
@@ -28,9 +29,14 @@ const replacements = (await Promise.all(
       case "type":
         return TAG_NAME[data[2]];
       case "name":
-        return await getText(char, data[2]);
+        return await getName(char, data[2]);
       case "img":
         return await getImage(char, data[2]);
+      case "desc":
+        return parseParams(
+          (await getDescription(char, data[2]))!,
+          (await getParams(char, data[2]))![0]
+        );
     }
 
     console.log(data);

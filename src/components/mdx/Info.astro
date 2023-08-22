@@ -14,5 +14,8 @@ const { id } = Astro.props;
     <span>|</span>
     <span class="italic">|name|{id}|</span>
   </div>
+  <div class="m-4 p-4 border-4 border-theme-600 rounded-2xl">
+    |desc|{id}|
+  </div>
   <slot />
 </TabContent>

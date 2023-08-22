@@ -8,67 +8,57 @@ export async function getCharacter(name: string) {
   return data.get(name);
 }
 
-export async function getImage(name: string, type: string) {
+async function getObject(name: string, type: string) {
   const char = await getCharacter(name);
   switch (type) {
     case "Ultimate":
-      return char?.skills.filter((s) => s.type === "Ultra")[0].icon;
+      return char?.skills.filter((s) => s.type === "Ultra")[0];
     case "Skill":
-      return char?.skills.filter((s) => s.type === "BPSkill")[0].icon;
+      return char?.skills.filter((s) => s.type === "BPSkill")[0];
     case "Talent":
-      return char?.skills.filter((s) => s.type === "Talent")[0].icon;
+      return char?.skills.filter((s) => s.type === "Talent")[0];
     case "Basic":
-      return char?.skills.filter((s) => s.type === "Normal")[0].icon;
+      return char?.skills.filter((s) => s.type === "Normal")[0];
 
     case "ultimate":
-      return char?.skills.filter((s) => s.type === "Ultra")[0].icon;
+      return char?.skills.filter((s) => s.type === "Ultra")[0];
     case "skill":
-      return char?.skills.filter((s) => s.type === "BPSkill")[0].icon;
+      return char?.skills.filter((s) => s.type === "BPSkill")[0];
     case "talent":
-      return char?.skills.filter((s) => s.type === "Talent")[0].icon;
+      return char?.skills.filter((s) => s.type === "Talent")[0];
     case "basic":
-      return char?.skills.filter((s) => s.type === "Normal")[0].icon;
+      return char?.skills.filter((s) => s.type === "Normal")[0];
     case "technique":
-      return char?.skills.filter((s) => s.type === "Maze")[0].icon;
+      return char?.skills.filter((s) => s.type === "Maze")[0];
 
     case "A2":
-      return char?.traces.filter((t) => t.minAsc === 2)[0].icon;
+      return char?.traces.filter((t) => t.minAsc === 2)[0];
     case "A4":
-      return char?.traces.filter((t) => t.minAsc === 4)[0].icon;
+      return char?.traces.filter((t) => t.minAsc === 4)[0];
     case "A6":
-      return char?.traces.filter((t) => t.minAsc === 6)[0].icon;
+      return char?.traces.filter((t) => t.minAsc === 6)[0];
 
     case "a2":
-      return char?.traces.filter((t) => t.minAsc === 2)[0].icon;
+      return char?.traces.filter((t) => t.minAsc === 2)[0];
     case "a4":
-      return char?.traces.filter((t) => t.minAsc === 4)[0].icon;
+      return char?.traces.filter((t) => t.minAsc === 4)[0];
     case "a6":
-      return char?.traces.filter((t) => t.minAsc === 6)[0].icon;
+      return char?.traces.filter((t) => t.minAsc === 6)[0];
   }
 }
 
-export async function getText(name: string, type: string) {
-  const char = await getCharacter(name);
+export async function getImage(name: string, type: string) {
+  return (await getObject(name, type))?.icon;
+}
 
-  switch (type) {
-    case "basic":
-      return char?.skills.filter((s) => s.type === "Normal")[0].name;
-    case "skill":
-      return char?.skills.filter((s) => s.type === "BPSkill")[0].name;
-    case "ultimate":
-      return char?.skills.filter((s) => s.type === "Ultra")[0].name;
-    case "talent":
-      return char?.skills.filter((s) => s.type === "Talent")[0].name;
-    case "technique":
-      return char?.skills.filter((s) => s.type === "Maze")[0].name;
+export async function getName(name: string, type: string) {
+  return (await getObject(name, type))?.name;
+}
 
-    case "a2":
-      return char?.traces.filter((t) => t.minAsc === 2)[0].name;
-    case "a4":
-      return char?.traces.filter((t) => t.minAsc === 4)[0].name;
-    case "a6":
-      return char?.traces.filter((t) => t.minAsc === 6)[0].name;
-  }
+export async function getDescription(name: string, type: string) {
+  return (await getObject(name, type))?.description;
+}
 
-  return `placeholder ${type}`;
+export async function getParams(name: string, type: string) {
+  return (await getObject(name, type))?.params;
 }
