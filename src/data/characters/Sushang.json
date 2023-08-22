@@ -1,282 +1,309 @@
 {
+  "id": "1206",
   "name": "Sushang",
+  "description": "Born on the Xianzhou Yaoqing, sent to the Cloud Knights of the Luofu for military training.\\nShe wields her family sword, a gift from her mother, and longs for the future she will go on to write.",
   "element": "Physical",
   "path": "The Hunt",
   "rarity": 4,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 76.8,
-      "attackAdd": 3.84,
-      "hpBase": 124.8,
-      "hpAdd": 6.24,
-      "defenseBase": 57,
-      "defenseAdd": 2.85,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 107,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 107.52,
-      "attackAdd": 3.84,
-      "hpBase": 174.72,
-      "hpAdd": 6.24,
-      "defenseBase": 79.8,
-      "defenseAdd": 2.85,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 107,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 138.24,
-      "attackAdd": 3.84,
-      "hpBase": 224.64,
-      "hpAdd": 6.24,
-      "defenseBase": 102.6,
-      "defenseAdd": 2.85,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 107,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 168.96,
-      "attackAdd": 3.84,
-      "hpBase": 274.56,
-      "hpAdd": 6.24,
-      "defenseBase": 125.4,
-      "defenseAdd": 2.85,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 107,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 199.68,
-      "attackAdd": 3.84,
-      "hpBase": 324.48,
-      "hpAdd": 6.24,
-      "defenseBase": 148.2,
-      "defenseAdd": 2.85,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 107,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 230.4,
-      "attackAdd": 3.84,
-      "hpBase": 374.4,
-      "hpAdd": 6.24,
-      "defenseBase": 171,
-      "defenseAdd": 2.85,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 107,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 261.12,
-      "attackAdd": 3.84,
-      "hpBase": 424.32,
-      "hpAdd": 6.24,
-      "defenseBase": 193.8,
-      "defenseAdd": 2.85,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 107,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 120,
+  "icon": "icon/character/1206.png",
+  "preview": "/image/character_preview/1206.png",
+  "portrait": "/image/character_portrait/1206.png",
   "skills": [
     {
       "name": "Cloudfencer Art: Starshine",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Sushang's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Physical",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Physical DMG to a single enemy.",
+      "description": "Deals Physical DMG equal to #1[i]% of Sushang's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "/icon/skill/SkillIcon_1206_Normal.png"
     },
     {
       "name": "Cloudfencer Art: Mountainfall",
-      "tag": "Single Target",
-      "type": "Skill",
-      "desc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Sushang's ATK to a single enemy. In addition, there is a <unbreak>#3[i]%</unbreak> chance to trigger Sword Stance on the final hit, dealing <u>Additional</u> Physical DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Sushang's ATK to the enemy.\\nIf the enemy is inflicted with <u>Weakness Break</u>, Sword Stance is guaranteed to trigger.",
+      "maxLevel": 15,
+      "element": "Physical",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals Physical DMG to a single enemy with a small chance of triggering Sword Stance. If the enemy has Weakness Break, Sword Stance is guaranteed to trigger.",
+      "description": "Deals Physical DMG equal to #1[i]% of Sushang's ATK to a single enemy. In addition, there is a #3[i]% chance to trigger Sword Stance on the final hit, dealing Additional Physical DMG equal to #2[i]% of Sushang's ATK to the enemy.\nIf the enemy is inflicted with Weakness Break, Sword Stance is guaranteed to trigger.",
       "params": [
-        [ 1.05, 0.5, 0.33 ],
-        [ 1.155, 0.55, 0.33 ],
-        [ 1.26, 0.6, 0.33 ],
-        [ 1.365, 0.65, 0.33 ],
-        [ 1.47, 0.7, 0.33 ],
-        [ 1.575, 0.75, 0.33 ],
-        [ 1.70625, 0.8125, 0.33 ],
-        [ 1.8375, 0.875, 0.33 ],
-        [ 1.96875, 0.9375, 0.33 ],
-        [ 2.1, 1, 0.33 ],
-        [ 2.205, 1.05, 0.33 ],
-        [ 2.31, 1.1, 0.33 ],
-        [ 2.415, 1.15, 0.33 ],
-        [ 2.52, 1.2, 0.33 ],
-        [ 2.625, 1.25, 0.33 ]
+        [1.05, 0.5, 0.33],
+        [1.155, 0.55, 0.33],
+        [1.26, 0.6, 0.33],
+        [1.365, 0.65, 0.33],
+        [1.47, 0.7, 0.33],
+        [1.575, 0.75, 0.33],
+        [1.7063, 0.8125, 0.33],
+        [1.8375, 0.875, 0.33],
+        [1.9688, 0.9375, 0.33],
+        [2.1, 1, 0.33],
+        [2.205, 1.05, 0.33],
+        [2.31, 1.1, 0.33],
+        [2.415, 1.15, 0.33],
+        [2.52, 1.2, 0.33],
+        [2.625, 1.25, 0.33]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60
-      }
+      "icon": "/icon/skill/SkillIcon_1206_BP.png"
     },
     {
       "name": "Shape of Taixu: Dawn Herald",
-      "tag": "Single Target",
-      "type": "Ultimate",
-      "desc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Sushang's ATK to a single enemy and immediately Advances her action forward by <unbreak>100%</unbreak>. In addition, Sushang's ATK increases by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> and using her Skill has 2 extra chances to trigger Sword Stance for <unbreak>#2[i]</unbreak> turn(s).\\nSword Stance triggered from the extra chances deals <unbreak>#3[i]%</unbreak> of the original DMG.",
+      "maxLevel": 15,
+      "element": "Physical",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals massive Physical DMG to a single enemy, enhances Sword Stance's effect, and takes action immediately.",
+      "description": "Deals Physical DMG equal to #1[i]% of Sushang's ATK to a single enemy target, and she immediately takes action again. In addition, Sushang's ATK increases by #4[i]% and using her Skill has 2 extra chances to trigger Sword Stance for #2[i] turn(s).\nSword Stance triggered from the extra chances deals #3[i]% of the original DMG.",
       "params": [
-        [ 1.92, 2, 0.5, 0.18 ],
-        [ 2.048, 2, 0.5, 0.192 ],
-        [ 2.176, 2, 0.5, 0.204 ],
-        [ 2.304, 2, 0.5, 0.216 ],
-        [ 2.432, 2, 0.5, 0.228 ],
-        [ 2.56, 2, 0.5, 0.24 ],
-        [ 2.72, 2, 0.5, 0.255 ],
-        [ 2.88, 2, 0.5, 0.27 ],
-        [ 3.04, 2, 0.5, 0.285 ],
-        [ 3.2, 2, 0.5, 0.3 ],
-        [ 3.328, 2, 0.5, 0.312 ],
-        [ 3.456, 2, 0.5, 0.324 ],
-        [ 3.584, 2, 0.5, 0.336 ],
-        [ 3.712, 2, 0.5, 0.348 ],
-        [ 3.84, 2, 0.5, 0.36 ]
+        [1.92, 2, 0.5, 0.18],
+        [2.048, 2, 0.5, 0.192],
+        [2.176, 2, 0.5, 0.204],
+        [2.304, 2, 0.5, 0.216],
+        [2.432, 2, 0.5, 0.228],
+        [2.56, 2, 0.5, 0.24],
+        [2.72, 2, 0.5, 0.255],
+        [2.88, 2, 0.5, 0.27],
+        [3.04, 2, 0.5, 0.285],
+        [3.2, 2, 0.5, 0.3],
+        [3.328, 2, 0.5, 0.312],
+        [3.456, 2, 0.5, 0.324],
+        [3.584, 2, 0.5, 0.336],
+        [3.712, 2, 0.5, 0.348],
+        [3.84, 2, 0.5, 0.36]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5,
-      "toughness": {
-        "Target": 90
-      }
+      "icon": "/icon/skill/SkillIcon_1206_Ultra_on.png"
     },
     {
       "name": "Dancing Blade",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "Physical",
       "type": "Talent",
-      "desc": "When an enemy has their Weakness Broken on the field, Sushang's SPD increases by <color=#f29e38ff><unbreak>#1[f2]%</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "When an enemy on the field has its Weakness Broken, this character's SPD increases.",
+      "description": "When an enemy has their Weakness Broken on the field, Sushang's SPD increases by #1[f2]% for #2[i] turn(s).",
       "params": [
-        [ 0.15, 2 ],
-        [ 0.155, 2 ],
-        [ 0.16, 2 ],
-        [ 0.165, 2 ],
-        [ 0.17, 2 ],
-        [ 0.175, 2 ],
-        [ 0.18125, 2 ],
-        [ 0.1875, 2 ],
-        [ 0.19375, 2 ],
-        [ 0.2, 2 ],
-        [ 0.205, 2 ],
-        [ 0.21, 2 ],
-        [ 0.215, 2 ],
-        [ 0.22, 2 ],
-        [ 0.225, 2 ]
-      ]
+        [0.15, 2],
+        [0.155, 2],
+        [0.16, 2],
+        [0.165, 2],
+        [0.17, 2],
+        [0.175, 2],
+        [0.1813, 2],
+        [0.1875, 2],
+        [0.1938, 2],
+        [0.2, 2],
+        [0.205, 2],
+        [0.21, 2],
+        [0.215, 2],
+        [0.22, 2],
+        [0.225, 2]
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_Passive.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Physical",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "/icon/skill/SkillIcon_1206_Normal.png"
     },
     {
       "name": "Cloudfencer Art: Warcry",
-      "type": "Technique",
-      "desc": "Immediately attacks the enemy. Upon entering battle, Sushang deals Physical DMG equal to <unbreak>#1[i]%</unbreak> of her ATK to all enemies.",
-      "params": [
-        [ 0.8 ]
-      ],
-      "toughness": {
-        "All": 60
-      }
+      "maxLevel": 1,
+      "element": "Physical",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "MazeAttack",
+      "simpleDescription": "Attacks the enemy. After entering battle, deals minor Physical DMG to all enemies.",
+      "description": "Immediately attacks the enemy. Upon entering battle, Sushang deals Physical DMG equal to #1[i]% of her ATK to all enemies.",
+      "params": [[0.8]],
+      "icon": "/icon/skill/SkillIcon_1206_Maze.png"
     }
   ],
   "eidolons": [
     {
       "name": "Cut With Ease",
+      "rank": 1,
       "desc": "After using Skill against a Weakness Broken enemy, regenerates 1 Skill Point.",
-      "params": []
+      "materials": [
+        {
+          "id": "11206",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_Rank1.png"
     },
     {
       "name": "Refine in Toil",
-      "desc": "After triggering Sword Stance, the DMG taken by Sushang is reduced by <unbreak>#1[i]%</unbreak> for 1 turn.",
-      "params": [ 0.2 ]
+      "rank": 2,
+      "desc": "After Sword Stance is triggered, the DMG taken by Sushang is reduced by 20% for 1 turn.",
+      "materials": [
+        {
+          "id": "11206",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_Rank2.png"
     },
     {
       "name": "Rise From Fame",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11206",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_BP.png"
     },
     {
       "name": "Cleave With Heart",
-      "desc": "Sushang's Break Effect increases by <unbreak>#1[i]%</unbreak>.",
-      "params": [ 0.4 ]
+      "rank": 4,
+      "desc": "Sushang's Break Effect increases by 40%.",
+      "materials": [
+        {
+          "id": "11206",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_Rank4.png"
     },
     {
       "name": "Prevail via Taixu",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11206",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_Ultra_on.png"
     },
     {
       "name": "Dwell Like Water",
+      "rank": 6,
       "desc": "Talent's SPD Boost is stackable and can stack up to 2 times. Additionally, after entering battle, Sushang immediately gains 1 stack of her Talent's SPD Boost.",
-      "params": []
+      "materials": [
+        {
+          "id": "11206",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_Rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1206101,
+      "id": "1206101",
       "name": "Guileless",
-      "desc": "When current HP percentage is <unbreak>#1[i]%</unbreak> or lower, reduces the chance of being attacked by enemies.",
-      "icon": "SkillIcon_1206_SkillTree1.png",
-      "params": [ 0.5, 0.5 ],
+      "maxLevel": 1,
+      "description": "When current HP percentage is #1[i]% or lower, reduces the chance of being attacked by enemies.",
+      "params": [[0.5, 0.5]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110121",
+              "num": 2
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_SkillTree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1206202,
+          "id": "1206202",
           "name": "HP Boost",
-          "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconMaxHP.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "HP increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "HPAddedRatio",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110121",
+                  "num": 2
+                },
+                {
+                  "id": "113011",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconMaxHP.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1206203,
+              "id": "1206203",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110122",
+                      "num": 2
+                    },
+                    {
+                      "id": "113012",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 3
             }
           ]
@@ -284,27 +311,107 @@
       ]
     },
     {
-      "id": 1206102,
+      "id": "1206102",
       "name": "Riposte",
-      "desc": "For every Sword Stance triggered, the DMG dealt by Sword Stance increases by <unbreak>#1[i]%</unbreak>. Stacks up to <unbreak>#2[i]</unbreak> time(s).",
-      "icon": "SkillIcon_1206_SkillTree2.png",
-      "params": [ 0.025, 10 ],
+      "maxLevel": 1,
+      "description": "For every Sword Stance triggered, the DMG dealt by Sword Stance increases by #1[i]%. Stacks up to #2[i] time(s).",
+      "params": [[0.025, 10]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110122",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_SkillTree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1206205,
+          "id": "1206205",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110122",
+                  "num": 4
+                },
+                {
+                  "id": "113012",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1206206,
+              "id": "1206206",
               "name": "HP Boost",
-              "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconMaxHP.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "HP increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "HPAddedRatio",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 2
+                    },
+                    {
+                      "id": "113013",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconMaxHP.png",
+              "major": false,
               "minAsc": 5
             }
           ]
@@ -312,35 +419,144 @@
       ]
     },
     {
-      "id": 1206103,
+      "id": "1206103",
       "name": "Vanquisher",
-      "desc": "After using Basic ATK or Skill, if there are enemies on the field with Weakness Break, Sushang's action is Advanced Forward by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1206_SkillTree3.png",
-      "params": [ 0.15 ],
+      "maxLevel": 1,
+      "description": "After using Basic ATK or Skill, if there are enemies on the field with Weakness Break, Sushang's action is Advanced Forward by #1[i]%.",
+      "params": [[0.15]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110123",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1206_SkillTree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1206208,
+          "id": "1206208",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.075 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 7.5%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.075
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110123",
+                  "num": 6
+                },
+                {
+                  "id": "113013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconDefence.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 1206209,
+              "id": "1206209",
               "name": "HP Boost",
-              "desc": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconMaxHP.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "HP increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "HPAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 6
+                    },
+                    {
+                      "id": "113013",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconMaxHP.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 1206210,
+              "id": "1206210",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 6
+                    },
+                    {
+                      "id": "113013",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -348,28 +564,317 @@
       ]
     },
     {
-      "id": 1206201,
+      "id": "1206201",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.04 ]
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "113011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0
     },
     {
-      "id": 1206204,
+      "id": "1206204",
       "name": "DEF Boost",
-      "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconDefence.png",
-      "params": [ 0.05 ],
+      "maxLevel": 1,
+      "description": "DEF increases by 5.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 3,
+          "properties": [
+            {
+              "type": "DefenceAddedRatio",
+              "value": 0.05
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 8000
+            },
+            {
+              "id": "110122",
+              "num": 2
+            },
+            {
+              "id": "113012",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconDefence.png",
+      "major": false,
       "minAsc": 3
     },
     {
-      "id": 1206207,
+      "id": "1206207",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.06 ],
+      "maxLevel": 1,
+      "description": "ATK increases by 6.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 5,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.06
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 36000
+            },
+            {
+              "id": "110123",
+              "num": 2
+            },
+            {
+              "id": "113013",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconAttack.png",
+      "major": false,
       "minAsc": 5
     }
   ],
-  "description": "Born on the Xianzhou Yaoqing, sent to the Cloud Knights of the Luofu for military training.\nShe wields her family sword, a gift from her mother, and longs for the future she will go on to write."
+  "stats": [
+    {
+      "health": {
+        "base": 124.8,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 76.8,
+        "step": 3.84
+      },
+      "defense": {
+        "base": 57,
+        "step": 2.85
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 174.72,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 107.52,
+        "step": 3.84
+      },
+      "defense": {
+        "base": 79.8,
+        "step": 2.85
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 224.64,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 138.24,
+        "step": 3.84
+      },
+      "defense": {
+        "base": 102.6,
+        "step": 2.85
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 274.56,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 168.96,
+        "step": 3.84
+      },
+      "defense": {
+        "base": 125.4,
+        "step": 2.85
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 324.48,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 199.68,
+        "step": 3.84
+      },
+      "defense": {
+        "base": 148.2,
+        "step": 2.85
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 374.4,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 230.4,
+        "step": 3.84
+      },
+      "defense": {
+        "base": 171,
+        "step": 2.85
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 424.32,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 261.12,
+        "step": 3.84
+      },
+      "defense": {
+        "base": 193.8,
+        "step": 2.85
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

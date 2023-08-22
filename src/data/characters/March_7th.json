@@ -1,291 +1,350 @@
 {
+  "id": "1001",
   "name": "March 7th",
+  "description": "A girl who once slumbered in eternal ice and knows nothing about her past.\\nTo find out the truth about her origins, she decided to travel with the Astral Express.\\nAs of right now, she has prepared about 67 different versions of her life story for herself.",
   "element": "Ice",
   "path": "Preservation",
   "rarity": 4,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 69.6,
-      "attackAdd": 3.48,
-      "hpBase": 144,
-      "hpAdd": 7.2,
-      "defenseBase": 78,
-      "defenseAdd": 3.9,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 101,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 97.44,
-      "attackAdd": 3.48,
-      "hpBase": 201.6,
-      "hpAdd": 7.2,
-      "defenseBase": 109.2,
-      "defenseAdd": 3.9,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 101,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 125.28,
-      "attackAdd": 3.48,
-      "hpBase": 259.2,
-      "hpAdd": 7.2,
-      "defenseBase": 140.4,
-      "defenseAdd": 3.9,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 101,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 153.12,
-      "attackAdd": 3.48,
-      "hpBase": 316.8,
-      "hpAdd": 7.2,
-      "defenseBase": 171.6,
-      "defenseAdd": 3.9,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 101,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 180.96,
-      "attackAdd": 3.48,
-      "hpBase": 374.4,
-      "hpAdd": 7.2,
-      "defenseBase": 202.8,
-      "defenseAdd": 3.9,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 101,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 208.8,
-      "attackAdd": 3.48,
-      "hpBase": 432,
-      "hpAdd": 7.2,
-      "defenseBase": 234,
-      "defenseAdd": 3.9,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 101,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 236.64,
-      "attackAdd": 3.48,
-      "hpBase": 489.6,
-      "hpAdd": 7.2,
-      "defenseBase": 265.2,
-      "defenseAdd": 3.9,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 150,
-      "speedBase": 101,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 120,
+  "icon": "icon/character/1001.png",
+  "preview": "/image/character_preview/1001.png",
+  "portrait": "/image/character_portrait/1001.png",
   "skills": [
     {
       "name": "Frigid Cold Arrow",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of March 7th's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Ice",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Ice DMG to a single enemy.",
+      "description": "Deals Ice DMG equal to #1[i]% of March 7th's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "/icon/skill/SkillIcon_1001_Normal.png"
     },
     {
       "name": "The Power of Cuteness",
-      "tag": "Defense",
-      "type": "Skill",
-      "desc": "Provides a single ally with a Shield that can absorb DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of March 7th's DEF plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).\\nIf the ally's current HP percentage is <unbreak>#3[i]%</unbreak> or higher, greatly increases the chance of enemies attacking that ally.",
+      "maxLevel": 15,
+      "element": "",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Defence",
+      "simpleDescription": "Provides a single ally with a Shield.",
+      "description": "Provides a single ally with a Shield that can absorb DMG equal to #1[i]% of March 7th's DEF plus #4[i] for #2[i] turn(s).\nIf the ally's current HP percentage is #3[i]% or higher, greatly increases the chance of enemies attacking that ally.",
       "params": [
-        [ 0.38, 3, 0.3, 190, 5 ],
-        [ 0.40375, 3, 0.3, 304, 5 ],
-        [ 0.4275, 3, 0.3, 389.5, 5 ],
-        [ 0.45125, 3, 0.3, 475, 5 ],
-        [ 0.475, 3, 0.3, 532, 5 ],
-        [ 0.494, 3, 0.3, 589, 5 ],
-        [ 0.513, 3, 0.3, 631.75, 5 ],
-        [ 0.532, 3, 0.3, 674.5, 5 ],
-        [ 0.551, 3, 0.3, 717.25, 5 ],
-        [ 0.57, 3, 0.3, 760, 5 ],
-        [ 0.589, 3, 0.3, 802.75, 5 ],
-        [ 0.608, 3, 0.3, 845.5, 5 ],
-        [ 0.627, 3, 0.3, 888.25, 5 ],
-        [ 0.646, 3, 0.3, 931, 5 ],
-        [ 0.665, 3, 0.3, 973.75, 5 ]
+        [0.38, 3, 0.3, 190, 5],
+        [0.4038, 3, 0.3, 304, 5],
+        [0.4275, 3, 0.3, 389.5, 5],
+        [0.4513, 3, 0.3, 475, 5],
+        [0.475, 3, 0.3, 532, 5],
+        [0.494, 3, 0.3, 589, 5],
+        [0.513, 3, 0.3, 631.75, 5],
+        [0.532, 3, 0.3, 674.5, 5],
+        [0.551, 3, 0.3, 717.25, 5],
+        [0.57, 3, 0.3, 760, 5],
+        [0.589, 3, 0.3, 802.75, 5],
+        [0.608, 3, 0.3, 845.5, 5],
+        [0.627, 3, 0.3, 888.25, 5],
+        [0.646, 3, 0.3, 931, 5],
+        [0.665, 3, 0.3, 973.75, 5]
       ],
-      "energyGain": 30
+      "icon": "/icon/skill/SkillIcon_1001_BP.png"
     },
     {
       "name": "Glacial Cascade",
-      "tag": "AoE",
-      "type": "Ultimate",
-      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of March 7th's ATK to all enemies. Hit enemies have a <unbreak>#2[i]%</unbreak> <u>base chance</u> to be Frozen for <unbreak>#3[i]</unbreak> turn(s).\\nWhile Frozen, enemies cannot take action and will receive <u>Additional</u> Ice DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of March 7th's ATK at the beginning of each turn.",
+      "maxLevel": 15,
+      "element": "Ice",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "AoEAttack",
+      "simpleDescription": "Deals Ice DMG to all enemies, with a chance of Freezing them.",
+      "description": "Deals Ice DMG equal to #1[i]% of March 7th's ATK to all enemies. Hit enemies have a #2[i]% base chance to be Frozen for #3[i] turn(s).\nWhile Frozen, enemies cannot take action and will receive Additional Ice DMG equal to #4[i]% of March 7th's ATK at the beginning of each turn.",
       "params": [
-        [ 0.9, 0.5, 1, 0.3 ],
-        [ 0.96, 0.5, 1, 0.33 ],
-        [ 1.02, 0.5, 1, 0.36 ],
-        [ 1.08, 0.5, 1, 0.39 ],
-        [ 1.14, 0.5, 1, 0.42 ],
-        [ 1.2, 0.5, 1, 0.45 ],
-        [ 1.275, 0.5, 1, 0.4875 ],
-        [ 1.35, 0.5, 1, 0.525 ],
-        [ 1.425, 0.5, 1, 0.5625 ],
-        [ 1.5, 0.5, 1, 0.6 ],
-        [ 1.56, 0.5, 1, 0.63 ],
-        [ 1.62, 0.5, 1, 0.66 ],
-        [ 1.68, 0.5, 1, 0.69 ],
-        [ 1.74, 0.5, 1, 0.72 ],
-        [ 1.8, 0.5, 1, 0.75 ]
+        [0.9, 0.5, 1, 0.3],
+        [0.96, 0.5, 1, 0.33],
+        [1.02, 0.5, 1, 0.36],
+        [1.08, 0.5, 1, 0.39],
+        [1.14, 0.5, 1, 0.42],
+        [1.2, 0.5, 1, 0.45],
+        [1.275, 0.5, 1, 0.4875],
+        [1.35, 0.5, 1, 0.525],
+        [1.425, 0.5, 1, 0.5625],
+        [1.5, 0.5, 1, 0.6],
+        [1.56, 0.5, 1, 0.63],
+        [1.62, 0.5, 1, 0.66],
+        [1.68, 0.5, 1, 0.69],
+        [1.74, 0.5, 1, 0.72],
+        [1.8, 0.5, 1, 0.75]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5,
-      "toughness": {
-        "All": 60
-      }
+      "icon": "/icon/skill/SkillIcon_1001_Ultra_on.png"
     },
     {
       "name": "Girl Power",
-      "tag": "Single Target",
+      "maxLevel": 15,
+      "element": "Ice",
       "type": "Talent",
-      "desc": "After a Shielded ally is attacked by an enemy, March 7th immediately <u>Counters</u>, dealing Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK. This effect can be triggered <unbreak>#2[i]</unbreak> time(s) each turn.",
+      "typeText": "Talent",
+      "effect": "SingleAttack",
+      "simpleDescription": "",
+      "description": "After a Shielded ally is attacked by an enemy, March 7th immediately Counters, dealing Ice DMG equal to #1[i]% of her ATK. This effect can be triggered #2[i] time(s) each turn.",
       "params": [
-        [ 0.5, 2 ],
-        [ 0.55, 2 ],
-        [ 0.6, 2 ],
-        [ 0.65, 2 ],
-        [ 0.7, 2 ],
-        [ 0.75, 2 ],
-        [ 0.8125, 2 ],
-        [ 0.875, 2 ],
-        [ 0.9375, 2 ],
-        [ 1, 2 ],
-        [ 1.05, 2 ],
-        [ 1.1, 2 ],
-        [ 1.15, 2 ],
-        [ 1.2, 2 ],
-        [ 1.25, 2 ]
+        [0.5, 2],
+        [0.55, 2],
+        [0.6, 2],
+        [0.65, 2],
+        [0.7, 2],
+        [0.75, 2],
+        [0.8125, 2],
+        [0.875, 2],
+        [0.9375, 2],
+        [1, 2],
+        [1.05, 2],
+        [1.1, 2],
+        [1.15, 2],
+        [1.2, 2],
+        [1.25, 2]
       ],
-      "energyGain": 10,
-      "toughness": {
-        "Target": 30
-      }
+      "icon": "/icon/skill/SkillIcon_1001_Passive.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Ice",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "/icon/skill/SkillIcon_1001_Normal.png"
     },
     {
       "name": "Freezing Beauty",
-      "type": "Technique",
-      "desc": "Immediately attacks the enemy. After entering battle, there is a <unbreak>#1[i]%</unbreak> <u>base chance</u> to Freeze a random enemy for <unbreak>#2[i]</unbreak> turn(s).\\nWhile Frozen, the enemy cannot take action and will take <u>Additional</u> Ice DMG equal to <unbreak>#3[i]%</unbreak> of March 7th's ATK at the beginning of each turn.",
-      "params": [
-        [ 1, 1, 0.5 ]
-      ],
-      "toughness": {
-        "All": 60
-      }
+      "maxLevel": 1,
+      "element": "Ice",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Immediately attacks the enemy. After entering battle, there is a #1[i]% base chance to Freeze a random enemy for #2[i] turn(s).\nWhile Frozen, the enemy cannot take action and will take Additional Ice DMG equal to #3[i]% of March 7th's ATK at the beginning of each turn.",
+      "params": [[1, 1, 0.5]],
+      "icon": "/icon/skill/SkillIcon_1001_Maze.png"
     }
   ],
   "eidolons": [
     {
       "name": "Memory of You",
-      "desc": "Every time March 7th's Ultimate Freezes a target, she regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "params": [ 6 ]
+      "rank": 1,
+      "desc": "Every time March 7th's Ultimate Freezes a target, she regenerates 6 Energy.",
+      "materials": [
+        {
+          "id": "11001",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1001_Rank1.png"
     },
     {
       "name": "Memory of It",
-      "desc": "Upon entering battle, grants a Shield equal to <unbreak>#1[i]%</unbreak> of March 7th's DEF plus <unbreak>#3[i]</unbreak> to the ally with the lowest HP percentage, lasting for <unbreak>#2[i]</unbreak> turn(s).",
-      "params": [ 0.24, 3, 320 ]
+      "rank": 2,
+      "desc": "Upon entering battle, grants a Shield equal to 24% of March 7th's DEF plus 320 to the ally with the lowest HP percentage, lasting for 3 turn(s).",
+      "materials": [
+        {
+          "id": "11001",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1001_Rank2.png"
     },
     {
       "name": "Memory of Everything",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11001",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1001_BP.png"
     },
     {
       "name": "Never Forfeit Again",
-      "desc": "The Talent's Counter effect can be triggered 1 more time in each turn. The DMG dealt by Counter increases by an amount that is equal to <unbreak>#1[i]%</unbreak> of March 7th's DEF.",
-      "params": [ 0.3 ]
+      "rank": 4,
+      "desc": "The Talent's Counter effect can be triggered 1 more time in each turn. The DMG dealt by Counter increases by an amount that is equal to 30% of March 7th's DEF.",
+      "materials": [
+        {
+          "id": "11001",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1001_Rank4.png"
     },
     {
       "name": "Never Forget Again",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11001",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1001_Ultra_on.png"
     },
     {
       "name": "Just Like This, Always...",
-      "desc": "Allies under the protection of the Shield granted by the Skill restores HP equal to <unbreak>#1[i]%</unbreak> of their Max HP plus <unbreak>#2[i]</unbreak> at the beginning of each turn.",
-      "params": [ 0.04, 106 ]
+      "rank": 6,
+      "desc": "Allies under the protection of the Shield granted by the Skill restores HP equal to 4% of their Max HP plus 106 at the beginning of each turn.",
+      "materials": [
+        {
+          "id": "11001",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1001_Rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1001103,
+      "id": "1001103",
       "name": "Ice Spell",
-      "desc": "Increases Ultimate's base chance to Freeze enemies by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1001_SkillTree3.png",
-      "params": [ 0.15 ],
+      "maxLevel": 1,
+      "description": "Increases Ultimate's base chance to Freeze enemies by #1[i]%.",
+      "params": [[0.15]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110143",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1001_SkillTree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1001208,
+          "id": "1001208",
           "name": "DMG Boost: Ice",
-          "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconIceAddedRatio.png",
-          "params": [ 0.048 ],
+          "maxLevel": 1,
+          "description": "Ice DMG Boost increases by 4.8%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "IceAddedRatio",
+                  "value": 0.048
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110143",
+                  "num": 6
+                },
+                {
+                  "id": "111013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconIceAddedRatio.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 1001209,
+              "id": "1001209",
               "name": "DMG Boost: Ice",
-              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconIceAddedRatio.png",
-              "params": [ 0.064 ],
+              "maxLevel": 1,
+              "description": "Ice DMG Boost increases by 6.4%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "IceAddedRatio",
+                      "value": 0.064
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110143",
+                      "num": 6
+                    },
+                    {
+                      "id": "111013",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconIceAddedRatio.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 1001210,
+              "id": "1001210",
               "name": "DEF Boost",
-              "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconDefence.png",
-              "params": [ 0.1 ],
+              "maxLevel": 1,
+              "description": "DEF increases by 10.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "DefenceAddedRatio",
+                      "value": 0.1
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110143",
+                      "num": 6
+                    },
+                    {
+                      "id": "111013",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconDefence.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -293,34 +352,134 @@
       ]
     },
     {
-      "id": 1001201,
+      "id": "1001201",
       "name": "DMG Boost: Ice",
-      "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconIceAddedRatio.png",
-      "params": [ 0.032 ],
+      "maxLevel": 1,
+      "description": "Ice DMG Boost increases by 3.2%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "IceAddedRatio",
+              "value": 0.032
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "111011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconIceAddedRatio.png",
+      "major": false,
+      "minAsc": 0,
       "children": [
         {
-          "id": 1001101,
+          "id": "1001101",
           "name": "Purify",
-          "desc": "Skill removes 1 debuff from an ally.",
-          "icon": "SkillIcon_1001_SkillTree1.png",
+          "maxLevel": 1,
+          "description": "Skill removes 1 debuff from an ally.",
           "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110141",
+                  "num": 2
+                },
+                {
+                  "id": "110501",
+                  "num": 1
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/skill/SkillIcon_1001_SkillTree1.png",
+          "major": true,
           "minAsc": 2,
           "children": [
             {
-              "id": 1001202,
+              "id": "1001202",
               "name": "DEF Boost",
-              "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconDefence.png",
-              "params": [ 0.05 ],
+              "maxLevel": 1,
+              "description": "DEF increases by 5.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 2,
+                  "properties": [
+                    {
+                      "type": "DefenceAddedRatio",
+                      "value": 0.05
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 4000
+                    },
+                    {
+                      "id": "110141",
+                      "num": 2
+                    },
+                    {
+                      "id": "111011",
+                      "num": 4
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconDefence.png",
+              "major": false,
               "minAsc": 2,
               "children": [
                 {
-                  "id": 1001203,
+                  "id": "1001203",
                   "name": "DMG Boost: Ice",
-                  "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconIceAddedRatio.png",
-                  "params": [ 0.032 ],
+                  "maxLevel": 1,
+                  "description": "Ice DMG Boost increases by 3.2%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "IceAddedRatio",
+                          "value": 0.032
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 8000
+                        },
+                        {
+                          "id": "110142",
+                          "num": 2
+                        },
+                        {
+                          "id": "111012",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "/icon/property/IconIceAddedRatio.png",
+                  "major": false,
                   "minAsc": 3
                 }
               ]
@@ -328,27 +487,107 @@
           ]
         },
         {
-          "id": 1001102,
+          "id": "1001102",
           "name": "Reinforce",
-          "desc": "The duration of the Shield generated from Skill is extended for <unbreak>#1[i]</unbreak> turn(s).",
-          "icon": "SkillIcon_1001_SkillTree2.png",
-          "params": [ 1 ],
+          "maxLevel": 1,
+          "description": "The duration of the Shield generated from Skill is extended for #1[i] turn(s).",
+          "params": [[1]],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110142",
+                  "num": 4
+                },
+                {
+                  "id": "241",
+                  "num": 1
+                },
+                {
+                  "id": "110501",
+                  "num": 1
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/skill/SkillIcon_1001_SkillTree2.png",
+          "major": true,
           "minAsc": 4,
           "children": [
             {
-              "id": 1001205,
+              "id": "1001205",
               "name": "DMG Boost: Ice",
-              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconIceAddedRatio.png",
-              "params": [ 0.048 ],
+              "maxLevel": 1,
+              "description": "Ice DMG Boost increases by 4.8%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 4,
+                  "properties": [
+                    {
+                      "type": "IceAddedRatio",
+                      "value": 0.048
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 16000
+                    },
+                    {
+                      "id": "110142",
+                      "num": 4
+                    },
+                    {
+                      "id": "111012",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconIceAddedRatio.png",
+              "major": false,
               "minAsc": 4,
               "children": [
                 {
-                  "id": 1001206,
+                  "id": "1001206",
                   "name": "Effect RES Boost",
-                  "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconStatusResistance.png",
-                  "params": [ 0.06 ],
+                  "maxLevel": 1,
+                  "description": "Effect RES increases by 6.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "StatusResistanceBase",
+                          "value": 0.06
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 36000
+                        },
+                        {
+                          "id": "110143",
+                          "num": 2
+                        },
+                        {
+                          "id": "111013",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "/icon/property/IconStatusResistance.png",
+                  "major": false,
                   "minAsc": 5
                 }
               ]
@@ -358,21 +597,286 @@
       ]
     },
     {
-      "id": 1001204,
+      "id": "1001204",
       "name": "Effect RES Boost",
-      "desc": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconStatusResistance.png",
-      "params": [ 0.04 ],
+      "maxLevel": 1,
+      "description": "Effect RES increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 3,
+          "properties": [
+            {
+              "type": "StatusResistanceBase",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 8000
+            },
+            {
+              "id": "110142",
+              "num": 2
+            },
+            {
+              "id": "111012",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconStatusResistance.png",
+      "major": false,
       "minAsc": 3
     },
     {
-      "id": 1001207,
+      "id": "1001207",
       "name": "DEF Boost",
-      "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconDefence.png",
-      "params": [ 0.075 ],
+      "maxLevel": 1,
+      "description": "DEF increases by 7.5%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 5,
+          "properties": [
+            {
+              "type": "DefenceAddedRatio",
+              "value": 0.075
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 36000
+            },
+            {
+              "id": "110143",
+              "num": 2
+            },
+            {
+              "id": "111013",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconDefence.png",
+      "major": false,
       "minAsc": 5
     }
   ],
-  "description": "A girl who once slumbered in eternal ice and knows nothing about her past.\nTo find out the truth about her origins, she decided to travel with the Astral Express.\nAs of right now, she has prepared about 67 different versions of her life story for herself."
+  "stats": [
+    {
+      "health": {
+        "base": 144,
+        "step": 7.2
+      },
+      "attack": {
+        "base": 69.6,
+        "step": 3.48
+      },
+      "defense": {
+        "base": 78,
+        "step": 3.9
+      },
+      "speed": {
+        "base": 101,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 201.6,
+        "step": 7.2
+      },
+      "attack": {
+        "base": 97.44,
+        "step": 3.48
+      },
+      "defense": {
+        "base": 109.2,
+        "step": 3.9
+      },
+      "speed": {
+        "base": 101,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 259.2,
+        "step": 7.2
+      },
+      "attack": {
+        "base": 125.28,
+        "step": 3.48
+      },
+      "defense": {
+        "base": 140.4,
+        "step": 3.9
+      },
+      "speed": {
+        "base": 101,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 316.8,
+        "step": 7.2
+      },
+      "attack": {
+        "base": 153.12,
+        "step": 3.48
+      },
+      "defense": {
+        "base": 171.6,
+        "step": 3.9
+      },
+      "speed": {
+        "base": 101,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 374.4,
+        "step": 7.2
+      },
+      "attack": {
+        "base": 180.96,
+        "step": 3.48
+      },
+      "defense": {
+        "base": 202.8,
+        "step": 3.9
+      },
+      "speed": {
+        "base": 101,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 432,
+        "step": 7.2
+      },
+      "attack": {
+        "base": 208.8,
+        "step": 3.48
+      },
+      "defense": {
+        "base": 234,
+        "step": 3.9
+      },
+      "speed": {
+        "base": 101,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 489.6,
+        "step": 7.2
+      },
+      "attack": {
+        "base": 236.64,
+        "step": 3.48
+      },
+      "defense": {
+        "base": 265.2,
+        "step": 3.9
+      },
+      "speed": {
+        "base": 101,
+        "step": 0
+      },
+      "taunt": {
+        "base": 150,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

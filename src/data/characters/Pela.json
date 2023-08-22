@@ -1,290 +1,344 @@
 {
+  "id": "1106",
   "name": "Pela",
+  "description": "An intelligence officer for the Silvermane Guards.\\nShe has a serious personality and is revered by other members of the Silvermane Guards.",
   "element": "Ice",
   "path": "Nihility",
   "rarity": 4,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 74.4,
-      "attackAdd": 3.72,
-      "hpBase": 134.4,
-      "hpAdd": 6.72,
-      "defenseBase": 63,
-      "defenseAdd": 3.15,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 105,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 104.16,
-      "attackAdd": 3.72,
-      "hpBase": 188.16,
-      "hpAdd": 6.72,
-      "defenseBase": 88.2,
-      "defenseAdd": 3.15,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 105,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 133.92,
-      "attackAdd": 3.72,
-      "hpBase": 241.92,
-      "hpAdd": 6.72,
-      "defenseBase": 113.4,
-      "defenseAdd": 3.15,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 105,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 163.68,
-      "attackAdd": 3.72,
-      "hpBase": 295.68,
-      "hpAdd": 6.72,
-      "defenseBase": 138.6,
-      "defenseAdd": 3.15,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 105,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 193.44,
-      "attackAdd": 3.72,
-      "hpBase": 349.44,
-      "hpAdd": 6.72,
-      "defenseBase": 163.8,
-      "defenseAdd": 3.15,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 105,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 223.2,
-      "attackAdd": 3.72,
-      "hpBase": 403.2,
-      "hpAdd": 6.72,
-      "defenseBase": 189,
-      "defenseAdd": 3.15,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 105,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 252.96,
-      "attackAdd": 3.72,
-      "hpBase": 456.96,
-      "hpAdd": 6.72,
-      "defenseBase": 214.2,
-      "defenseAdd": 3.15,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 100,
-      "speedBase": 105,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 110,
+  "icon": "icon/character/1106.png",
+  "preview": "/image/character_preview/1106.png",
+  "portrait": "/image/character_portrait/1106.png",
   "skills": [
     {
       "name": "Frost Shot",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Pela's ATK to a single target enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Ice",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Ice DMG to a single enemy.",
+      "description": "Deals Ice DMG equal to #1[i]% of Pela's ATK to a single target enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "/icon/skill/SkillIcon_1106_Normal.png"
     },
     {
       "name": "Frostbite",
-      "tag": "Impair",
-      "type": "Skill",
-      "desc": "Removes <unbreak>#2[i]</unbreak> <u>buff(s)</u> and deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Pela's ATK to a single target enemy.",
+      "maxLevel": 15,
+      "element": "Ice",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Impair",
+      "simpleDescription": "Removes 1 buff and deals Ice DMG to a single enemy.",
+      "description": "Removes #2[i] buff(s) and deals Ice DMG equal to #1[i]% of Pela's ATK to a single target enemy.",
       "params": [
-        [ 1.05, 1 ],
-        [ 1.155, 1 ],
-        [ 1.26, 1 ],
-        [ 1.365, 1 ],
-        [ 1.47, 1 ],
-        [ 1.575, 1 ],
-        [ 1.70625, 1 ],
-        [ 1.8375, 1 ],
-        [ 1.96875, 1 ],
-        [ 2.1, 1 ],
-        [ 2.205, 1 ],
-        [ 2.31, 1 ],
-        [ 2.415, 1 ],
-        [ 2.52, 1 ],
-        [ 2.625, 1 ]
+        [1.05, 1],
+        [1.155, 1],
+        [1.26, 1],
+        [1.365, 1],
+        [1.47, 1],
+        [1.575, 1],
+        [1.7063, 1],
+        [1.8375, 1],
+        [1.9688, 1],
+        [2.1, 1],
+        [2.205, 1],
+        [2.31, 1],
+        [2.415, 1],
+        [2.52, 1],
+        [2.625, 1]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60
-      }
+      "icon": "/icon/skill/SkillIcon_1106_BP.png"
     },
     {
       "name": "Zone Suppression",
-      "tag": "Impair",
-      "type": "Ultimate",
-      "desc": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Pela's ATK to all enemies, with a <unbreak>#1[i]%</unbreak> <u>base chance</u> to inflict Exposed on all enemies.\\nWhen Exposed, enemies' DEF is reduced by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s).",
+      "maxLevel": 15,
+      "element": "Ice",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Impair",
+      "simpleDescription": "Has a high chance of lowering enemies' DEF and deals minor Ice DMG to all enemies.",
+      "description": "Deals Ice DMG equal to #4[i]% of Pela's ATK to all enemies, with a #1[i]% base chance to inflict Exposed on all enemies.\nWhen Exposed, enemies' DEF is reduced by #2[i]% for #3[i] turn(s).",
       "params": [
-        [ 1, 0.3, 2, 0.6 ],
-        [ 1, 0.31, 2, 0.64 ],
-        [ 1, 0.32, 2, 0.68 ],
-        [ 1, 0.33, 2, 0.72 ],
-        [ 1, 0.34, 2, 0.76 ],
-        [ 1, 0.35, 2, 0.8 ],
-        [ 1, 0.3625, 2, 0.85 ],
-        [ 1, 0.375, 2, 0.9 ],
-        [ 1, 0.3875, 2, 0.95 ],
-        [ 1, 0.4, 2, 1 ],
-        [ 1, 0.41, 2, 1.04 ],
-        [ 1, 0.42, 2, 1.08 ],
-        [ 1, 0.43, 2, 1.12 ],
-        [ 1, 0.44, 2, 1.16 ],
-        [ 1, 0.45, 2, 1.2 ]
+        [1, 0.3, 2, 0.6],
+        [1, 0.31, 2, 0.64],
+        [1, 0.32, 2, 0.68],
+        [1, 0.33, 2, 0.72],
+        [1, 0.34, 2, 0.76],
+        [1, 0.35, 2, 0.8],
+        [1, 0.3625, 2, 0.85],
+        [1, 0.375, 2, 0.9],
+        [1, 0.3875, 2, 0.95],
+        [1, 0.4, 2, 1],
+        [1, 0.41, 2, 1.04],
+        [1, 0.42, 2, 1.08],
+        [1, 0.43, 2, 1.12],
+        [1, 0.44, 2, 1.16],
+        [1, 0.45, 2, 1.2]
       ],
-      "energyNeeded": 110,
-      "energyGain": 5,
-      "toughness": {
-        "All": 60
-      }
+      "icon": "/icon/skill/SkillIcon_1106_Ultra_on.png"
     },
     {
       "name": "Data Collecting",
-      "tag": "Support",
+      "maxLevel": 15,
+      "element": "",
       "type": "Talent",
-      "desc": "If the enemy is <u>debuffed</u> after Pela's attack, Pela will restore <color=#f29e38ff><unbreak>#1[f1]</unbreak></color> extra Energy. This effect can only be triggered 1 time per attack.",
+      "typeText": "Talent",
+      "effect": "Support",
+      "simpleDescription": "After using an attack, if the enemy target is currently inflicted with debuff(s), Pela regenerates Energy.",
+      "description": "If the enemy is debuffed after Pela's attack, Pela will restore #1[f1] additional Energy. This effect can only be triggered 1 time per attack.",
       "params": [
-        [ 5 ],
-        [ 5.5 ],
-        [ 6 ],
-        [ 6.5 ],
-        [ 7 ],
-        [ 7.5 ],
-        [ 8.125 ],
-        [ 8.75 ],
-        [ 9.375 ],
-        [ 10 ],
-        [ 10.5 ],
-        [ 11 ],
-        [ 11.5 ],
-        [ 12 ],
-        [ 12.5 ]
-      ]
+        [5],
+        [5.5],
+        [6],
+        [6.5],
+        [7],
+        [7.5],
+        [8.125],
+        [8.75],
+        [9.375],
+        [10],
+        [10.5],
+        [11],
+        [11.5],
+        [12],
+        [12.5]
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_Passive.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Ice",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "/icon/skill/SkillIcon_1106_Normal.png"
     },
     {
       "name": "Preemptive Strike",
-      "type": "Technique",
-      "desc": "Immediately attacks the enemy. Upon entering battle, Pela deals Ice DMG equal to <unbreak>#4[i]%</unbreak> of her ATK to a random enemy, with a <unbreak>#1[i]%</unbreak> <u>base chance</u> of lowering the DEF of all enemies by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
-      "params": [
-        [ 1, 0.2, 2, 0.8 ]
-      ],
-      "toughness": {
-        "All": 60
-      }
+      "maxLevel": 1,
+      "element": "Ice",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "MazeAttack",
+      "simpleDescription": "Attacks the enemy. After entering battle, deals minor DMG to a random single enemy, with a high chance of lowering the DEF of all enemy targets.",
+      "description": "Immediately attacks the enemy. Upon entering battle, Pela deals Ice DMG equal to #4[i]% of her ATK to a random enemy, with a #1[i]% base chance of lowering the DEF of all enemies by #2[i]% for #3[i] turn(s).",
+      "params": [[1, 0.2, 2, 0.8]],
+      "icon": "/icon/skill/SkillIcon_1106_Maze.png"
     }
   ],
   "eidolons": [
     {
       "name": "Victory Report",
-      "desc": "When Pela defeats an enemy, Pela regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "params": [ 5 ]
+      "rank": 1,
+      "desc": "When an enemy is defeated, Pela regenerates 5 Energy.",
+      "materials": [
+        {
+          "id": "11106",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_Rank1.png"
     },
     {
       "name": "Adamant Charge",
-      "desc": "Using Skill to remove buff(s) increases SPD by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "params": [ 0.1, 2, 1 ]
+      "rank": 2,
+      "desc": "Using Skill to remove buff(s) increases SPD by 10% for 2 turn(s).",
+      "materials": [
+        {
+          "id": "11106",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_Rank2.png"
     },
     {
       "name": "Suppressive Force",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11106",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_BP.png"
     },
     {
       "name": "Full Analysis",
-      "desc": "When using Skill, there is a <unbreak>#1[i]%</unbreak> base chance to reduce the target enemy's Ice RES by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
-      "params": [ 1, 0.12, 2 ]
+      "rank": 4,
+      "desc": "When Skill is used, there is a 100% base chance to reduce the target enemy's Ice RES by 12% for 2 turn(s).",
+      "materials": [
+        {
+          "id": "11106",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_Rank4.png"
     },
     {
       "name": "Absolute Jeopardy",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11106",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_Ultra_on.png"
     },
     {
       "name": "Feeble Pursuit",
-      "desc": "When Pela attacks a debuffed enemy, she deals Additional Ice DMG equal to <unbreak>#1[i]%</unbreak> of Pela's ATK to the enemy.",
-      "params": [ 0.4 ]
+      "rank": 6,
+      "desc": "When Pela attacks a debuffed enemy, she deals Additional Ice DMG equal to 40% of Pela's ATK to the enemy.",
+      "materials": [
+        {
+          "id": "11106",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_Rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1106101,
+      "id": "1106101",
       "name": "Bash",
-      "desc": "Deals <unbreak>#1[i]%</unbreak> more DMG to debuffed enemies.",
-      "icon": "SkillIcon_1106_SkillTree1.png",
-      "params": [ 0.2 ],
+      "maxLevel": 1,
+      "description": "Deals #1[i]% more DMG to debuffed enemies.",
+      "params": [[0.2]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110151",
+              "num": 2
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_SkillTree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1106202,
+          "id": "1106202",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110151",
+                  "num": 2
+                },
+                {
+                  "id": "111001",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1106203,
+              "id": "1106203",
               "name": "DMG Boost: Ice",
-              "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconIceAddedRatio.png",
-              "params": [ 0.032 ],
+              "maxLevel": 1,
+              "description": "Ice DMG Boost increases by 3.2%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "IceAddedRatio",
+                      "value": 0.032
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110152",
+                      "num": 2
+                    },
+                    {
+                      "id": "111002",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconIceAddedRatio.png",
+              "major": false,
               "minAsc": 3,
               "children": [
                 {
-                  "id": 1106204,
+                  "id": "1106204",
                   "name": "Effect Hit Rate Boost",
-                  "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconStatusProbability.png",
-                  "params": [ 0.04 ],
+                  "maxLevel": 1,
+                  "description": "Effect Hit Rate increases by 4.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "StatusProbabilityBase",
+                          "value": 0.04
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 8000
+                        },
+                        {
+                          "id": "110152",
+                          "num": 2
+                        },
+                        {
+                          "id": "111002",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "/icon/property/IconStatusProbability.png",
+                  "major": false,
                   "minAsc": 3
                 }
               ]
@@ -294,35 +348,142 @@
       ]
     },
     {
-      "id": 1106102,
+      "id": "1106102",
       "name": "The Secret Strategy",
-      "desc": "When Pela is on the battlefield, all allies' Effect Hit Rate increases by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1106_SkillTree2.png",
-      "params": [ 0.1 ],
+      "maxLevel": 1,
+      "description": "When Pela is on the battlefield, all allies' Effect Hit Rate increases by #1[i]%.",
+      "params": [[0.1]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110152",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_SkillTree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1106205,
+          "id": "1106205",
           "name": "DMG Boost: Ice",
-          "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconIceAddedRatio.png",
-          "params": [ 0.048 ],
+          "maxLevel": 1,
+          "description": "Ice DMG Boost increases by 4.8%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "IceAddedRatio",
+                  "value": 0.048
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110152",
+                  "num": 4
+                },
+                {
+                  "id": "111002",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconIceAddedRatio.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1106206,
+              "id": "1106206",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110153",
+                      "num": 2
+                    },
+                    {
+                      "id": "111003",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 5,
               "children": [
                 {
-                  "id": 1106207,
+                  "id": "1106207",
                   "name": "DMG Boost: Ice",
-                  "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-                  "icon": "IconIceAddedRatio.png",
-                  "params": [ 0.048 ],
+                  "maxLevel": 1,
+                  "description": "Ice DMG Boost increases by 4.8%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "IceAddedRatio",
+                          "value": 0.048
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 36000
+                        },
+                        {
+                          "id": "110153",
+                          "num": 2
+                        },
+                        {
+                          "id": "111003",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "/icon/property/IconIceAddedRatio.png",
+                  "major": false,
                   "minAsc": 5
                 }
               ]
@@ -332,48 +493,392 @@
       ]
     },
     {
-      "id": 1106103,
+      "id": "1106103",
       "name": "Wipe Out",
-      "desc": "Using Skill to remove buff(s) increases the DMG of the next attack by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1106_SkillTree3.png",
-      "params": [ 0.2 ],
+      "maxLevel": 1,
+      "description": "Using Skill to remove buff(s) increases the DMG of the next attack by #1[i]%.",
+      "params": [[0.2]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110153",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1106_SkillTree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1106208,
+          "id": "1106208",
           "name": "Effect Hit Rate Boost",
-          "desc": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconStatusProbability.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "111003",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconStatusProbability.png",
+          "major": false,
           "minAsc": 6
         },
         {
-          "id": 1106209,
+          "id": "1106209",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.08 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "111003",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
+          "minAsc": 0,
           "minLevel": 75
         }
       ]
     },
     {
-      "id": 1106201,
+      "id": "1106201",
       "name": "DMG Boost: Ice",
-      "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconIceAddedRatio.png",
-      "params": [ 0.032 ],
+      "maxLevel": 1,
+      "description": "Ice DMG Boost increases by 3.2%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "IceAddedRatio",
+              "value": 0.032
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "111001",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconIceAddedRatio.png",
+      "major": false,
+      "minAsc": 0,
       "children": [
         {
-          "id": 1106210,
+          "id": "1106210",
           "name": "DMG Boost: Ice",
-          "desc": "Ice DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconIceAddedRatio.png",
-          "params": [ 0.064 ],
+          "maxLevel": 1,
+          "description": "Ice DMG Boost increases by 6.4%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "IceAddedRatio",
+                  "value": 0.064
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "111003",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconIceAddedRatio.png",
+          "major": false,
+          "minAsc": 0,
           "minLevel": 80
         }
       ]
     }
   ],
-  "description": "A secretarial officer for the Silvermane Guards.\nShe has a serious personality and is revered by other members of the Silvermane Guards."
+  "stats": [
+    {
+      "health": {
+        "base": 134.4,
+        "step": 6.72
+      },
+      "attack": {
+        "base": 74.4,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 63,
+        "step": 3.15
+      },
+      "speed": {
+        "base": 105,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 188.16,
+        "step": 6.72
+      },
+      "attack": {
+        "base": 104.16,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 88.2,
+        "step": 3.15
+      },
+      "speed": {
+        "base": 105,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 241.92,
+        "step": 6.72
+      },
+      "attack": {
+        "base": 133.92,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 113.4,
+        "step": 3.15
+      },
+      "speed": {
+        "base": 105,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 295.68,
+        "step": 6.72
+      },
+      "attack": {
+        "base": 163.68,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 138.6,
+        "step": 3.15
+      },
+      "speed": {
+        "base": 105,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 349.44,
+        "step": 6.72
+      },
+      "attack": {
+        "base": 193.44,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 163.8,
+        "step": 3.15
+      },
+      "speed": {
+        "base": 105,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 403.2,
+        "step": 6.72
+      },
+      "attack": {
+        "base": 223.2,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 189,
+        "step": 3.15
+      },
+      "speed": {
+        "base": 105,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 456.96,
+        "step": 6.72
+      },
+      "attack": {
+        "base": 252.96,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 214.2,
+        "step": 3.15
+      },
+      "speed": {
+        "base": 105,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

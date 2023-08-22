@@ -1,0 +1,884 @@
+{
+  "id": "1006",
+  "name": "Silver Wolf",
+  "description": "A member of the Stellaron Hunters and a genius hacker.\\nShe sees the universe as a big immersive simulation game and has fun with it.\\nShe's mastered the skill known as \"aether editing,\" which can be used to tamper with the data of reality.",
+  "element": "Quantum",
+  "path": "Nihility",
+  "rarity": 5,
+  "maxSkillPoints": 110,
+  "icon": "icon/character/1006.png",
+  "preview": "/image/character_preview/1006.png",
+  "portrait": "/image/character_portrait/1006.png",
+  "skills": [
+    {
+      "name": "System Warning",
+      "maxLevel": 9,
+      "element": "Quantum",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Quantum DMG to a single enemy.",
+      "description": "Deals Quantum DMG equal to #1[i]% of Silver Wolf's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "/icon/skill/SkillIcon_1006_Normal.png"
+    },
+    {
+      "name": "Allow Changes?",
+      "maxLevel": 15,
+      "element": "Quantum",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "Impair",
+      "simpleDescription": "There is a high chance to apply additional Type Weaknesses to a single enemy and deals Quantum DMG to this target enemy.",
+      "description": "There is a #2[i]% base chance to add 1 Weakness of an on-field character's Type to the target enemy. This also reduces the enemy's DMG RES to that Weakness Type by #4[i]% for #3[i] turn(s). If the enemy already has that Type Weakness, the effect of DMG RES reduction to that Weakness Type will not be triggered.\nEach enemy can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be kept.\nIn addition, there is a #5[i]% base chance to further reduce the All-Type RES of the enemy by #6[f1]% for #7[i] turn(s).\nDeals Quantum DMG equal to #1[i]% of Silver Wolf's ATK to this enemy.",
+      "params": [
+        [0.98, 0.75, 2, 0.2, 1, 0.075, 2],
+        [1.078, 0.76, 2, 0.2, 1, 0.0775, 2],
+        [1.176, 0.77, 2, 0.2, 1, 0.08, 2],
+        [1.274, 0.78, 2, 0.2, 1, 0.0825, 2],
+        [1.372, 0.79, 2, 0.2, 1, 0.085, 2],
+        [1.47, 0.8, 2, 0.2, 1, 0.0875, 2],
+        [1.5925, 0.8125, 2, 0.2, 1, 0.0906, 2],
+        [1.715, 0.825, 2, 0.2, 1, 0.0938, 2],
+        [1.8375, 0.8375, 2, 0.2, 1, 0.0969, 2],
+        [1.96, 0.85, 2, 0.2, 1, 0.1, 2],
+        [2.058, 0.86, 2, 0.2, 1, 0.1025, 2],
+        [2.156, 0.87, 2, 0.2, 1, 0.105, 2],
+        [2.254, 0.88, 2, 0.2, 1, 0.1075, 2],
+        [2.352, 0.89, 2, 0.2, 1, 0.11, 2],
+        [2.45, 0.9, 2, 0.2, 1, 0.1125, 2]
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_BP.png"
+    },
+    {
+      "name": "User Banned",
+      "maxLevel": 15,
+      "element": "Quantum",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "Impair",
+      "simpleDescription": "Has a high chance of lowering a single enemy's DEF and deals massive Quantum DMG to this target enemy.",
+      "description": "There's a #2[i]% base chance to decrease the target enemy's DEF by #3[f1]% for #4[i] turn(s). And at the same time, deals Quantum DMG equal to #1[i]% of Silver Wolf's ATK to the target enemy.",
+      "params": [
+        [2.28, 0.85, 0.36, 3],
+        [2.432, 0.865, 0.369, 3],
+        [2.584, 0.88, 0.378, 3],
+        [2.736, 0.895, 0.387, 3],
+        [2.888, 0.91, 0.396, 3],
+        [3.04, 0.925, 0.405, 3],
+        [3.23, 0.9438, 0.4163, 3],
+        [3.42, 0.9625, 0.4275, 3],
+        [3.61, 0.9813, 0.4388, 3],
+        [3.8, 1, 0.45, 3],
+        [3.952, 1.015, 0.459, 3],
+        [4.104, 1.03, 0.468, 3],
+        [4.256, 1.045, 0.477, 3],
+        [4.408, 1.06, 0.486, 3],
+        [4.56, 1.075, 0.495, 3]
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_Ultra_on.png"
+    },
+    {
+      "name": "Awaiting System Response...",
+      "maxLevel": 15,
+      "element": "",
+      "type": "Talent",
+      "typeText": "Talent",
+      "effect": "Impair",
+      "simpleDescription": "After each attack, there is a chance of inflicting the attacked enemy with 1 random Bug.",
+      "description": "Silver Wolf can create three types of Bugs: reduce ATK by #1[f1]%, reduce DEF by #2[f1]%, and reduce SPD by #3[f1]%.\nEvery time Silver Wolf attacks, she has a #4[i]% base chance to implant a random Bug that lasts for #5[i] turn(s) in an enemy target.",
+      "params": [
+        [0.05, 0.04, 0.03, 0.6, 3],
+        [0.055, 0.044, 0.033, 0.612, 3],
+        [0.06, 0.048, 0.036, 0.624, 3],
+        [0.065, 0.052, 0.039, 0.636, 3],
+        [0.07, 0.056, 0.042, 0.648, 3],
+        [0.075, 0.06, 0.045, 0.66, 3],
+        [0.0813, 0.065, 0.0488, 0.675, 3],
+        [0.0875, 0.07, 0.0525, 0.69, 3],
+        [0.0938, 0.075, 0.0563, 0.705, 3],
+        [0.1, 0.08, 0.06, 0.72, 3],
+        [0.105, 0.084, 0.063, 0.732, 3],
+        [0.11, 0.088, 0.066, 0.744, 3],
+        [0.115, 0.092, 0.069, 0.756, 3],
+        [0.12, 0.096, 0.072, 0.768, 3],
+        [0.125, 0.1, 0.075, 0.78, 3]
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_Passive.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Quantum",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "/icon/skill/SkillIcon_1006_Normal.png"
+    },
+    {
+      "name": "Force Quit Program",
+      "maxLevel": 1,
+      "element": "Quantum",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "MazeAttack",
+      "simpleDescription": "Attacks the enemy. After entering battle, deals minor amounts of DMG to all enemies and reduces Toughness of all enemies irrespective of Weakness Types.",
+      "description": "Immediately attacks the enemy. After entering battle, deals Quantum DMG equal to #1[i]% of Silver Wolf's ATK to all enemies, and ignores Weakness Types and reduces Toughness from all enemies. Enemies with their Weakness Broken in this way will trigger the Quantum Weakness Break effect.",
+      "params": [[0.8]],
+      "icon": "/icon/skill/SkillIcon_1006_Maze.png"
+    }
+  ],
+  "eidolons": [
+    {
+      "name": "Social Engineering",
+      "rank": 1,
+      "desc": "After using her Ultimate to attack enemies, Silver Wolf regenerates 7 Energy for every debuff that the target enemy currently has. This effect can be triggered up to 5 time(s) in each use of her Ultimate.",
+      "materials": [
+        {
+          "id": "11006",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_Rank1.png"
+    },
+    {
+      "name": "Zombie Network",
+      "rank": 2,
+      "desc": "When an enemy enters battle, reduces their Effect RES by 20%.",
+      "materials": [
+        {
+          "id": "11006",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_Rank2.png"
+    },
+    {
+      "name": "Payload",
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11006",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_BP.png"
+    },
+    {
+      "name": "Bounce Attack",
+      "rank": 4,
+      "desc": "After using her Ultimate to attack enemies, deals Additional Quantum DMG equal to 20% of Silver Wolf's ATK for every debuff currently on the enemy target. This effect can be triggered for a maximum of 5 time(s) during each use of her Ultimate.",
+      "materials": [
+        {
+          "id": "11006",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_Rank4.png"
+    },
+    {
+      "name": "Brute Force Attack",
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11006",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_Ultra_on.png"
+    },
+    {
+      "name": "Overlay Network",
+      "rank": 6,
+      "desc": "For every debuff the target enemy has, the DMG dealt by Silver Wolf increases by 20%, up to a limit of 100%.",
+      "materials": [
+        {
+          "id": "11006",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_Rank6.png"
+    }
+  ],
+  "traces": [
+    {
+      "id": "1006101",
+      "name": "Generate",
+      "maxLevel": 1,
+      "description": "Bug's duration is extended for #1[i] turn(s). Every time an enemy is inflicted with Weakness Break, Silver Wolf has a #2[i]% base chance of implanting a random Bug in the enemy.",
+      "params": [[1, 0.65]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 5000
+            },
+            {
+              "id": "110151",
+              "num": 3
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_SkillTree1.png",
+      "major": true,
+      "minAsc": 2,
+      "children": [
+        {
+          "id": "1006202",
+          "name": "Effect Hit Rate Boost",
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 5000
+                },
+                {
+                  "id": "110151",
+                  "num": 3
+                },
+                {
+                  "id": "112011",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconStatusProbability.png",
+          "major": false,
+          "minAsc": 2,
+          "children": [
+            {
+              "id": "1006203",
+              "name": "ATK Boost",
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 10000
+                    },
+                    {
+                      "id": "110152",
+                      "num": 3
+                    },
+                    {
+                      "id": "112012",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
+              "minAsc": 3,
+              "children": [
+                {
+                  "id": "1006204",
+                  "name": "DMG Boost: Quantum",
+                  "maxLevel": 1,
+                  "description": "Quantum DMG Boost increases by 3.2%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "QuantumAddedRatio",
+                          "value": 0.032
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 10000
+                        },
+                        {
+                          "id": "110152",
+                          "num": 3
+                        },
+                        {
+                          "id": "112012",
+                          "num": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "/icon/property/IconQuantumAddedRatio.png",
+                  "major": false,
+                  "minAsc": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1006102",
+      "name": "Inject",
+      "maxLevel": 1,
+      "description": "The duration of the Weakness implanted by Silver Wolf's Skill increases by #1[i] turn(s).",
+      "params": [[1]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 20000
+            },
+            {
+              "id": "110152",
+              "num": 5
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_SkillTree2.png",
+      "major": true,
+      "minAsc": 4,
+      "children": [
+        {
+          "id": "1006205",
+          "name": "ATK Boost",
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 20000
+                },
+                {
+                  "id": "110152",
+                  "num": 5
+                },
+                {
+                  "id": "112012",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
+          "minAsc": 4,
+          "children": [
+            {
+              "id": "1006206",
+              "name": "Effect Hit Rate Boost",
+              "maxLevel": 1,
+              "description": "Effect Hit Rate increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "StatusProbabilityBase",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 45000
+                    },
+                    {
+                      "id": "110153",
+                      "num": 3
+                    },
+                    {
+                      "id": "112013",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconStatusProbability.png",
+              "major": false,
+              "minAsc": 5,
+              "children": [
+                {
+                  "id": "1006207",
+                  "name": "ATK Boost",
+                  "maxLevel": 1,
+                  "description": "ATK increases by 6.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "AttackAddedRatio",
+                          "value": 0.06
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 45000
+                        },
+                        {
+                          "id": "110153",
+                          "num": 3
+                        },
+                        {
+                          "id": "112013",
+                          "num": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "/icon/property/IconAttack.png",
+                  "major": false,
+                  "minAsc": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1006103",
+      "name": "Side Note",
+      "maxLevel": 1,
+      "description": "If there are #1[i] or more debuff(s) affecting the enemy when the Skill is used, then the Skill decreases the enemy's All-Type RES by an additional #2[i]%.",
+      "params": [[3, 0.03]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110153",
+              "num": 8
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1006_SkillTree3.png",
+      "major": true,
+      "minAsc": 6,
+      "children": [
+        {
+          "id": "1006208",
+          "name": "DMG Boost: Quantum",
+          "maxLevel": 1,
+          "description": "Quantum DMG Boost increases by 4.8%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "QuantumAddedRatio",
+                  "value": 0.048
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110153",
+                  "num": 8
+                },
+                {
+                  "id": "112013",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconQuantumAddedRatio.png",
+          "major": false,
+          "minAsc": 6
+        },
+        {
+          "id": "1006209",
+          "name": "Effect Hit Rate Boost",
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110153",
+                  "num": 8
+                },
+                {
+                  "id": "112013",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconStatusProbability.png",
+          "major": false,
+          "minAsc": 0,
+          "minLevel": 75
+        }
+      ]
+    },
+    {
+      "id": "1006201",
+      "name": "ATK Boost",
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2500
+            },
+            {
+              "id": "112011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0,
+      "children": [
+        {
+          "id": "1006210",
+          "name": "ATK Boost",
+          "maxLevel": 1,
+          "description": "ATK increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110153",
+                  "num": 8
+                },
+                {
+                  "id": "112013",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
+          "minAsc": 0,
+          "minLevel": 80
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "health": {
+        "base": 142.56,
+        "step": 7.128
+      },
+      "attack": {
+        "base": 87.12,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 62.7,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 199.584,
+        "step": 7.128
+      },
+      "attack": {
+        "base": 121.968,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 87.78,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 256.608,
+        "step": 7.128
+      },
+      "attack": {
+        "base": 156.816,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 112.86,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 313.632,
+        "step": 7.128
+      },
+      "attack": {
+        "base": 191.664,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 137.94,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 370.656,
+        "step": 7.128
+      },
+      "attack": {
+        "base": 226.512,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 163.02,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 427.68,
+        "step": 7.128
+      },
+      "attack": {
+        "base": 261.36,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 188.1,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 484.704,
+        "step": 7.128
+      },
+      "attack": {
+        "base": 296.208,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 213.18,
+        "step": 3.135
+      },
+      "speed": {
+        "base": 107,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+---
+layout: "layouts/Guide.astro"
+title: "Kafka Quick Guide"
+hero: "/kafka-quick-guide/Kafka.png"
+pubDate: "2023 08 13"
+authors:
+  - Cyn
+  - Monochrome9
+  - nyte
+  - Reens
+  - skylarke
+  - Sushou
+---
+
+import PriorityTable from "../../components/mdx/PriorityTable.astro";
+import PriorityItem from "../../components/mdx/PriorityItem.astro";
+import CharacterInfo from "../../components/mdx/CharacterInfo.astro";
+import Info from "../../components/mdx/Info.astro";
+export { components } from "../../components/mdx/Styles.tsx";
+
+# Kafka Quick Guide
+
+![Kafka](/kafka-quick-guide/Kafka.png)
+
+## Initial Thoughts
+
+Kafka is a 5★ character available exclusively from the Nessun Dorma Warp in Honkai: Star Rail. She is a Lightning damage dealer belonging to the Nihility Path. Kafka is the premier Damage over Time (DoT) character bringing both exceptional personal damage as well as the ability to amplify the damage of other DoT characters. With her powerful Area of Effect (AoE) damage output and explosive detonations of DoT effects, Kafka makes for a well-rounded damage dealer who can lead teams to victory.
+
+As a character whose mechanics focus on triggering DoTs, she has unique playstyles, synergies and stat requirements that we’ll cover below.
+
+## Mechanics
+
+Kafka’s kit revolves around her unique ability to trigger DoT effects on her own turn without reducing their duration, granting all Damage over Time effects additional damage output and removing their reliance on enemies taking turns. The more often Kafka can act, the more often she can force DoT effects to trigger.
+
+This makes Kafka unique in that a portion of her damage can be derived from the stats of other characters, allowing her to scale with both her own stats and kit, as well as all current and future sources of DoT. Bear in mind that this also means if you are choosing to pair Kafka with other DoT characters, these characters must also be very well invested to see good damage returns.
+
+### Kit Breakdown
+
+Kafka’s Skill and Ultimate are what forcibly trigger DoT effects. Her Ultimate detonates DoT effects at a higher percentage of the original DoT when compared to her Skill, but this requires her A2 Bonus Trace to be able to detonate all DoT effects instead of just Shock.
+
+While Kafka’s Skill is only capable of detonating existing DoT effects, her Ultimate is the source of her own personal DoT, inflicting Shock onto all enemies and then immediately triggering the DoT effect once. Because of the immediate DoT proc, Kafka does not need to set up her personal Shock beforehand to maximize the effectiveness of her Ultimate.
+
+Kafka’s Talent is a follow-up attack that is triggered by ally Basic ATKs, and it will inflict her Ultimate’s Shock DoT onto the enemy hit by the follow-up attack. This allows Kafka to easily prime enemies to take high damage from her Skill without being overly reliant on her Ultimate for set up. Because the follow-up attack has a one-turn cooldown (based on Kafka’s turns), it is relatively easy to apply Shock onto multiple enemies and then keep it going, provided you meet the criteria for activation.
+
+Kafka’s Technique is a way to begin an encounter with her Ultimate’s Shock DoT already applied onto all enemies, thus reducing Kafka’s ramp-up time.
+
+Due to these interactions, Kafka’s Ultimate is the most important aspect of her kit, since its DoT can be applied through multiple means and is the main source of damage that will be triggered via her Skill and the Ultimate itself.
+
+### Traces
+
+<CharacterInfo char="Kafka">
+  <Info id="basic">
+    If you’re using this, it typically means that you’ve done something wrong.
+  </Info>
+  <Info id="skill">
+    Any DoTs that are detonated by Kafka’s skill but don’t belong to her, such
+    as Sampo’s Wind Shear, will still scale off of the character with DoT
+    ownership. Second highest priority after Ultimate, as this is Kafka’s most
+    used ability.
+  </Info>
+  <Info id="ultimate">
+    Like her Skill, DoT damage depends on the stats of the DoT effect’s owner.
+    Highest priority to level, as Kafka’s Shock DoT scales off of Ultimate’s
+    Trace Level.<br></br>This also affects her Talent and Technique, since both of
+    those inflict the Ultimate’s DoT onto enemies.
+  </Info>
+  <Info id="talent">
+    The value of the DoT effect inflicted by this skill is dependent on the
+    current Ultimate Trace Level.
+  </Info>
+  <Info id="technique">
+    Applies Ultimate’s Shock DoT to all enemies and deals improved Toughness
+    damage. Can be used for a slightly faster ramp-up, but often is not as
+    powerful as other techniques to engage.
+  </Info>
+  <Info id="a2">
+    Allows Kafka to detonate DoT effects from other units, not just her own
+    Shocks.<br></br>Invaluable if using DoT inflicting characters with Kafka.
+  </Info>
+  <Info id="a4">
+    Can offer potentially significant Energy gains but only in situations with
+    lots of weaker enemies or summons.
+  </Info>
+  <Info id="a6">
+    Substantially reduces Kafka’s need for EHR stats, outside of E1, reducing
+    her recommended EHR total to about 28.3%. Since Kafka gains 18% from Minor
+    Traces, you only need about 10% from substats in total (about 2-3 subs
+    worth) or other outside sources.
+  </Info>
+</CharacterInfo>
+
+### Trace Priority
+
+#### Ability Level Priority
+
+<PriorityTable char="Kafka">
+  <PriorityItem type="Ultimate" />
+  <PriorityItem type="Skill" />
+  <PriorityItem type="Talent" />
+  <PriorityItem type="Basic" />
+</PriorityTable>
+
+Both Kafka’s Ultimate and Skill offer great damage, but her Talent’s follow-up attack inflicts the same DoT as her Ultimate, meaning her Ultimate is the top priority to level.
+
+#### Bonus Ability Priority
+
+<PriorityTable char="Kafka">
+  <PriorityItem type="A2" />
+  <PriorityItem type="A6" />
+  <PriorityItem type="A4" />
+</PriorityTable>
+
+A2 will generally be the highest priority Bonus Ability to unlock, unless you are playing Kafka without any other DoT characters.
+
+### Eidolons
+
+Replace this with a tabbedpage component
+![Placeholder](https://i.imgur.com/SGV5zi1.jpg)
+
+## Playstyle
+
+Kafka always wants to use her Skill every turn. You should aim to apply DoT to enemies before using the Skill.
+
+One way to apply DoT to the enemy is by using an ally Basic ATK to activate Kafka’s Talent, though this relies on the ally being faster than Kafka. Other methods include using ally Abilities that can apply DoT or using Kafka’s Ultimate to apply Shock. Since Kafka’s Ultimate also detonates the Shock as it’s applied, this is a very efficient setup.
+
+Kafka’s Technique can also be used to apply Shock at the start of an encounter, giving her a head start in applying DoT to all enemies.
+
+Kafka’s Ultimate can generally be used as soon as it is available, though there may be situations where you want to hold onto it for a bit to gain more out of it, such as by waiting for teammates to apply their own DoT effects onto enemies for a larger detonation, waiting for Kafka to get buffed by a support, or debuffing enemies prior to using her Ultimate.
+
+### Relics
+
+#### Relic Sets
+
+![Placeholder](https://i.imgur.com/VdKOzup.jpg)
+
+#### Planar Ornaments
+
+![Placeholder](https://i.imgur.com/E00Xvq4.jpg)
+
+### Light Cones
+
+![Placeholder](https://i.imgur.com/pmQutWQ.jpg)
+
+### Stats
+
+![Placeholder](https://i.imgur.com/DD54dXm.jpg)
+
+##### EHR
+
+Prioritize getting to 28.3% total Effect Hit Rate before going for other substats. This 28% EHR does not have to be exclusively achieved through substats since it can also be acquired through Kafka’s Traces or external factors such as Pela’s A4 Bonus Ability.
+
+##### SPD and ATK
+
+You should prioritize SPD substats as this will have the most significant bearing on Kafka’s ability to deal damage, regardless of which team composition you go for. More SPD is better, so long as you are able to keep up with the increasing SP costs associated with going faster. More ATK is never a bad thing, though this has a lower priority compared to SPD and EHR.
+
+##### Break Effect
+
+Break Effect% is a stat that Kafka can potentially make good use of against Lightning weak foes to improve the damage of the DoT from Weakness Break, especially since her Ultimate and Skill are capable of detonating the Break DoT. However, this is oftentimes an unreliable overall damage increase, since it relies entirely on Kafka being the one to Break the enemy which is not always possible. It is also completely useless against enemies that are not weak to Lightning. As such, Break Effect% is better used on other characters while Kafka focuses on SPD and ATK%.
+
+One thing to keep in mind is that building Break Effect% is only an effective strategy when built on a single character of a team, since an enemy can only be Weakness Broken by one character at a time.
+
+One thing to keep in mind is that building Break Effect% is only an effective strategy when built on a single character of a team, since an enemy can only be Weakness Broken by one character at a time.
+
+<div
+  class="flex justify-center p-5 m-5"
+  style=" background-position:50% 50%;background-image:url(https://hsr.keqingmains.com/wp-content/uploads/2023/08/408001-1.webp)"
+>
+  <span class="header">Do NOT Build CRIT.</span>
+</div>
+
+DoT cannot crit and Kafka’s DoT detonation effect similarly cannot crit, leaving her CRIT-scaling multipliers which are nothing short of **abysmal**. The CRIT-scaling hit of her Ultimate has an 80% multiplier per enemy at Trace level 10, **which is even less than her Basic ATK**. In comparison, her DoT damage from Shock (which is completely incapable of hitting crits) is 290% of her ATK at the same level.
+
+Building for CRIT will pull far more valuable substats away from the strongest part of Kafka’s kit. Again, this is dreadful. If you get CRIT substats by chance, that’s just unlucky, but no matter how good that CRIT may seem, don’t get baited. Invest in Kafka DoT stocks instead.
+
+### Notable Synergies
+
+Kafka has a unique set of synergies due to her reliance on DoT in terms of both her secondary Damage dealer options and the support buff and debuff options. Characters that can apply DoTs have a natural synergy with Kafka’s detonation effect, but characters that can enhance Kafka’s own DoT or that are able to debuff enemies are also very potent.
+
+![Placeholder](https://i.imgur.com/AJAIH2g.jpg)
+
+### Notable Anti-synergies
+
+![Placeholder](https://i.imgur.com/tjfMGwe.jpg)
+
+# Rest of content
+
+I was too lazy, here is another miku
+
+![Placeholder](https://i.imgur.com/1VOXMdS.jpg)

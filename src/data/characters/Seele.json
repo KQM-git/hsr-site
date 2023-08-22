@@ -1,280 +1,309 @@
 {
+  "id": "1102",
   "name": "Seele",
+  "description": "A resident of the Underworld and the backbone of Wildfire. She goes by the alias \"Babochka.\"\\nShe has a frank personality, but there is a delicate and sensitive hidden side to her deep in her heart.",
   "element": "Quantum",
   "path": "The Hunt",
   "rarity": 5,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 87.12,
-      "attackAdd": 4.356,
-      "hpBase": 126.72,
-      "hpAdd": 6.336,
-      "defenseBase": 49.5,
-      "defenseAdd": 2.475,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 115,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 121.968,
-      "attackAdd": 4.356,
-      "hpBase": 177.408,
-      "hpAdd": 6.336,
-      "defenseBase": 69.3,
-      "defenseAdd": 2.475,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 115,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 156.816,
-      "attackAdd": 4.356,
-      "hpBase": 228.096,
-      "hpAdd": 6.336,
-      "defenseBase": 89.1,
-      "defenseAdd": 2.475,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 115,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 191.664,
-      "attackAdd": 4.356,
-      "hpBase": 278.784,
-      "hpAdd": 6.336,
-      "defenseBase": 108.9,
-      "defenseAdd": 2.475,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 115,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 226.512,
-      "attackAdd": 4.356,
-      "hpBase": 329.472,
-      "hpAdd": 6.336,
-      "defenseBase": 128.7,
-      "defenseAdd": 2.475,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 115,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 261.36,
-      "attackAdd": 4.356,
-      "hpBase": 380.16,
-      "hpAdd": 6.336,
-      "defenseBase": 148.5,
-      "defenseAdd": 2.475,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 115,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 296.208,
-      "attackAdd": 4.356,
-      "hpBase": 430.848,
-      "hpAdd": 6.336,
-      "defenseBase": 168.3,
-      "defenseAdd": 2.475,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 115,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 120,
+  "icon": "icon/character/1102.png",
+  "preview": "/image/character_preview/1102.png",
+  "portrait": "/image/character_portrait/1102.png",
   "skills": [
     {
       "name": "Thwack",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Seele's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Quantum",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Quantum DMG to a single enemy.",
+      "description": "Deals Quantum DMG equal to #1[i]% of Seele's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "/icon/skill/SkillIcon_1102_Normal.png"
     },
     {
       "name": "Sheathed Blade",
-      "tag": "Single Target",
-      "type": "Skill",
-      "desc": "Increases Seele's SPD by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s) and deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Seele's ATK to a single enemy.",
+      "maxLevel": 15,
+      "element": "Quantum",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals Quantum DMG to a single enemy and increases SPD.",
+      "description": "Increases Seele's SPD by #2[i]% for #3[i] turn(s) and deals Quantum DMG equal to #1[i]% of Seele's ATK to a single enemy.",
       "params": [
-        [ 1.1, 0.25, 2 ],
-        [ 1.21, 0.25, 2 ],
-        [ 1.32, 0.25, 2 ],
-        [ 1.43, 0.25, 2 ],
-        [ 1.54, 0.25, 2 ],
-        [ 1.65, 0.25, 2 ],
-        [ 1.7875, 0.25, 2 ],
-        [ 1.925, 0.25, 2 ],
-        [ 2.0625, 0.25, 2 ],
-        [ 2.2, 0.25, 2 ],
-        [ 2.31, 0.25, 2 ],
-        [ 2.42, 0.25, 2 ],
-        [ 2.53, 0.25, 2 ],
-        [ 2.64, 0.25, 2 ],
-        [ 2.75, 0.25, 2 ]
+        [1.1, 0.25, 2],
+        [1.21, 0.25, 2],
+        [1.32, 0.25, 2],
+        [1.43, 0.25, 2],
+        [1.54, 0.25, 2],
+        [1.65, 0.25, 2],
+        [1.7875, 0.25, 2],
+        [1.925, 0.25, 2],
+        [2.0625, 0.25, 2],
+        [2.2, 0.25, 2],
+        [2.31, 0.25, 2],
+        [2.42, 0.25, 2],
+        [2.53, 0.25, 2],
+        [2.64, 0.25, 2],
+        [2.75, 0.25, 2]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60
-      }
+      "icon": "/icon/skill/SkillIcon_1102_BP.png"
     },
     {
       "name": "Butterfly Flurry",
-      "tag": "Single Target",
-      "type": "Ultimate",
-      "desc": "Seele enters the buffed state and deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to a single enemy.",
+      "maxLevel": 15,
+      "element": "Quantum",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "SingleAttack",
+      "simpleDescription": "Enters the buffed state and deals massive Quantum DMG to a single enemy.",
+      "description": "Seele enters the buffed state and deals Quantum DMG equal to #1[i]% of her ATK to a single enemy.",
       "params": [
-        [ 2.55 ],
-        [ 2.72 ],
-        [ 2.89 ],
-        [ 3.06 ],
-        [ 3.23 ],
-        [ 3.4 ],
-        [ 3.6125 ],
-        [ 3.825 ],
-        [ 4.0375 ],
-        [ 4.25 ],
-        [ 4.42 ],
-        [ 4.59 ],
-        [ 4.76 ],
-        [ 4.93 ],
-        [ 5.1 ]
+        [2.55],
+        [2.72],
+        [2.89],
+        [3.06],
+        [3.23],
+        [3.4],
+        [3.6125],
+        [3.825],
+        [4.0375],
+        [4.25],
+        [4.42],
+        [4.59],
+        [4.76],
+        [4.93],
+        [5.1]
       ],
-      "energyNeeded": 120,
-      "energyGain": 5,
-      "toughness": {
-        "Target": 90
-      }
+      "icon": "/icon/skill/SkillIcon_1102_Ultra_on.png"
     },
     {
       "name": "Resurgence",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "",
       "type": "Talent",
-      "desc": "Enters the buffed state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an <u>extra turn</u>. While in the buffed state, the DMG of Seele's attacks increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).\\nEnemies defeated in the <u>extra turn</u> provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "",
+      "description": "Enters the buffed state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an extra turn. While in the buffed state, the DMG of Seele's attacks increases by #1[i]% for #2[i] turn(s).\nEnemies defeated in the extra turn provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
       "params": [
-        [ 0.4, 1 ],
-        [ 0.44, 1 ],
-        [ 0.48, 1 ],
-        [ 0.52, 1 ],
-        [ 0.56, 1 ],
-        [ 0.6, 1 ],
-        [ 0.65, 1 ],
-        [ 0.7, 1 ],
-        [ 0.75, 1 ],
-        [ 0.8, 1 ],
-        [ 0.84, 1 ],
-        [ 0.88, 1 ],
-        [ 0.92, 1 ],
-        [ 0.96, 1 ],
-        [ 1, 1 ]
-      ]
+        [0.4, 1],
+        [0.44, 1],
+        [0.48, 1],
+        [0.52, 1],
+        [0.56, 1],
+        [0.6, 1],
+        [0.65, 1],
+        [0.7, 1],
+        [0.75, 1],
+        [0.8, 1],
+        [0.84, 1],
+        [0.88, 1],
+        [0.92, 1],
+        [0.96, 1],
+        [1, 1]
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_Passive.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Quantum",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "/icon/skill/SkillIcon_1102_Normal.png"
     },
     {
       "name": "Phantom Illusion",
-      "tag": "Enhance",
-      "type": "Technique",
-      "desc": "After using her Technique, Seele gains Stealth for <unbreak>#1[i]</unbreak> second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering battle by attacking enemies, Seele will immediately enter the buffed state.",
-      "params": [
-        [ 20 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Enhance",
+      "simpleDescription": "",
+      "description": "After using her Technique, Seele gains Stealth for #1[i] second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering battle by attacking enemies, Seele will immediately enter the buffed state.",
+      "params": [[20]],
+      "icon": "/icon/skill/SkillIcon_1102_Maze.png"
     }
   ],
   "eidolons": [
     {
       "name": "Extirpating Slash",
-      "desc": "When dealing DMG to an enemy whose HP percentage is <unbreak>#1[i]%</unbreak> or lower, CRIT Rate increases by <unbreak>#2[i]%</unbreak>.",
-      "params": [ 0.8, 0.15 ]
+      "rank": 1,
+      "desc": "When dealing DMG to an enemy whose HP percentage is 80% or lower, CRIT Rate increases by 15%.",
+      "materials": [
+        {
+          "id": "11102",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_Rank1.png"
     },
     {
       "name": "Dancing Butterfly",
-      "desc": "The SPD Boost effect of Seele's Skill can stack up to <unbreak>#1[i]</unbreak> time(s).",
-      "params": [ 2 ]
+      "rank": 2,
+      "desc": "The SPD Boost effect of Seele's Skill can stack up to 2 time(s).",
+      "materials": [
+        {
+          "id": "11102",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_Rank2.png"
     },
     {
       "name": "Dazzling Tumult",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11102",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_BP.png"
     },
     {
       "name": "Flitting Phantasm",
-      "desc": "Seele regenerates <unbreak>#1[i]</unbreak> Energy when she defeats an enemy.",
-      "params": [ 15 ]
+      "rank": 4,
+      "desc": "Seele regenerates 15 Energy when she defeats an enemy.",
+      "materials": [
+        {
+          "id": "11102",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_Rank4.png"
     },
     {
       "name": "Piercing Shards",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11102",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_Ultra_on.png"
     },
     {
       "name": "Shattering Shambles",
-      "desc": "After Seele uses her Ultimate, inflict the target enemy with Butterfly Flurry for <unbreak>#2[i]</unbreak> turn(s). Enemies suffering from Butterfly Flurry will take Additional Quantum DMG equal to <unbreak>#1[i]%</unbreak> of Seele's Ultimate DMG every time they are attacked. If the target enemy is defeated by the Butterfly Flurry DMG triggered by other allies' attacks, Seele's Talent will not be triggered.\\nWhen Seele is knocked down, the Butterfly Flurry inflicted on the enemies will be removed.",
-      "params": [ 0.15, 1 ]
+      "rank": 6,
+      "desc": "After Seele uses her Ultimate, inflict the target enemy with Butterfly Flurry for 1 turn(s). Enemies suffering from Butterfly Flurry will take Additional Quantum DMG equal to 15% of Seele's Ultimate DMG every time they are attacked. If the target enemy is defeated by the Butterfly Flurry DMG triggered by other allies' attacks, Seele's Talent will not be triggered.\\nWhen Seele is knocked down, the Butterfly Flurry inflicted on the enemies will be removed.",
+      "materials": [
+        {
+          "id": "11102",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_Rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1102101,
+      "id": "1102101",
       "name": "Nightshade",
-      "desc": "When current HP percentage is <unbreak>#1[i]%</unbreak> or lower, reduces the chance of being attacked by enemies.",
-      "icon": "SkillIcon_1102_SkillTree1.png",
-      "params": [ 0.5, 0.5 ],
+      "maxLevel": 1,
+      "description": "When current HP percentage is #1[i]% or lower, reduces the chance of being attacked by enemies.",
+      "params": [[0.5, 0.5]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 5000
+            },
+            {
+              "id": "110121",
+              "num": 3
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_SkillTree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1102202,
+          "id": "1102202",
           "name": "CRIT DMG Boost",
-          "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconCriticalDamage.png",
-          "params": [ 0.053 ],
+          "maxLevel": 1,
+          "description": "CRIT DMG increases by 5.3%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "CriticalDamageBase",
+                  "value": 0.053
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 5000
+                },
+                {
+                  "id": "110121",
+                  "num": 3
+                },
+                {
+                  "id": "111011",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconCriticalDamage.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1102203,
+              "id": "1102203",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 10000
+                    },
+                    {
+                      "id": "110122",
+                      "num": 3
+                    },
+                    {
+                      "id": "111012",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 3
             }
           ]
@@ -282,27 +311,107 @@
       ]
     },
     {
-      "id": 1102102,
+      "id": "1102102",
       "name": "Lacerate",
-      "desc": "While Seele is in the buffed state, her Quantum RES PEN increases by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1102_SkillTree2.png",
-      "params": [ 0.2 ],
+      "maxLevel": 1,
+      "description": "While Seele is in the buffed state, her Quantum RES PEN increases by #1[i]%.",
+      "params": [[0.2]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 20000
+            },
+            {
+              "id": "110122",
+              "num": 5
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_SkillTree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1102205,
+          "id": "1102205",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 20000
+                },
+                {
+                  "id": "110122",
+                  "num": 5
+                },
+                {
+                  "id": "111012",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1102206,
+              "id": "1102206",
               "name": "CRIT DMG Boost",
-              "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconCriticalDamage.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "CRIT DMG increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "CriticalDamageBase",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 45000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 3
+                    },
+                    {
+                      "id": "111013",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconCriticalDamage.png",
+              "major": false,
               "minAsc": 5
             }
           ]
@@ -310,35 +419,144 @@
       ]
     },
     {
-      "id": 1102103,
+      "id": "1102103",
       "name": "Rippling Waves",
-      "desc": "After using a Basic ATK, Seele's next action will be Advanced Forward by <unbreak>#1[i]%</unbreak>.",
-      "icon": "SkillIcon_1102_SkillTree3.png",
-      "params": [ 0.2 ],
+      "maxLevel": 1,
+      "description": "After using a Basic ATK, Seele's next action will be Advanced Forward by #1[i]%.",
+      "params": [[0.2]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110123",
+              "num": 8
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110502",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1102_SkillTree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1102208,
+          "id": "1102208",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.075 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 7.5%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.075
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110123",
+                  "num": 8
+                },
+                {
+                  "id": "111013",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconDefence.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 1102209,
+              "id": "1102209",
               "name": "CRIT DMG Boost",
-              "desc": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconCriticalDamage.png",
-              "params": [ 0.107 ],
+              "maxLevel": 1,
+              "description": "CRIT DMG increases by 10.7%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "CriticalDamageBase",
+                      "value": 0.107
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 8
+                    },
+                    {
+                      "id": "111013",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconCriticalDamage.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 1102210,
+              "id": "1102210",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 160000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 8
+                    },
+                    {
+                      "id": "111013",
+                      "num": 8
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -346,28 +564,317 @@
       ]
     },
     {
-      "id": 1102201,
+      "id": "1102201",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.04 ]
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2500
+            },
+            {
+              "id": "111011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0
     },
     {
-      "id": 1102204,
+      "id": "1102204",
       "name": "DEF Boost",
-      "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconDefence.png",
-      "params": [ 0.05 ],
+      "maxLevel": 1,
+      "description": "DEF increases by 5.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 3,
+          "properties": [
+            {
+              "type": "DefenceAddedRatio",
+              "value": 0.05
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 10000
+            },
+            {
+              "id": "110122",
+              "num": 3
+            },
+            {
+              "id": "111012",
+              "num": 3
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconDefence.png",
+      "major": false,
       "minAsc": 3
     },
     {
-      "id": 1102207,
+      "id": "1102207",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.06 ],
+      "maxLevel": 1,
+      "description": "ATK increases by 6.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 5,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.06
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 45000
+            },
+            {
+              "id": "110123",
+              "num": 3
+            },
+            {
+              "id": "111013",
+              "num": 3
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconAttack.png",
+      "major": false,
       "minAsc": 5
     }
   ],
-  "description": "A resident of the Underworld and the backbone of Wildfire. She goes by the alias \"Babochka.\"\nShe has a frank personality, but there is a delicate and sensitive hidden side to her deep in her heart."
+  "stats": [
+    {
+      "health": {
+        "base": 126.72,
+        "step": 6.336
+      },
+      "attack": {
+        "base": 87.12,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 49.5,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 115,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 177.408,
+        "step": 6.336
+      },
+      "attack": {
+        "base": 121.968,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 69.3,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 115,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 228.096,
+        "step": 6.336
+      },
+      "attack": {
+        "base": 156.816,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 89.1,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 115,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 278.784,
+        "step": 6.336
+      },
+      "attack": {
+        "base": 191.664,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 108.9,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 115,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 329.472,
+        "step": 6.336
+      },
+      "attack": {
+        "base": 226.512,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 128.7,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 115,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 380.16,
+        "step": 6.336
+      },
+      "attack": {
+        "base": 261.36,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 148.5,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 115,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 430.848,
+        "step": 6.336
+      },
+      "attack": {
+        "base": 296.208,
+        "step": 4.356
+      },
+      "defense": {
+        "base": 168.3,
+        "step": 2.475
+      },
+      "speed": {
+        "base": 115,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

@@ -9,54 +9,63 @@ import type { CharacterTrace } from "types/game-data";
 export interface Props extends CharacterTrace {
   depth: number;
 }
-const { id, name, desc, params, icon, minAsc, minLevel, children, depth } =
-  Astro.props;
+const {
+  name,
+  description,
+  params,
+  icon,
+  children,
+  depth,
+  maxLevel,
+  id,
+
+  major,
+  minAsc,
+  minLevel,
+} = Astro.props;
 
 // This is really janky
-const major = icon.includes("_");
+// const major = icon.includes("_");
 const dim = major ? "64" : "48";
 ---
 
 <!-- Remove unnecessary class names -->
 <li class=`tree-node depth-${depth} ${major ? "major" : "minor"}`>
   <div
-    id={id.toString()}
+    id={id}
     class=`relative flex ${major ? "gap-4" :"gap-2"} items-start mb-2`
   >
     <div class="relative shrink-0">
-      <img src={`/img/traces/${icon}`} width={dim} height={dim} alt="" />
+      <img src={icon} width={dim} height={dim} alt="" />
       <div
         class="bg-gray-950 bg-opacity-95 text-xs rounded w-min px-1 absolute font-bold tracking-wider bottom-0 left-0 right-0 ml-auto mr-auto z-10"
       >
-        {(minAsc && `A${minAsc}`) || (minLevel && `LV${minLevel}`) || "A0"}
+        {(minLevel && `LV${minLevel}`) || (minAsc && `A${minAsc}`) || "A0"}
       </div>
     </div>
     <div>
       <h2 class={major ? "subsubheader" : "subsubsubheader"}>{name}</h2>
       <p class={major ? "" : "text-sm"}>
-        <ParsedParams data={desc} params={params} />
+        <ParsedParams data={description} params={params[maxLevel - 1]} />
       </p>
     </div>
   </div>
   {
     children && (
       <div class="flex flex-row">
-        <div
-          class="relative"
-          style={ `width:${dim}px` }
-        >
+        <div class="relative" style={`width:${dim}px`}>
           <div
             class="absolute left-1/2 right-1/2 w-1 rounded-sm bg-[white]"
-            style={ `height:${children.length * 56 - 28}px` }
+            style={`height:${children.length * 56 - 28}px`}
           />
-            {children.map((child) => (
-              <div
-                class="absolute left-1/2 h-1 w-6 rounded-sm bg-[white]"
-                style={`top:${24 + children.indexOf(child) * 56}px`}
-              />
-            ))}
+          {children.map((child) => (
+            <div
+              class="absolute left-1/2 h-1 w-6 rounded-sm bg-[white]"
+              style={`top:${24 + children.indexOf(child) * 56}px`}
+            />
+          ))}
         </div>
-      
+
         <ol class="">
           {children.map((ch) => (
             <Astro.self {...ch} depth={depth + 1} />

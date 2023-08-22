@@ -1,0 +1,84 @@
+---
+import { parse } from "node-html-parser";
+
+export interface Props {
+  names: { [key: string]: string };
+  buttonClass?: string;
+  headerClass?: string;
+}
+
+const { names, buttonClass, headerClass } = Astro.props;
+const id = Math.random().toString();
+const tabs = Object.keys(names);
+
+const children = Array.from(
+  parse(await Astro.slots.render("default")).querySelectorAll("> *")
+);
+---
+
+<div class="tabpage" id={id}>
+  <div class={`tabheader ${headerClass}`}>
+    {
+      tabs.map((tab, inx) => (
+        <button
+          id={`${tab}:${id}`}
+          data-tab={inx ? "inactive" : "active"}
+          class={`${buttonClass} tablink`}
+        >
+          {names[tab]}
+        </button>
+      ))
+    }
+  </div>
+  <div class="tabbody">
+    {
+      children.map((child) => {
+        child.setAttribute(
+          "style",
+          `display: ${child.id === tabs[0] ? "block" : "none"};`
+        );
+        child.setAttribute("id", `${child.getAttribute("id")}:${id}`);
+
+        return child;
+      })
+    }
+  </div>
+</div>
+<script>
+  function disableAll(id) {
+    document.querySelectorAll(".tablink").forEach((button) => {
+      const [, buttonId] = button.id.split(":");
+      if (id === buttonId) button.setAttribute("data-tab", "inactive");
+    });
+
+    document.querySelectorAll(".tabcontent").forEach((content) => {
+      if (content.id.split(":")[1] === id) content.style.display = "none";
+    });
+  }
+
+  function selectTab(id) {
+    document.querySelectorAll(".tablink").forEach((button) => {
+      const [, buttonId] = button.id.split(":");
+      const [, tabId] = id.split(":");
+      if (tabId === buttonId)
+        button.setAttribute(
+          "data-tab",
+          id === button.id ? "active" : "inactive"
+        );
+    });
+
+    document.querySelectorAll(".tabcontent").forEach((content) => {
+      if (id === content.id) content.style.display = "block";
+    });
+  }
+
+  document.querySelectorAll(".tablink").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const id = e.target.id;
+      const [_, pageId] = id.split(":");
+
+      disableAll(pageId);
+      selectTab(id);
+    });
+  });
+</script>

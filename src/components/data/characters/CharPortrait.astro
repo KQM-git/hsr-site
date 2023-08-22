@@ -1,0 +1,22 @@
+---
+import type { Character } from "types/game-data";
+export interface Props {
+  char: Character;
+  big?: boolean;
+}
+
+const { char, big } = Astro.props;
+const { portrait } = char;
+---
+
+<img
+  src={portrait}
+  width={big ? "360" : "640"}
+  height={big ? "360" : "640"}
+  class={`${
+    big ? "hidden" : "block"
+  } scale-75 md:scale-100 md:block md:absolute ${
+    big ? "md:-top-6 md:-right-6" : "md:-top-16 md:-right-16"
+  }`}
+  alt=""
+/>

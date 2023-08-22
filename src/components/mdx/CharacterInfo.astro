@@ -1,0 +1,57 @@
+---
+import { parse } from "node-html-parser";
+import { getDescription, getImage, getName, getParams } from "./CharacterData";
+import TabPage from "components/tabpage/TabPage.astro";
+import { parseParams } from "util/parseParams";
+
+const { char } = Astro.props;
+
+const TAG_NAME: any = {
+  basic: "Basic ATK",
+  skill: "Skill",
+  ultimate: "Ultimate",
+  talent: "Talent",
+  technique: "Technique",
+
+  a2: "A2 Bonus",
+  a4: "A4 Bonus",
+  a6: "A6 Bonus",
+};
+
+const pattern = /\|(.+?)\|(.+?)\|/g;
+
+let html = await Astro.slots.render("default");
+const replacements = (await Promise.all(
+  Array.from(html.matchAll(pattern), async (match) => {
+    const data = match[0].split("|");
+
+    switch (data[1]) {
+      case "type":
+        return TAG_NAME[data[2]];
+      case "name":
+        return await getName(char, data[2]);
+      case "img":
+        return await getImage(char, data[2]);
+      case "desc":
+        return parseParams(
+          (await getDescription(char, data[2]))!,
+          (await getParams(char, data[2]))![0]
+        );
+    }
+
+    console.log(data);
+    return "placeholder";
+  })
+)) as string[];
+let i = 0;
+html = html.replace(pattern, () => replacements[i++]);
+
+const children = Array.from(parse(html).querySelectorAll("> *"));
+---
+
+<TabPage
+  names={TAG_NAME}
+  buttonClass="rounded-3xl p-4 m-2 data-[tab=active]:bg-theme-600 bg-theme-800"
+>
+  {children}
+</TabPage>

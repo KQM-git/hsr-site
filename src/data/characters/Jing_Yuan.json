@@ -1,292 +1,344 @@
 {
+  "id": "1204",
   "name": "Jing Yuan",
+  "description": "The Divine Foresight, one of the Seven Arbiter-Generals of the Xianzhou Alliance, leads the Cloud Knights of the Xianzhou Luofu.\\nA student of the Luofu's previous Sword Champion, though not known for his martial prowess.",
   "element": "Lightning",
   "path": "Erudition",
   "rarity": 5,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 95.04,
-      "attackAdd": 4.752,
-      "hpBase": 158.4,
-      "hpAdd": 7.92,
-      "defenseBase": 66,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 133.056,
-      "attackAdd": 4.752,
-      "hpBase": 221.76,
-      "hpAdd": 7.92,
-      "defenseBase": 92.4,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 171.072,
-      "attackAdd": 4.752,
-      "hpBase": 285.12,
-      "hpAdd": 7.92,
-      "defenseBase": 118.8,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 209.088,
-      "attackAdd": 4.752,
-      "hpBase": 348.48,
-      "hpAdd": 7.92,
-      "defenseBase": 145.2,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 247.104,
-      "attackAdd": 4.752,
-      "hpBase": 411.84,
-      "hpAdd": 7.92,
-      "defenseBase": 171.6,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 285.12,
-      "attackAdd": 4.752,
-      "hpBase": 475.2,
-      "hpAdd": 7.92,
-      "defenseBase": 198,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 99,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 323.136,
-      "attackAdd": 4.752,
-      "hpBase": 538.56,
-      "hpAdd": 7.92,
-      "defenseBase": 224.4,
-      "defenseAdd": 3.3,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 99,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 130,
+  "icon": "icon/character/1204.png",
+  "preview": "/image/character_preview/1204.png",
+  "portrait": "/image/character_portrait/1204.png",
   "skills": [
     {
       "name": "Glistening Light",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Jing Yuan deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of his ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Thunder",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Lightning DMG to a single enemy.",
+      "description": "Jing Yuan deals Lightning DMG equal to #1[i]% of his ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "/icon/skill/SkillIcon_1204_Normal.png"
     },
     {
       "name": "Rifting Zenith",
-      "tag": "AoE",
-      "type": "Skill",
-      "desc": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Jing Yuan's ATK to all enemies and increases Lightning-Lord's Hits Per Action by <unbreak>#2[i]</unbreak> for the next turn.",
+      "maxLevel": 15,
+      "element": "Thunder",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "AoEAttack",
+      "simpleDescription": "Deals minor Lightning DMG to all enemies and increases Lightning-Lord's Hits Per Action.",
+      "description": "Deals Lightning DMG equal to #1[i]% of Jing Yuan's ATK to all enemies and increases Lightning-Lord's Hits Per Action by #2[i] for the next turn.",
       "params": [
-        [ 0.5, 2 ],
-        [ 0.55, 2 ],
-        [ 0.6, 2 ],
-        [ 0.65, 2 ],
-        [ 0.7, 2 ],
-        [ 0.75, 2 ],
-        [ 0.8125, 2 ],
-        [ 0.875, 2 ],
-        [ 0.9375, 2 ],
-        [ 1, 2 ],
-        [ 1.05, 2 ],
-        [ 1.1, 2 ],
-        [ 1.15, 2 ],
-        [ 1.2, 2 ],
-        [ 1.25, 2 ]
+        [0.5, 2],
+        [0.55, 2],
+        [0.6, 2],
+        [0.65, 2],
+        [0.7, 2],
+        [0.75, 2],
+        [0.8125, 2],
+        [0.875, 2],
+        [0.9375, 2],
+        [1, 2],
+        [1.05, 2],
+        [1.1, 2],
+        [1.15, 2],
+        [1.2, 2],
+        [1.25, 2]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "All": 30
-      }
+      "icon": "/icon/skill/SkillIcon_1204_BP.png"
     },
     {
       "name": "Lightbringer",
-      "tag": "AoE",
-      "type": "Ultimate",
-      "desc": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Jing Yuan's ATK to all enemies and increases Lightning-Lord's Hits Per Action by <unbreak>#2[i]</unbreak> for the next turn.",
+      "maxLevel": 15,
+      "element": "Thunder",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "AoEAttack",
+      "simpleDescription": "Deals Lightning DMG to all enemies and increases Lightning-Lord's Hits Per Action.",
+      "description": "Deals Lightning DMG equal to #1[i]% of Jing Yuan's ATK to all enemies and increases Lightning-Lord's Hits Per Action by #2[i] for the next turn.",
       "params": [
-        [ 1.2, 3 ],
-        [ 1.28, 3 ],
-        [ 1.36, 3 ],
-        [ 1.44, 3 ],
-        [ 1.52, 3 ],
-        [ 1.6, 3 ],
-        [ 1.7, 3 ],
-        [ 1.8, 3 ],
-        [ 1.9, 3 ],
-        [ 2, 3 ],
-        [ 2.08, 3 ],
-        [ 2.16, 3 ],
-        [ 2.24, 3 ],
-        [ 2.32, 3 ],
-        [ 2.4, 3 ]
+        [1.2, 3],
+        [1.28, 3],
+        [1.36, 3],
+        [1.44, 3],
+        [1.52, 3],
+        [1.6, 3],
+        [1.7, 3],
+        [1.8, 3],
+        [1.9, 3],
+        [2, 3],
+        [2.08, 3],
+        [2.16, 3],
+        [2.24, 3],
+        [2.32, 3],
+        [2.4, 3]
       ],
-      "energyNeeded": 130,
-      "energyGain": 5,
-      "toughness": {
-        "All": 60
-      }
+      "icon": "/icon/skill/SkillIcon_1204_Ultra_on.png"
     },
     {
       "name": "Prana Extirpated",
-      "tag": "Bounce",
+      "maxLevel": 15,
+      "element": "Thunder",
       "type": "Talent",
-      "desc": "Summons Lightning-Lord at the start of the battle. Lightning-Lord has <unbreak>#1[i]</unbreak> base SPD and <unbreak>#4[i]</unbreak> base Hits Per Action. When the Lightning-Lord takes action, its hits are considered as <u>follow-up attacks</u>, with each hit dealing Lightning DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Jing Yuan's ATK to a single enemy, and enemies adjacent to it also receive Lightning DMG equal to <unbreak>#5[i]%</unbreak> of the DMG dealt to the target enemy.\\nThe Lightning-Lord's Hits Per Action can reach a max of <unbreak>#6[i]</unbreak>. Every time Lightning-Lord's Hits Per Action increases by 1, its SPD increases by <unbreak>#3[i]</unbreak>. After the Lightning-Lord's action ends, its SPD and Hits Per Action return to their base values.\\nWhen Jing Yuan is <u>knocked down</u>, the Lightning-Lord will disappear.\\nWhen Jing Yuan is affected by <u>Crowd Control debuff</u>, the Lightning-Lord is unable to take action.",
+      "typeText": "Talent",
+      "effect": "Bounce",
+      "simpleDescription": "",
+      "description": "Summons Lightning-Lord at the start of the battle. Lightning-Lord has #1[i] base SPD and #4[i] base Hits Per Action. When the Lightning-Lord takes action, its hits are considered as follow-up attacks, with each hit dealing Lightning DMG equal to #2[i]% of Jing Yuan's ATK to a random single enemy, and enemies adjacent to it also receive Lightning DMG equal to #5[i]% of the DMG dealt to the target enemy.\nThe Lightning-Lord's Hits Per Action can reach a max of #6[i]. Every time Lightning-Lord's Hits Per Action increases by 1, its SPD increases by #3[i]. After the Lightning-Lord's action ends, its SPD and Hits Per Action return to their base values.\nWhen Jing Yuan is knocked down, the Lightning-Lord will disappear.\nWhen Jing Yuan is affected by Crowd Control debuff, the Lightning-Lord is unable to take action.",
       "params": [
-        [ 60, 0.33, 10, 3, 0.25, 10 ],
-        [ 60, 0.363, 10, 3, 0.25, 10 ],
-        [ 60, 0.396, 10, 3, 0.25, 10 ],
-        [ 60, 0.429, 10, 3, 0.25, 10 ],
-        [ 60, 0.462, 10, 3, 0.25, 10 ],
-        [ 60, 0.495, 10, 3, 0.25, 10 ],
-        [ 60, 0.53625, 10, 3, 0.25, 10 ],
-        [ 60, 0.5775, 10, 3, 0.25, 10 ],
-        [ 60, 0.61875, 10, 3, 0.25, 10 ],
-        [ 60, 0.66, 10, 3, 0.25, 10 ],
-        [ 60, 0.693, 10, 3, 0.25, 10 ],
-        [ 60, 0.726, 10, 3, 0.25, 10 ],
-        [ 60, 0.759, 10, 3, 0.25, 10 ],
-        [ 60, 0.792, 10, 3, 0.25, 10 ],
-        [ 60, 0.825, 10, 3, 0.25, 10 ]
+        [60, 0.33, 10, 3, 0.25, 10],
+        [60, 0.363, 10, 3, 0.25, 10],
+        [60, 0.396, 10, 3, 0.25, 10],
+        [60, 0.429, 10, 3, 0.25, 10],
+        [60, 0.462, 10, 3, 0.25, 10],
+        [60, 0.495, 10, 3, 0.25, 10],
+        [60, 0.5363, 10, 3, 0.25, 10],
+        [60, 0.5775, 10, 3, 0.25, 10],
+        [60, 0.6188, 10, 3, 0.25, 10],
+        [60, 0.66, 10, 3, 0.25, 10],
+        [60, 0.693, 10, 3, 0.25, 10],
+        [60, 0.726, 10, 3, 0.25, 10],
+        [60, 0.759, 10, 3, 0.25, 10],
+        [60, 0.792, 10, 3, 0.25, 10],
+        [60, 0.825, 10, 3, 0.25, 10]
       ],
-      "toughness": {
-        "Target": 15,
-        "Bounce": 15
-      }
+      "icon": "/icon/skill/SkillIcon_1204_Passive.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Thunder",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "/icon/skill/SkillIcon_1204_Normal.png"
     },
     {
       "name": "Spirit Invocation",
-      "tag": "Enhance",
-      "type": "Technique",
-      "desc": "After using Technique, at the start of the next battle, the Lightning-Lord's Hits Per Action in the first turn increases by <unbreak>#1[i]</unbreak>.",
-      "params": [
-        [ 3 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Enhance",
+      "simpleDescription": "",
+      "description": "After the Technique is used, the Lightning-Lord's Hits Per Action in the first turn increases by #1[i] at the start of the next battle.",
+      "params": [[3]],
+      "icon": "/icon/skill/SkillIcon_1204_Maze.png"
     }
   ],
   "eidolons": [
     {
       "name": "Slash, Seas Split",
-      "desc": "When Lightning-Lord attacks, the DMG multiplier on enemies adjacent to the target enemy increases by an extra amount equal to <unbreak>#1[i]%</unbreak> of the DMG multiplier against the target enemy.",
-      "params": [ 0.25 ]
+      "rank": 1,
+      "desc": "When Lightning-Lord attacks, the DMG multiplier on enemies adjacent to the target enemy increases by an extra amount equal to 25% of the DMG multiplier against the target enemy.",
+      "materials": [
+        {
+          "id": "11204",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_Rank1.png"
     },
     {
       "name": "Swing, Skies Squashed",
-      "desc": "After Lightning-Lord takes action, DMG caused by Jing Yuan's Basic ATK, Skill, and Ultimate increases by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "params": [ 0.2, 2 ]
+      "rank": 2,
+      "desc": "After Lightning-Lord takes action, DMG caused by Jing Yuan's Basic ATK, Skill, and Ultimate increases by 20% for 2 turn(s).",
+      "materials": [
+        {
+          "id": "11204",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_Rank2.png"
     },
     {
       "name": "Strike, Suns Subdued",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11204",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_BP.png"
     },
     {
       "name": "Spin, Stars Sieged",
-      "desc": "For each hit performed by the Lightning-Lord when it takes action, Jing Yuan regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "params": [ 2 ]
+      "rank": 4,
+      "desc": "For each hit performed by the Lightning-Lord when it takes action, Jing Yuan regenerates 2 Energy.",
+      "materials": [
+        {
+          "id": "11204",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_Rank4.png"
     },
     {
       "name": "Stride, Spoils Seized",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11204",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_Ultra_on.png"
     },
     {
       "name": "Sweep, Souls Slain",
-      "desc": "Each hit performed by the Lightning-Lord when it takes action will make the target enemy Vulnerable.\\nWhile Vulnerable, enemies receive <unbreak>#1[i]%</unbreak> more DMG until the end of the Lightning-Lord's current turn, stacking up to <unbreak>#2[i]</unbreak> time(s).",
-      "params": [ 0.12, 3 ]
+      "rank": 6,
+      "desc": "Each hit performed by the Lightning-Lord when it takes action will make the target enemy Vulnerable.\\nWhile Vulnerable, enemies receive 12% more DMG until the end of the Lightning-Lord's current turn, stacking up to 3 time(s).",
+      "materials": [
+        {
+          "id": "11204",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_Rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1204101,
+      "id": "1204101",
       "name": "Battalia Crush",
-      "desc": "If the Lightning-Lord's Hits Per Action is greater or equal to <unbreak>#1[i]</unbreak> in the next turn, its CRIT DMG increases by <unbreak>#2[i]%</unbreak> for the next turn.",
-      "icon": "SkillIcon_1204_SkillTree1.png",
-      "params": [ 6, 0.25 ],
+      "maxLevel": 1,
+      "description": "If the Lightning-Lord's Hits Per Action is greater or equal to #1[i] in the next turn, its CRIT DMG increases by #2[i]% for the next turn.",
+      "params": [[6, 0.25]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 5000
+            },
+            {
+              "id": "110131",
+              "num": 3
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_SkillTree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1204202,
+          "id": "1204202",
           "name": "CRIT Rate Boost",
-          "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconCriticalChance.png",
-          "params": [ 0.027 ],
+          "maxLevel": 1,
+          "description": "CRIT Rate increases by 2.7%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "CriticalChanceBase",
+                  "value": 0.027
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 5000
+                },
+                {
+                  "id": "110131",
+                  "num": 3
+                },
+                {
+                  "id": "113001",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconCriticalChance.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1204203,
+              "id": "1204203",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 10000
+                    },
+                    {
+                      "id": "110132",
+                      "num": 3
+                    },
+                    {
+                      "id": "113002",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 3
             },
             {
-              "id": 1204204,
+              "id": "1204204",
               "name": "DEF Boost",
-              "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconDefence.png",
-              "params": [ 0.05 ],
+              "maxLevel": 1,
+              "description": "DEF increases by 5.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "DefenceAddedRatio",
+                      "value": 0.05
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 10000
+                    },
+                    {
+                      "id": "110132",
+                      "num": 3
+                    },
+                    {
+                      "id": "113002",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconDefence.png",
+              "major": false,
               "minAsc": 3
             }
           ]
@@ -294,35 +346,142 @@
       ]
     },
     {
-      "id": 1204102,
+      "id": "1204102",
       "name": "Savant Providence",
-      "desc": "At the start of the battle, immediately regenerates <unbreak>#1[i]</unbreak> Energy.",
-      "icon": "SkillIcon_1204_SkillTree2.png",
-      "params": [ 15 ],
+      "maxLevel": 1,
+      "description": "At the start of the battle, immediately regenerates #1[i] Energy.",
+      "params": [[15]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 20000
+            },
+            {
+              "id": "110132",
+              "num": 5
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_SkillTree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1204205,
+          "id": "1204205",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.06 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 20000
+                },
+                {
+                  "id": "110132",
+                  "num": 5
+                },
+                {
+                  "id": "113002",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1204206,
+              "id": "1204206",
               "name": "CRIT Rate Boost",
-              "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconCriticalChance.png",
-              "params": [ 0.04 ],
+              "maxLevel": 1,
+              "description": "CRIT Rate increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "CriticalChanceBase",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 45000
+                    },
+                    {
+                      "id": "110133",
+                      "num": 3
+                    },
+                    {
+                      "id": "113003",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconCriticalChance.png",
+              "major": false,
               "minAsc": 5
             },
             {
-              "id": 1204207,
+              "id": "1204207",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 45000
+                    },
+                    {
+                      "id": "110133",
+                      "num": 3
+                    },
+                    {
+                      "id": "113003",
+                      "num": 3
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 5
             }
           ]
@@ -330,46 +489,390 @@
       ]
     },
     {
-      "id": 1204103,
+      "id": "1204103",
       "name": "War Marshal",
-      "desc": "After using Skill, CRIT Rate increases by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
-      "icon": "SkillIcon_1204_SkillTree3.png",
-      "params": [ 0.1, 2 ],
+      "maxLevel": 1,
+      "description": "After the Skill is used, the CRIT Rate increases by #1[i]% for #2[i] turn(s).",
+      "params": [[0.1, 2]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110133",
+              "num": 8
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1204_SkillTree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1204208,
+          "id": "1204208",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.075 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 7.5%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.075
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110133",
+                  "num": 8
+                },
+                {
+                  "id": "113003",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconDefence.png",
+          "major": false,
           "minAsc": 6
         },
         {
-          "id": 1204209,
+          "id": "1204209",
           "name": "CRIT Rate Boost",
-          "desc": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconCriticalChance.png",
-          "params": [ 0.053 ],
+          "maxLevel": 1,
+          "description": "CRIT Rate increases by 5.3%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "CriticalChanceBase",
+                  "value": 0.053
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 160000
+                },
+                {
+                  "id": "110133",
+                  "num": 8
+                },
+                {
+                  "id": "113003",
+                  "num": 8
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconCriticalChance.png",
+          "major": false,
+          "minAsc": 0,
           "minLevel": 75
         }
       ]
     },
     {
-      "id": 1204201,
+      "id": "1204201",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.04 ]
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2500
+            },
+            {
+              "id": "113001",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0
     },
     {
-      "id": 1204210,
+      "id": "1204210",
       "name": "ATK Boost",
-      "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconAttack.png",
-      "params": [ 0.08 ],
+      "maxLevel": 1,
+      "description": "ATK increases by 8.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.08
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 160000
+            },
+            {
+              "id": "110133",
+              "num": 8
+            },
+            {
+              "id": "113003",
+              "num": 8
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0,
       "minLevel": 80
     }
   ],
-  "description": "The Divine Foresight, one of the Seven Arbiter-Generals of the Xianzhou Alliance, leads the Cloud Knights of the Xianzhou Luofu.\nA student of the Luofu's previous Sword Champion, though not known for his martial prowess."
+  "stats": [
+    {
+      "health": {
+        "base": 158.4,
+        "step": 7.92
+      },
+      "attack": {
+        "base": 95.04,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 66,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 221.76,
+        "step": 7.92
+      },
+      "attack": {
+        "base": 133.056,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 92.4,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 285.12,
+        "step": 7.92
+      },
+      "attack": {
+        "base": 171.072,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 118.8,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 348.48,
+        "step": 7.92
+      },
+      "attack": {
+        "base": 209.088,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 145.2,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 411.84,
+        "step": 7.92
+      },
+      "attack": {
+        "base": 247.104,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 171.6,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 475.2,
+        "step": 7.92
+      },
+      "attack": {
+        "base": 285.12,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 198,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 538.56,
+        "step": 7.92
+      },
+      "attack": {
+        "base": 323.136,
+        "step": 4.752
+      },
+      "defense": {
+        "base": 224.4,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 99,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

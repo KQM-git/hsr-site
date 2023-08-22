@@ -1,280 +1,309 @@
 {
+  "id": "1002",
   "name": "Dan Heng",
+  "description": "A cold and reserved young man who is reticent about his past.\\nTo avoid his kin, he decided to travel with the Astral Express.",
   "element": "Wind",
   "path": "The Hunt",
   "rarity": 4,
-  "stats": [
-    {
-      "level": 0,
-      "maxLevel": 20,
-      "attackBase": 74.4,
-      "attackAdd": 3.72,
-      "hpBase": 120,
-      "hpAdd": 6,
-      "defenseBase": 54,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 110,
-      "speedAdd": 0
-    },
-    {
-      "level": 1,
-      "maxLevel": 30,
-      "attackBase": 104.16,
-      "attackAdd": 3.72,
-      "hpBase": 168,
-      "hpAdd": 6,
-      "defenseBase": 75.6,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 110,
-      "speedAdd": 0
-    },
-    {
-      "level": 2,
-      "maxLevel": 40,
-      "attackBase": 133.92,
-      "attackAdd": 3.72,
-      "hpBase": 216,
-      "hpAdd": 6,
-      "defenseBase": 97.2,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 110,
-      "speedAdd": 0
-    },
-    {
-      "level": 3,
-      "maxLevel": 50,
-      "attackBase": 163.68,
-      "attackAdd": 3.72,
-      "hpBase": 264,
-      "hpAdd": 6,
-      "defenseBase": 118.8,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 110,
-      "speedAdd": 0
-    },
-    {
-      "level": 4,
-      "maxLevel": 60,
-      "attackBase": 193.44,
-      "attackAdd": 3.72,
-      "hpBase": 312,
-      "hpAdd": 6,
-      "defenseBase": 140.4,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 110,
-      "speedAdd": 0
-    },
-    {
-      "level": 5,
-      "maxLevel": 70,
-      "attackBase": 223.2,
-      "attackAdd": 3.72,
-      "hpBase": 360,
-      "hpAdd": 6,
-      "defenseBase": 162,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 110,
-      "speedAdd": 0
-    },
-    {
-      "level": 6,
-      "maxLevel": 80,
-      "attackBase": 252.96,
-      "attackAdd": 3.72,
-      "hpBase": 408,
-      "hpAdd": 6,
-      "defenseBase": 183.6,
-      "defenseAdd": 2.7,
-      "crate": 0.05,
-      "cdmg": 0.5,
-      "aggro": 75,
-      "speedBase": 110,
-      "speedAdd": 0
-    }
-  ],
+  "maxSkillPoints": 100,
+  "icon": "icon/character/1002.png",
+  "preview": "/image/character_preview/1002.png",
+  "portrait": "/image/character_portrait/1002.png",
   "skills": [
     {
       "name": "Cloudlancer Art: North Wind",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "desc": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dan Heng's ATK to a single enemy.",
-      "params": [
-        [ 0.5 ],
-        [ 0.6 ],
-        [ 0.7 ],
-        [ 0.8 ],
-        [ 0.9 ],
-        [ 1 ],
-        [ 1.1 ],
-        [ 1.2 ],
-        [ 1.3 ]
-      ],
-      "energyGain": 20,
-      "toughness": {
-        "Target": 30
-      }
+      "maxLevel": 9,
+      "element": "Wind",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Wind DMG to a single enemy.",
+      "description": "Deals Wind DMG equal to #1[i]% of Dan Heng's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "/icon/skill/SkillIcon_1002_Normal.png"
     },
     {
       "name": "Cloudlancer Art: Torrent",
-      "tag": "Single Target",
-      "type": "Skill",
-      "desc": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dan Heng's ATK to a single enemy.\\nOn a CRIT Hit, there is a <unbreak>#4[i]%</unbreak> <u>base chance</u> to reduce the target's SPD by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
+      "maxLevel": 15,
+      "element": "Wind",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals Wind DMG to a single enemy. Upon a CRIT Hit, there is a high chance of Slowing the enemy.",
+      "description": "Deals Wind DMG equal to #1[i]% of Dan Heng's ATK to a single enemy.\nOn a CRIT Hit, there is a #4[i]% base chance to reduce the target's SPD by #2[i]% for #3[i] turn(s).",
       "params": [
-        [ 1.3, 0.12, 2, 1 ],
-        [ 1.43, 0.12, 2, 1 ],
-        [ 1.56, 0.12, 2, 1 ],
-        [ 1.69, 0.12, 2, 1 ],
-        [ 1.82, 0.12, 2, 1 ],
-        [ 1.95, 0.12, 2, 1 ],
-        [ 2.1125, 0.12, 2, 1 ],
-        [ 2.275, 0.12, 2, 1 ],
-        [ 2.4375, 0.12, 2, 1 ],
-        [ 2.6, 0.12, 2, 1 ],
-        [ 2.73, 0.12, 2, 1 ],
-        [ 2.86, 0.12, 2, 1 ],
-        [ 2.99, 0.12, 2, 1 ],
-        [ 3.12, 0.12, 2, 1 ],
-        [ 3.25, 0.12, 2, 1 ]
+        [1.3, 0.12, 2, 1],
+        [1.43, 0.12, 2, 1],
+        [1.56, 0.12, 2, 1],
+        [1.69, 0.12, 2, 1],
+        [1.82, 0.12, 2, 1],
+        [1.95, 0.12, 2, 1],
+        [2.1125, 0.12, 2, 1],
+        [2.275, 0.12, 2, 1],
+        [2.4375, 0.12, 2, 1],
+        [2.6, 0.12, 2, 1],
+        [2.73, 0.12, 2, 1],
+        [2.86, 0.12, 2, 1],
+        [2.99, 0.12, 2, 1],
+        [3.12, 0.12, 2, 1],
+        [3.25, 0.12, 2, 1]
       ],
-      "energyGain": 30,
-      "toughness": {
-        "Target": 60
-      }
+      "icon": "/icon/skill/SkillIcon_1002_BP.png"
     },
     {
       "name": "Ethereal Dream",
-      "tag": "Single Target",
-      "type": "Ultimate",
-      "desc": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dan Heng's ATK to a single enemy. If the enemy is Slowed, the Ultimate's DMG multiplier increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+      "maxLevel": 15,
+      "element": "Wind",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals massive Wind DMG to a single enemy. If the enemy is Slowed, DMG multiplier dealt will be increased.",
+      "description": "Deals Wind DMG equal to #1[i]% of Dan Heng's ATK to a single enemy. If the enemy is Slowed, the Ultimate's DMG multiplier increases by #2[i]%.",
       "params": [
-        [ 2.4, 0.72 ],
-        [ 2.56, 0.768 ],
-        [ 2.72, 0.816 ],
-        [ 2.88, 0.864 ],
-        [ 3.04, 0.912 ],
-        [ 3.2, 0.96 ],
-        [ 3.4, 1.02 ],
-        [ 3.6, 1.08 ],
-        [ 3.8, 1.14 ],
-        [ 4, 1.2 ],
-        [ 4.16, 1.248 ],
-        [ 4.32, 1.296 ],
-        [ 4.48, 1.344 ],
-        [ 4.64, 1.392 ],
-        [ 4.8, 1.44 ]
+        [2.4, 0.72],
+        [2.56, 0.768],
+        [2.72, 0.816],
+        [2.88, 0.864],
+        [3.04, 0.912],
+        [3.2, 0.96],
+        [3.4, 1.02],
+        [3.6, 1.08],
+        [3.8, 1.14],
+        [4, 1.2],
+        [4.16, 1.248],
+        [4.32, 1.296],
+        [4.48, 1.344],
+        [4.64, 1.392],
+        [4.8, 1.44]
       ],
-      "energyNeeded": 100,
-      "energyGain": 5,
-      "toughness": {
-        "Target": 90
-      }
+      "icon": "/icon/skill/SkillIcon_1002_Ultra_on.png"
     },
     {
       "name": "Superiority of Reach",
-      "tag": "Enhance",
+      "maxLevel": 15,
+      "element": "",
       "type": "Talent",
-      "desc": "When Dan Heng is the target of an ally's Ability, his next attack's Wind <u>RES PEN</u> increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can be triggered again after <unbreak>#2[i]</unbreak> turn(s).",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "When they are the target of an ally's Ability, their next attack's Wind RES PEN increases. This effect can be triggered again after 2 turns.",
+      "description": "When Dan Heng is the target of an ally's Ability, his next attack's Wind RES PEN increases by #1[i]%. This effect can be triggered again after #2[i] turn(s).",
       "params": [
-        [ 0.18, 2 ],
-        [ 0.198, 2 ],
-        [ 0.216, 2 ],
-        [ 0.234, 2 ],
-        [ 0.252, 2 ],
-        [ 0.27, 2 ],
-        [ 0.2925, 2 ],
-        [ 0.315, 2 ],
-        [ 0.3375, 2 ],
-        [ 0.36, 2 ],
-        [ 0.378, 2 ],
-        [ 0.396, 2 ],
-        [ 0.414, 2 ],
-        [ 0.432, 2 ],
-        [ 0.45, 2 ]
-      ]
+        [0.18, 2],
+        [0.198, 2],
+        [0.216, 2],
+        [0.234, 2],
+        [0.252, 2],
+        [0.27, 2],
+        [0.2925, 2],
+        [0.315, 2],
+        [0.3375, 2],
+        [0.36, 2],
+        [0.378, 2],
+        [0.396, 2],
+        [0.414, 2],
+        [0.432, 2],
+        [0.45, 2]
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_Passive.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Wind",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "/icon/skill/SkillIcon_1002_Normal.png"
     },
     {
       "name": "Splitting Spearhead",
-      "tag": "Enhance",
-      "type": "Technique",
-      "desc": "After Dan Heng uses his Technique, his ATK increases by <unbreak>#1[i]%</unbreak> at the start of the next battle for <unbreak>#2[i]</unbreak> turn(s).",
-      "params": [
-        [ 0.4, 3 ]
-      ]
+      "maxLevel": 1,
+      "element": "",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "Enhance",
+      "simpleDescription": "After they use their Technique, their ATK is increased at the start of the next battle.",
+      "description": "After Dan Heng uses his Technique, his ATK increases by #1[i]% at the start of the next battle for #2[i] turn(s).",
+      "params": [[0.4, 3]],
+      "icon": "/icon/skill/SkillIcon_1002_Maze.png"
     }
   ],
   "eidolons": [
     {
       "name": "The Higher You Fly, the Harder You Fall",
-      "desc": "When the target enemy's current HP percentage is greater than or equal to <unbreak>#1[i]%</unbreak>, CRIT Rate increases by <unbreak>#2[i]%</unbreak>.",
-      "params": [ 0.5, 0.12 ]
+      "rank": 1,
+      "desc": "When the target enemy's current HP percentage is greater than or equal to 50%, CRIT Rate increases by 12%.",
+      "materials": [
+        {
+          "id": "11002",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_Rank1.png"
     },
     {
       "name": "Quell the Venom Octet, Quench the Vice O'Flame",
+      "rank": 2,
       "desc": "Reduces Talent cooldown by 1 turn.",
-      "params": []
+      "materials": [
+        {
+          "id": "11002",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_Rank2.png"
     },
     {
       "name": "Seen and Unseen",
-      "desc": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
-      "params": []
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11002",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_BP.png"
     },
     {
       "name": "Roaring Dragon and Soaring Sun",
-      "desc": "When Dan Heng uses his Ultimate to defeat an enemy, his next action is Advanced Forward by <unbreak>100%</unbreak>.",
-      "params": []
+      "rank": 4,
+      "desc": "When Dan Heng uses his Ultimate to defeat an enemy, he will immediately take action again.",
+      "materials": [
+        {
+          "id": "11002",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_Rank4.png"
     },
     {
       "name": "A Drop of Rain Feeds a Torrent",
-      "desc": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "params": []
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11002",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_Ultra_on.png"
     },
     {
       "name": "The Troubled Soul Lies in Wait",
-      "desc": "The Slow state triggered by Skill reduces the enemy's SPD by an extra <unbreak>#1[i]%</unbreak>.",
-      "params": [ 0.08 ]
+      "rank": 6,
+      "desc": "The Slow state triggered by Skill reduces the enemy's SPD by an extra 8%.",
+      "materials": [
+        {
+          "id": "11002",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_Rank6.png"
     }
   ],
-  "skillTree": [
+  "traces": [
     {
-      "id": 1002101,
+      "id": "1002101",
       "name": "Hidden Dragon",
-      "desc": "When current HP percentage is <unbreak>#1[i]%</unbreak> or lower, reduces the chance of being attacked by enemies.",
-      "icon": "SkillIcon_1002_SkillTree1.png",
-      "params": [ 0.5, 0.5 ],
+      "maxLevel": 1,
+      "description": "When current HP percentage is #1[i]% or lower, reduces the chance of being attacked by enemies.",
+      "params": [[0.5, 0.5]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110121",
+              "num": 2
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_SkillTree1.png",
+      "major": true,
       "minAsc": 2,
       "children": [
         {
-          "id": 1002202,
+          "id": "1002202",
           "name": "ATK Boost",
-          "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconAttack.png",
-          "params": [ 0.04 ],
+          "maxLevel": 1,
+          "description": "ATK increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110121",
+                  "num": 2
+                },
+                {
+                  "id": "111001",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
           "minAsc": 2,
           "children": [
             {
-              "id": 1002203,
+              "id": "1002203",
               "name": "DMG Boost: Wind",
-              "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconWindAddedRatio.png",
-              "params": [ 0.032 ],
+              "maxLevel": 1,
+              "description": "Wind DMG Boost increases by 3.2%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "WindAddedRatio",
+                      "value": 0.032
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110122",
+                      "num": 2
+                    },
+                    {
+                      "id": "111002",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconWindAddedRatio.png",
+              "major": false,
               "minAsc": 3
             }
           ]
@@ -282,27 +311,107 @@
       ]
     },
     {
-      "id": 1002102,
+      "id": "1002102",
       "name": "Faster Than Light",
-      "desc": "After launching an attack, there is a <unbreak>#1[i]%</unbreak> fixed chance to increase own SPD by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
-      "icon": "SkillIcon_1002_SkillTree2.png",
-      "params": [ 0.5, 0.2, 2 ],
+      "maxLevel": 1,
+      "description": "After launching an attack, there is a #1[i]% fixed chance to increase own SPD by #2[i]% for #3[i] turn(s).",
+      "params": [[0.5, 0.2, 2]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110122",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_SkillTree2.png",
+      "major": true,
       "minAsc": 4,
       "children": [
         {
-          "id": 1002205,
+          "id": "1002205",
           "name": "DMG Boost: Wind",
-          "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconWindAddedRatio.png",
-          "params": [ 0.048 ],
+          "maxLevel": 1,
+          "description": "Wind DMG Boost increases by 4.8%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "WindAddedRatio",
+                  "value": 0.048
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110122",
+                  "num": 4
+                },
+                {
+                  "id": "111002",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconWindAddedRatio.png",
+          "major": false,
           "minAsc": 4,
           "children": [
             {
-              "id": 1002206,
+              "id": "1002206",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.06 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 2
+                    },
+                    {
+                      "id": "111003",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
               "minAsc": 5
             }
           ]
@@ -310,35 +419,144 @@
       ]
     },
     {
-      "id": 1002103,
+      "id": "1002103",
       "name": "High Gale",
-      "desc": "Basic ATK deals <unbreak>#1[i]%</unbreak> more DMG to Slowed enemies.",
-      "icon": "SkillIcon_1002_SkillTree3.png",
-      "params": [ 0.4 ],
+      "maxLevel": 1,
+      "description": "Basic ATK deals #1[i]% more DMG to Slowed enemies.",
+      "params": [[0.4]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110123",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110501",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1002_SkillTree3.png",
+      "major": true,
       "minAsc": 6,
       "children": [
         {
-          "id": 1002208,
+          "id": "1002208",
           "name": "DEF Boost",
-          "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-          "icon": "IconDefence.png",
-          "params": [ 0.075 ],
+          "maxLevel": 1,
+          "description": "DEF increases by 7.5%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.075
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110123",
+                  "num": 6
+                },
+                {
+                  "id": "111003",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconDefence.png",
+          "major": false,
           "minAsc": 6,
           "children": [
             {
-              "id": 1002209,
+              "id": "1002209",
               "name": "ATK Boost",
-              "desc": "ATK increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconAttack.png",
-              "params": [ 0.08 ],
+              "maxLevel": 1,
+              "description": "ATK increases by 8.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.08
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 6
+                    },
+                    {
+                      "id": "111003",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 75
             },
             {
-              "id": 1002210,
+              "id": "1002210",
               "name": "DMG Boost: Wind",
-              "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-              "icon": "IconWindAddedRatio.png",
-              "params": [ 0.064 ],
+              "maxLevel": 1,
+              "description": "Wind DMG Boost increases by 6.4%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 0,
+                  "properties": [
+                    {
+                      "type": "WindAddedRatio",
+                      "value": 0.064
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 128000
+                    },
+                    {
+                      "id": "110123",
+                      "num": 6
+                    },
+                    {
+                      "id": "111003",
+                      "num": 6
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconWindAddedRatio.png",
+              "major": false,
+              "minAsc": 0,
               "minLevel": 80
             }
           ]
@@ -346,28 +564,317 @@
       ]
     },
     {
-      "id": 1002201,
+      "id": "1002201",
       "name": "DMG Boost: Wind",
-      "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconWindAddedRatio.png",
-      "params": [ 0.032 ]
+      "maxLevel": 1,
+      "description": "Wind DMG Boost increases by 3.2%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "WindAddedRatio",
+              "value": 0.032
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "111001",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconWindAddedRatio.png",
+      "major": false,
+      "minAsc": 0
     },
     {
-      "id": 1002204,
+      "id": "1002204",
       "name": "DEF Boost",
-      "desc": "DEF increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconDefence.png",
-      "params": [ 0.05 ],
+      "maxLevel": 1,
+      "description": "DEF increases by 5.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 3,
+          "properties": [
+            {
+              "type": "DefenceAddedRatio",
+              "value": 0.05
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 8000
+            },
+            {
+              "id": "110122",
+              "num": 2
+            },
+            {
+              "id": "111002",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconDefence.png",
+      "major": false,
       "minAsc": 3
     },
     {
-      "id": 1002207,
+      "id": "1002207",
       "name": "DMG Boost: Wind",
-      "desc": "Wind DMG increases by <unbreak>#1[f1]%</unbreak>",
-      "icon": "IconWindAddedRatio.png",
-      "params": [ 0.048 ],
+      "maxLevel": 1,
+      "description": "Wind DMG Boost increases by 4.8%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 5,
+          "properties": [
+            {
+              "type": "WindAddedRatio",
+              "value": 0.048
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 36000
+            },
+            {
+              "id": "110123",
+              "num": 2
+            },
+            {
+              "id": "111003",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconWindAddedRatio.png",
+      "major": false,
       "minAsc": 5
     }
   ],
-  "description": "A cold and reserved young man who is reticent about his past.\nTo avoid his kin, he decided to travel with the Astral Express."
+  "stats": [
+    {
+      "health": {
+        "base": 120,
+        "step": 6
+      },
+      "attack": {
+        "base": 74.4,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 54,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 110,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 168,
+        "step": 6
+      },
+      "attack": {
+        "base": 104.16,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 75.6,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 110,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 216,
+        "step": 6
+      },
+      "attack": {
+        "base": 133.92,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 97.2,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 110,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 264,
+        "step": 6
+      },
+      "attack": {
+        "base": 163.68,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 118.8,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 110,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 312,
+        "step": 6
+      },
+      "attack": {
+        "base": 193.44,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 140.4,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 110,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 360,
+        "step": 6
+      },
+      "attack": {
+        "base": 223.2,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 162,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 110,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 408,
+        "step": 6
+      },
+      "attack": {
+        "base": 252.96,
+        "step": 3.72
+      },
+      "defense": {
+        "base": 183.6,
+        "step": 2.7
+      },
+      "speed": {
+        "base": 110,
+        "step": 0
+      },
+      "taunt": {
+        "base": 75,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
 }

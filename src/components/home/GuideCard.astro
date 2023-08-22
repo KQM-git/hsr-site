@@ -16,16 +16,11 @@ const { title, description, hero, pubDate, tags } = frontmatter;
   class="rounded-lg overflow-hidden bg-gray-900 min-w-[min(320px,75vw)] h-[400px] snap-center"
 >
   <a href={url} class="grid grid-rows-[auto_auto_auto_1fr_auto] h-full">
-    <img
-      src=`/img/guides/${hero}`
-      class="w-full h-[200px] object-cover"
-      height={200}
-      alt=""
-    />
+    <img src={hero} class="w-full h-[200px] object-cover" height={200} alt="" />
     <ul class="flex gap-2 mt-4 mb-1 mx-4">
       <li class="card-tag-chip text-sm tag new">NEW</li>
       {
-        tags.map((tag) => (
+        tags?.map((tag) => (
           <li
             class={`card-tag-chip text-sm tag ${tag
               .toString()

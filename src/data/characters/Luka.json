@@ -1,0 +1,906 @@
+{
+  "id": "1111",
+  "name": "Luka",
+  "description": "The boxing champion in Belobog's Underworld, and one of Wildfire's most capable fighters.\\nThe consecutive reigning champion of the Fight Club, whose enthusiasm inspires children of the Underworld to dream big.",
+  "element": "Physical",
+  "path": "Nihility",
+  "rarity": 4,
+  "maxSkillPoints": 130,
+  "icon": "icon/character/1111.png",
+  "preview": "/image/character_preview/1111.png",
+  "portrait": "/image/character_portrait/1111.png",
+  "skills": [
+    {
+      "name": "Direct Punch",
+      "maxLevel": 9,
+      "element": "Physical",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals minor Physical DMG to a single enemy.",
+      "description": "Deals Physical DMG equal to #1[i]% of Luka's ATK to a single enemy.",
+      "params": [[0.5], [0.6], [0.7], [0.8], [0.9], [1], [1.1], [1.2], [1.3]],
+      "icon": "/icon/skill/SkillIcon_1111_Normal.png"
+    },
+    {
+      "name": "Lacerating Fist",
+      "maxLevel": 15,
+      "element": "Physical",
+      "type": "BPSkill",
+      "typeText": "Skill",
+      "effect": "SingleAttack",
+      "simpleDescription": "Deals Physical DMG to a single enemy, with a high chance of causing the enemy to Bleed.",
+      "description": "Deals Physical DMG equal to #1[i]% of Luka's ATK to a single enemy target. In addition, there is a #2[i]% base chance to inflict Bleed on them, lasting for #5[i] turn(s).\nWhile Bleeding, the enemy will take #3[f1]% of their Max HP as Physical DoT at the start of each turn. This DMG will not exceed more than #4[i]% of Luka's ATK.",
+      "params": [
+        [0.6, 1, 0.24, 1.3, 3],
+        [0.66, 1, 0.24, 1.43, 3],
+        [0.72, 1, 0.24, 1.56, 3],
+        [0.78, 1, 0.24, 1.69, 3],
+        [0.84, 1, 0.24, 1.82, 3],
+        [0.9, 1, 0.24, 2.015, 3],
+        [0.975, 1, 0.24, 2.275, 3],
+        [1.05, 1, 0.24, 2.6, 3],
+        [1.125, 1, 0.24, 2.99, 3],
+        [1.2, 1, 0.24, 3.38, 3],
+        [1.26, 1, 0.24, 3.549, 3],
+        [1.32, 1, 0.24, 3.718, 3],
+        [1.38, 1, 0.24, 3.887, 3],
+        [1.44, 1, 0.24, 4.056, 3],
+        [1.5, 1, 0.24, 4.225, 3]
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_BP.png"
+    },
+    {
+      "name": "Coup de Grâce",
+      "maxLevel": 15,
+      "element": "Physical",
+      "type": "Ultra",
+      "typeText": "Ultimate",
+      "effect": "SingleAttack",
+      "simpleDescription": "Receives #5[i] stack(s) of Fighting Will, with a high chance of increasing the target's DMG received, and deals massive Physical DMG to the target.",
+      "description": "Receives #5[i] stack(s) of Fighting Will, with a #2[i]% base chance to increase a single enemy target's DMG received by #3[f1]% for #4[i] turn(s). Then, deals Physical DMG equal to #1[i]% of Luka's ATK to the target.",
+      "params": [
+        [1.98, 1, 0.12, 3, 2],
+        [2.112, 1, 0.128, 3, 2],
+        [2.244, 1, 0.136, 3, 2],
+        [2.376, 1, 0.144, 3, 2],
+        [2.508, 1, 0.152, 3, 2],
+        [2.64, 1, 0.16, 3, 2],
+        [2.805, 1, 0.17, 3, 2],
+        [2.97, 1, 0.18, 3, 2],
+        [3.135, 1, 0.19, 3, 2],
+        [3.3, 1, 0.2, 3, 2],
+        [3.432, 1, 0.208, 3, 2],
+        [3.564, 1, 0.216, 3, 2],
+        [3.696, 1, 0.224, 3, 2],
+        [3.828, 1, 0.232, 3, 2],
+        [3.96, 1, 0.24, 3, 2]
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_Ultra_on.png"
+    },
+    {
+      "name": "Flying Sparks",
+      "maxLevel": 15,
+      "element": "",
+      "type": "Talent",
+      "typeText": "Talent",
+      "effect": "Enhance",
+      "simpleDescription": "After using Basic ATK \"Direct Punch\" or Skill \"Lacerating Fist,\" receives 1 stack of Fighting Will. When 2 or more stacks of Fighting Will are present, Basic Attack becomes Enhanced.\nIf the enemy is Bleeding, the Enhanced Basic ATK will cause Bleed to deal extra DMG for 1 time.",
+      "description": "After Luka uses his Basic ATK \"Direct Punch\" or Skill \"Lacerating Fist,\" he receives #1[i] stack(s) of Fighting Will, up to 4 stacks. When he has 2 or more stacks of Fighting Will, his Basic ATK \"Direct Punch\" is enhanced to \"Sky-Shatter Fist.\" After his Enhanced Basic ATK's \"Rising Uppercut\" hits a Bleeding enemy target, the Bleed status will immediately deal DMG for 1 time equal to #2[i]% of the original DMG to the target. At the start of battle, Luka will possess 1 stack of Fighting Will.",
+      "params": [
+        [1, 0.68],
+        [1, 0.697],
+        [1, 0.714],
+        [1, 0.731],
+        [1, 0.748],
+        [1, 0.765],
+        [1, 0.7863],
+        [1, 0.8075],
+        [1, 0.8288],
+        [1, 0.85],
+        [1, 0.867],
+        [1, 0.884],
+        [1, 0.901],
+        [1, 0.918],
+        [1, 0.935]
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_Passive.png"
+    },
+    {
+      "name": "Attack",
+      "maxLevel": 1,
+      "element": "Physical",
+      "type": "MazeNormal",
+      "typeText": "",
+      "effect": "MazeAttack",
+      "simpleDescription": "",
+      "description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+      "params": [],
+      "icon": "/icon/skill/SkillIcon_1111_Normal.png"
+    },
+    {
+      "name": "Anticipator",
+      "maxLevel": 1,
+      "element": "Physical",
+      "type": "Maze",
+      "typeText": "Technique",
+      "effect": "MazeAttack",
+      "simpleDescription": "Attacks the enemy. After entering battle, deals minor Physical DMG to a random single enemy, with a high chance to inflict Bleed to the target. Luka then gains 1 stack of Fighting Will.",
+      "description": "Immediately attacks the enemy. Upon entering battle, Luka deals Physical DMG equal to #1[i]% of his ATK to a random single enemy with a #2[i]% base chance to inflict his Skill's Bleed effect on the target. Then, Luka gains 1 additional stack of Fighting Will.",
+      "params": [[0.5, 1]],
+      "icon": "/icon/skill/SkillIcon_1111_Maze.png"
+    },
+    {
+      "name": "Sky-Shatter Fist",
+      "maxLevel": 9,
+      "element": "Physical",
+      "type": "Normal",
+      "typeText": "Basic ATK",
+      "effect": "SingleAttack",
+      "simpleDescription": "Consumes 2 stacks of Fighting Will to deal Physical DMG to a single enemy.",
+      "description": "Consumes 2 stacks of Fighting Will. First, uses Direct Punch to deal 3 hits, with each hit dealing Physical DMG equal to #1[i]% of Luka's ATK to a single enemy target.\nThen, uses Rising Uppercut to deal 1 hit, dealing Physical DMG equal to #2[i]% of Luka's ATK to the single enemy target.",
+      "params": [
+        [0.1, 0.4],
+        [0.12, 0.48],
+        [0.14, 0.56],
+        [0.16, 0.64],
+        [0.18, 0.72],
+        [0.2, 0.8],
+        [0.22, 0.88],
+        [0.24, 0.96],
+        [0.26, 1.04]
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_Normal.png"
+    }
+  ],
+  "eidolons": [
+    {
+      "name": "Fighting Endlessly",
+      "rank": 1,
+      "desc": "When Luka takes action, if the target enemy is Bleeding, increases DMG dealt by Luka by 15% for 2 turn(s).",
+      "materials": [
+        {
+          "id": "11111",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_Rank1.png"
+    },
+    {
+      "name": "The Enemy is Weak, I am Strong",
+      "rank": 2,
+      "desc": "If the Skill hits an enemy target with Physical Weakness, gain 1 stack(s) of Fighting Will.",
+      "materials": [
+        {
+          "id": "11111",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_Rank2.png"
+    },
+    {
+      "name": "Born for the Ring",
+      "rank": 3,
+      "desc": "Skill Lv. +2, up to a maximum of Lv. 15.\\nTalent Lv. +2, up to a maximum of Lv. 15.",
+      "materials": [
+        {
+          "id": "11111",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_BP.png"
+    },
+    {
+      "name": "Never Turning Back",
+      "rank": 4,
+      "desc": "For every stack of Fighting Will obtained, increases ATK by 5%, stacking up to 4 time(s).",
+      "materials": [
+        {
+          "id": "11111",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_Rank4.png"
+    },
+    {
+      "name": "The Spirit of Wildfire",
+      "rank": 5,
+      "desc": "Ultimate Lv. +2, up to a maximum of Lv. 15.\\nBasic ATK Lv. +1, up to a maximum of Lv. 10.",
+      "materials": [
+        {
+          "id": "11111",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_Ultra_on.png"
+    },
+    {
+      "name": "A Champion's Applause",
+      "rank": 6,
+      "desc": "After the Enhanced Basic ATK's \"Rising Uppercut\" hits a Bleeding enemy target, the Bleed status will immediately deal DMG 1 time equal to 8% of the original DMG for every hit of Direct Punch already unleashed during the current Enhanced Basic ATK.",
+      "materials": [
+        {
+          "id": "11111",
+          "num": 1
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_Rank6.png"
+    }
+  ],
+  "traces": [
+    {
+      "id": "1111101",
+      "name": "Kinetic Overload",
+      "maxLevel": 1,
+      "description": "When the Skill is used, immediately dispels #1[i] buff from the enemy target.",
+      "params": [[1]],
+      "levels": [
+        {
+          "promotion": 2,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 4000
+            },
+            {
+              "id": "110151",
+              "num": 2
+            },
+            {
+              "id": "110503",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_SkillTree1.png",
+      "major": true,
+      "minAsc": 2,
+      "children": [
+        {
+          "id": "1111202",
+          "name": "Effect Hit Rate Boost",
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 4.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 2,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.04
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 4000
+                },
+                {
+                  "id": "110151",
+                  "num": 2
+                },
+                {
+                  "id": "112011",
+                  "num": 4
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconStatusProbability.png",
+          "major": false,
+          "minAsc": 2,
+          "children": [
+            {
+              "id": "1111203",
+              "name": "ATK Boost",
+              "maxLevel": 1,
+              "description": "ATK increases by 4.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 3,
+                  "properties": [
+                    {
+                      "type": "AttackAddedRatio",
+                      "value": 0.04
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 8000
+                    },
+                    {
+                      "id": "110152",
+                      "num": 2
+                    },
+                    {
+                      "id": "112012",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconAttack.png",
+              "major": false,
+              "minAsc": 3,
+              "children": [
+                {
+                  "id": "1111204",
+                  "name": "ATK Boost",
+                  "maxLevel": 1,
+                  "description": "DEF increases by 5.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 3,
+                      "properties": [
+                        {
+                          "type": "DefenceAddedRatio",
+                          "value": 0.05
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 8000
+                        },
+                        {
+                          "id": "110152",
+                          "num": 2
+                        },
+                        {
+                          "id": "112012",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "/icon/property/IconDefence.png",
+                  "major": false,
+                  "minAsc": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1111102",
+      "name": "Cycle Braking",
+      "maxLevel": 1,
+      "description": "For every stack of Fighting Will obtained, additionally regenerates #1[i] Energy.",
+      "params": [[3]],
+      "levels": [
+        {
+          "promotion": 4,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 16000
+            },
+            {
+              "id": "110152",
+              "num": 4
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110503",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_SkillTree2.png",
+      "major": true,
+      "minAsc": 4,
+      "children": [
+        {
+          "id": "1111205",
+          "name": "ATK Boost",
+          "maxLevel": 1,
+          "description": "ATK increases by 6.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 4,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.06
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 16000
+                },
+                {
+                  "id": "110152",
+                  "num": 4
+                },
+                {
+                  "id": "112012",
+                  "num": 3
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
+          "minAsc": 4,
+          "children": [
+            {
+              "id": "1111206",
+              "name": "Effect Hit Rate Boost",
+              "maxLevel": 1,
+              "description": "Effect Hit Rate increases by 6.0%",
+              "params": [],
+              "levels": [
+                {
+                  "promotion": 5,
+                  "properties": [
+                    {
+                      "type": "StatusProbabilityBase",
+                      "value": 0.06
+                    }
+                  ],
+                  "materials": [
+                    {
+                      "id": "2",
+                      "num": 36000
+                    },
+                    {
+                      "id": "110153",
+                      "num": 2
+                    },
+                    {
+                      "id": "112013",
+                      "num": 2
+                    }
+                  ]
+                }
+              ],
+              "icon": "/icon/property/IconStatusProbability.png",
+              "major": false,
+              "minAsc": 5,
+              "children": [
+                {
+                  "id": "1111207",
+                  "name": "ATK Boost",
+                  "maxLevel": 1,
+                  "description": "ATK increases by 6.0%",
+                  "params": [],
+                  "levels": [
+                    {
+                      "promotion": 5,
+                      "properties": [
+                        {
+                          "type": "AttackAddedRatio",
+                          "value": 0.06
+                        }
+                      ],
+                      "materials": [
+                        {
+                          "id": "2",
+                          "num": 36000
+                        },
+                        {
+                          "id": "110153",
+                          "num": 2
+                        },
+                        {
+                          "id": "112013",
+                          "num": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "icon": "/icon/property/IconAttack.png",
+                  "major": false,
+                  "minAsc": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1111103",
+      "name": "Crush Fighting Will",
+      "maxLevel": 1,
+      "description": "When using Enhanced Basic ATK, every hit Direct Punch deals has a #1[i]% fixed chance for Luka to use 1 additional hit. This effect does not apply to additional hits generated in this way.",
+      "params": [[0.5]],
+      "levels": [
+        {
+          "promotion": 6,
+          "properties": [],
+          "materials": [
+            {
+              "id": "2",
+              "num": 128000
+            },
+            {
+              "id": "110153",
+              "num": 6
+            },
+            {
+              "id": "241",
+              "num": 1
+            },
+            {
+              "id": "110503",
+              "num": 1
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/skill/SkillIcon_1111_SkillTree3.png",
+      "major": true,
+      "minAsc": 6,
+      "children": [
+        {
+          "id": "1111208",
+          "name": "ATK Boost",
+          "maxLevel": 1,
+          "description": "DEF increases by 7.5%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 6,
+              "properties": [
+                {
+                  "type": "DefenceAddedRatio",
+                  "value": 0.075
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "112013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconDefence.png",
+          "major": false,
+          "minAsc": 6
+        },
+        {
+          "id": "1111209",
+          "name": "Effect Hit Rate Boost",
+          "maxLevel": 1,
+          "description": "Effect Hit Rate increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "StatusProbabilityBase",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "112013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconStatusProbability.png",
+          "major": false,
+          "minAsc": 0,
+          "minLevel": 75
+        }
+      ]
+    },
+    {
+      "id": "1111201",
+      "name": "ATK Boost",
+      "maxLevel": 1,
+      "description": "ATK increases by 4.0%",
+      "params": [],
+      "levels": [
+        {
+          "promotion": 0,
+          "properties": [
+            {
+              "type": "AttackAddedRatio",
+              "value": 0.04
+            }
+          ],
+          "materials": [
+            {
+              "id": "2",
+              "num": 2000
+            },
+            {
+              "id": "112011",
+              "num": 2
+            }
+          ]
+        }
+      ],
+      "icon": "/icon/property/IconAttack.png",
+      "major": false,
+      "minAsc": 0,
+      "children": [
+        {
+          "id": "1111210",
+          "name": "ATK Boost",
+          "maxLevel": 1,
+          "description": "ATK increases by 8.0%",
+          "params": [],
+          "levels": [
+            {
+              "promotion": 0,
+              "properties": [
+                {
+                  "type": "AttackAddedRatio",
+                  "value": 0.08
+                }
+              ],
+              "materials": [
+                {
+                  "id": "2",
+                  "num": 128000
+                },
+                {
+                  "id": "110153",
+                  "num": 6
+                },
+                {
+                  "id": "112013",
+                  "num": 6
+                }
+              ]
+            }
+          ],
+          "icon": "/icon/property/IconAttack.png",
+          "major": false,
+          "minAsc": 0,
+          "minLevel": 80
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "health": {
+        "base": 124.8,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 79.2,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 66,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 103,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 174.72,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 110.88,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 92.4,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 103,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 224.64,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 142.56,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 118.8,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 103,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 274.56,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 174.24,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 145.2,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 103,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 324.48,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 205.92,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 171.6,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 103,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 374.4,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 237.6,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 198,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 103,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    },
+    {
+      "health": {
+        "base": 424.32,
+        "step": 6.24
+      },
+      "attack": {
+        "base": 269.28,
+        "step": 3.96
+      },
+      "defense": {
+        "base": 224.4,
+        "step": 3.3
+      },
+      "speed": {
+        "base": 103,
+        "step": 0
+      },
+      "taunt": {
+        "base": 100,
+        "step": 0
+      },
+      "critRate": {
+        "base": 0.05,
+        "step": 0
+      },
+      "critDmg": {
+        "base": 0.5,
+        "step": 0
+      }
+    }
+  ]
+}
