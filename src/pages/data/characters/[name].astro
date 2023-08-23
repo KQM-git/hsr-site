@@ -46,6 +46,14 @@ const tabLabels = {
   traces: "Traces",
 };
 
+const skillTypes = {
+  "SingleAttack": "Single Target",
+  "AoEAttack": "AoE Attack",
+  "Blast": "Blast",
+  "Enhance": "Enhance",
+  "MazeAttack": "Attack Technique",
+  "Maze": "Utility Technique"
+}
 ---
 
 <Layout
@@ -94,8 +102,11 @@ const tabLabels = {
                   />
                   <div>
                     <h2 class="subsubheader">
-                        {s.name}
+                      {s.name}
                     </h2>
+                    <h3>
+                      {skillTypes[s.effect]} {/*linter doesnt like this but it works */}
+                    </h3>
                     <div>
                         {splitLines(s.simpleDescription).map((line, inx) => ( //TODO: change from s.simpleDescription to s.description and figure out scaling
                           <>
