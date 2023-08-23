@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 const { name } = Astro.params;
 const char = (await getCharacter(name!))!;
 
-const { name: charName, id, description, eidolons, traces } = char;
+const { name: charName, id, description, skills, eidolons, traces } = char;
 
 const cardClass = "rounded-lg p-4 max-w-full md:max-w-sm relative pb-16";
 const bgClass = `card-bg-1 bg-opacity-90 max-w-full relative`;
@@ -45,6 +45,7 @@ const tabLabels = {
   eidolons: "Eidolons",
   traces: "Traces",
 };
+
 ---
 
 <Layout
@@ -80,7 +81,35 @@ const tabLabels = {
         <TabContent id="skills" class={cardClass}>
           <CharInfo {...char} />
         </TabContent>
-        <TabContent id="skills" class={bgClass} />
+        <TabContent id="skills" class={bgClass}>
+          <ol class="flex flex-col gap-6">
+            {
+              skills.filter((s, i) => i != 4).map((s) => ( // Needed to filter out MazeAttack from list
+                <li class="flex gap-2 md:gap-4 items-start">
+                  <img
+                    src={s.icon}
+                    width="120"
+                    height="120"
+                    alt=""
+                  />
+                  <div>
+                    <h2 class="subsubheader">
+                        {s.name}
+                    </h2>
+                    <div>
+                        {splitLines(s.simpleDescription).map((line, inx) => ( //TODO: change from s.simpleDescription to s.description and figure out scaling
+                          <>
+                            {inx !== 0 && <br />}
+                            {line}
+                          </>
+                        ))}
+                      </div>
+                  </div>
+                </li>
+              ))
+            }
+          </ol>
+        </TabContent>
 
         <TabContent id="eidolons" class={cardClass}>
           <CharInfo {...char} />
