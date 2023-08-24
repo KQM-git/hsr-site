@@ -46,14 +46,23 @@ const tabLabels = {
   traces: "Traces",
 };
 
-const skillTypes = {
+const skillCategories = {
+  talent: "Talent",
+  basic: "Basic",
+  skill: "Skill", 
+  ultimate: "Ultimate",
+  technique: "Technique"
+};
+const skillTypes: { [key: string]: string } = {
   "SingleAttack": "Single Target",
   "AoEAttack": "AoE Attack",
   "Blast": "Blast",
   "Enhance": "Enhance",
   "MazeAttack": "Attack Technique",
   "Maze": "Utility Technique"
-}
+};
+let tal;
+const scalingPattern = /\|(.+?)\|(.+?)\|/g;
 ---
 
 <Layout
@@ -90,7 +99,68 @@ const skillTypes = {
           <CharInfo {...char} />
         </TabContent>
         <TabContent id="skills" class={bgClass}>
-          <ol class="flex flex-col gap-6">
+          <TabPage
+            names={skillCategories}
+            buttonClass="m-2 rounded-2xl z-10"
+            headerClass="grid grid-cols-5"
+          >
+            
+            <TabContent id="talent">
+              {tal = skills.filter((s) => s.type == "Talent")}
+              <h2 class="subsubheader">
+                {tal[0].name}
+              </h2>
+              <h3>
+                {skillTypes[tal[0].effect]}
+              </h3>
+              <div>
+                Level: 
+                <span id="talentValue">1</span> <br />
+                <input id="talentSlider" min="1" max="15" type="range" value="1">
+                <script>
+                  const talentValue = document.getElementById("talentValue");
+                  const talentSlider = document.getElementById("talentSlider");
+                  talentSlider.addEventListener('input', () => {
+                    talentValue.textContent = talentSlider.value;
+                  });
+                </script>
+              </div>
+              <p>
+                {tal[0].description.match(scalingPattern) /*TODO: regex scaling on skill description ; try adding eventlistener to modify values*/}
+              </p>
+              
+              {/*
+                skills.filter((s) => s.type == "Talent").map(s => 
+                  <h2 class="subsubheader">
+                    {s.name}
+                  </h2>
+                  <h3>
+                    {skillTypes[s.effect]}  
+                  </h3>
+                  <div>
+                    Level: 
+                    <span id="talentValue">1</span>
+                    <input id="talentSlider" max="15" min="1" type="range" value="1">
+                  </div>
+                  <p>
+                    {s.description}
+                  </p>
+                  <script is:inline>
+                    const talentValue = document.getElementById('talentValue');
+                    const talentSlider = document.getElementById('talentSlider');
+                    talentValue.addEventListener('input', () => {
+                      talentValue.textContent = talentSlider.value;
+                    });
+                  </script>
+                )
+                */}
+              
+            </TabContent>
+            <TabContent id="basic">
+              testCon2
+            </TabContent>
+          </TabPage>
+          {/*<ol class="flex flex-col gap-6">
             {
               skills.filter((s, i) => i != 4).map((s) => ( // Needed to filter out MazeAttack from list
                 <li class="flex gap-2 md:gap-4 items-start">
@@ -105,7 +175,7 @@ const skillTypes = {
                       {s.name}
                     </h2>
                     <h3>
-                      {skillTypes[s.effect]} {/*linter doesnt like this but it works */}
+                      {skillTypes[s.effect]}
                     </h3>
                     <div>
                         {splitLines(s.simpleDescription).map((line, inx) => ( //TODO: change from s.simpleDescription to s.description and figure out scaling
@@ -119,7 +189,7 @@ const skillTypes = {
                 </li>
               ))
             }
-          </ol>
+          </ol>*/}
         </TabContent>
 
         <TabContent id="eidolons" class={cardClass}>
