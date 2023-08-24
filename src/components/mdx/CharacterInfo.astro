@@ -1,6 +1,11 @@
 ---
 import { parse } from "node-html-parser";
-import { getDescription, getImage, getName, getParams } from "./CharacterData";
+import {
+  getDescription,
+  getImage,
+  getName,
+  getParams,
+} from "../data/CharacterData";
 import TabPage from "components/tabpage/TabPage.astro";
 import { parseParams } from "util/parseParams";
 
@@ -21,28 +26,26 @@ const TAG_NAME: any = {
 const pattern = /\|(.+?)\|(.+?)\|/g;
 
 let html = await Astro.slots.render("default");
-const replacements = (await Promise.all(
-  Array.from(html.matchAll(pattern), async (match) => {
-    const data = match[0].split("|");
+const replacements = Array.from(html.matchAll(pattern), (match) => {
+  const data = match[0].split("|");
 
-    switch (data[1]) {
-      case "type":
-        return TAG_NAME[data[2]];
-      case "name":
-        return await getName(char, data[2]);
-      case "img":
-        return await getImage(char, data[2]);
-      case "desc":
-        return parseParams(
-          (await getDescription(char, data[2]))!,
-          (await getParams(char, data[2]))![0]
-        );
-    }
+  switch (data[1]) {
+    case "type":
+      return TAG_NAME[data[2]];
+    case "name":
+      return getName(char, data[2]);
+    case "img":
+      return getImage(char, data[2]);
+    case "desc":
+      return parseParams(
+        getDescription(char, data[2])!,
+        getParams(char, data[2])![0]
+      );
+  }
 
-    console.log(data);
-    return "placeholder";
-  })
-)) as string[];
+  console.log(data);
+  return "placeholder";
+}) as string[];
 let i = 0;
 html = html.replace(pattern, () => replacements[i++]);
 

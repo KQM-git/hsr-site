@@ -6,14 +6,14 @@
 /* BREAKPOINTS: MD, LG */
 
 import CharacterCard from "components/data/CharacterCard.astro";
+import { getCharacters } from "components/data/CharacterData";
 import Layout from "layouts/Data.astro";
-import type { Character } from "types/game-data";
 import elements from "util/elements";
 import paths from "util/paths";
 
 const breadcrumbs = ["Data Bank", "Characters"];
 
-const chars = (await Astro.glob("/src/data/characters/*.json")) as Character[];
+const chars = getCharacters();
 ---
 
 <Layout title="Characters" description="" breadcrumbs={breadcrumbs}>

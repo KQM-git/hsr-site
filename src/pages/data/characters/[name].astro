@@ -17,20 +17,18 @@ import splitLines from "util/splitLines";
 import TabPage from "components/tabpage/TabPage.astro";
 import TabContent from "components/tabpage/TabContent.astro";
 import CharPortrait from "components/data/characters/CharPortrait.astro";
-import { getCharacter } from "components/mdx/CharacterData";
+import { getCharacter, getCharacterIndexes } from "components/data/CharacterData";
 
-export async function getStaticPaths() {
-  const chars = (await Astro.glob(
-    "/src/data/characters/*.json"
-  )) as Character[];
-
-  return chars.map((ch) => ({
-    params: { name: ch.name.replaceAll(" ", "_") },
+export function getStaticPaths() {
+  return getCharacterIndexes().map((ch) => ({
+    params: {
+      name: ch,
+    },
   }));
 }
 
 const { name } = Astro.params;
-const char = (await getCharacter(name!))!;
+const char = getCharacter(name!)!;
 
 const { name: charName, id, description, skills, eidolons, traces } = char;
 
@@ -47,13 +45,13 @@ const tabLabels = {
 };
 
 const skillTypes = {
-  "SingleAttack": "Single Target",
-  "AoEAttack": "AoE Attack",
-  "Blast": "Blast",
-  "Enhance": "Enhance",
-  "MazeAttack": "Attack Technique",
-  "Maze": "Utility Technique"
-}
+  SingleAttack: "Single Target",
+  AoEAttack: "AoE Attack",
+  Blast: "Blast",
+  Enhance: "Enhance",
+  MazeAttack: "Attack Technique",
+  Maze: "Utility Technique",
+};
 ---
 
 <Layout
@@ -92,32 +90,37 @@ const skillTypes = {
         <TabContent id="skills" class={bgClass}>
           <ol class="flex flex-col gap-6">
             {
-              skills.filter((s, i) => i != 4).map((s) => ( // Needed to filter out MazeAttack from list
-                <li class="flex gap-2 md:gap-4 items-start">
-                  <img
-                    src={s.icon}
-                    width="120"
-                    height="120"
-                    alt=""
-                  />
-                  <div>
-                    <h2 class="subsubheader">
-                      {s.name}
-                    </h2>
-                    <h3>
-                      {skillTypes[s.effect]} {/*linter doesnt like this but it works */}
-                    </h3>
-                    <div>
-                        {splitLines(s.simpleDescription).map((line, inx) => ( //TODO: change from s.simpleDescription to s.description and figure out scaling
-                          <>
-                            {inx !== 0 && <br />}
-                            {line}
-                          </>
-                        ))}
+              skills
+                .filter((s, i) => i != 4)
+                .map(
+                  (
+                    s // Needed to filter out MazeAttack from list
+                  ) => (
+                    <li class="flex gap-2 md:gap-4 items-start">
+                      <img src={s.icon} width="120" height="120" alt="" />
+                      <div>
+                        <h2 class="subsubheader">{s.name}</h2>
+                        <h3>
+                          {skillTypes[s.effect]}{" "}
+                          {/*linter doesnt like this but it works */}
+                        </h3>
+                        <div>
+                          {splitLines(s.simpleDescription).map(
+                            (
+                              line,
+                              inx //TODO: change from s.simpleDescription to s.description and figure out scaling
+                            ) => (
+                              <>
+                                {inx !== 0 && <br />}
+                                {line}
+                              </>
+                            )
+                          )}
+                        </div>
                       </div>
-                  </div>
-                </li>
-              ))
+                    </li>
+                  )
+                )
             }
           </ol>
         </TabContent>

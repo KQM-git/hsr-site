@@ -1,6 +1,6 @@
 ---
 import { parse } from "node-html-parser";
-import { getImage } from "./CharacterData";
+import { getImage } from "../data/CharacterData";
 
 export interface Props {
   char: string;
@@ -11,12 +11,10 @@ const pattern = /\|icon\|(.+?)\|/g;
 const { char } = Astro.props;
 
 let html = await Astro.slots.render("default");
-const replacements = (await Promise.all(
-  Array.from(html.matchAll(pattern), async (match) => {
-    const data = match[0].split("|");
-    return await getImage(char, data[2])!;
-  })
-)) as string[];
+const replacements = Array.from(html.matchAll(pattern), (match) => {
+  const data = match[0].split("|");
+  return getImage(char, data[2])!;
+}) as string[];
 let i = 0;
 html = html.replace(pattern, () => replacements[i++]);
 

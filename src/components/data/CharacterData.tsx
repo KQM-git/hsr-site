@@ -2,14 +2,29 @@ import type { Character } from "types/game-data";
 
 const data = new Map<string, Character>();
 
-export async function getCharacter(name: string) {
-  if (!data.has(name))
-    data.set(name, await import(`../../data/characters/${name}.json`));
+await Promise.all(
+  Object.values(import.meta.glob("../../data/characters/*.json")).map(
+    async (charFile) => {
+      const char = (await charFile()) as Character;
+      data.set(char.name.replace(" ", "_"), char);
+    }
+  )
+);
+
+export function getCharacter(name: string) {
   return data.get(name);
 }
 
-async function getObject(name: string, type: string) {
-  const char = await getCharacter(name);
+export function getCharacters() {
+  return Array.from(data.values());
+}
+
+export function getCharacterIndexes() {
+  return Array.from(data.keys());
+}
+
+function getObject(name: string, type: string) {
+  const char = getCharacter(name);
   switch (type) {
     case "Ultimate":
       return char?.skills.filter((s) => s.type === "Ultra")[0];
@@ -47,18 +62,18 @@ async function getObject(name: string, type: string) {
   }
 }
 
-export async function getImage(name: string, type: string) {
-  return (await getObject(name, type))?.icon;
+export function getImage(name: string, type: string) {
+  return getObject(name, type)?.icon;
 }
 
-export async function getName(name: string, type: string) {
-  return (await getObject(name, type))?.name;
+export function getName(name: string, type: string) {
+  return getObject(name, type)?.name;
 }
 
-export async function getDescription(name: string, type: string) {
-  return (await getObject(name, type))?.description;
+export function getDescription(name: string, type: string) {
+  return getObject(name, type)?.description;
 }
 
-export async function getParams(name: string, type: string) {
-  return (await getObject(name, type))?.params;
+export function getParams(name: string, type: string) {
+  return getObject(name, type)?.params;
 }
