@@ -18,6 +18,7 @@ import TabPage from "components/tabpage/TabPage.astro";
 import TabContent from "components/tabpage/TabContent.astro";
 import CharPortrait from "components/data/characters/CharPortrait.astro";
 import { getCharacter } from "components/mdx/CharacterData";
+import AbilityDescription from "./AbilityDescription.astro";
 
 export async function getStaticPaths() {
   const chars = (await Astro.glob(
@@ -61,8 +62,12 @@ const skillTypes: { [key: string]: string } = {
   "MazeAttack": "Attack Technique",
   "Maze": "Utility Technique"
 };
-let tal;
-const scalingPattern = /\|(.+?)\|(.+?)\|/g;
+
+function getAbilityInfo(abilityType:string, abilityLevel?:number):any {
+  const ability = skills.filter((s) => s.type == abilityType);
+
+  return ability[0];
+}
 ---
 
 <Layout
@@ -106,90 +111,27 @@ const scalingPattern = /\|(.+?)\|(.+?)\|/g;
           >
             
             <TabContent id="talent">
-              {tal = skills.filter((s) => s.type == "Talent")}
+              
               <h2 class="subsubheader">
-                {tal[0].name}
+                {getAbilityInfo("Talent").name}
               </h2>
               <h3>
-                {skillTypes[tal[0].effect]}
+                {getAbilityInfo("Talent").effect} <!--SOMETIMES not working?? -->
               </h3>
               <div>
-                Level: 
-                <span id="talentValue">1</span> <br />
-                <input id="talentSlider" min="1" max="15" type="range" value="1">
-                <script>
-                  const talentValue = document.getElementById("talentValue");
-                  const talentSlider = document.getElementById("talentSlider");
-                  talentSlider.addEventListener('input', () => {
-                    talentValue.textContent = talentSlider.value;
-                  });
-                </script>
+                <AbilityDescription 
+                  abilityDesc={getAbilityInfo("Talent").description}, 
+                  abilityScaling={JSON.stringify(getAbilityInfo("Talent").params)},
+                  abilityMaxLevel={getAbilityInfo("Talent").maxLevel} >
+                </AbilityDescription>
               </div>
-              <p>
-                {tal[0].description.match(scalingPattern) /*TODO: regex scaling on skill description ; try adding eventlistener to modify values*/}
-              </p>
               
-              {/*
-                skills.filter((s) => s.type == "Talent").map(s => 
-                  <h2 class="subsubheader">
-                    {s.name}
-                  </h2>
-                  <h3>
-                    {skillTypes[s.effect]}  
-                  </h3>
-                  <div>
-                    Level: 
-                    <span id="talentValue">1</span>
-                    <input id="talentSlider" max="15" min="1" type="range" value="1">
-                  </div>
-                  <p>
-                    {s.description}
-                  </p>
-                  <script is:inline>
-                    const talentValue = document.getElementById('talentValue');
-                    const talentSlider = document.getElementById('talentSlider');
-                    talentValue.addEventListener('input', () => {
-                      talentValue.textContent = talentSlider.value;
-                    });
-                  </script>
-                )
-                */}
               
             </TabContent>
             <TabContent id="basic">
               testCon2
             </TabContent>
           </TabPage>
-          {/*<ol class="flex flex-col gap-6">
-            {
-              skills.filter((s, i) => i != 4).map((s) => ( // Needed to filter out MazeAttack from list
-                <li class="flex gap-2 md:gap-4 items-start">
-                  <img
-                    src={s.icon}
-                    width="120"
-                    height="120"
-                    alt=""
-                  />
-                  <div>
-                    <h2 class="subsubheader">
-                      {s.name}
-                    </h2>
-                    <h3>
-                      {skillTypes[s.effect]}
-                    </h3>
-                    <div>
-                        {splitLines(s.simpleDescription).map((line, inx) => ( //TODO: change from s.simpleDescription to s.description and figure out scaling
-                          <>
-                            {inx !== 0 && <br />}
-                            {line}
-                          </>
-                        ))}
-                      </div>
-                  </div>
-                </li>
-              ))
-            }
-          </ol>*/}
         </TabContent>
 
         <TabContent id="eidolons" class={cardClass}>

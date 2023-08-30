@@ -1,0 +1,58 @@
+---
+const {
+    abilityType = "placeholder",
+    abilityDesc = "placeholderDesc",
+    abilityScaling = [[]],
+    abilityLevel = 1,
+    abilityMaxLevel = 15
+} = Astro.props;
+---
+
+<ability-desc data-type={abilityType} data-desc={abilityDesc} data-scaling={abilityScaling} data-level={abilityLevel}, data-maxlev={abilityMaxLevel}>
+    Level: 
+    <span id="talentValue">1</span> <br />
+    <input id="talentSlider" min="1" max={abilityMaxLevel} type="range" value="1">
+    <p id="talentDesc">
+        {abilityDesc}
+    </p>
+</ability-desc>
+
+<script>
+    class AbilityDescription extends HTMLElement {
+        constructor() {
+            super();
+
+            const scalingPattern = /[#][1-9]\[([^\]]+)]/g;
+
+            const desc = this.dataset.desc;
+            const scal = JSON.parse(this.dataset.scaling!);
+
+            const val = this.querySelector('span')!;
+            const slider = this.querySelector('input')!;
+            const d = this.querySelector('p')!;
+
+            let tempStr:string = desc!;
+            const regFound = desc!.match(scalingPattern) ?? [];   
+            regFound.forEach((r) => (tempStr = tempStr.replace(r, (scal![0][Number(r!.at(1)) - 1] * 100).toFixed(2))));
+            d.textContent = tempStr;
+
+            slider?.addEventListener('input', () => {
+                const sharedVal = Number(slider.value)
+                val.textContent = String(sharedVal)
+
+                
+                let tempStr:string = desc!;
+                // console.log(type);
+                // console.log(JSON.stringify(scal));
+                //console.log(scal!);
+                // console.log(maxLevel);
+                const regFound = desc!.match(scalingPattern) ?? [];
+                
+                regFound.forEach((r) => (tempStr = tempStr.replace(r, (scal![sharedVal - 1][Number(r!.at(1)) - 1] * 100).toFixed(2))));
+
+                d.textContent = tempStr;
+            });
+        }
+    }
+    customElements.define('ability-desc', AbilityDescription);
+</script>
