@@ -47,6 +47,7 @@ const tabLabels = {
   traces: "Traces",
 };
 
+let currAbilityTab:string = "";
 const skillCategories = {
   talent: "Talent",
   basic: "Basic",
@@ -62,8 +63,7 @@ const skillTypes: { [key: string]: string } = {
   "MazeAttack": "Attack Technique",
   "Maze": "Utility Technique"
 };
-
-function getAbilityInfo(abilityType:string, abilityLevel?:number):any {
+function getAbilityInfo(abilityType:string):any {
   const ability = skills.filter((s) => s.type == abilityType);
 
   return ability[0];
@@ -111,26 +111,90 @@ function getAbilityInfo(abilityType:string, abilityLevel?:number):any {
           >
             
             <TabContent id="talent">
-              
+              <p hidden>{currAbilityTab = "Talent"}</p>
               <h2 class="subsubheader">
-                {getAbilityInfo("Talent").name}
+                {getAbilityInfo(currAbilityTab).name}
               </h2>
               <h3>
-                {getAbilityInfo("Talent").effect} <!--SOMETIMES not working?? -->
+                {skillTypes[getAbilityInfo(currAbilityTab).effect]} <!--SOMETIMES not working?? -->
               </h3>
               <div>
                 <AbilityDescription 
-                  abilityDesc={getAbilityInfo("Talent").description}, 
-                  abilityScaling={JSON.stringify(getAbilityInfo("Talent").params)},
-                  abilityMaxLevel={getAbilityInfo("Talent").maxLevel} >
+                  abilityDesc={getAbilityInfo(currAbilityTab).description}, 
+                  abilityScaling={JSON.stringify(getAbilityInfo(currAbilityTab).params)},
+                  abilityMaxLevel={getAbilityInfo(currAbilityTab).maxLevel} >
                 </AbilityDescription>
               </div>
-              
-              
             </TabContent>
+
             <TabContent id="basic">
-              testCon2
+              <p hidden>{currAbilityTab = "Normal"}</p>
+              <h2 class="subsubheader">
+                {getAbilityInfo(currAbilityTab).name}
+              </h2>
+              <h3>
+                {skillTypes[getAbilityInfo(currAbilityTab).effect]}
+              </h3>
+              <div>
+                <AbilityDescription 
+                  abilityDesc={getAbilityInfo(currAbilityTab).description}, 
+                  abilityScaling={JSON.stringify(getAbilityInfo(currAbilityTab).params)},
+                  abilityMaxLevel={getAbilityInfo(currAbilityTab).maxLevel} >
+                </AbilityDescription>
+              </div>
             </TabContent>
+
+            <TabContent id="skill">
+              <p hidden>{currAbilityTab = "BPSkill"}</p>
+              <h2 class="subsubheader">
+                {getAbilityInfo(currAbilityTab).name}
+              </h2>
+              <h3>
+                {skillTypes[getAbilityInfo(currAbilityTab).effect]}
+              </h3>
+              <div>
+                <AbilityDescription 
+                  abilityDesc={getAbilityInfo(currAbilityTab).description}, 
+                  abilityScaling={JSON.stringify(getAbilityInfo(currAbilityTab).params)},
+                  abilityMaxLevel={getAbilityInfo(currAbilityTab).maxLevel} >
+                </AbilityDescription>
+              </div>
+            </TabContent>
+
+            <TabContent id="ultimate">
+              <p hidden>{currAbilityTab = "Ultra"}</p>
+              <h2 class="subsubheader">
+                {getAbilityInfo(currAbilityTab).name}
+              </h2>
+              <h3>
+                {skillTypes[getAbilityInfo(currAbilityTab).effect]}
+              </h3>
+              <div>
+                <AbilityDescription 
+                  abilityDesc={getAbilityInfo(currAbilityTab).description}, 
+                  abilityScaling={JSON.stringify(getAbilityInfo(currAbilityTab).params)},
+                  abilityMaxLevel={getAbilityInfo(currAbilityTab).maxLevel} >
+                </AbilityDescription>
+              </div>
+            </TabContent>
+
+            <TabContent id="technique">
+              <p hidden>{currAbilityTab = "Maze"}</p>
+              <h2 class="subsubheader">
+                {getAbilityInfo(currAbilityTab).name}
+              </h2>
+              <h3>
+                {skillTypes[getAbilityInfo(currAbilityTab).effect]}
+              </h3>
+              <div>
+                <AbilityDescription 
+                  abilityDesc={getAbilityInfo(currAbilityTab).description}, 
+                  abilityScaling={JSON.stringify(getAbilityInfo(currAbilityTab).params)},
+                  abilityMaxLevel={getAbilityInfo(currAbilityTab).maxLevel} >
+                </AbilityDescription>
+              </div>
+            </TabContent>
+
           </TabPage>
         </TabContent>
 
